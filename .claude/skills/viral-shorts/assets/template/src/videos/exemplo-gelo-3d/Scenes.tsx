@@ -72,7 +72,7 @@ const G02: React.FC<SceneProps> = ({ durationInFrames }) => {
 
 const G03: React.FC<SceneProps> = ({ durationInFrames }) => {
   const { t, dur } = useSceneTime(durationInFrames);
-  const grow = ramp(t, dur * 0.1, dur * 0.6, "out");
+  const grow = ramp(t, dur * 0.08, dur * 0.4, "out");
   const s = mix(1, 1.09 ** (1 / 3) * 1.0, grow);
   return (
     <AbsoluteFill>
@@ -82,7 +82,7 @@ const G03: React.FC<SceneProps> = ({ durationInFrames }) => {
         <LowPolyBox position={[1.25, 0.8 * s, 0]} size={[1.6, 1.6, 1.6]} scale={s} color={ICE} opacity={0.9} />
       </Scene3D>
       <ScreenLabel x={330} y={700} text="Água" delay={0.1} color="#9fdcff" />
-      <ScreenLabel x={760} y={700} text="Gelo +9%" delay={dur * 0.45} />
+      <ScreenLabel x={760} y={700} text="Gelo +9%" delay={dur * 0.25} />
     </AbsoluteFill>
   );
 };
