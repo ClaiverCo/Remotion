@@ -1,0 +1,1223 @@
+[
+  {
+    "text": "Pra",
+    "startMs": 150,
+    "endMs": 487,
+    "timestampMs": 319,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " sumir",
+    "startMs": 487,
+    "endMs": 883,
+    "timestampMs": 685,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " com",
+    "startMs": 883,
+    "endMs": 1219,
+    "timestampMs": 1051,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " o",
+    "startMs": 1219,
+    "endMs": 1496,
+    "timestampMs": 1358,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " xixi",
+    "startMs": 1496,
+    "endMs": 1863,
+    "timestampMs": 1680,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " e",
+    "startMs": 1863,
+    "endMs": 2140,
+    "timestampMs": 2002,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " o",
+    "startMs": 2140,
+    "endMs": 2417,
+    "timestampMs": 2279,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " cocô,",
+    "startMs": 2417,
+    "endMs": 2783,
+    "timestampMs": 2600,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " bastava",
+    "startMs": 2943,
+    "endMs": 3399,
+    "timestampMs": 3171,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " um",
+    "startMs": 3399,
+    "endMs": 3706,
+    "timestampMs": 3553,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " buraco",
+    "startMs": 3706,
+    "endMs": 4132,
+    "timestampMs": 3919,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " ligado",
+    "startMs": 4132,
+    "endMs": 4557,
+    "timestampMs": 4345,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " ao",
+    "startMs": 4557,
+    "endMs": 4864,
+    "timestampMs": 4711,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " esgoto.",
+    "startMs": 4864,
+    "endMs": 5290,
+    "timestampMs": 5077,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " Só",
+    "startMs": 5830,
+    "endMs": 6137,
+    "timestampMs": 5984,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " que",
+    "startMs": 6137,
+    "endMs": 6473,
+    "timestampMs": 6305,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " o",
+    "startMs": 6473,
+    "endMs": 6751,
+    "timestampMs": 6612,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " esgoto",
+    "startMs": 6751,
+    "endMs": 7176,
+    "timestampMs": 6964,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " solta",
+    "startMs": 7176,
+    "endMs": 7572,
+    "timestampMs": 7374,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " gases",
+    "startMs": 7572,
+    "endMs": 7968,
+    "timestampMs": 7770,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " com",
+    "startMs": 7968,
+    "endMs": 8305,
+    "timestampMs": 8137,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " cheiro",
+    "startMs": 8305,
+    "endMs": 8731,
+    "timestampMs": 8518,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " de",
+    "startMs": 8731,
+    "endMs": 9038,
+    "timestampMs": 8885,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " ovo",
+    "startMs": 9038,
+    "endMs": 9374,
+    "timestampMs": 9206,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " podre,",
+    "startMs": 9374,
+    "endMs": 9770,
+    "timestampMs": 9572,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " que",
+    "startMs": 9930,
+    "endMs": 10267,
+    "timestampMs": 10099,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " subiriam",
+    "startMs": 10267,
+    "endMs": 10752,
+    "timestampMs": 10510,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " pro",
+    "startMs": 10752,
+    "endMs": 11089,
+    "timestampMs": 10921,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " banheiro.",
+    "startMs": 11089,
+    "endMs": 11574,
+    "timestampMs": 11332,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " A",
+    "startMs": 12114,
+    "endMs": 12391,
+    "timestampMs": 12253,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " solução:",
+    "startMs": 12391,
+    "endMs": 12846,
+    "timestampMs": 12619,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " uma",
+    "startMs": 13006,
+    "endMs": 13343,
+    "timestampMs": 13175,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " curva",
+    "startMs": 13343,
+    "endMs": 13739,
+    "timestampMs": 13541,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " no",
+    "startMs": 13739,
+    "endMs": 14046,
+    "timestampMs": 13893,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " cano.",
+    "startMs": 14046,
+    "endMs": 14412,
+    "timestampMs": 14229,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " A",
+    "startMs": 14772,
+    "endMs": 15049,
+    "timestampMs": 14911,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " água",
+    "startMs": 15049,
+    "endMs": 15416,
+    "timestampMs": 15233,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fica",
+    "startMs": 15416,
+    "endMs": 15782,
+    "timestampMs": 15599,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " presa",
+    "startMs": 15782,
+    "endMs": 16178,
+    "timestampMs": 15980,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " nela",
+    "startMs": 16178,
+    "endMs": 16544,
+    "timestampMs": 16361,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " e",
+    "startMs": 16544,
+    "endMs": 16821,
+    "timestampMs": 16683,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " tampa",
+    "startMs": 16821,
+    "endMs": 17218,
+    "timestampMs": 17020,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 17218,
+    "endMs": 17495,
+    "timestampMs": 17357,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " passagem.",
+    "startMs": 17495,
+    "endMs": 17980,
+    "timestampMs": 17738,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Essa",
+    "startMs": 18520,
+    "endMs": 18886,
+    "timestampMs": 18703,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " curva",
+    "startMs": 18886,
+    "endMs": 19282,
+    "timestampMs": 19084,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " é",
+    "startMs": 19282,
+    "endMs": 19559,
+    "timestampMs": 19421,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " o",
+    "startMs": 19559,
+    "endMs": 19837,
+    "timestampMs": 19698,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " sifão,",
+    "startMs": 19837,
+    "endMs": 20233,
+    "timestampMs": 20035,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " e",
+    "startMs": 20393,
+    "endMs": 20670,
+    "timestampMs": 20532,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " essa",
+    "startMs": 20670,
+    "endMs": 21036,
+    "timestampMs": 20853,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " água",
+    "startMs": 21036,
+    "endMs": 21402,
+    "timestampMs": 21219,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " é",
+    "startMs": 21402,
+    "endMs": 21680,
+    "timestampMs": 21541,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " o",
+    "startMs": 21680,
+    "endMs": 21957,
+    "timestampMs": 21819,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " fecho",
+    "startMs": 21957,
+    "endMs": 22353,
+    "timestampMs": 22155,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " hídrico.",
+    "startMs": 22353,
+    "endMs": 22808,
+    "timestampMs": 22581,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " Mas",
+    "startMs": 23348,
+    "endMs": 23685,
+    "timestampMs": 23517,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " se",
+    "startMs": 23685,
+    "endMs": 23992,
+    "timestampMs": 23839,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " a",
+    "startMs": 23992,
+    "endMs": 24269,
+    "timestampMs": 24131,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " água",
+    "startMs": 24269,
+    "endMs": 24635,
+    "timestampMs": 24452,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " tampa",
+    "startMs": 24635,
+    "endMs": 25031,
+    "timestampMs": 24833,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " o",
+    "startMs": 25031,
+    "endMs": 25309,
+    "timestampMs": 25170,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cano,",
+    "startMs": 25309,
+    "endMs": 25675,
+    "timestampMs": 25492,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " como",
+    "startMs": 25835,
+    "endMs": 26201,
+    "timestampMs": 26018,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " o",
+    "startMs": 26201,
+    "endMs": 26478,
+    "timestampMs": 26340,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cocô",
+    "startMs": 26478,
+    "endMs": 26845,
+    "timestampMs": 26662,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " passa?",
+    "startMs": 26845,
+    "endMs": 27241,
+    "timestampMs": 27043,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " Pouca",
+    "startMs": 27781,
+    "endMs": 28177,
+    "timestampMs": 27979,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " água",
+    "startMs": 28177,
+    "endMs": 28543,
+    "timestampMs": 28360,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " não",
+    "startMs": 28543,
+    "endMs": 28880,
+    "timestampMs": 28712,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " resolve.",
+    "startMs": 28880,
+    "endMs": 29335,
+    "timestampMs": 29108,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " O",
+    "startMs": 29695,
+    "endMs": 29972,
+    "timestampMs": 29834,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " truque",
+    "startMs": 29972,
+    "endMs": 30398,
+    "timestampMs": 30185,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " é",
+    "startMs": 30398,
+    "endMs": 30675,
+    "timestampMs": 30537,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " muita",
+    "startMs": 30675,
+    "endMs": 31071,
+    "timestampMs": 30873,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " água",
+    "startMs": 31071,
+    "endMs": 31438,
+    "timestampMs": 31255,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " de",
+    "startMs": 31438,
+    "endMs": 31744,
+    "timestampMs": 31591,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " uma",
+    "startMs": 31744,
+    "endMs": 32081,
+    "timestampMs": 31913,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " vez.",
+    "startMs": 32081,
+    "endMs": 32418,
+    "timestampMs": 32250,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " Ela",
+    "startMs": 32958,
+    "endMs": 33294,
+    "timestampMs": 33126,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " enche",
+    "startMs": 33294,
+    "endMs": 33690,
+    "timestampMs": 33492,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " a",
+    "startMs": 33690,
+    "endMs": 33967,
+    "timestampMs": 33829,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " curva",
+    "startMs": 33967,
+    "endMs": 34363,
+    "timestampMs": 34165,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " e,",
+    "startMs": 34363,
+    "endMs": 34641,
+    "timestampMs": 34502,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " ao",
+    "startMs": 34801,
+    "endMs": 35108,
+    "timestampMs": 34955,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " descer,",
+    "startMs": 35108,
+    "endMs": 35533,
+    "timestampMs": 35321,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " puxa",
+    "startMs": 35693,
+    "endMs": 36060,
+    "timestampMs": 35877,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " tudo:",
+    "startMs": 36060,
+    "endMs": 36426,
+    "timestampMs": 36243,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " é",
+    "startMs": 36586,
+    "endMs": 36863,
+    "timestampMs": 36725,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " o",
+    "startMs": 36863,
+    "endMs": 37140,
+    "timestampMs": 37002,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " efeito",
+    "startMs": 37140,
+    "endMs": 37566,
+    "timestampMs": 37353,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " sifão.",
+    "startMs": 37566,
+    "endMs": 37962,
+    "timestampMs": 37764,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " Por",
+    "startMs": 38502,
+    "endMs": 38839,
+    "timestampMs": 38671,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " isso",
+    "startMs": 38839,
+    "endMs": 39205,
+    "timestampMs": 39022,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " a",
+    "startMs": 39205,
+    "endMs": 39482,
+    "timestampMs": 39344,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " caixa",
+    "startMs": 39482,
+    "endMs": 39878,
+    "timestampMs": 39680,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 7
+  },
+  {
+    "text": " acoplada",
+    "startMs": 39878,
+    "endMs": 40363,
+    "timestampMs": 40121,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 7
+  },
+  {
+    "text": " guarda",
+    "startMs": 40363,
+    "endMs": 40789,
+    "timestampMs": 40576,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " uns",
+    "startMs": 40789,
+    "endMs": 41126,
+    "timestampMs": 40958,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " 6",
+    "startMs": 41126,
+    "endMs": 41403,
+    "timestampMs": 41265,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 7
+  },
+  {
+    "text": " litros",
+    "startMs": 41403,
+    "endMs": 41829,
+    "timestampMs": 41616,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 7
+  },
+  {
+    "text": " prontos.",
+    "startMs": 41829,
+    "endMs": 42284,
+    "timestampMs": 42057,
+    "confidence": null,
+    "scene": 7
+  },
+  {
+    "text": " Apertou",
+    "startMs": 42824,
+    "endMs": 43279,
+    "timestampMs": 43052,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " o",
+    "startMs": 43279,
+    "endMs": 43557,
+    "timestampMs": 43418,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " botão,",
+    "startMs": 43557,
+    "endMs": 43953,
+    "timestampMs": 43755,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " o",
+    "startMs": 44113,
+    "endMs": 44390,
+    "timestampMs": 44252,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " obturador",
+    "startMs": 44390,
+    "endMs": 44905,
+    "timestampMs": 44648,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 8
+  },
+  {
+    "text": " levanta",
+    "startMs": 44905,
+    "endMs": 45360,
+    "timestampMs": 45133,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " e",
+    "startMs": 45360,
+    "endMs": 45637,
+    "timestampMs": 45499,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " a",
+    "startMs": 45637,
+    "endMs": 45915,
+    "timestampMs": 45776,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " água",
+    "startMs": 45915,
+    "endMs": 46281,
+    "timestampMs": 46098,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " despenca.",
+    "startMs": 46281,
+    "endMs": 46766,
+    "timestampMs": 46524,
+    "confidence": null,
+    "scene": 8
+  },
+  {
+    "text": " A",
+    "startMs": 47306,
+    "endMs": 47583,
+    "timestampMs": 47445,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " boia",
+    "startMs": 47583,
+    "endMs": 47949,
+    "timestampMs": 47766,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 9
+  },
+  {
+    "text": " desce,",
+    "startMs": 47949,
+    "endMs": 48345,
+    "timestampMs": 48147,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " abre",
+    "startMs": 48505,
+    "endMs": 48872,
+    "timestampMs": 48689,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " a",
+    "startMs": 48872,
+    "endMs": 49149,
+    "timestampMs": 49011,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " entrada",
+    "startMs": 49149,
+    "endMs": 49604,
+    "timestampMs": 49377,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " e,",
+    "startMs": 49604,
+    "endMs": 49882,
+    "timestampMs": 49743,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " com",
+    "startMs": 50042,
+    "endMs": 50378,
+    "timestampMs": 50210,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " a",
+    "startMs": 50378,
+    "endMs": 50655,
+    "timestampMs": 50517,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " caixa",
+    "startMs": 50655,
+    "endMs": 51051,
+    "timestampMs": 50853,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " cheia,",
+    "startMs": 51051,
+    "endMs": 51447,
+    "timestampMs": 51249,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " sobe",
+    "startMs": 51607,
+    "endMs": 51974,
+    "timestampMs": 51791,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " e",
+    "startMs": 51974,
+    "endMs": 52251,
+    "timestampMs": 52113,
+    "confidence": null,
+    "scene": 9
+  },
+  {
+    "text": " fecha.",
+    "startMs": 52251,
+    "endMs": 52647,
+    "timestampMs": 52449,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 9
+  },
+  {
+    "text": " E",
+    "startMs": 53187,
+    "endMs": 53464,
+    "timestampMs": 53326,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " um",
+    "startMs": 53464,
+    "endMs": 53771,
+    "timestampMs": 53618,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " tubinho",
+    "startMs": 53771,
+    "endMs": 54227,
+    "timestampMs": 53999,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " devolve",
+    "startMs": 54227,
+    "endMs": 54682,
+    "timestampMs": 54455,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " água",
+    "startMs": 54682,
+    "endMs": 55048,
+    "timestampMs": 54865,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " pro",
+    "startMs": 55048,
+    "endMs": 55385,
+    "timestampMs": 55217,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " vaso:",
+    "startMs": 55385,
+    "endMs": 55751,
+    "timestampMs": 55568,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " o",
+    "startMs": 55911,
+    "endMs": 56188,
+    "timestampMs": 56050,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " fecho",
+    "startMs": 56188,
+    "endMs": 56584,
+    "timestampMs": 56386,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 10
+  },
+  {
+    "text": " volta",
+    "startMs": 56584,
+    "endMs": 56980,
+    "timestampMs": 56782,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " e",
+    "startMs": 56980,
+    "endMs": 57258,
+    "timestampMs": 57119,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " o",
+    "startMs": 57258,
+    "endMs": 57535,
+    "timestampMs": 57397,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " cheiro",
+    "startMs": 57535,
+    "endMs": 57961,
+    "timestampMs": 57748,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " fica",
+    "startMs": 57961,
+    "endMs": 58327,
+    "timestampMs": 58144,
+    "confidence": null,
+    "scene": 10
+  },
+  {
+    "text": " lá",
+    "startMs": 58327,
+    "endMs": 58634,
+    "timestampMs": 58481,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 10
+  },
+  {
+    "text": " embaixo.",
+    "startMs": 58634,
+    "endMs": 59089,
+    "timestampMs": 58862,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 10
+  },
+  {
+    "text": " Ainda",
+    "startMs": 59629,
+    "endMs": 60025,
+    "timestampMs": 59827,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " acha",
+    "startMs": 60025,
+    "endMs": 60392,
+    "timestampMs": 60209,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " que",
+    "startMs": 60392,
+    "endMs": 60728,
+    "timestampMs": 60560,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " era",
+    "startMs": 60728,
+    "endMs": 61065,
+    "timestampMs": 60897,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " só",
+    "startMs": 61065,
+    "endMs": 61372,
+    "timestampMs": 61219,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " um",
+    "startMs": 61372,
+    "endMs": 61679,
+    "timestampMs": 61526,
+    "confidence": null,
+    "scene": 11
+  },
+  {
+    "text": " buraco?",
+    "startMs": 61679,
+    "endMs": 62104,
+    "timestampMs": 61892,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 11
+  }
+]

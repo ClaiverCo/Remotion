@@ -1,0 +1,48 @@
+{
+  "_comoUsar": "Escolha 1 'ampla' + 2 'nicho' do nicho do vídeo e complete com 1–2 hashtags específicas do tema. YouTube: acrescente #shorts. Reels: no máximo 5 no total.",
+  "_atualizado": "2026-11",
+  "geral": {
+    "ampla": ["#curiosidades", "#vocesabia", "#aprenda"],
+    "plataforma": { "youtube": ["#shorts"], "tiktok": ["#aprendanotiktok"], "reels": [] }
+  },
+  "como-funciona": {
+    "ampla": ["#curiosidades", "#comofunciona"],
+    "nicho": ["#engenharia", "#tecnologia", "#ciencia", "#explicado", "#comofazem"]
+  },
+  "ciencia": {
+    "ampla": ["#ciencia", "#curiosidades"],
+    "nicho": ["#fisica", "#quimica", "#biologia", "#experimento", "#cienciadivertida"]
+  },
+  "engenharia-casa": {
+    "ampla": ["#curiosidades", "#engenharia"],
+    "nicho": ["#construcao", "#hidraulica", "#eletrica", "#manutencao", "#reforma"]
+  },
+  "corpo-humano": {
+    "ampla": ["#corpohumano", "#curiosidades"],
+    "nicho": ["#anatomia", "#biologia", "#saude", "#medicina", "#cerebro"]
+  },
+  "espaco": {
+    "ampla": ["#espaco", "#curiosidades"],
+    "nicho": ["#astronomia", "#universo", "#nasa", "#planetas", "#ciencia"]
+  },
+  "historia": {
+    "ampla": ["#historia", "#curiosidades"],
+    "nicho": ["#historiadobrasil", "#historiamundial", "#antigamente", "#arqueologia", "#fatoshistoricos"]
+  },
+  "e-se": {
+    "ampla": ["#curiosidades", "#ese"],
+    "nicho": ["#hipotese", "#ciencia", "#imagina", "#cenarios", "#teoria"]
+  },
+  "esportes": {
+    "ampla": ["#esporte", "#curiosidades"],
+    "nicho": ["#boxe", "#futebol", "#treino", "#academia", "#biomecanica"]
+  },
+  "tecnologia": {
+    "ampla": ["#tecnologia", "#curiosidades"],
+    "nicho": ["#tech", "#inovacao", "#gadgets", "#internet", "#inteligenciaartificial"]
+  },
+  "natureza-animais": {
+    "ampla": ["#natureza", "#curiosidades"],
+    "nicho": ["#animais", "#biologia", "#vidaselvagem", "#oceano", "#planeta"]
+  }
+}

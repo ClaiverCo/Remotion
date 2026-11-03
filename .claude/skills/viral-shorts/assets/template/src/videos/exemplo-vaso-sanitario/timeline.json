@@ -1,0 +1,68 @@
+{
+  "fps": 30,
+  "durationMs": 63004,
+  "audio": null,
+  "source": "estimada",
+  "scenes": [
+    {
+      "id": "s01-gancho",
+      "startMs": 0,
+      "endMs": 5710
+    },
+    {
+      "id": "s02-gases",
+      "startMs": 5710,
+      "endMs": 11994
+    },
+    {
+      "id": "s03-curva",
+      "startMs": 11994,
+      "endMs": 18400
+    },
+    {
+      "id": "s04-nomes",
+      "startMs": 18400,
+      "endMs": 23228
+    },
+    {
+      "id": "s05-pergunta",
+      "startMs": 23228,
+      "endMs": 27661
+    },
+    {
+      "id": "s06-pouca-agua",
+      "startMs": 27661,
+      "endMs": 32838
+    },
+    {
+      "id": "s07-efeito-sifao",
+      "startMs": 32838,
+      "endMs": 38382
+    },
+    {
+      "id": "s08-caixa",
+      "startMs": 38382,
+      "endMs": 42704
+    },
+    {
+      "id": "s09-obturador",
+      "startMs": 42704,
+      "endMs": 47186
+    },
+    {
+      "id": "s10-boia",
+      "startMs": 47186,
+      "endMs": 53067
+    },
+    {
+      "id": "s11-selo-volta",
+      "startMs": 53067,
+      "endMs": 59509
+    },
+    {
+      "id": "s12-final",
+      "startMs": 59509,
+      "endMs": 63004
+    }
+  ]
+}

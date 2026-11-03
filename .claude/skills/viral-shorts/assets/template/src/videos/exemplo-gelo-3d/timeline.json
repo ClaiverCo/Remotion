@@ -1,0 +1,28 @@
+{
+  "fps": 30,
+  "durationMs": 19261,
+  "audio": null,
+  "source": "estimada",
+  "scenes": [
+    {
+      "id": "g01-gancho",
+      "startMs": 0,
+      "endMs": 4568
+    },
+    {
+      "id": "g02-rede",
+      "startMs": 4568,
+      "endMs": 9976
+    },
+    {
+      "id": "g03-volume",
+      "startMs": 9976,
+      "endMs": 15923
+    },
+    {
+      "id": "g04-final",
+      "startMs": 15923,
+      "endMs": 19261
+    }
+  ]
+}

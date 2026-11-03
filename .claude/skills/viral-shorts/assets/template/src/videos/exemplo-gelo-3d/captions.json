@@ -1,0 +1,370 @@
+[
+  {
+    "text": "Gelo",
+    "startMs": 150,
+    "endMs": 520,
+    "timestampMs": 335,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " é",
+    "startMs": 520,
+    "endMs": 800,
+    "timestampMs": 660,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " água",
+    "startMs": 800,
+    "endMs": 1169,
+    "timestampMs": 985,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " sólida.",
+    "startMs": 1169,
+    "endMs": 1599,
+    "timestampMs": 1384,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Então",
+    "startMs": 1959,
+    "endMs": 2359,
+    "timestampMs": 2159,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " por",
+    "startMs": 2359,
+    "endMs": 2699,
+    "timestampMs": 2529,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " que",
+    "startMs": 2699,
+    "endMs": 3039,
+    "timestampMs": 2869,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " ele",
+    "startMs": 3039,
+    "endMs": 3378,
+    "timestampMs": 3209,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " não",
+    "startMs": 3378,
+    "endMs": 3718,
+    "timestampMs": 3548,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " afunda?",
+    "startMs": 3718,
+    "endMs": 4148,
+    "timestampMs": 3933,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " Ao",
+    "startMs": 4688,
+    "endMs": 4998,
+    "timestampMs": 4843,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " congelar,",
+    "startMs": 4998,
+    "endMs": 5488,
+    "timestampMs": 5243,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " as",
+    "startMs": 5648,
+    "endMs": 5957,
+    "timestampMs": 5803,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " moléculas",
+    "startMs": 5957,
+    "endMs": 6477,
+    "timestampMs": 6217,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " se",
+    "startMs": 6477,
+    "endMs": 6787,
+    "timestampMs": 6632,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " travam",
+    "startMs": 6787,
+    "endMs": 7217,
+    "timestampMs": 7002,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " numa",
+    "startMs": 7217,
+    "endMs": 7587,
+    "timestampMs": 7402,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " rede",
+    "startMs": 7587,
+    "endMs": 7956,
+    "timestampMs": 7772,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " cheia",
+    "startMs": 7956,
+    "endMs": 8356,
+    "timestampMs": 8156,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " de",
+    "startMs": 8356,
+    "endMs": 8666,
+    "timestampMs": 8511,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " espaços",
+    "startMs": 8666,
+    "endMs": 9126,
+    "timestampMs": 8896,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " vazios.",
+    "startMs": 9126,
+    "endMs": 9556,
+    "timestampMs": 9341,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Por",
+    "startMs": 10096,
+    "endMs": 10435,
+    "timestampMs": 10266,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " isso",
+    "startMs": 10435,
+    "endMs": 10805,
+    "timestampMs": 10620,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " o",
+    "startMs": 10805,
+    "endMs": 11085,
+    "timestampMs": 10945,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " gelo",
+    "startMs": 11085,
+    "endMs": 11455,
+    "timestampMs": 11270,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " ocupa",
+    "startMs": 11455,
+    "endMs": 11855,
+    "timestampMs": 11655,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " uns",
+    "startMs": 11855,
+    "endMs": 12194,
+    "timestampMs": 12025,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " 9%",
+    "startMs": 12194,
+    "endMs": 12474,
+    "timestampMs": 12334,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 12474,
+    "endMs": 12754,
+    "timestampMs": 12614,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " mais",
+    "startMs": 12754,
+    "endMs": 13124,
+    "timestampMs": 12939,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " e",
+    "startMs": 13124,
+    "endMs": 13404,
+    "timestampMs": 13264,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fica",
+    "startMs": 13404,
+    "endMs": 13774,
+    "timestampMs": 13589,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " mais",
+    "startMs": 13774,
+    "endMs": 14143,
+    "timestampMs": 13959,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " leve",
+    "startMs": 14143,
+    "endMs": 14513,
+    "timestampMs": 14328,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " que",
+    "startMs": 14513,
+    "endMs": 14853,
+    "timestampMs": 14683,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 14853,
+    "endMs": 15133,
+    "timestampMs": 14993,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " água.",
+    "startMs": 15133,
+    "endMs": 15503,
+    "timestampMs": 15318,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " E",
+    "startMs": 16043,
+    "endMs": 16323,
+    "timestampMs": 16183,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " é",
+    "startMs": 16323,
+    "endMs": 16602,
+    "timestampMs": 16463,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " por",
+    "startMs": 16602,
+    "endMs": 16942,
+    "timestampMs": 16772,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " isso",
+    "startMs": 16942,
+    "endMs": 17312,
+    "timestampMs": 17127,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " que",
+    "startMs": 17312,
+    "endMs": 17652,
+    "timestampMs": 17482,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " ele",
+    "startMs": 17652,
+    "endMs": 17992,
+    "timestampMs": 17822,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " boia.",
+    "startMs": 17992,
+    "endMs": 18361,
+    "timestampMs": 18177,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  }
+]
