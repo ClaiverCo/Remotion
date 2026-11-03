@@ -2,6 +2,7 @@ node_modules/
 out/
 .cache/
 .whisper/
+.tts/
 .secrets/
 .env
 *.log

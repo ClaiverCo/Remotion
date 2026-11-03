@@ -1,6 +1,6 @@
 ---
 name: viral-shorts
-description: Cria vídeos curtos virais (YouTube Shorts, TikTok, Reels) explicativos e de curiosidades com Remotion, 100% por código. A partir de um tema já escolhido, faz uma pesquisa detalhada na internet, escreve um roteiro que prende até o fim, gera a narração (ElevenLabs ou a voz do usuário), legendas automáticas palavra por palavra, cenas animadas em 2.5D ou 3D, hashtags/títulos para cada plataforma e faz o upload agendado no YouTube. Use quando o usuário pedir "vídeo viral", "short", "reels", "tiktok", "vídeo explicativo", "como funciona X em vídeo", "vídeo de curiosidade", "legenda automática", "hashtags virais" ou "postar em massa".
+description: Cria vídeos curtos virais (YouTube Shorts, TikTok, Reels) explicativos e de curiosidades com Remotion, 100% por código. A partir de um tema já escolhido, faz uma pesquisa detalhada na internet, escreve um roteiro que prende até o fim, gera a narração (grátis com Kokoro local ou Google Cloud TTS, ElevenLabs ou a voz do usuário), legendas automáticas palavra por palavra, cenas animadas em 2.5D ou 3D, hashtags/títulos para cada plataforma e faz o upload agendado no YouTube. Use quando o usuário pedir "vídeo viral", "short", "reels", "tiktok", "vídeo explicativo", "como funciona X em vídeo", "vídeo de curiosidade", "legenda automática", "narração grátis", "hashtags virais" ou "postar em massa".
 argument-hint: "<tema do vídeo>  |  lote <arquivo-com-temas.txt>"
 ---
 
@@ -25,8 +25,8 @@ Caminhos abaixo: `SKILL_DIR` é a pasta deste arquivo; `PROJ` é o projeto Remot
 2. Se `PROJ` não tiver `src/videos/registry.ts`, ele ainda não é um projeto da skill. Então:
    - copie `SKILL_DIR/assets/template/` (incluindo os arquivos ocultos, como `.env.example` e `.gitignore`) para a pasta atual, ou para uma subpasta `viral-shorts/` se a pasta atual já tiver outro projeto;
    - rode `npm install`;
-   - confira `node -v` (≥ 18) e `ffmpeg -version`. Sem ffmpeg, explique como instalar e pare.
-   - Se o usuário for usar ElevenLabs ou YouTube, peça para copiar `.env.example` para `.env` e preencher. Nunca peça a chave no chat.
+   - confira `node -v` (≥ 18) e `ffmpeg -version`. Sem ffmpeg, explique como instalar e pare. Para a narração grátis local (Kokoro), confira também o Python 3.10+ (`python3 --version`, ou `py -3 --version` no Windows).
+   - Se o usuário for usar Google TTS, ElevenLabs ou YouTube, peça para copiar `.env.example` para `.env` e preencher. Nunca peça a chave no chat.
 3. Os exemplos `exemplo-vaso-sanitario` (2.5D) e `exemplo-gelo-3d` (3D) servem de referência de código. Leia o `Scenes.tsx` e o `Toilet.tsx` deles antes de escrever cenas novas.
 
 ## 1. Briefing
@@ -34,7 +34,12 @@ Caminhos abaixo: `SKILL_DIR` é a pasta deste arquivo; `PROJ` é o projeto Remot
 O tema vem no argumento (`/viral-shorts como funciona o chuveiro elétrico`). Pergunte com **AskUserQuestion** apenas o que faltar, numa única pergunta com até 3 itens:
 - **Estilo visual:** 2.5D (padrão; corte/maquete, render rápido) ou 3D (Three.js low-poly, mais lento, precisa de WebGL).
 - **Duração alvo:** 30, 45 ou 60 s (padrão 45).
-- **Voz:** ElevenLabs (padrão se houver `ELEVENLABS_API_KEY` no `.env`), a própria voz do usuário ou rascunho sem voz.
+- **Voz:**
+  - **Grátis local (Kokoro):** padrão quando não há nenhuma chave no `.env`; vozes `pm_alex` (masc.) e `pf_dora` (fem.);
+  - **Grátis na nuvem (Google Cloud TTS):** cota mensal grátis, voz mais natural, exige `GOOGLE_TTS_API_KEY`;
+  - **ElevenLabs:** pago, a mais expressiva;
+  - **a própria voz do usuário;**
+  - **rascunho sem voz.**
 
 Gere o slug (`como-funciona-chuveiro`) e rode `npm run new -- <slug> --estilo 2.5d|3d --titulo "..."`.
 
@@ -78,11 +83,17 @@ Escolha um caminho. Todos geram `captions.json` + `timeline.json`, que é a sinc
 
 | Voz | Comando | Observação |
 |---|---|---|
-| ElevenLabs | `npm run tts -- <slug>` | Tempos exatos do próprio TTS; o texto da legenda é o do roteiro. `--from-cache` refaz sem gastar créditos. |
+| **Grátis: Kokoro** (local) | `npm run tts:kokoro -- <slug> [--voz pm_alex\|pf_dora]` | Sem conta, offline. 1ª vez instala o Python env e baixa ~350 MB. Sintetiza frase por frase: o início de cada frase é exato e as vírgulas são achadas no áudio. |
+| **Grátis: Google** (cota) | `npm run tts:google -- <slug> [--voz pt-BR-Neural2-C]` | Tempo exato por palavra (marcas SSML). Exige chave e faturamento ativo; cota mensal grátis. `--from-cache` não cobra de novo. |
+| ElevenLabs | `npm run tts:elevenlabs -- <slug>` | Tempos exatos do próprio TTS; o texto da legenda é o do roteiro. `--from-cache` refaz sem gastar créditos. |
 | Voz própria | `npm run transcribe -- <slug> --audio caminho.m4a` | Whisper (whisper.cpp) local; as palavras são realinhadas ao roteiro. Na 1ª vez baixa o modelo (~1,5 GB para `medium`). |
 | Rascunho | `npm run estimate -- <slug>` | Sem áudio, com tempos estimados. Serve para montar as cenas antes da voz. |
 
-Detalhes, vozes e como gravar bem: `references/narracao.md`. Se o roteiro mudar só na pontuação ou na divisão das cenas, rode `npm run sync -- <slug>` sem regravar.
+`npm run tts -- <slug>` sem `--motor` escolhe sozinho: `TTS_MOTOR` do `.env`, ElevenLabs ou Google se houver chave, senão Kokoro. Use `--dry-run` para ver as frases e caracteres antes.
+
+**Depois de qualquer narração, rode `npm run check-sync -- <slug>`.** Ele detecta os silêncios reais do áudio e confere se nenhuma palavra aparece durante um silêncio. Se falhar, regere a narração ou investigue antes de seguir.
+
+Atualize `"voz"` no `roteiro.json` com o motor usado. Detalhes, vozes, cotas e como gravar bem: `references/narracao.md`. Se o roteiro mudar só na pontuação ou na divisão das cenas, rode `npm run sync -- <slug>` sem regravar.
 
 ## 5. Cenas
 
@@ -160,6 +171,8 @@ Ao final, ou quando o usuário corrigir algo, acrescente em `SKILL_DIR/aprendiza
 6. Varie o modelo de roteiro, os selos, a paleta e os movimentos entre os vídeos. Conteúdo repetitivo/"produzido em massa" é desmonetizado pelo YouTube.
 
 ## Problemas comuns
+- **Kokoro: "Python 3.10+ não encontrado":** instale o Python (python.org; no Windows marque "Add to PATH") e rode de novo. Para reinstalar do zero, apague a pasta `.tts/`.
+- **Google: erro 403 ou "billing":** ative a "Cloud Text-to-Speech API" e uma conta de faturamento no projeto. A cota grátis só vale com faturamento ativo.
 - **Falta componente de cena:** a cena aparece vermelha ("sem componente") no vídeo. Adicione o id em `Scenes.tsx`.
 - **"timeline.json desatualizada":** rode `npm run sync -- <slug>`, ou regere tts/transcribe/estimate se o texto mudou.
 - **Duração muito acima do alvo:** enxugue o roteiro (o script de legenda avisa).

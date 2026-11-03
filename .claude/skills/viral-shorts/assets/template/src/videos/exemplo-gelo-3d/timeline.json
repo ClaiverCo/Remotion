@@ -1,28 +1,28 @@
 {
   "fps": 30,
-  "durationMs": 19261,
-  "audio": null,
-  "source": "estimada",
+  "durationMs": 15515,
+  "audio": "exemplo-gelo-3d/narracao.mp3",
+  "source": "kokoro",
   "scenes": [
     {
       "id": "g01-gancho",
       "startMs": 0,
-      "endMs": 4568
+      "endMs": 3825
     },
     {
       "id": "g02-rede",
-      "startMs": 4568,
-      "endMs": 9976
+      "startMs": 3825,
+      "endMs": 8445
     },
     {
       "id": "g03-volume",
-      "startMs": 9976,
-      "endMs": 15923
+      "startMs": 8445,
+      "endMs": 13075
     },
     {
       "id": "g04-final",
-      "startMs": 15923,
-      "endMs": 19261
+      "startMs": 13075,
+      "endMs": 15515
     }
   ]
 }

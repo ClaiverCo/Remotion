@@ -244,7 +244,6 @@ export const alignTimedWordsToScript = (
     }
   }
 
-  // Interpola tempos das palavras sem par.
   const starts: number[] = new Array(n).fill(NaN);
   const ends: number[] = new Array(n).fill(NaN);
   match.forEach((t, k) => {
@@ -253,6 +252,15 @@ export const alignTimedWordsToScript = (
       ends[k] = t.endMs;
     }
   });
+  fillMissingTimes(script, starts, ends);
+  return sanitizeCaptions(
+    script.map((w, idx) => makeCaption(w, starts[idx], ends[idx], idx === 0)),
+  );
+};
+
+/** Preenche (no lugar) tempos NaN interpolando entre as palavras vizinhas, com peso pelo tamanho. */
+const fillMissingTimes = (script: ScriptWord[], starts: number[], ends: number[]) => {
+  const n = script.length;
   let k = 0;
   while (k < n) {
     if (!Number.isNaN(starts[k])) {
@@ -275,8 +283,255 @@ export const alignTimedWordsToScript = (
     }
     k = r;
   }
+};
 
-  return sanitizeCaptions(
-    script.map((w, idx) => makeCaption(w, starts[idx], ends[idx], idx === 0)),
-  );
+// ---------------------------------------------------------------------------
+// TTS por frases (Kokoro local): início de cada frase é exato; palavras distribuídas
+// ---------------------------------------------------------------------------
+
+const SENTENCE_END = /[.!?…]["”')]?$/;
+const CLAUSE_END = /[,;:]["”')]?$/;
+
+export type Phrase = {
+  /** Índice global da primeira palavra da frase. */
+  first: number;
+  words: ScriptWord[];
+  text: string;
+  scene: number;
+  /** Silêncio a inserir depois desta frase (ms). */
+  pauseAfterMs: number;
+};
+
+export type PhraseOptions = {
+  sentencePauseMs?: number;
+  scenePauseMs?: number;
+};
+
+/**
+ * Divide a narração em frases para sintetizar uma a uma: quebra no fim de frase (. ! ? …)
+ * e na troca de cena. Vírgulas ficam DENTRO da frase (preserva a entonação natural).
+ */
+export const phrasesFromWords = (words: ScriptWord[], opts: PhraseOptions = {}): Phrase[] => {
+  const sentencePause = opts.sentencePauseMs ?? 260;
+  const scenePause = opts.scenePauseMs ?? 380;
+  const phrases: Phrase[] = [];
+  let cur: ScriptWord[] = [];
+  let first = 0;
+  words.forEach((w, i) => {
+    if (cur.length === 0) first = i;
+    cur.push(w);
+    const next = words[i + 1];
+    const sceneChange = !!next && next.scene !== w.scene;
+    if (!next || sceneChange || SENTENCE_END.test(w.text)) {
+      phrases.push({
+        first,
+        words: cur,
+        text: cur.map((x) => x.text).join(" "),
+        scene: w.scene,
+        pauseAfterMs: !next ? 0 : sceneChange ? scenePause : sentencePause,
+      });
+      cur = [];
+    }
+  });
+  return phrases;
+};
+
+/**
+ * Acha no envelope de energia do áudio a pausa de cada vírgula da frase:
+ * para cada vírgula, procura o vale mais fundo perto de onde ela "deveria" cair
+ * (estimativa por peso) e expande enquanto a energia continua baixa.
+ * Retorna [] se não houver vírgulas ou se algum vale não for claro (aí distribui por peso).
+ */
+export const findClausePauses = (
+  words: ScriptWord[],
+  startMs: number,
+  endMs: number,
+  envelope: number[],
+  envStartMs: number,
+  frameMs = 10,
+): { startMs: number; endMs: number }[] => {
+  const breaks = clauseBreaks(words);
+  if (breaks.length === 0 || envelope.length < 10) return [];
+  const smooth = envelope.map((_, i) => {
+    const a = envelope.slice(Math.max(0, i - 1), i + 2);
+    return a.reduce((x, y) => x + y, 0) / a.length;
+  });
+  const toFrame = (ms: number) => Math.max(0, Math.min(smooth.length - 1, Math.round((ms - envStartMs) / frameMs)));
+  const toMs = (f: number) => envStartMs + f * frameMs;
+  const voiced = smooth.slice(toFrame(startMs), toFrame(endMs) + 1);
+  const sorted = [...voiced].sort((x, y) => x - y);
+  const median = sorted[Math.floor(sorted.length / 2)] || 1e-6;
+
+  // posição esperada de cada vírgula (mesmos pesos de distributeWords)
+  const weights = words.map((w) => 1 + normalizeWord(w.text).length);
+  const gapUnits = 3;
+  const total = weights.reduce((a, b) => a + b, 0) + breaks.length * gapUnits;
+  const dur = endMs - startMs;
+  const expected: number[] = [];
+  let acc = 0;
+  for (let i = 0, b = 0; i < words.length && b < breaks.length; i++) {
+    acc += weights[i];
+    if (i !== breaks[b]) continue;
+    expected.push(startMs + ((acc + gapUnits / 2) / total) * dur);
+    acc += gapUnits;
+    b++;
+  }
+
+  // 1) todos os vales: trechos ≥ 30 ms com energia < 35% da mediana da fala
+  const thr = median * 0.35;
+  const minLen = Math.max(1, Math.round(30 / frameMs));
+  const lo = toFrame(startMs + 120);
+  const hi = toFrame(endMs - 120);
+  const valleys: { startMs: number; endMs: number; center: number }[] = [];
+  let runStart = -1;
+  for (let f = lo; f <= hi + 1; f++) {
+    const low = f <= hi && smooth[f] < thr;
+    if (low && runStart < 0) runStart = f;
+    if (!low && runStart >= 0) {
+      if (f - runStart >= minLen) {
+        valleys.push({ startMs: toMs(runStart), endMs: toMs(f), center: toMs((runStart + f) / 2) });
+      }
+      runStart = -1;
+    }
+  }
+  if (valleys.length < breaks.length) return [];
+
+  // 2) escolhe, em ordem, os vales mais próximos das posições esperadas (programação dinâmica)
+  const n = valleys.length;
+  const k = breaks.length;
+  const INF = Number.POSITIVE_INFINITY;
+  const cost: number[][] = Array.from({ length: k + 1 }, () => new Array(n + 1).fill(INF));
+  const take: boolean[][] = Array.from({ length: k + 1 }, () => new Array(n + 1).fill(false));
+  for (let j = 0; j <= n; j++) cost[0][j] = 0;
+  for (let b = 1; b <= k; b++) {
+    for (let j = b; j <= n; j++) {
+      const skip = cost[b][j - 1];
+      const use = cost[b - 1][j - 1] + Math.abs(valleys[j - 1].center - expected[b - 1]);
+      if (use <= skip) {
+        cost[b][j] = use;
+        take[b][j] = true;
+      } else cost[b][j] = skip;
+    }
+  }
+  const chosen: { startMs: number; endMs: number }[] = [];
+  for (let b = k, j = n; b > 0 && j > 0; ) {
+    if (take[b][j]) {
+      chosen.unshift({ startMs: valleys[j - 1].startMs, endMs: valleys[j - 1].endMs });
+      b--;
+    }
+    j--;
+  }
+  return chosen.length === k ? chosen : [];
+};
+
+/** Quantas pausas internas (vírgula, ponto e vírgula, dois-pontos) a frase deve ter. */
+export const clauseBreaks = (words: ScriptWord[]): number[] =>
+  words.slice(0, -1).flatMap((w, i) => (CLAUSE_END.test(w.text) ? [i] : []));
+
+/**
+ * Distribui as palavras de uma frase no trecho com voz [startMs, endMs].
+ * Se `pauses` (silêncios internos detectados no áudio) bater com o nº de vírgulas,
+ * cada trecho entre vírgulas usa o seu intervalo real; senão, distribui por peso.
+ */
+export const distributeWords = (
+  words: ScriptWord[],
+  startMs: number,
+  endMs: number,
+  firstGlobalIndex: number,
+  pauses: { startMs: number; endMs: number }[] = [],
+): VideoCaption[] => {
+  const breaks = clauseBreaks(words);
+  const groups: { words: ScriptWord[]; from: number; to: number }[] = [];
+  if (breaks.length > 0 && pauses.length === breaks.length) {
+    let prevIdx = 0;
+    let prevTime = startMs;
+    breaks.forEach((b, i) => {
+      groups.push({ words: words.slice(prevIdx, b + 1), from: prevTime, to: pauses[i].startMs });
+      prevIdx = b + 1;
+      prevTime = pauses[i].endMs;
+    });
+    groups.push({ words: words.slice(prevIdx), from: prevTime, to: endMs });
+  } else {
+    groups.push({ words, from: startMs, to: endMs });
+  }
+
+  const out: VideoCaption[] = [];
+  let idx = firstGlobalIndex;
+  for (const g of groups) {
+    // peso: 1 + letras; vírgula interna (sem pausa detectada) ganha uma pausa equivalente a 3 letras
+    const weights = g.words.map((w) => 1 + normalizeWord(w.text).length);
+    const gaps: number[] = g.words.map((w, i) => (i < g.words.length - 1 && CLAUSE_END.test(w.text) ? 3 : 0));
+    const total = weights.reduce((a, b) => a + b, 0) + gaps.reduce((a, b) => a + b, 0);
+    const span = Math.max(g.to - g.from, MIN_WORD_MS * g.words.length);
+    let t = g.from;
+    g.words.forEach((w, i) => {
+      const d = (weights[i] / total) * span;
+      out.push(makeCaption(w, t, t + d, idx === 0));
+      t += d + (gaps[i] / total) * span;
+      idx++;
+    });
+  }
+  return out;
+};
+
+// ---------------------------------------------------------------------------
+// Google Cloud TTS: SSML com <mark> antes de cada palavra -> tempos exatos
+// ---------------------------------------------------------------------------
+
+const escapeXml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+/** SSML com uma marca por palavra (nome = "w" + índice global) e pausa curta entre cenas. */
+export const ssmlWithMarks = (
+  words: ScriptWord[],
+  opts: { firstIndex?: number; scenePauseMs?: number } = {},
+): string => {
+  const first = opts.firstIndex ?? 0;
+  const scenePause = opts.scenePauseMs ?? 300;
+  const parts = words.map((w, i) => {
+    const prev = words[i - 1];
+    const br = prev && prev.scene !== w.scene ? `<break time="${scenePause}ms"/>` : "";
+    return `${br}<mark name="w${first + i}"/>${escapeXml(w.text)}`;
+  });
+  return `<speak>${parts.join(" ")}</speak>`;
+};
+
+export type Timepoint = { markName: string; timeSeconds: number };
+
+/**
+ * Converte os timepoints do Google (início de cada palavra) em legendas.
+ * Fim de cada palavra = início da próxima (menos parte da pausa, se houver pontuação);
+ * marcas que não voltaram (bug conhecido da API) são interpoladas.
+ */
+export const timepointsToCaptions = (
+  timepoints: Timepoint[],
+  words: ScriptWord[],
+  audioDurationMs: number,
+): VideoCaption[] => {
+  const n = words.length;
+  const starts: number[] = new Array(n).fill(NaN);
+  for (const tp of timepoints) {
+    const m = /^w(\d+)$/.exec(tp.markName);
+    if (m && +m[1] < n) starts[+m[1]] = tp.timeSeconds * 1000;
+  }
+  const ends: number[] = new Array(n).fill(NaN);
+  const weight = (w: ScriptWord) => 1 + normalizeWord(w.text).length;
+  for (let i = 0; i < n; i++) {
+    if (Number.isNaN(starts[i])) continue;
+    let j = i + 1;
+    while (j < n && Number.isNaN(starts[j])) j++;
+    const limit = j < n ? starts[j] : Math.max(starts[i] + 200, audioDurationMs - 120);
+    // se há palavras sem marca logo depois, esta palavra divide o intervalo com elas
+    const missing = words.slice(i + 1, j).reduce((a, w) => a + weight(w), 0);
+    const gap = (limit - starts[i]) * (weight(words[i]) / (weight(words[i]) + missing));
+    const punct = SENTENCE_END.test(words[i].text) || CLAUSE_END.test(words[i].text);
+    // palavra com pontuação não "ocupa" a pausa que vem depois dela
+    const maxDur = 120 + normalizeWord(words[i].text).length * 95;
+    ends[i] = starts[i] + (punct ? Math.min(gap, maxDur) : gap);
+  }
+  // palavras sem marca: limpa o fim também, para a interpolação tratar o bloco todo
+  for (let i = 0; i < n; i++) if (Number.isNaN(starts[i])) ends[i] = NaN;
+  if (starts.every((s) => Number.isNaN(s))) throw new Error("O Google não devolveu nenhuma marca de tempo (timepoints).");
+  fillMissingTimes(words, starts, ends);
+  return sanitizeCaptions(words.map((w, i) => makeCaption(w, starts[i], ends[i], i === 0)));
 };

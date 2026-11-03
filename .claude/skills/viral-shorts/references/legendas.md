@@ -9,9 +9,13 @@ Tudo vira o tipo `Caption` do `@remotion/captions` (uma entrada por palavra, com
 
 | Origem | Script | Precisão |
 |---|---|---|
-| ElevenLabs | `npm run tts` | Exata: o próprio TTS devolve o tempo de cada caractere. |
+| Kokoro (grátis) | `npm run tts:kokoro` | Início de cada frase exato (sintetizada uma a uma); vírgulas localizadas no áudio; palavras por peso dentro do trecho. |
+| Google (cota grátis) | `npm run tts:google` | Exata: uma marca SSML antes de cada palavra devolve o tempo dela. |
+| ElevenLabs | `npm run tts:elevenlabs` | Exata: o próprio TTS devolve o tempo de cada caractere. |
 | Sua voz | `npm run transcribe` | Whisper dá os tempos; o **texto é sempre o do roteiro** (alinhamento Needleman–Wunsch corrige erros como "arquíferos"). |
 | Rascunho | `npm run estimate` | Estimativa por tamanho de palavra e pausas; só para prévia. |
+
+Confira sempre com `npm run check-sync -- <slug>`: zero palavras exibidas durante silêncio e ≥ 85% das pausas do áudio caindo entre palavras.
 
 ## Estilo padrão (`components/ViralCaptions.tsx`)
 - **1 a 3 palavras por "página"**, até ~15 letras. Quebra em pontuação, pausas > 350 ms e troca de cena (`src/lib/paginate.ts`).

@@ -21,7 +21,7 @@ export type Timeline = {
   durationMs: number;
   /** Caminho relativo a public/ (ex.: "meu-video/narracao.mp3") ou null em rascunho sem áudio. */
   audio: string | null;
-  source: "elevenlabs" | "whisper" | "estimada";
+  source: "kokoro" | "google" | "elevenlabs" | "whisper" | "estimada";
   scenes: TimelineScene[];
 };
 

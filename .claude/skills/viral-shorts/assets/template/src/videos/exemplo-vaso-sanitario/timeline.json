@@ -1,68 +1,68 @@
 {
   "fps": 30,
-  "durationMs": 63004,
-  "audio": null,
-  "source": "estimada",
+  "durationMs": 46735,
+  "audio": "exemplo-vaso-sanitario/narracao.mp3",
+  "source": "kokoro",
   "scenes": [
     {
       "id": "s01-gancho",
       "startMs": 0,
-      "endMs": 5710
+      "endMs": 4305
     },
     {
       "id": "s02-gases",
-      "startMs": 5710,
-      "endMs": 11994
+      "startMs": 4305,
+      "endMs": 9015
     },
     {
       "id": "s03-curva",
-      "startMs": 11994,
-      "endMs": 18400
+      "startMs": 9015,
+      "endMs": 13825
     },
     {
       "id": "s04-nomes",
-      "startMs": 18400,
-      "endMs": 23228
+      "startMs": 13825,
+      "endMs": 17175
     },
     {
       "id": "s05-pergunta",
-      "startMs": 23228,
-      "endMs": 27661
+      "startMs": 17175,
+      "endMs": 20075
     },
     {
       "id": "s06-pouca-agua",
-      "startMs": 27661,
-      "endMs": 32838
+      "startMs": 20075,
+      "endMs": 24275
     },
     {
       "id": "s07-efeito-sifao",
-      "startMs": 32838,
-      "endMs": 38382
+      "startMs": 24275,
+      "endMs": 28065
     },
     {
       "id": "s08-caixa",
-      "startMs": 38382,
-      "endMs": 42704
+      "startMs": 28065,
+      "endMs": 31795
     },
     {
       "id": "s09-obturador",
-      "startMs": 42704,
-      "endMs": 47186
+      "startMs": 31795,
+      "endMs": 35255
     },
     {
       "id": "s10-boia",
-      "startMs": 47186,
-      "endMs": 53067
+      "startMs": 35255,
+      "endMs": 39165
     },
     {
       "id": "s11-selo-volta",
-      "startMs": 53067,
-      "endMs": 59509
+      "startMs": 39165,
+      "endMs": 43875
     },
     {
       "id": "s12-final",
-      "startMs": 59509,
-      "endMs": 63004
+      "startMs": 43875,
+      "endMs": 46735
     }
   ]
 }

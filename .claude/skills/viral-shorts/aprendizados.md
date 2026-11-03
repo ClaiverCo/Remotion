@@ -20,6 +20,12 @@ Formato: `- [AAAA-MM-DD] contexto → regra`. Acrescente no fim da seção certa
 - [2026-11-03] Texto dentro do WebGL é trabalhoso → `ScreenLabel` por cima do canvas.
 - [2026-11-03] O render 3D na CPU (swangle) é lento (~1 frame/s) → faça o QA com stills antes e só depois o render completo.
 
+## Narração
+- [2026-11-03] As vírgulas do Kokoro quase nunca viram silêncio total (só 2/9 frases eram detectadas por limiar) → localizar cada vírgula pelo vale de energia mais próximo da posição esperada; com isso foram 9/9.
+- [2026-11-03] Sintetizar frase por frase (quebra em . ! ? e cena) mantém a entonação e deixa o início de cada frase exato; não quebrar nas vírgulas (a fala fica picotada).
+- [2026-11-03] Narração real (46,7 s) saiu bem mais curta que a estimativa (63 s) → só ajuste a duração do roteiro depois de gerar a voz de verdade.
+- [2026-11-03] Sempre rodar `npm run check-sync` depois da voz: ele pegou na hora a legenda deslocada em 400 ms (teste de controle).
+
 ## Roteiro / pesquisa
 - [2026-11-03] Estatística sem fonte quase entrou num texto → só números com fonte no dossiê; na dúvida, corte.
 

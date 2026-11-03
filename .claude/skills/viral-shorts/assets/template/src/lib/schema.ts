@@ -34,7 +34,7 @@ export const roteiroSchema = z.object({
   idioma: z.string().default("pt-BR"),
   perguntaCentral: z.string().min(1),
   duracaoAlvoSeg: z.number().min(10).max(180),
-  voz: z.enum(["elevenlabs", "propria", "estimada"]),
+  voz: z.enum(["kokoro", "google", "elevenlabs", "propria", "estimada"]),
   musica: z
     .object({
       arquivo: z.string(),
