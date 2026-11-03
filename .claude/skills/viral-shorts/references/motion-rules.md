@@ -9,13 +9,13 @@ O Remotion não é o gargalo; o acabamento do movimento é. Estas regras separam
 5. **Camadas:** fundo → cena/objetos → overlays (setas, rótulos) → vinheta + grão → selo → legenda. `ShortVideo.tsx` já empilha fundo, vinheta, grão, selo e legenda.
 6. **Câmera sempre viva.** Toda cena tem `CameraRig` (2.5D) ou keyframes de câmera (3D). Mesmo "parada", há um drift leve. Corte de cena = mudança de enquadramento.
 7. **Idle.** Elementos parados respiram: `useIdle(amplitude, período)` (balanço, flutuação, piscar do mascote).
-8. **Tempo derivado do fps e da cena.** Use `useSceneTime(durationInFrames)` e anime em **frações de `dur`** (`ramp(t, dur*0.2, dur*0.6)`). A duração real vem da narração, então números fixos de frame quebram quando a voz muda.
+8. **Tempo derivado da fala.** Use `useScene(props)` e anime nos tempos das palavras (`at("palavra")`). Para o que não tem palavra-gatilho (câmera, idle), use frações de `dur`. Números fixos de frame quebram quando a voz muda.
 9. **Tema único.** Cores, fontes e springs só de `theme.ts`. Nada de hex solto nas cenas (exceto detalhes do objeto, como a boia laranja).
 10. **Renderizar → inspecionar → corrigir → renderizar.** Nunca entregue sem olhar os frames (`npm run qa`).
 
 ## Sincronia com a fala
 - A cena começa ~120 ms **antes** da primeira palavra dela (`leadMs` em `timeline.ts`): o olho chega antes do ouvido.
-- O evento visual principal da cena deve acontecer **quando a palavra-chave é dita**. Use `captions.json` para saber o tempo da palavra se precisar de precisão ("6 litros" → contador termina junto).
+- O evento visual principal da cena deve acontecer **quando a palavra-chave é dita**: `const { t, at } = useScene(props)` e `ramp(t, at("litros"), at("litros") + 0.4)`. `at()` aceita prefixo e ignora acento/pontuação, `{ edge: "end" }` dá o fim da palavra e `{ nth: 2 }` a 2ª ocorrência. O 2º argumento é a fração da cena usada se a palavra não existir (ex.: `at("despenca", 0.75)`).
 - Mudança de cena a cada 3 a 6 s. Mais de 7 s parado no mesmo enquadramento = queda de retenção.
 
 ## Determinismo

@@ -8,8 +8,9 @@ import {
   ssmlWithMarks,
   timepointsToCaptions,
 } from "../../src/lib/captions.ts";
-import { tokenizeNarration, type ScriptWord } from "../../src/lib/words.ts";
+import { spokenWords, tokenizeNarration, type ScriptWord } from "../../src/lib/words.ts";
 import { chooseMotor } from "../lib/tts/choose.ts";
+import { wordTime } from "../../src/lib/scene.ts";
 import { chunkForGoogle } from "../lib/tts/google.ts";
 
 const words: ScriptWord[] = [
@@ -85,8 +86,8 @@ test("chunkForGoogle mantém tudo num pedido quando cabe e divide por frase/cena
   assert.equal(chunks[1].firstIndex, chunks[0].words.length);
 });
 
-test("chooseMotor: flag > TTS_MOTOR > chaves > kokoro grátis", () => {
-  assert.equal(chooseMotor(undefined, {}), "kokoro");
+test("chooseMotor: flag > TTS_MOTOR > chaves > piper grátis (pt-BR)", () => {
+  assert.equal(chooseMotor(undefined, {}), "piper");
   assert.equal(chooseMotor(undefined, { GOOGLE_TTS_API_KEY: "x" }), "google");
   assert.equal(chooseMotor(undefined, { GOOGLE_TTS_API_KEY: "x", ELEVENLABS_API_KEY: "y" }), "elevenlabs");
   assert.equal(chooseMotor(undefined, { TTS_MOTOR: "Kokoro", ELEVENLABS_API_KEY: "y" }), "kokoro");
@@ -110,4 +111,28 @@ test("findClausePauses acha o vale de energia de cada vírgula (mesmo sem silên
   // sem vale claro → [] (cai na distribuição por peso)
   const flat = Array.from({ length: 300 }, () => 0.2);
   assert.deepEqual(findClausePauses(ph.words, 1000, 4000, flat, 1000, 10), []);
+});
+
+test("spokenWords troca só o que a voz fala, mantendo pontuação, cena e ênfase", () => {
+  const w = tokenizeNarration("O *fecho* volta, e a NBR manda: fecho.", 2);
+  const s = spokenWords(w, { fecho: "fêcho", nbr: "ene bê erre" });
+  assert.deepEqual(s.map((x) => x.text), ["O", "fêcho", "volta,", "e", "a", "ene bê erre", "manda:", "fêcho."]);
+  assert.equal(s[1].emphasis, true);
+  assert.equal(s[1].scene, 2);
+  assert.equal(spokenWords(w, {}), w);
+});
+
+test("wordTime acha a palavra falada na cena (sem acento/pontuação, por prefixo, n-ésima, fim)", () => {
+  const words = [
+    { text: "Apertou", start: 0.1, end: 0.5 },
+    { text: "o", start: 0.5, end: 0.6 },
+    { text: "botão,", start: 0.6, end: 1.0 },
+    { text: "levanta", start: 2.0, end: 2.4 },
+    { text: "botão.", start: 3.0, end: 3.3 },
+  ];
+  assert.equal(wordTime(words, "botao", 9), 0.6);
+  assert.equal(wordTime(words, "Botão", 9, { edge: "end" }), 1.0);
+  assert.equal(wordTime(words, "botao", 9, { nth: 2 }), 3.0);
+  assert.equal(wordTime(words, "levant", 9), 2.0);
+  assert.equal(wordTime(words, "despenca", 9), 9);
 });

@@ -8,7 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ssmlWithMarks, timepointsToCaptions, type Timepoint } from "../../../src/lib/captions.ts";
-import { scriptWords, type ScriptWord } from "../../../src/lib/words.ts";
+import { scriptWords, spokenWords, type ScriptWord } from "../../../src/lib/words.ts";
 import { cacheDir, fail, ffprobeDurationMs, publicDir, readJson, run, writeJson } from "../project.ts";
 import type { TtsEngine } from "./types.ts";
 
@@ -76,7 +76,8 @@ export const listGoogleVoices = async () => {
 
 export const google: TtsEngine = async (slug, roteiro, opts) => {
   const words = scriptWords(roteiro);
-  const chunks = chunkForGoogle(words);
+  // SSML com o texto "falado" (pronúncias do roteiro); as marcas usam os mesmos índices da legenda
+  const chunks = chunkForGoogle(spokenWords(words, roteiro.pronuncias));
   const voz = opts.voz ?? process.env.GOOGLE_TTS_VOZ ?? "pt-BR-Neural2-B";
   const velocidade = opts.velocidade ?? parseFloat(process.env.GOOGLE_TTS_VELOCIDADE ?? "1.05");
   const cacheFile = path.join(cacheDir(), `${slug}-google.json`);

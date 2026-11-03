@@ -5,12 +5,13 @@
  *                            [--from-cache] [--dry-run] [--listar-vozes]
  *
  * Motores:
- *   kokoro      GRÁTIS, local e offline (Python 3.10+; 1º uso baixa ~350 MB). Vozes: pm_alex, pm_santa, pf_dora
+ *   piper       GRÁTIS, local, offline, PORTUGUÊS BRASILEIRO (padrão). Vozes: faber, cadu, jeff
+ *   kokoro      GRÁTIS, local e offline. Vozes pm_alex, pm_santa, pf_dora (sotaque puxa para Portugal)
  *   google      Google Cloud TTS (cota grátis mensal; precisa GOOGLE_TTS_API_KEY). Legenda com tempo exato
  *   elevenlabs  ElevenLabs (mais expressivo; plano pago/limite grátis). Legenda com tempo exato
  *
- * Sem --motor: usa TTS_MOTOR do .env; senão ElevenLabs (se houver chave), Google (se houver chave) ou Kokoro.
- * Atalhos: npm run tts:kokoro -- <slug> · npm run tts:google -- <slug> · npm run tts:elevenlabs -- <slug>
+ * Sem --motor: usa TTS_MOTOR do .env; senão ElevenLabs (se houver chave), Google (se houver chave) ou Piper.
+ * Atalhos: npm run tts:piper · tts:kokoro · tts:google · tts:elevenlabs -- <slug>
  */
 import { parseArgs } from "node:util";
 import { ffprobeDurationMs, fail, loadRoteiro, requireSlug, saveCaptionsAndTimeline } from "./lib/project.ts";
@@ -18,6 +19,7 @@ import { chooseMotor } from "./lib/tts/choose.ts";
 import { elevenlabs } from "./lib/tts/elevenlabs.ts";
 import { google, listGoogleVoices } from "./lib/tts/google.ts";
 import { kokoro } from "./lib/tts/kokoro.ts";
+import { piper, PIPER_VOICES } from "./lib/tts/piper.ts";
 import type { TtsEngine, TtsMotor } from "./lib/tts/types.ts";
 
 const { positionals, values } = parseArgs({
@@ -35,9 +37,9 @@ const { positionals, values } = parseArgs({
   },
 });
 
-const ENGINES: Record<TtsMotor, TtsEngine> = { kokoro, google, elevenlabs };
+const ENGINES: Record<TtsMotor, TtsEngine> = { piper, kokoro, google, elevenlabs };
 
-let motor: TtsMotor = "kokoro";
+let motor: TtsMotor = "piper";
 try {
   motor = chooseMotor(values.motor, process.env);
 } catch (e) {
@@ -46,12 +48,13 @@ try {
 
 if (values["listar-vozes"]) {
   if (motor === "google") await listGoogleVoices();
+  else if (motor === "piper") console.log(`Piper pt-BR: ${Object.keys(PIPER_VOICES).join(" · ")} (padrão: faber)`);
   else if (motor === "kokoro") console.log("Kokoro pt-BR: pm_alex (masculina, padrão) · pm_santa (masculina) · pf_dora (feminina)");
   else console.log("ElevenLabs: veja as vozes em elevenlabs.io → Voices (copie o Voice ID).");
   process.exit(0);
 }
 
-const slug = requireSlug(positionals, "npm run tts -- <slug> [--motor kokoro|google|elevenlabs] [--voz X]");
+const slug = requireSlug(positionals, "npm run tts -- <slug> [--motor piper|kokoro|google|elevenlabs] [--voz X]");
 const roteiro = loadRoteiro(slug);
 const result = await ENGINES[motor](slug, roteiro, {
   voz: values.voz ?? values.voice,

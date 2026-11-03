@@ -16,6 +16,8 @@ export type ViralCaptionsProps = {
   y?: number;
   maxWidth?: number;
   highlight?: string;
+  /** Cor da palavra que está sendo falada (modo "page"). */
+  activeColor?: string;
   paginate?: PaginateOptions;
 };
 
@@ -44,6 +46,7 @@ export const ViralCaptions: React.FC<ViralCaptionsProps> = ({
   y = SAFE.captionY,
   maxWidth = 900,
   highlight = COLORS.captionHighlight,
+  activeColor = COLORS.captionHighlight2,
   paginate,
 }) => {
   const frame = useCurrentFrame();
@@ -101,7 +104,8 @@ export const ViralCaptions: React.FC<ViralCaptionsProps> = ({
           const wf = ((ms - w.startMs) / 1000) * fps;
           const pop = spring({ frame: wf, fps, config: SPRING.pop });
           const visible = mode === "page" || spoken || i === 0;
-          const color = w.emphasis ? highlight : COLORS.captionText;
+          // palavra sendo falada ganha cor (karaokê): deixa a sincronia visível; ênfase continua ciano
+          const color = w.emphasis ? highlight : active && mode === "page" ? activeColor : COLORS.captionText;
           const scale =
             mode === "reveal"
               ? interpolate(pop, [0, 1], [0.6, 1])

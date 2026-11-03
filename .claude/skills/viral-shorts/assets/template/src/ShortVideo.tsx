@@ -5,8 +5,14 @@ import { CutFlash, Grain, ProgressBar, Vignette } from "./components/Overlays";
 import { HookBadge } from "./components/HookBadge";
 import { ViralCaptions } from "./components/ViralCaptions";
 import { msToFrame, timelineDurationInFrames } from "./lib/timeline";
-import type { VideoDefinition } from "./lib/types";
+import type { SceneWord, VideoDefinition } from "./lib/types";
 import { COLORS, FONT, SPRING } from "./theme";
+
+/** Palavras de uma cena, com tempos relativos ao início dela (s). */
+const sceneWords = (captions: VideoDefinition["captions"], index: number, sceneStartMs: number): SceneWord[] =>
+  captions
+    .filter((c) => c.scene === index)
+    .map((c) => ({ text: c.text.trim(), start: (c.startMs - sceneStartMs) / 1000, end: (c.endMs - sceneStartMs) / 1000 }));
 
 /** Entrada da cena: leve "punch-in" (escala + desfoque) nos primeiros frames. */
 const SceneShell: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -53,7 +59,13 @@ export const ShortVideo: React.FC<{ video: VideoDefinition }> = ({ video }) => {
         const cena = spec.cenas[i];
         return (
           <Sequence key={s.id} from={from} durationInFrames={dur} name={s.id} premountFor={fps}>
-            <SceneShell>{Comp ? <Comp durationInFrames={dur} index={i} id={s.id} /> : <MissingScene id={s.id} />}</SceneShell>
+            <SceneShell>
+              {Comp ? (
+                <Comp durationInFrames={dur} index={i} id={s.id} words={sceneWords(captions, i, s.startMs)} />
+              ) : (
+                <MissingScene id={s.id} />
+              )}
+            </SceneShell>
             {i > 0 && <CutFlash />}
             {cena?.selo && <HookBadge selo={cena.selo} durationInFrames={dur} />}
           </Sequence>

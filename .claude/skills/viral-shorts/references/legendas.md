@@ -9,7 +9,8 @@ Tudo vira o tipo `Caption` do `@remotion/captions` (uma entrada por palavra, com
 
 | Origem | Script | Precisão |
 |---|---|---|
-| Kokoro (grátis) | `npm run tts:kokoro` | Início de cada frase exato (sintetizada uma a uma); vírgulas localizadas no áudio; palavras por peso dentro do trecho. |
+| Piper (grátis, pt-BR) | `npm run tts:piper` | Início de cada frase exato (sintetizada uma a uma); vírgulas localizadas no áudio; palavras por peso dentro do trecho. |
+| Kokoro (grátis) | `npm run tts:kokoro` | Igual ao Piper (mas o sotaque puxa para Portugal). |
 | Google (cota grátis) | `npm run tts:google` | Exata: uma marca SSML antes de cada palavra devolve o tempo dela. |
 | ElevenLabs | `npm run tts:elevenlabs` | Exata: o próprio TTS devolve o tempo de cada caractere. |
 | Sua voz | `npm run transcribe` | Whisper dá os tempos; o **texto é sempre o do roteiro** (alinhamento Needleman–Wunsch corrige erros como "arquíferos"). |
@@ -21,7 +22,7 @@ Confira sempre com `npm run check-sync -- <slug>`: zero palavras exibidas durant
 - **1 a 3 palavras por "página"**, até ~15 letras. Quebra em pontuação, pausas > 350 ms e troca de cena (`src/lib/paginate.ts`).
 - **CAIXA ALTA**, Montserrat 900, contorno escuro grosso + sombra (legível em qualquer fundo).
 - O tamanho da fonte é **medido** para caber numa linha (60 a 124 px).
-- Palavra *enfatizada* em ciano (`COLORS.captionHighlight`); a palavra sendo falada dá um "pop" (escala 1,07 e sobe 6 px).
+- Palavra *enfatizada* em ciano (`COLORS.captionHighlight`). A palavra **sendo falada** fica amarela (karaokê, `COLORS.captionHighlight2`) e dá um "pop": a sincronia fica visível na hora.
 - Modo `page` (padrão: a página toda aparece) ou `reveal` (cada palavra entra quando é falada).
 - Posição: centro em **y = 1330** (~70% da altura), dentro da área segura.
 

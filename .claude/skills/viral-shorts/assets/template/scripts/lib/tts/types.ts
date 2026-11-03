@@ -1,7 +1,7 @@
 import type { Roteiro } from "../../../src/lib/schema.ts";
 import type { Timeline, VideoCaption } from "../../../src/lib/types.ts";
 
-export type TtsMotor = "kokoro" | "google" | "elevenlabs";
+export type TtsMotor = "piper" | "kokoro" | "google" | "elevenlabs";
 
 export type TtsOptions = {
   /** Voz do motor (ex.: pm_alex, pt-BR-Neural2-B, ID do ElevenLabs). */

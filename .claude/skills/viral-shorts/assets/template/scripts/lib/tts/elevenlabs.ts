@@ -7,7 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { elevenLabsToCaptions, type ElevenLabsAlignment } from "../../../src/lib/captions.ts";
-import { narrationText, scriptWords } from "../../../src/lib/words.ts";
+import { scriptWords, spokenWords } from "../../../src/lib/words.ts";
 import { cacheDir, fail, publicDir, readJson, writeJson } from "../project.ts";
 import type { TtsEngine } from "./types.ts";
 
@@ -21,7 +21,7 @@ const num = (v: string | undefined, d: number) => (v ? parseFloat(v) : d);
 
 export const elevenlabs: TtsEngine = async (slug, roteiro, opts) => {
   const words = scriptWords(roteiro);
-  const text = narrationText(roteiro);
+  const text = spokenWords(words, roteiro.pronuncias).map((w) => w.text).join(" ");
   const cacheFile = path.join(cacheDir(), `${slug}-elevenlabs.json`);
   const voice = opts.voz ?? process.env.ELEVENLABS_VOICE_ID;
   const model = opts.modelo ?? process.env.ELEVENLABS_MODEL_ID ?? "eleven_multilingual_v2";

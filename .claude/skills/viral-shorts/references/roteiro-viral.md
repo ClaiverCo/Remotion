@@ -38,6 +38,12 @@ Uma pergunta impactante que só é respondida no fim, com pistas no caminho.
 ## Loops abertos (frases-ponte)
 "Só que tem um problema…" · "Mas aí vem a parte estranha…" · "E o mais genial…" · "Parece resolvido, né? Não." · "Mas como…?" · "E se isso falhar?"
 
+## A narração descreve a imagem (regra de ouro)
+- **Cada frase narra exatamente o que a cena mostra naquele momento.** Se a voz fala de uma coisa e a tela mostra outra, a pessoa se perde e sai. Escreva o `visual` da cena junto com a `narracao` e confira um contra o outro.
+- Cada evento importante da imagem deve ter uma **palavra-gatilho** na fala ("levanta", "despenca", "fecha"); a cena anima nessa palavra com `at("levanta")`.
+- 1 ideia por cena, de 8 a 18 palavras (no máximo ~110 caracteres por frase). Frase longa demais = cena longa demais e voz cansativa.
+- Explique termos na hora em que aparecem ("a borracha do fundo, o *obturador*, levanta").
+
 ## Regras de escrita para narração
 - Frases curtas (6 a 14 palavras). Uma ideia por frase.
 - Fala, não texto: "pro", "tá", "a gente" são ok; evite termos técnicos sem explicar na hora.

@@ -7,37 +7,50 @@
   "idioma": "pt-BR",
   "perguntaCentral": "Se o gelo é a mesma água, só que sólida, por que ele não afunda?",
   "duracaoAlvoSeg": 20,
-  "voz": "kokoro",
+  "voz": "piper",
   "barraProgresso": true,
   "cenas": [
     {
       "id": "g01-gancho",
       "narracao": "Gelo é água sólida. Então por que ele *não afunda*?",
       "visual": "Copo 3D com cubo de gelo boiando; câmera orbitando.",
-      "selo": { "texto": "PARECE ÓBVIO?", "icone": "?" },
+      "selo": {
+        "texto": "PARECE ÓBVIO?",
+        "icone": "?"
+      },
       "sfx": "whoosh",
-      "fontes": [1]
+      "fontes": [
+        1
+      ]
     },
     {
       "id": "g02-rede",
       "narracao": "Ao congelar, as moléculas se travam numa *rede* cheia de espaços vazios.",
       "visual": "Moléculas de água bagunçadas se organizam em anéis hexagonais abertos.",
       "sfx": "whoosh",
-      "fontes": [1, 2]
+      "fontes": [
+        1,
+        2
+      ]
     },
     {
       "id": "g03-volume",
       "narracao": "Por isso o gelo ocupa uns *9% a mais* e fica mais *leve* que a água.",
       "visual": "Cubo de água cresce ao virar gelo; os dois cubos lado a lado.",
       "sfx": "pop",
-      "fontes": [1]
+      "fontes": [
+        1
+      ]
     },
     {
       "id": "g04-final",
       "narracao": "E é por isso que ele *boia*.",
       "visual": "Volta ao copo, gelo boiando, câmera se afasta.",
       "sfx": "ding",
-      "fontes": [1]
+      "fontes": [
+        1
+      ]
     }
-  ]
+  ],
+  "pronuncias": {}
 }

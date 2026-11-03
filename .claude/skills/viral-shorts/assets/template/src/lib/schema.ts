@@ -34,7 +34,9 @@ export const roteiroSchema = z.object({
   idioma: z.string().default("pt-BR"),
   perguntaCentral: z.string().min(1),
   duracaoAlvoSeg: z.number().min(10).max(180),
-  voz: z.enum(["kokoro", "google", "elevenlabs", "propria", "estimada"]),
+  voz: z.enum(["piper", "kokoro", "google", "elevenlabs", "propria", "estimada"]),
+  /** Como a VOZ deve falar certas palavras (a legenda mantém o original). Ex.: { "fecho": "fêcho" } */
+  pronuncias: z.record(z.string(), z.string()).default({}),
   musica: z
     .object({
       arquivo: z.string(),

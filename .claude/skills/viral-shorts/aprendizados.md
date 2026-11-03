@@ -8,7 +8,13 @@ Formato: `- [AAAA-MM-DD] contexto → regra`. Acrescente no fim da seção certa
 - [2026-11-03] Palavras coladas ("BURACOLIGADO") porque o contorno grosso come o espaço → espaço entre palavras de 0,42em e tamanho calculado com `measureText` (nada de estimar por nº de letras).
 - [2026-11-03] Página quebrando em 2 linhas com palavra órfã ("ÁGUA TAMPA / O") → limite de ~15 letras por página e fonte ajustada para caber numa linha.
 
+## Sincronia imagem × fala
+- [2026-11-03] **Usuário viu "erros" no vídeo:** as animações estavam presas a frações fixas da cena; com a narração real, a borracha levantava antes da voz dizer "levanta" → toda animação importante dispara na palavra (`useScene(props).at("levanta")`).
+- [2026-11-03] Legenda em modo página mostra palavras antes de serem ditas → a palavra falada fica amarela (karaokê) para a sincronia ficar óbvia.
+- [2026-11-03] Transformações de forma (cano reto → curva) com crossfade parecem um "fantasma" → faça a forma nova crescer (`Pipe reveal`) enquanto a antiga some.
+
 ## Cenas 2.5D
+- [2026-11-03] Mascote cortado na borda em planos com zoom → com zoom > 1,1 confira a posição do mascote na tela, ou tire o mascote da cena.
 - [2026-11-03] Seta desenhada sobre o mesmo path do cano "embranquece" a água → setas ficam AO LADO do cano (path paralelo), nunca em cima.
 - [2026-11-03] Rótulos perto da borda são cortados com zoom ≥ 1,3 → com câmera em close, mantenha rótulos com x entre 300 e 800 no espaço da cena.
 - [2026-11-03] Selo cobre o topo do objeto quando a câmera abre → no plano final, centralize a câmera mais baixo (y ≈ 820) para o objeto descer.
@@ -21,6 +27,8 @@ Formato: `- [AAAA-MM-DD] contexto → regra`. Acrescente no fim da seção certa
 - [2026-11-03] O render 3D na CPU (swangle) é lento (~1 frame/s) → faça o QA com stills antes e só depois o render completo.
 
 ## Narração
+- [2026-11-03] **Usuário reprovou o Kokoro:** "voz muito ruim, travada, português de Portugal" → padrão agora é o **Piper pt-BR (faber)**, gravado por brasileiros. Nunca use o Kokoro para pt-BR sem o usuário pedir.
+- [2026-11-03] Rode `--dry-run` e confira pronúncias antes da voz final: "fecho" (substantivo) saía "fécho" → `"pronuncias": { "fecho": "fêcho" }`.
 - [2026-11-03] As vírgulas do Kokoro quase nunca viram silêncio total (só 2/9 frases eram detectadas por limiar) → localizar cada vírgula pelo vale de energia mais próximo da posição esperada; com isso foram 9/9.
 - [2026-11-03] Sintetizar frase por frase (quebra em . ! ? e cena) mantém a entonação e deixa o início de cada frase exato; não quebrar nas vírgulas (a fala fica picotada).
 - [2026-11-03] Narração real (46,7 s) saiu bem mais curta que a estimativa (63 s) → só ajuste a duração do roteiro depois de gerar a voz de verdade.

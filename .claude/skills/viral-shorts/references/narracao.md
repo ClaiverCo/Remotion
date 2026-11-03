@@ -1,32 +1,54 @@
-# Narração: grátis (Kokoro ou Google), ElevenLabs ou sua própria voz
+# Narração: grátis em pt-BR (Piper ou Google), ElevenLabs ou sua própria voz
 
 Um comando para todos os motores:
 ```bash
 npm run tts -- <slug>                       # escolhe sozinho (veja abaixo)
-npm run tts -- <slug> --motor kokoro --voz pf_dora
-npm run tts:kokoro -- <slug>                # atalhos: tts:kokoro · tts:google · tts:elevenlabs
+npm run tts -- <slug> --motor piper --voz cadu
+npm run tts:piper -- <slug>                 # atalhos: tts:piper · tts:google · tts:elevenlabs · tts:kokoro
 npm run tts -- <slug> --dry-run             # mostra frases/caracteres sem gerar nada
 npm run tts -- --motor google --listar-vozes
 npm run check-sync -- <slug>                # confere a sincronia legenda × áudio (sem precisar ouvir)
 ```
-Sem `--motor`, a ordem é: `TTS_MOTOR` no `.env` → ElevenLabs (se houver chave) → Google (se houver chave) → **Kokoro** (grátis, sempre funciona).
+Sem `--motor`, a ordem é: `TTS_MOTOR` no `.env` → ElevenLabs (se houver chave) → Google (se houver chave) → **Piper** (grátis, português brasileiro, sempre funciona).
 
 | Motor | Custo | Qualidade pt-BR | Tempo das legendas | Precisa de |
 |---|---|---|---|---|
-| **Kokoro** (padrão) | grátis, ilimitado, offline | boa, um pouco "robótica" em frases longas | início de cada frase exato; vírgulas pelo áudio; palavras por peso | Python 3.10+, ~350 MB na 1ª vez |
+| **Piper** (padrão) | grátis, ilimitado, offline | **sotaque brasileiro** (locutores brasileiros); ainda soa sintética | início de cada frase exato; vírgulas pelo áudio; palavras por peso | Python 3.10+, ~65 MB na 1ª vez |
+| Kokoro | grátis, offline | ⚠ sotaque puxa para **Portugal**, fala "travada" | igual ao Piper | Python 3.10+, ~350 MB |
 | **Google Cloud TTS** | grátis até a cota mensal | muito boa (Neural2) | exato por palavra (marcas SSML) | conta Google Cloud com faturamento + chave de API |
 | **ElevenLabs** | pago (plano grátis limitado, sem uso comercial) | excelente, expressiva | exato por caractere | conta + chave |
 | **Sua voz** | grátis | a mais autêntica | Whisper + alinhamento ao roteiro | gravar o áudio |
 
 Depois de gerar, rode **`npm run check-sync -- <slug>`**: ele detecta os silêncios reais do áudio e confere se nenhuma palavra aparece durante um silêncio. Se falhar, regere ou ajuste o roteiro.
 
-## Opção grátis 1: Kokoro (local, offline, Apache 2.0)
+## Opção grátis 1 (padrão): Piper — português BRASILEIRO, local e offline
+- `npm run tts:piper -- <slug>` (ou só `npm run tts -- <slug>` sem chaves no `.env`). Na 1ª vez ele cria `.tts/venv` (**Python 3.10+**), instala o `piper-tts` e baixa a voz (~65 MB) do repositório oficial (Hugging Face) ou, se ele estiver fora do ar, do pacote no GitHub. Depois disso funciona **sem internet**.
+- **Vozes (todas masculinas, gravadas por brasileiros, datasets CC0 → uso comercial liberado):** `faber` (padrão, ritmo mais ágil), `cadu`, `jeff` (mais calmos) e `edresson` (qualidade baixa). Use `--voz` ou `PIPER_VOZ`. O "de" sai "dji" e o "t" de "existe" sai "tchi", como no Brasil.
+- **Velocidade:** `--velocidade 1.1` ou `PIPER_VELOCIDADE` (padrão 1,0).
+- Licenças: o programa `piper-tts` é GPL-3.0 (é só instalado e usado como ferramenta; o áudio gerado é seu); as vozes vêm de datasets CC0.
+
+### Corrigindo pronúncia (vale para todos os motores)
+O TTS às vezes erra o timbre de uma vogal ou lê uma sigla do jeito errado. No `roteiro.json`:
+```json
+"pronuncias": { "fecho": "fêcho", "NBR": "ene bê erre", "Wi-Fi": "uai fai" }
+```
+Só a VOZ muda; a legenda continua com o texto original. `npm run tts -- <slug> --dry-run` mostra o texto falado (marca "pronúncia ajustada"). O que mais dá problema são palavras escritas iguais com timbre diferente (e/o aberto × fechado). Casos conferidos no Piper:
+| Escrito | A voz lê | Corrija para |
+|---|---|---|
+| fecho (substantivo, "fecho hídrico") | "fécho" | `fêcho` |
+| forma (no sentido de "fôrma de bolo") | "fórma" | `fôrma` |
+
+Conferidos e **corretos** sem ajuste: colher, sede, olho/olhos, porco/porcos, gelo, siglas comuns (GPS, NBR, ABS), "de" → "dji", "existe" → "ezistchi". Para palavras raras, nomes próprios e estrangeirismos, confira o `--dry-run` e ouça a amostra.
+
+## Opção grátis (alternativa): Kokoro (local, offline, Apache 2.0)
+> ⚠ As vozes de português do Kokoro têm sotaque que puxa para **Portugal**. Prefira o Piper para pt-BR.
+
 - `npm run tts:kokoro -- <slug>`. Na 1ª vez ele cria `.tts/venv` (precisa do **Python 3.10+**; no Windows, marque "Add Python to PATH" no instalador), instala o `kokoro-onnx` e baixa o modelo e as vozes do GitHub (~350 MB). Depois disso funciona **sem internet**.
 - **Vozes pt-BR:** `pm_alex` (masculina, padrão), `pm_santa` (masculina) e `pf_dora` (feminina). Use `--voz` ou `KOKORO_VOZ` no `.env`.
 - **Velocidade:** `--velocidade 1.1` ou `KOKORO_VELOCIDADE` (0,5 a 2; padrão 1,05).
 - **Modelo menor/mais rápido:** `KOKORO_MODELO=kokoro-v1.0.int8.onnx` (~90 MB, qualidade um pouco menor).
 - **Como a sincronia funciona:** a narração é sintetizada **frase por frase** (quebras em . ! ? e troca de cena), e as pausas entre frases são inseridas por nós, então o início de cada frase é exato. Dentro da frase, as vírgulas são localizadas pelos vales de energia do áudio e as palavras são distribuídas pelo tamanho.
-- Frases repetidas ficam em cache (`.cache/<slug>-kokoro/`): mudar uma cena só ressintetiza o que mudou.
+- Frases repetidas ficam em cache (`.cache/<slug>-<motor>/`): mudar uma cena só ressintetiza o que mudou.
 - Licença: o modelo Kokoro-82M é Apache 2.0 (uso comercial permitido). Declare voz sintética no YouTube (`midiaSintetica: true`).
 - Dicas: frases curtas soam melhor. Números saem por extenso ("9%" → "nove por cento"). Siglas podem sair soletradas; escreva como se fala.
 

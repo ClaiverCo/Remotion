@@ -8,6 +8,7 @@
     "studio": "remotion studio",
     "new": "tsx scripts/new-video.ts",
     "tts": "tsx scripts/tts.ts",
+    "tts:piper": "tsx scripts/tts.ts --motor piper",
     "tts:kokoro": "tsx scripts/tts.ts --motor kokoro",
     "tts:google": "tsx scripts/tts.ts --motor google",
     "tts:elevenlabs": "tsx scripts/tts.ts --motor elevenlabs",

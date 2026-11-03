@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Narração GRATUITA e local com Kokoro (kokoro-onnx, Apache 2.0).
+Narração GRATUITA e local: Piper (vozes pt-BR gravadas por brasileiros) ou Kokoro.
 
-Chamado por scripts/lib/tts/kokoro.ts — não precisa rodar à mão.
+Chamado por scripts/lib/tts/local.ts — não precisa rodar à mão.
+  --motor piper  : --modelo <voz.onnx> [--config <voz.onnx.json>]
+  --motor kokoro : --modelo <kokoro.onnx> --vozes <voices.bin> --voz pm_alex
 
 Entrada (--entrada): JSON [{"text": "...", "pauseAfterMs": 260}, ...]  (uma frase por item)
 Saída:
@@ -20,7 +22,6 @@ import sys
 
 import numpy as np
 import soundfile as sf
-from kokoro_onnx import Kokoro
 
 LEAD_MS = 150  # silêncio no começo do áudio
 TAIL_MS = 350  # silêncio no fim
@@ -68,14 +69,52 @@ def analyse(x: np.ndarray, sr: int):
     return first * win, (last + 1) * win, pauses
 
 
+def make_synth(args):
+    """Retorna (função texto -> (áudio float32, taxa), taxa de amostragem)."""
+    if args.motor == "kokoro":
+        from kokoro_onnx import Kokoro
+
+        kokoro = Kokoro(args.modelo, args.vozes)
+        if args.voz not in kokoro.get_voices():
+            pt = [v for v in kokoro.get_voices() if v.startswith(("pf_", "pm_"))]
+            log(f"Voz '{args.voz}' não existe. Vozes em português: {', '.join(pt)}")
+            sys.exit(2)
+
+        def synth(text):
+            audio, sr = kokoro.create(text, voice=args.voz, speed=args.velocidade, lang=args.idioma)
+            return audio.astype(np.float32), sr
+
+        return synth, 24000
+
+    if args.motor == "piper":
+        from piper import PiperVoice, SynthesisConfig
+
+        voice = PiperVoice.load(args.modelo, config_path=args.config or f"{args.modelo}.json")
+        cfg = SynthesisConfig(length_scale=1.0 / max(0.5, min(2.0, args.velocidade)))
+
+        def synth(text):
+            chunks = list(voice.synthesize(text, syn_config=cfg))
+            if not chunks:
+                return np.zeros(1, dtype=np.float32), voice.config.sample_rate
+            audio = np.concatenate([c.audio_int16_array for c in chunks]).astype(np.float32) / 32768.0
+            return audio, chunks[0].sample_rate
+
+        return synth, voice.config.sample_rate
+
+    log(f"Motor desconhecido: {args.motor}")
+    sys.exit(2)
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--motor", default="piper", choices=["piper", "kokoro"])
     ap.add_argument("--entrada", required=True)
     ap.add_argument("--saida", required=True)
     ap.add_argument("--modelo", required=True)
-    ap.add_argument("--vozes", required=True)
-    ap.add_argument("--voz", default="pm_alex")
-    ap.add_argument("--velocidade", type=float, default=1.05)
+    ap.add_argument("--config", default=None)
+    ap.add_argument("--vozes", default=None)
+    ap.add_argument("--voz", default="")
+    ap.add_argument("--velocidade", type=float, default=1.0)
     ap.add_argument("--idioma", default="pt-br")
     ap.add_argument("--cache", default=None)
     args = ap.parse_args()
@@ -83,13 +122,7 @@ def main():
     with open(args.entrada, encoding="utf-8") as f:
         phrases = json.load(f)
 
-    kokoro = Kokoro(args.modelo, args.vozes)
-    if args.voz not in kokoro.get_voices():
-        pt = [v for v in kokoro.get_voices() if v.startswith(("pf_", "pm_"))]
-        log(f"Voz '{args.voz}' não existe. Vozes em português: {', '.join(pt)}")
-        sys.exit(2)
-
-    sr = 24000
+    synth, sr = make_synth(args)
     pad = int(sr * PAD_MS / 1000)
     parts = [np.zeros(int(sr * LEAD_MS / 1000), dtype=np.float32)]
     cursor = len(parts[0])
@@ -98,14 +131,13 @@ def main():
     for i, p in enumerate(phrases):
         text = p["text"].strip()
         key = hashlib.sha1(
-            f"{os.path.basename(args.modelo)}|{args.voz}|{args.velocidade}|{args.idioma}|{text}".encode("utf-8")
+            f"{args.motor}|{os.path.basename(args.modelo)}|{args.voz}|{args.velocidade}|{args.idioma}|{text}".encode("utf-8")
         ).hexdigest()[:16]
         cached = os.path.join(args.cache, f"{key}.wav") if args.cache else None
         if cached and os.path.exists(cached):
             audio, sr = sf.read(cached, dtype="float32")
         else:
-            audio, sr = kokoro.create(text, voice=args.voz, speed=args.velocidade, lang=args.idioma)
-            audio = audio.astype(np.float32)
+            audio, sr = synth(text)
             if cached:
                 os.makedirs(args.cache, exist_ok=True)
                 sf.write(cached, audio, sr, subtype="PCM_16")

@@ -38,6 +38,23 @@ export const tokenizeNarration = (
 export const scriptWords = (roteiro: Roteiro): ScriptWord[] =>
   roteiro.cenas.flatMap((cena, i) => tokenizeNarration(cena.narracao, i));
 
+/**
+ * Versão "falada" das palavras: aplica o dicionário de pronúncias do roteiro
+ * (ex.: { "fecho": "fêcho", "NBR": "ene bê erre" }) só no que vai para a voz.
+ * A legenda continua mostrando o texto original. A chave é comparada sem acento/pontuação
+ * e a pontuação da palavra original é mantida.
+ */
+export const spokenWords = (words: ScriptWord[], pronuncias: Record<string, string> = {}): ScriptWord[] => {
+  const map = new Map(Object.entries(pronuncias).map(([k, v]) => [normalizeWord(k), v]));
+  if (map.size === 0) return words;
+  return words.map((w) => {
+    const rep = map.get(normalizeWord(w.text));
+    if (!rep) return w;
+    const m = /^([^\p{L}\p{N}]*)[\s\S]*?([^\p{L}\p{N}]*)$/u.exec(w.text);
+    return { ...w, text: `${m?.[1] ?? ""}${rep}${m?.[2] ?? ""}` };
+  });
+};
+
 /** Texto limpo (sem asteriscos) para mandar ao TTS. */
 export const narrationText = (roteiro: Roteiro): string =>
   scriptWords(roteiro)

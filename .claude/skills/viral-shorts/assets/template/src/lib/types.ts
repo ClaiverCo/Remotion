@@ -21,13 +21,18 @@ export type Timeline = {
   durationMs: number;
   /** Caminho relativo a public/ (ex.: "meu-video/narracao.mp3") ou null em rascunho sem áudio. */
   audio: string | null;
-  source: "kokoro" | "google" | "elevenlabs" | "whisper" | "estimada";
+  source: "piper" | "kokoro" | "google" | "elevenlabs" | "whisper" | "estimada";
   scenes: TimelineScene[];
 };
+
+/** Palavra falada na cena, com tempos em SEGUNDOS desde o início da cena. */
+export type SceneWord = { text: string; start: number; end: number };
 
 export type SceneProps = {
   /** Duração da cena em frames (já sincronizada com a narração). */
   durationInFrames: number;
+  /** Palavras faladas nesta cena (use com useScene().at("palavra") para sincronizar a imagem com a fala). */
+  words: SceneWord[];
   /** Índice da cena no roteiro. */
   index: number;
   id: string;

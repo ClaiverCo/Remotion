@@ -10,7 +10,7 @@ import {
   WaterMolecule,
   type Vec3,
 } from "../../components/three";
-import { mix, ramp, useIdle, useSceneTime } from "../../lib/anim";
+import { mix, ramp, useIdle, useScene, useSceneTime } from "../../lib/anim";
 import type { SceneProps } from "../../lib/types";
 
 const ICE = "#d9f1ff";
@@ -51,9 +51,10 @@ const hexLattice = (): Vec3[] => {
 };
 const LATTICE = hexLattice();
 
-const G02: React.FC<SceneProps> = ({ durationInFrames }) => {
-  const { t, dur } = useSceneTime(durationInFrames);
-  const order = ramp(t, dur * 0.2, dur * 0.8);
+const G02: React.FC<SceneProps> = (props) => {
+  const { t, dur, at } = useScene(props);
+  // as moléculas se organizam entre "congelar" e "rede" (o que a narração diz)
+  const order = ramp(t, at("congelar", 0.15), at("rede", 0.6, { edge: "end" }));
   return (
     <Scene3D camera={[{ t: 0, pos: [0, 0.5, 15], look: [0, 0, 0] }, { t: dur, pos: [2, 1.5, 13], look: [0, 0, 0] }]} fog={false}>
       {LATTICE.map((p, i) => {
@@ -70,9 +71,10 @@ const G02: React.FC<SceneProps> = ({ durationInFrames }) => {
   );
 };
 
-const G03: React.FC<SceneProps> = ({ durationInFrames }) => {
-  const { t, dur } = useSceneTime(durationInFrames);
-  const grow = ramp(t, dur * 0.08, dur * 0.4, "out");
+const G03: React.FC<SceneProps> = (props) => {
+  const { t, dur, at } = useScene(props);
+  const nove = at("9", 0.25);
+  const grow = ramp(t, nove - 0.1, at("mais", 0.45, { edge: "end" }), "out");
   const s = mix(1, 1.09 ** (1 / 3) * 1.0, grow);
   return (
     <AbsoluteFill>
@@ -82,7 +84,7 @@ const G03: React.FC<SceneProps> = ({ durationInFrames }) => {
         <LowPolyBox position={[1.25, 0.8 * s, 0]} size={[1.6, 1.6, 1.6]} scale={s} color={ICE} opacity={0.9} />
       </Scene3D>
       <ScreenLabel x={330} y={700} text="Água" delay={0.1} color="#9fdcff" />
-      <ScreenLabel x={760} y={700} text="Gelo +9%" delay={dur * 0.25} />
+      <ScreenLabel x={760} y={700} text="Gelo +9%" delay={nove} />
     </AbsoluteFill>
   );
 };

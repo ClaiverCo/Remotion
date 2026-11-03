@@ -4,7 +4,7 @@ Skill que transforma um **tema** num **Short/Reels/TikTok explicativo pronto par
 
 1. faz uma **pesquisa detalhada na internet** e monta um dossiê com fontes checadas;
 2. escreve um **roteiro que prende até o fim** e **para para você aprovar**;
-3. gera a **narração**: **grátis** com o Kokoro (local, offline) ou com o Google Cloud TTS (cota mensal grátis), pelo ElevenLabs ou pela sua voz transcrita com Whisper;
+3. gera a **narração**: **grátis em português brasileiro** com o Piper (local, offline) ou com o Google Cloud TTS (cota mensal grátis), pelo ElevenLabs ou pela sua voz transcrita com Whisper;
 4. produz **legendas automáticas** palavra por palavra, com as palavras-chave destacadas;
 5. anima as cenas em **2.5D** (maquete em corte) ou **3D** (Three.js low-poly);
 6. inspeciona os frames, corrige e renderiza em **1080×1920**;
@@ -25,7 +25,7 @@ Skill que transforma um **tema** num **Short/Reels/TikTok explicativo pronto par
 
 ## Instalação
 
-**Requisitos:** [Claude Code](https://claude.com/claude-code), Node.js 18+ (reinicie o PC depois de instalar), ffmpeg e git. No Windows, também o Git Bash. Para a narração grátis local (Kokoro): Python 3.10+.
+**Requisitos:** [Claude Code](https://claude.com/claude-code), Node.js 18+ (reinicie o PC depois de instalar), ffmpeg e git. No Windows, também o Git Bash. Para a narração grátis local (Piper): Python 3.10+.
 
 - **Só neste projeto:** clone este repositório e abra a pasta no Claude Code. A skill já está em `.claude/skills/`.
 - **Em qualquer projeto:** copie a pasta da skill para a pasta pessoal:
@@ -55,7 +55,7 @@ Copie `.env.example` para `.env` e preencha só o que for usar.
 
 | O quê | Variáveis | Guia |
 |---|---|---|
-| Voz grátis local (Kokoro) | nada obrigatório. Opcionais: `KOKORO_VOZ` (`pm_alex`/`pf_dora`), `KOKORO_VELOCIDADE` | `references/narracao.md` |
+| Voz grátis local pt-BR (Piper) | nada obrigatório. Opcionais: `PIPER_VOZ` (`faber`/`cadu`/`jeff`), `PIPER_VELOCIDADE` | `references/narracao.md` |
 | Voz grátis Google (cota mensal) | `GOOGLE_TTS_API_KEY`, `GOOGLE_TTS_VOZ` | `references/narracao.md` |
 | Voz ElevenLabs | `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | `references/narracao.md` |
 | Sua voz (Whisper local) | `WHISPER_MODEL` (padrão `medium`) | `references/narracao.md` |
@@ -67,8 +67,8 @@ Copie `.env.example` para `.env` e preencha só o que for usar.
 ```bash
 npm run new -- <slug> [--estilo 2.5d|3d]   # cria src/videos/<slug>/
 npm run estimate -- <slug>                 # legendas estimadas (rascunho sem voz)
-npm run tts -- <slug>                      # narração (Kokoro grátis por padrão; Google/ElevenLabs se houver chave)
-npm run tts:kokoro -- <slug> --voz pf_dora # força um motor/voz (tts:kokoro · tts:google · tts:elevenlabs)
+npm run tts -- <slug>                      # narração (Piper pt-BR grátis por padrão; Google/ElevenLabs se houver chave)
+npm run tts:piper -- <slug> --voz cadu     # força um motor/voz (tts:piper · tts:google · tts:elevenlabs · tts:kokoro)
 npm run check-sync -- <slug>               # confere a sincronia legenda × áudio
 npm run transcribe -- <slug> --audio x.m4a # sua voz + Whisper + alinhamento com o roteiro
 npm run studio                             # pré-visualização no navegador
@@ -83,15 +83,15 @@ npm test                                   # testes das bibliotecas (legendas, a
 
 ## Exemplos incluídos
 
-- **`exemplo-vaso-sanitario`** (2.5D, ~47 s, modelo "parece fácil?"): sifão, fecho hídrico, efeito sifão e caixa acoplada. O dossiê tem 10 fontes, incluindo as normas ABNT NBR 8160 e 15097.
+- **`exemplo-vaso-sanitario`** (2.5D, ~48 s, modelo "parece fácil?"): sifão, fecho hídrico, efeito sifão e caixa acoplada. O dossiê tem 10 fontes, incluindo as normas ABNT NBR 8160 e 15097.
 - **`exemplo-gelo-3d`** (3D, ~20 s, modelo "pergunta final"): densidade e rede hexagonal do gelo.
 
-Os dois já vêm **narrados** com a voz grátis do Kokoro (`pm_alex`) e legendas sincronizadas pelo áudio real. Para trocar de voz: `npm run tts -- exemplo-vaso-sanitario --voz pf_dora`.
+Os dois já vêm **narrados** com a voz grátis brasileira do Piper (`faber`), legendas sincronizadas pelo áudio real e cenas que animam na palavra falada. Para trocar de voz: `npm run tts -- exemplo-vaso-sanitario --voz cadu`.
 
 ## Créditos e referências
 
 - [Remotion](https://www.remotion.dev) e os [Agent Skills oficiais](https://github.com/remotion-dev/skills) (`npx skills add remotion-dev/skills`), que também podem ser instalados junto.
 - Regras de movimento inspiradas em [haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) (MIT).
 - Fonte Montserrat, licença SIL OFL 1.1 (`assets/template/public/fonts/OFL.txt`).
-- Narração grátis: [Kokoro-82M](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (Apache 2.0).
+- Narração grátis: [Piper](https://github.com/OHF-Voice/piper1-gpl) (vozes pt-BR faber/cadu/jeff, datasets CC0) e, como alternativa, [Kokoro-82M](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (Apache 2.0).
 - Remotion é gratuito para pessoas físicas e empresas pequenas. Empresas maiores precisam de [licença](https://www.remotion.dev/license).

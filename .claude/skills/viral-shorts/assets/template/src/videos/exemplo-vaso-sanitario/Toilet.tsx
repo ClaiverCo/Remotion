@@ -154,8 +154,9 @@ export const Toilet: React.FC<ToiletState> = ({
       {bowlY < BOWL_BOTTOM && <Liquid clip={BOWL} level={bowlY} wave={flush > 0 ? 10 : 5} />}
 
       {/* cano: crossfade reto → sifão */}
-      <Pipe d={STRAIGHT} opacity={interpolate(trap, [0, 0.5], [1, 0], { extrapolateRight: "clamp" })} fill={trap < 0.5 && flush > 0 ? { to: flush } : undefined} flow={flush * 2} />
-      <Pipe d={TRAP} opacity={interpolate(trap, [0.5, 1], [0, 1], { extrapolateLeft: "clamp" })} fill={trap >= 0.5 ? fill : undefined} flow={flush * 2.2} />
+      {/* cano: o reto some enquanto a curva "cresce" desenhando o caminho (trap 0 → 1) */}
+      <Pipe d={STRAIGHT} opacity={interpolate(trap, [0, 0.35], [1, 0], { extrapolateRight: "clamp" })} fill={trap < 0.5 && flush > 0 ? { to: flush } : undefined} flow={flush * 2} />
+      <Pipe d={TRAP} reveal={trap} fill={trap >= 0.999 ? fill : undefined} flow={flush * 2.2} />
 
       {/* gases */}
       {gas > 0 && !gasBlocked && (

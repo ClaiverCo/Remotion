@@ -1,5 +1,9 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { EASE, SPRING } from "../theme";
+import { wordTime } from "./scene";
+import type { SceneWord } from "./types";
+
+export { wordTime };
 
 /**
  * Helpers de animação. Todo tempo é em SEGUNDOS relativos ao início da cena
@@ -47,6 +51,19 @@ export const useSceneTime = (durationInFrames: number) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   return { t: frame / fps, dur: durationInFrames / fps, p: frame / durationInFrames };
+};
+
+/**
+ * Tudo que uma cena precisa para animar NA FALA:
+ *   const { t, dur, at } = useScene(props);
+ *   const abre = ramp(t, at("levanta"), at("levanta") + 0.4);
+ * `at(palavra, fração)` → segundos em que a palavra é dita (ou fração×dur se não achar).
+ */
+export const useScene = ({ durationInFrames, words }: { durationInFrames: number; words?: SceneWord[] }) => {
+  const st = useSceneTime(durationInFrames);
+  const at = (query: string, fallbackFrac = 0, opts: { nth?: number; edge?: "start" | "end" } = {}) =>
+    wordTime(words ?? [], query, fallbackFrac * st.dur, opts);
+  return { ...st, at };
 };
 
 /** 0→1 entre `from` e `to` (mesma unidade de t), com clamp e easing. */

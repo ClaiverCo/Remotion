@@ -119,14 +119,25 @@ export const Pipe: React.FC<{
   /** cor do miolo (interior vazio) */
   innerColor?: string;
   opacity?: number;
-}> = ({ d, width = 56, color = COLORS.pipe, outline = COLORS.pipeOutline, fill, flow = 0, flowColor = COLORS.waterFoam, innerColor = COLORS.pipeDark, opacity = 1 }) => {
+  /** 0→1: o cano "cresce" do início ao fim do path (para animar ele surgindo) */
+  reveal?: number;
+}> = ({ d, width = 56, color = COLORS.pipe, outline = COLORS.pipeOutline, fill, flow = 0, flowColor = COLORS.waterFoam, innerColor = COLORS.pipeDark, opacity = 1, reveal = 1 }) => {
   const t = useTime();
+  const id = uid(useId());
   const inner = width - 16;
   const from = fill?.from ?? 0;
   const to = fill?.to ?? 0;
   const common = { fill: "none", strokeLinejoin: "round" as const, strokeLinecap: "butt" as const };
+  if (reveal <= 0) return null;
   return (
-    <g opacity={opacity}>
+    <g opacity={opacity} mask={reveal < 1 ? `url(#rv${id})` : undefined}>
+      {reveal < 1 && (
+        <defs>
+          <mask id={`rv${id}`} maskUnits="userSpaceOnUse" x={-2000} y={-2000} width={6000} height={6000}>
+            <path d={d} fill="none" stroke="#fff" strokeWidth={width + 40} strokeLinecap="round" pathLength={1} strokeDasharray={`${reveal} 2`} />
+          </mask>
+        </defs>
+      )}
       <path d={d} {...common} stroke={outline} strokeWidth={width + 16} />
       <path d={d} {...common} stroke={color} strokeWidth={width} />
       <path d={d} {...common} stroke={innerColor} strokeWidth={inner} />

@@ -1,9 +1,9 @@
 import type { TtsMotor } from "./types.ts";
 
-export const MOTORES: TtsMotor[] = ["kokoro", "google", "elevenlabs"];
+export const MOTORES: TtsMotor[] = ["piper", "kokoro", "google", "elevenlabs"];
 
 /**
- * Escolhe o motor de narração: --motor > TTS_MOTOR > ElevenLabs (com chave) > Google (com chave) > Kokoro (grátis).
+ * Escolhe o motor de narração: --motor > TTS_MOTOR > ElevenLabs (com chave) > Google (com chave) > Piper (grátis, pt-BR).
  * Lança erro se o nome for desconhecido.
  */
 export const chooseMotor = (flag: string | undefined, env: Record<string, string | undefined>): TtsMotor => {
@@ -16,5 +16,5 @@ export const chooseMotor = (flag: string | undefined, env: Record<string, string
   }
   if (env.ELEVENLABS_API_KEY) return "elevenlabs";
   if (env.GOOGLE_TTS_API_KEY) return "google";
-  return "kokoro";
+  return "piper";
 };
