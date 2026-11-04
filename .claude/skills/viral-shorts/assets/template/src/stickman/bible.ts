@@ -33,17 +33,15 @@ export const LEAD: CharacterBible = {
   id: "FL-01",
   name: "Kip",
   role: "Lead and narrator. A curious relic hunter from the far future who studies objects from 'the old days' (our present, the 2020s).",
-  era: "Future — planet Lumen (fiction)",
-  age: "young adult, friendly and curious",
-  headShape: "perfect circle, white fill, thick black outline",
+  era: "from the far future (planet Lumen, fiction)",
+  age: "a friendly young-adult stickman",
+  headShape: "a perfect white circle with a thick black outline",
   heightHeads: 4,
-  proportions:
-    "head 1 unit; torso 1.5 units from neck to hip; legs 1.5 units; thin straight stick arms and legs of equal thickness; small round hands with no fingers; short rounded boots",
-  face: "two solid black dot eyes set wide apart, short thick expressive eyebrows, simple single-line mouth; no nose, no ears",
-  hairOrHeadwear: "no hair; a thin glowing cyan halo ring floats one head-width above his head, tilted about 10 degrees",
-  clothing:
-    "white sleeveless tunic shaped like a narrow trapezoid from the neck to the hip, with a cyan trim line along the hem and a small high collar",
-  footwear: "short rounded white boots with a black outline",
+  proportions: "head 1 unit, torso 1.5, legs 1.5; thin straight stick arms and legs of equal thickness; small round fingerless hands",
+  face: "two black dot eyes set wide apart, short thick expressive eyebrows, a single-line mouth; no nose, no ears",
+  hairOrHeadwear: "No hair; a thin glowing cyan halo ring floats one head-width above the head, tilted about 10 degrees",
+  clothing: "a white sleeveless trapezoid tunic from neck to hip with a small high collar and a cyan trim line along the hem",
+  footwear: "short rounded white boots",
   colors: {
     outline: "#111827",
     skin: "#FFFFFF",
@@ -53,9 +51,8 @@ export const LEAD: CharacterBible = {
     chronoBand: "#8B5CF6",
     boots: "#FFFFFF",
   },
-  signatureProp:
-    "Chrono-Band: a glowing violet band on his LEFT wrist; it is the only way he travels in time",
-  distinguishing: "the floating cyan halo ring above his head is visible in every shot, in every era",
+  signatureProp: "A glowing violet Chrono-Band on his LEFT wrist, his only way to travel in time",
+  distinguishing: "the halo is visible in every shot, in every era",
   immutable: [
     "round white head with dot eyes and expressive brows",
     "floating cyan halo ring above the head",
@@ -63,13 +60,19 @@ export const LEAD: CharacterBible = {
     "violet Chrono-Band on the LEFT wrist",
     "black outline thickness and stick proportions",
   ],
-  changeable: ["facial expression", "pose", "which hand holds the relic (record it per clip)"],
+  changeable: ["expression", "pose", "which hand holds the relic (record it per clip)"],
 };
 
 export const PRESENT_PEOPLE = {
   id: "PP-xx",
-  rule: "Generic present-day people: same stick style but NO halo, NO tunic, NO Chrono-Band; simple t-shirt shapes in warm muted colors; slightly smaller than the lead so he stays the focus; never identifiable real people.",
+  rule: "same stick style as Kip but NO halo, NO tunic, NO Chrono-Band; simple t-shirt shapes in warm muted colors; slightly smaller than the lead so he stays the focus; never identifiable real people.",
   shirts: ["#D9825B", "#E0B44C", "#8FA37B", "#B9A28C", "#7B8FA6"],
+};
+
+export const FUTURE_PEOPLE = {
+  id: "FP-xx",
+  rule: "same stick style as Kip, plain pale-gray tunics with NO cyan trim, NO halo and NO Chrono-Band; slightly smaller than the lead and visually subordinate; never a second Kip.",
+  tunic: "#D5DEE6",
 };
 
 export const PLANET = {
@@ -113,8 +116,16 @@ export const ERAS = {
   },
 } as const;
 
+/** Assinatura sonora fixa de cada era e da viagem (vale para o vídeo por código e para o pacote de prompts). */
+export const SOUND = {
+  future: "soft airy synth pad with gentle glassy chimes; quiet, calm streets",
+  present: "warm light acoustic guitar or soft piano; faint everyday ambience (distant traffic, birds, footsteps)",
+  travel: "rising shimmer whoosh with a soft bass pulse, ending in a bright pop when the portal collapses",
+  music: "one unobtrusive lo-fi bed under the voiceover at about -24 dB, ducked further under narration",
+};
+
 export const STYLE =
-  "clean 2D flat stickman animation: round heads, consistent thick black outlines, slim stick limbs, simple round hands and feet, dot eyes, expressive eyebrows and mouths; compact costume shapes; background lines lighter and thinner than character outlines; flat colors, no gradients on characters, no heavy textures, no photorealism, no 3D rendering, no detailed anatomy, no visual clutter";
+  "clean flat 2D stickman animation: round heads, consistent thick black outlines, slim stick limbs, simple round hands and feet, dot eyes, expressive brows and mouths, compact costume shapes; scenery lines lighter and thinner than character outlines; flat colors; no gradients on characters, no heavy textures, no photorealism, no 3D, no clutter";
 
 export const NEGATIVE = [
   "no character redesign or style drift",
@@ -129,17 +140,20 @@ export const NEGATIVE = [
 /** Detalhes acrescentados em episódios (não contradizem o resto). Formato: "AAAA-MM-DD · episódio · detalhe". */
 export const ADDITIONS: string[] = [];
 
-/** Parágrafo de identidade (reutilize LITERALMENTE em todo prompt com o personagem). */
+/**
+ * Parágrafo de identidade (reutilize LITERALMENTE em todo prompt com o personagem).
+ * Compacto de propósito (~130 palavras): entra inteiro em cada prompt de imagem e de animação.
+ */
 export const identityParagraph = (c: CharacterBible) =>
   [
-    `${c.name} (${c.id}), ${c.role}`,
-    `Era of origin: ${c.era}. Age presentation: ${c.age}.`,
-    `Head: ${c.headShape}. Height: ${c.heightHeads} heads tall; ${c.proportions}.`,
-    `Face: ${c.face}. Headwear: ${c.hairOrHeadwear}.`,
+    `${c.name} (${c.id}): ${c.age} ${c.era}.`,
+    `${c.heightHeads} heads tall: ${c.proportions}.`,
+    `Head: ${c.headShape}. Face: ${c.face}.`,
+    `${c.hairOrHeadwear}.`,
     `Clothing: ${c.clothing}. Footwear: ${c.footwear}.`,
+    `${c.signatureProp}.`,
     `Exact colors: ${Object.entries(c.colors)
       .map(([k, v]) => `${k} ${v}`)
       .join(", ")}.`,
-    `Signature prop: ${c.signatureProp}. Permanent feature: ${c.distinguishing}.`,
-    `Immutable: ${c.immutable.join("; ")}. May change: ${c.changeable.join("; ")}.`,
+    `Always: ${c.distinguishing}. Everything above is fixed; only ${c.changeable.join(", ")} may change.`,
   ].join(" ");

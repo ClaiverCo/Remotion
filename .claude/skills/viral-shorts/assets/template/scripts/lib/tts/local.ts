@@ -13,6 +13,7 @@ import {
   findClausePauses,
   phrasesFromWords,
   sanitizeCaptions,
+  snapToSilences,
 } from "../../../src/lib/captions.ts";
 import type { Roteiro } from "../../../src/lib/schema.ts";
 import type { VideoCaption } from "../../../src/lib/types.ts";
@@ -142,6 +143,7 @@ export const synthesizeLocal = (opts: {
   let captions: VideoCaption[] = [];
   let withCommas = 0;
   let synced = 0;
+  let breaths = 0;
   phrases.forEach((p, i) => {
     const t = out.phrases[i];
     const breaks = clauseBreaks(p.words).length;
@@ -155,7 +157,13 @@ export const synthesizeLocal = (opts: {
       withCommas++;
       if (pauses.length === breaks) synced++;
     }
-    captions = captions.concat(distributeWords(p.words, t.startMs, t.endMs, p.first, pauses));
+    const caps = distributeWords(p.words, t.startMs, t.endMs, p.first, pauses);
+    // silêncios claros que sobraram (respiração sem vírgula): encaixa na fronteira de palavra mais próxima
+    const used = (x: Span) => pauses.some((q) => q.startMs < x.endMs && q.endMs > x.startMs);
+    const extra = silences.filter((x) => !used(x));
+    const snapped = snapToSilences(caps, extra);
+    if (snapped !== caps) breaths += extra.length;
+    captions = captions.concat(snapped);
   });
 
   return {
@@ -163,7 +171,7 @@ export const synthesizeLocal = (opts: {
     audioAbs,
     captions: sanitizeCaptions(captions),
     source: motor,
-    info: `${label} · ${phrases.length} frases · vírgulas sincronizadas pelo áudio em ${synced}/${withCommas} frases`,
+    info: `${label} · ${phrases.length} frases · vírgulas sincronizadas pelo áudio em ${synced}/${withCommas} frases${breaths ? ` · ${breaths} pausas sem vírgula encaixadas` : ""}`,
   };
 };
 

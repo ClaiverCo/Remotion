@@ -5,6 +5,7 @@ import {
   findClausePauses,
   distributeWords,
   phrasesFromWords,
+  snapToSilences,
   ssmlWithMarks,
   timepointsToCaptions,
 } from "../../src/lib/captions.ts";
@@ -145,4 +146,22 @@ test("kokoroLang: inglês EUA/UK pela voz, português como pt-br", () => {
   assert.equal(kokoroLang("en-US", "am_michael"), "en-us");
   assert.equal(kokoroLang("en-US", "bm_george"), "en-gb");
   assert.equal(kokoroLang("pt-BR", "pm_alex"), "pt-br");
+});
+
+test("snapToSilences encaixa a pausa sem vírgula na fronteira mais próxima e mantém as vírgulas", () => {
+  const ph = phrasesFromWords(tokenizeNarration("Nobody on Lumen can tell me, what it did.", 0))[0];
+  // vírgula já encaixada em 2600–2800; respiração real depois de "Lumen" em 1850–2050
+  // (pela distribuição por peso, a fronteira Lumen|can cairia em ~1914 ms)
+  const caps = distributeWords(ph.words, 1000, 3800, 0, [{ startMs: 2600, endMs: 2800 }]);
+  const out = snapToSilences(caps, [{ startMs: 1850, endMs: 2050 }]);
+  const at = (w: string) => out.find((c) => c.text.trim().replace(/[.,]/g, "") === w)!;
+  assert.equal(at("Lumen").endMs, 1850);
+  assert.equal(at("can").startMs, 2050);
+  // a vírgula continua no lugar
+  assert.equal(at("me").endMs, caps.find((c) => c.text.trim() === "me,")!.endMs);
+  assert.equal(at("what").startMs, 2800);
+  assert.equal(out[0].startMs, 1000);
+  assert.equal(out[out.length - 1].endMs, 3800);
+  // silêncio longe de qualquer fronteira (> 350 ms) é ignorado
+  assert.equal(snapToSilences(caps, [{ startMs: 5000, endMs: 5200 }]), caps);
 });

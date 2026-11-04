@@ -23,17 +23,12 @@ export const cenaSchema = z.object({
   selo: seloSchema.optional(),
   sfx: z.enum(["whoosh", "pop", "ding", "nenhum"]).default("whoosh"),
   fontes: z.array(z.number().int().positive()).default([]),
-  // --- campos do universo Stickman do Futuro (opcionais; usados pelo pacote de prompts) ---
+  // --- campos do universo Stickman do Futuro (opcionais) ---
+  // A direção detalhada de cada clipe (lugar, personagens, câmera, tempos) fica em clips.json.
   /** era mostrada na cena */
   era: z.enum(["futuro", "presente", "viagem", "comparacao"]).optional(),
-  /** ação visual principal (em inglês, vai para os prompts de imagem/animação) */
+  /** ação visual principal, uma frase em inglês (vai para o storyboard do pacote de prompts) */
   acao: z.string().optional(),
-  /** lugar da cena (em inglês) */
-  local: z.string().optional(),
-  /** IDs dos personagens em cena (ex.: ["FL-01", "PP-01"]) */
-  personagens: z.array(z.string()).optional(),
-  /** enquadramento/câmera (em inglês, ex.: "medium shot, eye level, slow push-in") */
-  camera: z.string().optional(),
 });
 
 export const roteiroSchema = z.object({

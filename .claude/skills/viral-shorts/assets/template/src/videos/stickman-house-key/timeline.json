@@ -1,0 +1,38 @@
+{
+  "fps": 30,
+  "durationMs": 45475,
+  "audio": "stickman-house-key/narracao.mp3",
+  "source": "kokoro",
+  "scenes": [
+    {
+      "id": "c01-relic",
+      "startMs": 0,
+      "endMs": 7685
+    },
+    {
+      "id": "c02-jump",
+      "startMs": 7685,
+      "endMs": 14955
+    },
+    {
+      "id": "c03-doorstep",
+      "startMs": 14955,
+      "endMs": 22285
+    },
+    {
+      "id": "c04-inside",
+      "startMs": 22285,
+      "endMs": 30225
+    },
+    {
+      "id": "c05-compare",
+      "startMs": 30225,
+      "endMs": 37975
+    },
+    {
+      "id": "c06-home",
+      "startMs": 37975,
+      "endMs": 45475
+    }
+  ]
+}

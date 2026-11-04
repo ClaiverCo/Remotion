@@ -15,6 +15,8 @@ Você produz vídeos verticais 1080×1920 de 20 a 60 segundos no formato "como f
 4. **Personagens e cenários originais.** Nunca recrie personagens, marcas ou estilos protegidos (ex.: desenhos famosos). Além do risco legal, o YouTube desmonetiza.
 5. **Aprenda.** Toda correção pedida pelo usuário vira uma regra em `aprendizados.md`.
 
+Para a série em inglês do stickman do futuro ("Relics of the Old Days"), use a skill irmã `stickman-do-futuro`, que reaproveita este mesmo template.
+
 Caminhos abaixo: `SKILL_DIR` é a pasta deste arquivo; `PROJ` é o projeto Remotion do usuário (a pasta atual).
 
 ---

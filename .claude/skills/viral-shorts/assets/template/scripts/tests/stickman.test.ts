@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { POSES, mixPose, poseAt, solve, walkAlong, type PoseName } from "../../src/stickman/rig.ts";
+import { POSES, jointWorld, leftArm, mixPose, poseAt, solve, walkAlong, type PoseName } from "../../src/stickman/rig.ts";
 import { LEAD, identityParagraph } from "../../src/stickman/bible.ts";
 
 test("toda pose fica com o pé mais baixo exatamente no chão (exceto o pulo do celebrate)", () => {
@@ -38,4 +38,23 @@ test("walkAlong anda de A a B no intervalo e para nas pontas", () => {
 test("parágrafo de identidade traz os traços imutáveis e as cores exatas", () => {
   const p = identityParagraph(LEAD);
   for (const must of ["FL-01", "halo", "Chrono-Band", "LEFT wrist", "#22D3EE", "#8B5CF6"]) assert.ok(p.includes(must), must);
+});
+
+test("a Chrono-Band fica sempre no pulso ESQUERDO dele, em qualquer vista", () => {
+  // de perfil olhando para a direita, o braço do lado da câmera é o DIREITO
+  assert.equal(leftArm("side", 1), "far");
+  assert.equal(leftArm("side", -1), "near");
+  assert.equal(leftArm("three-quarter", 1), "far");
+  // de frente, o esquerdo dele aparece à direita do quadro (braço "near" com facing 1)
+  assert.equal(leftArm("front", 1), "near");
+  // de costas, o esquerdo dele aparece à esquerda do quadro
+  assert.equal(leftArm("back", -1), "near");
+  assert.equal(leftArm("back", 1), "far");
+});
+
+test("jointWorld devolve a mão na tela respeitando escala e facing", () => {
+  const r = jointWorld({ x: 500, y: 1000, scale: 2, facing: 1, pose: "point" }, "nearHand");
+  const l = jointWorld({ x: 500, y: 1000, scale: 2, facing: -1, pose: "point" }, "nearHand");
+  assert.ok(r.x > 500 && l.x < 500, "aponta para o lado do facing");
+  assert.ok(Math.abs(r.x - 500 - (500 - l.x)) < 1e-9 && r.y === l.y, "espelhado");
 });

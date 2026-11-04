@@ -888,48 +888,48 @@
   {
     "text": " a",
     "startMs": 31914,
-    "endMs": 32048,
-    "timestampMs": 31981,
+    "endMs": 32064,
+    "timestampMs": 31989,
     "confidence": null,
     "scene": 8
   },
   {
     "text": " borracha",
-    "startMs": 32048,
-    "endMs": 32651,
-    "timestampMs": 32350,
+    "startMs": 32064,
+    "endMs": 32739,
+    "timestampMs": 32402,
     "confidence": null,
     "scene": 8
   },
   {
     "text": " do",
-    "startMs": 32651,
-    "endMs": 32852,
-    "timestampMs": 32752,
+    "startMs": 32739,
+    "endMs": 32964,
+    "timestampMs": 32852,
     "confidence": null,
     "scene": 8
   },
   {
     "text": " fundo,",
-    "startMs": 32852,
-    "endMs": 33254,
-    "timestampMs": 33053,
+    "startMs": 33094,
+    "endMs": 33378,
+    "timestampMs": 33236,
     "confidence": null,
     "scene": 8
   },
   {
     "text": " o",
-    "startMs": 33304,
-    "endMs": 33366,
-    "timestampMs": 33335,
+    "startMs": 33413,
+    "endMs": 33457,
+    "timestampMs": 33435,
     "confidence": null,
     "scene": 8
   },
   {
     "text": " obturador,",
-    "startMs": 33366,
+    "startMs": 33457,
     "endMs": 33674,
-    "timestampMs": 33520,
+    "timestampMs": 33566,
     "confidence": null,
     "emphasis": true,
     "scene": 8

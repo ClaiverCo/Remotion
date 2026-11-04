@@ -114,10 +114,12 @@ const House: React.FC<{ x: number; w: number; h: number; groundY: number; color:
   </g>
 );
 
-export const PresentBackdrop: React.FC<{ variant?: "street" | "doorstep" | "home" | "shop"; groundY?: number }> = ({
-  variant = "street",
-  groundY = GROUND_Y,
-}) => {
+export const PresentBackdrop: React.FC<{
+  variant?: "street" | "doorstep" | "home" | "shop";
+  groundY?: number;
+  /** doorstep: desenha a porta fixa (false = a cena desenha a sua, ex.: uma porta que abre) */
+  door?: boolean;
+}> = ({ variant = "street", groundY = GROUND_Y, door = true }) => {
   const id = uid(useId());
   return (
     <g>
@@ -149,12 +151,16 @@ export const PresentBackdrop: React.FC<{ variant?: "street" | "doorstep" | "home
             <line key={i} x1={-100} y1={260 + i * 70} x2={1180} y2={260 + i * 70} opacity={0.35} />
           ))}
           {/* porta da frente com maçaneta e fechadura */}
-          <rect x={560} y={groundY - 640} width={330} height={640} rx={8} fill="#A87452" />
-          <rect x={590} y={groundY - 610} width={270} height={250} rx={6} fill="none" stroke="#8D5F42" strokeWidth={5} />
-          <rect x={590} y={groundY - 330} width={270} height={300} rx={6} fill="none" stroke="#8D5F42" strokeWidth={5} />
-          <circle cx={600} cy={groundY - 330} r={14} fill="#D9B44A" stroke="#7A5A2A" strokeWidth={4} />
-          <rect x={590} y={groundY - 300} width={22} height={40} rx={8} fill="#D9B44A" stroke="#7A5A2A" strokeWidth={3} />
-          <rect x={520} y={groundY - 12} width={410} height={24} fill="#CDB9A0" />
+          {door && (
+            <>
+              <rect x={560} y={groundY - 640} width={330} height={640} rx={8} fill="#A87452" />
+              <rect x={590} y={groundY - 610} width={270} height={250} rx={6} fill="none" stroke="#8D5F42" strokeWidth={5} />
+              <rect x={590} y={groundY - 330} width={270} height={300} rx={6} fill="none" stroke="#8D5F42" strokeWidth={5} />
+              <circle cx={600} cy={groundY - 330} r={14} fill="#D9B44A" stroke="#7A5A2A" strokeWidth={4} />
+              <rect x={590} y={groundY - 300} width={22} height={40} rx={8} fill="#D9B44A" stroke="#7A5A2A" strokeWidth={3} />
+              <rect x={520} y={groundY - 12} width={410} height={24} fill="#CDB9A0" />
+            </>
+          )}
         </g>
       )}
       {variant === "home" && (
@@ -186,7 +192,7 @@ export const PresentBackdrop: React.FC<{ variant?: "street" | "doorstep" | "home
 };
 
 /** Etiqueta da era no canto (ficção do universo). */
-export const EraTag: React.FC<{ era: "future" | "present" }> = ({ era }) => {
+export const EraTag: React.FC<{ era: "future" | "present"; top?: number }> = ({ era, top = 250 }) => {
   const e = ERAS[era];
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -197,7 +203,7 @@ export const EraTag: React.FC<{ era: "future" | "present" }> = ({ era }) => {
         style={{
           position: "absolute",
           left: 60,
-          top: 250,
+          top,
           opacity: Math.min(1, s * 1.5),
           transform: `translateX(${interpolate(s, [0, 1], [-30, 0])}px)`,
           padding: "10px 22px",
@@ -297,9 +303,10 @@ export const SplitCompare: React.FC<{
   topLabel?: string;
   bottomLabel?: string;
   reveal?: number;
-}> = ({ top, bottom, topLabel = "THE OLD DAYS", bottomLabel = "MY TIME", reveal = 1 }) => {
+  /** y da divisão (padrão 960). Suba (ex.: 880) quando o personagem de baixo precisa de espaço acima da legenda. */
+  mid?: number;
+}> = ({ top, bottom, topLabel = "THE OLD DAYS", bottomLabel = "MY TIME", reveal = 1, mid = 960 }) => {
   const id = uid(useId());
-  const mid = 960;
   const label = (text: string, y: number, color: string) => (
     <g transform={`translate(540 ${y})`}>
       <rect x={-190} y={-34} width={380} height={68} rx={34} fill="#ffffff" stroke={color} strokeWidth={5} />
@@ -323,8 +330,9 @@ export const SplitCompare: React.FC<{
         {bottom}
       </g>
       <rect x={0} y={mid - 6} width={1080} height={12} fill={LEAD.colors.outline} />
-      {label(topLabel, 140, ERAS.present.accents[0])}
-      {reveal > 0 && label(bottomLabel, mid + 80, ERAS.future.accents[0])}
+      {/* y ≥ 230: fora da faixa que o app cobre no topo */}
+      {label(topLabel, 300, ERAS.present.accents[0])}
+      {reveal > 0 && label(bottomLabel, mid + 60, ERAS.future.accents[0])}
     </g>
   );
 };

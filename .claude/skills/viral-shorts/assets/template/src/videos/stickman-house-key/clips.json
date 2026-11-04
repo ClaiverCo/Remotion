@@ -1,0 +1,400 @@
+{
+  "project": {
+    "scope": "front doors with pin tumbler cylinder locks, common in North America and Europe in the 2020s (other lock types exist)",
+    "futureWay": "on Lumen, doors recognize the person who arrives, so nobody carries a key",
+    "insight": "a house key was a password cut into metal that people carried with them",
+    "tone": "curious, warm and lightly funny; never mocking ordinary people"
+  },
+  "relicDescription": "a small flat brass house key (#D4A64A, thick black outline): a round bow with a white hole and a straight blade with five jagged cuts along one edge; dusty and scuffed; a little longer than Kip's head is wide; in Kip's RIGHT hand unless a clip says otherwise",
+  "cast": [
+    {
+      "id": "PP-01",
+      "name": "Sam",
+      "role": "a generic present-day homeowner (not a real person) who shows Kip how a key opens a front door",
+      "era": "from the present day (the 2020s)",
+      "age": "a calm, friendly adult stickman",
+      "headShape": "a perfect white circle with a thick black outline",
+      "heightHeads": 4,
+      "proportions": "same stick proportions as Kip, about 10 percent smaller; thin straight stick arms and legs; small round fingerless hands",
+      "face": "two black dot eyes, short expressive eyebrows, a single-line mouth; no nose, no ears",
+      "hairOrHeadwear": "Short dark-brown hair cap with a small round bun at the back of the head",
+      "clothing": "a plain terracotta trapezoid t-shirt from shoulders to hips, no logos",
+      "footwear": "small solid black oval shoes",
+      "colors": {
+        "outline": "#111827",
+        "skin": "#FFFFFF",
+        "hair": "#4A3426",
+        "shirt": "#D9825B",
+        "keyring": "#7B8794",
+        "keys": "#D4A64A"
+      },
+      "signatureProp": "A small steel keyring with three brass house keys, carried in the RIGHT hand",
+      "distinguishing": "the hair bun; never a halo, a tunic or a Chrono-Band",
+      "immutable": [
+        "round white head with dot eyes",
+        "dark-brown hair bun",
+        "plain terracotta t-shirt",
+        "no future gear of any kind"
+      ],
+      "changeable": [
+        "expression",
+        "pose",
+        "which key from the ring is in use (record it per clip)"
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "cena": "c01-relic",
+      "purpose": "Hook: Kip finds the relic in his future world and cannot explain it",
+      "location": "the edge of a Lumen city plaza beside an excavation into the Old Layers (buried ruins)",
+      "timeOfDay": "soft bright daytime",
+      "framing": "medium-wide, eye level, Kip slightly right of center, ground line at 55 percent of the frame height",
+      "layout": {
+        "foreground": "lower left: a ground cutaway with four blue-gray soil layers, a dashed key-shaped imprint in the deepest one, and two posts with a glowing cyan rope",
+        "middleground": "Kip on the ground line just right of the dig site; open space at the right",
+        "background": "rounded white towers with thin cyan and violet light lines and two floating platforms"
+      },
+      "characters": [
+        {
+          "id": "FL-01",
+          "position": "slightly right of center, feet on the ground line",
+          "facing": "right",
+          "pose": "right arm raised high, holding the key up to study it",
+          "expression": "curious, one eyebrow raised",
+          "holding": "the relic key in his RIGHT hand, cuts facing down, glowing softly"
+        },
+        {
+          "id": "crowd",
+          "position": "two plain Lumen citizens, outside the frame at the right",
+          "facing": "left, toward Kip",
+          "pose": "walking",
+          "expression": "curious",
+          "inStartFrame": false
+        }
+      ],
+      "opening": "Kip has just lifted the dusty relic key out of the dig site and holds it up into the light; a soft golden glow surrounds it.",
+      "beats": [
+        "Hold on Kip studying the glowing key; small golden sparkles circle it and he tilts his head.",
+        "A round magnifier circle pops up beside the key and shows its five jagged cuts in close-up, then shrinks away; a dashed golden line traces from the key down to the key-shaped imprint in the deepest soil layer, which glows.",
+        "Two plain Lumen citizens in pale-gray tunics walk in from the right, stop beside Kip and look at the key.",
+        "Both citizens shrug; Kip lowers the key to chest height and shrugs too, looking worried; hold for half a second."
+      ],
+      "camera": "static frame with a very slow push-in of about 4 percent over the whole clip",
+      "finalState": "Kip slightly right of center facing right, shrugging and worried, the key in his RIGHT hand at chest height; the two citizens at the right, facing left, shrugging; the dig site imprint glowing at the lower left.",
+      "transition": "intentional cut to clip C02: the same future city, Kip calm and about to tap his Chrono-Band",
+      "sound": {
+        "sfx": [
+          "soft sparkle chime when the magnifier pops up",
+          "light footsteps for the citizens",
+          "a small questioning synth note on the shrug"
+        ],
+        "music": "start the future bed quietly from the first frame"
+      },
+      "avoid": [
+        "no readable marks or writing on the soil or on the key"
+      ],
+      "outgoing": {
+        "positions": "Kip slightly right of center; two citizens at the right edge",
+        "direction": "Kip faces right, the citizens face left; nobody is moving",
+        "propOwner": "Kip",
+        "propHand": "RIGHT hand, chest height",
+        "emotion": "puzzled and a little worried",
+        "changes": "none",
+        "nextMatches": false
+      }
+    },
+    {
+      "cena": "c02-jump",
+      "purpose": "He travels back with the Chrono-Band and arrives in the present day",
+      "location": "a Lumen city plaza, then an ordinary present-day residential street with three simple houses, a lamp post and a round tree",
+      "timeOfDay": "daytime in both eras",
+      "framing": "medium-wide, eye level, Kip left of center, ground line at 62 percent of the frame height; same framing after the jump",
+      "layout": {
+        "foreground": "an empty smooth pale plaza floor",
+        "middleground": "Kip left of center; empty space at the right where the portal will open",
+        "background": "rounded white towers with cyan and violet light lines"
+      },
+      "characters": [
+        {
+          "id": "FL-01",
+          "position": "left of center, feet on the ground line",
+          "facing": "right",
+          "pose": "standing relaxed, right hand starting to move toward his LEFT wrist",
+          "expression": "determined",
+          "holding": "the relic key in his RIGHT hand"
+        },
+        {
+          "id": "PP-01",
+          "position": "not in the starting frame; appears in the present-day street at the right edge",
+          "facing": "left, toward the door of the house on the right",
+          "pose": "walking",
+          "expression": "neutral",
+          "holding": "nothing visible yet",
+          "inStartFrame": false
+        }
+      ],
+      "opening": "Kip stands calmly in the plaza, about to tap the violet Chrono-Band on his LEFT wrist.",
+      "beats": [
+        "Kip taps the violet Chrono-Band on his LEFT wrist with his right hand, still holding the key; the band pulses violet.",
+        "A ring portal of concentric cyan and violet circles opens to his right; Kip walks into it, shrinking slightly as he passes through; the portal collapses into a bright dot with a soft white flash.",
+        "The flash reveals a warm present-day street; a shrinking violet ring drops Kip off at the left with a soft flash; he looks around, amazed.",
+        "Sam walks in from the right toward the door of the house on the right; Kip points at Sam with his right hand, the key still in it; hold."
+      ],
+      "camera": "static; one clean switch at about 5 seconds from the future plaza to the present street, keeping the same framing",
+      "finalState": "Present-day street: Kip left of center facing right, pointing with his right hand that still holds the key, curious; Sam near the house on the right, facing left.",
+      "transition": "intentional cut to clip C03: a closer view of a present-day front door that Sam walks up to",
+      "sound": {
+        "sfx": [
+          "a violet chime pulse on the wrist tap",
+          "the time-travel shimmer whoosh as the portal opens",
+          "a bright pop when the portal collapses",
+          "street ambience fading in on arrival"
+        ],
+        "music": "the future bed crossfades into the present bed at the arrival"
+      },
+      "avoid": [
+        "no second portal",
+        "no cars or real brands on the street"
+      ],
+      "outgoing": {
+        "positions": "Kip left of center; Sam at the right in front of a house",
+        "direction": "Kip faces right; Sam faces left, slowing to a stop",
+        "propOwner": "Kip",
+        "propHand": "RIGHT hand",
+        "emotion": "Kip curious and excited",
+        "changes": "Kip is now in the present day (the 2020s)",
+        "nextMatches": false
+      }
+    },
+    {
+      "cena": "c03-doorstep",
+      "purpose": "He watches how people open a door with a key today",
+      "location": "a simple present-day doorstep: warm plaster wall with thin siding lines and a brown wooden front door on the right, lock on the door's left edge",
+      "timeOfDay": "daytime",
+      "framing": "medium shot at eye level, the door filling the right third, ground line at about 62 percent of the frame height",
+      "layout": {
+        "foreground": "a light doormat strip in front of the door",
+        "middleground": "Kip at the left watching; Sam walking toward the door from the center",
+        "background": "the closed brown front door with two recessed panels, a brass knob and a brass lock below it"
+      },
+      "characters": [
+        {
+          "id": "FL-01",
+          "position": "left third, feet on the ground line",
+          "facing": "right, toward Sam and the door",
+          "pose": "standing, key held at waist height",
+          "expression": "curious",
+          "holding": "the relic key in his RIGHT hand"
+        },
+        {
+          "id": "PP-01",
+          "position": "center-left, two steps away from the door",
+          "facing": "right, toward the door",
+          "pose": "mid-walk",
+          "expression": "neutral",
+          "holding": "the keyring with three keys in the RIGHT hand"
+        }
+      ],
+      "opening": "Sam is walking up to the closed front door with a swinging keyring while Kip watches from the left.",
+      "beats": [
+        "Sam takes two steps and stops in front of the door; the keyring swings.",
+        "Sam lifts the keyring to chest height and jingles it; Kip lifts his own key to compare, curious; Sam pushes one key into the lock.",
+        "Sam twists the wrist and the key's bow turns a quarter turn in the lock with a small click; Kip leans in, thinking, hand near his chin.",
+        "The door swings inward on its right-side hinges, revealing the dark interior; Sam relaxes, happy; Kip throws his arms up in surprise; hold."
+      ],
+      "camera": "static, no camera move",
+      "finalState": "Door open inward; Sam at the door facing right, happy, the keyring hanging from the key in the lock; Kip at the left with arms up in surprise, the key in his RIGHT hand, delighted.",
+      "transition": "intentional transition into clip C04: a circular zoom into the lock on the door's left edge",
+      "sound": {
+        "sfx": [
+          "keys jingling",
+          "a key sliding into the lock",
+          "a metallic click on the twist",
+          "a soft door swing"
+        ],
+        "music": "present bed, light acoustic"
+      },
+      "avoid": [
+        "no house number or name plate",
+        "the door opens inward, not outward"
+      ],
+      "outgoing": {
+        "positions": "Kip at the left; Sam at the door, right of center",
+        "direction": "both face right",
+        "propOwner": "Kip holds the relic; Sam's keyring hangs from the key in the lock",
+        "propHand": "Kip: RIGHT hand; Sam: keys left in the lock",
+        "emotion": "Kip amazed; Sam relaxed",
+        "changes": "the front door stays open",
+        "nextMatches": false
+      }
+    },
+    {
+      "cena": "c04-inside",
+      "purpose": "The explanation of how the pin tumbler lock really works",
+      "location": "a side cutaway diagram of that front door's lock",
+      "timeOfDay": "diagram view",
+      "framing": "flat side cutaway, straight on; the housing fills the upper middle of the frame",
+      "layout": {
+        "foreground": "a round front-view inset at the lower right showing the cylinder face, its keyway slot and a steel bolt",
+        "middleground": "the cutaway: beige housing; a gold cylinder (plug) under a dashed yellow shear line; five holes, each with a gray spring, a steel-gray driver pin and a brass key pin of a different length; the driver pins cross the line",
+        "background": "a warm off-white card with a thin tan border"
+      },
+      "characters": [
+        {
+          "id": "FL-01",
+          "position": "lower left corner, small (about one third of the diagram's height)",
+          "facing": "right, toward the diagram",
+          "pose": "explaining, right arm raised toward the diagram",
+          "expression": "curious",
+          "holding": "the relic key in his RIGHT hand"
+        }
+      ],
+      "opening": "Locked, no key: springs push the five pin stacks down, so the steel driver pins cross the dashed shear line and block the gold cylinder.",
+      "beats": [
+        "Hold on the locked diagram; the five springs pulse with a soft yellow ring; in the lower-right inset the cylinder tries to turn, shakes, and a red X appears.",
+        "A brass key slides in from the left into the cylinder; as its jagged edge passes underneath, the pin stacks bob up and down.",
+        "The key reaches the end: every gap between a driver pin and a key pin lines up exactly on the dashed shear line, which brightens, and all key pins turn green.",
+        "In the inset the cylinder rotates a quarter turn and the steel bolt slides back; Kip throws both arms up, happy; hold."
+      ],
+      "camera": "static diagram; only the parts move",
+      "motionLimits": "mechanical motion only: the key slides horizontally, pins move only vertically, springs compress and stretch; proportions never change",
+      "finalState": "Key fully in, all five pin gaps on the shear line, key pins green; inset cylinder turned 90 degrees, bolt retracted; Kip at the lower left, arms up, key in his RIGHT hand.",
+      "transition": "intentional cut to clip C05: a split screen with the same lock seen small inside a round lens on the top half",
+      "sound": {
+        "sfx": [
+          "a soft spring boing",
+          "a metal slide as the key enters",
+          "a bright ding when the pins align",
+          "a solid click as the bolt retracts"
+        ],
+        "music": "present bed, slightly lower under the explanation"
+      },
+      "avoid": [
+        "exactly five pin stacks",
+        "labels are added in the editor"
+      ],
+      "outgoing": {
+        "positions": "Kip at the lower left; diagram in the center",
+        "direction": "Kip faces right",
+        "propOwner": "Kip holds his relic; the diagram key stays in the lock",
+        "propHand": "RIGHT hand",
+        "emotion": "delighted",
+        "changes": "none",
+        "nextMatches": false
+      }
+    },
+    {
+      "cena": "c05-compare",
+      "purpose": "The direct comparison between our way and his way",
+      "location": "top half: the same present-day doorstep, smaller; bottom half: an entrance in Lumen with a rounded white arch door",
+      "timeOfDay": "daytime in both halves",
+      "framing": "vertical split screen, a thick black horizontal divider slightly above the middle; both halves wide at eye level",
+      "layout": {
+        "foreground": "top: a round lens at the upper left showing the small lock cutaway; bottom: a smooth pale plaza floor",
+        "middleground": "top: Sam at the door, key in the lock; bottom: Kip at the left, a rounded white arch door with a cyan scan ring at the right",
+        "background": "top: warm wall with siding lines; bottom: rounded white towers with cyan and violet light lines"
+      },
+      "characters": [
+        {
+          "id": "PP-01",
+          "position": "right of center in the top half, at the door",
+          "facing": "right",
+          "pose": "arm stretched to the lock",
+          "expression": "neutral",
+          "holding": "a WRONG key from the keyring, inserted in the lock with the RIGHT hand"
+        },
+        {
+          "id": "FL-01",
+          "position": "left side of the bottom half, feet on its ground line",
+          "facing": "right, toward the arch door",
+          "pose": "starting to walk",
+          "expression": "happy",
+          "holding": "the relic key in his RIGHT hand"
+        }
+      ],
+      "opening": "Top: Sam's wrong key is going into the lock, seen in the lens. Bottom: Kip in his own time, about to walk to his door; the bottom half is dimmed.",
+      "beats": [
+        "Top: in the lens the wrong key slides in, one pin stops off the dashed line and turns red; Sam jiggles the key, worried. The bottom half stays dim and still.",
+        "The bottom half brightens: Kip walks to the arch door, the cyan ring scans him and the door slides up by itself; Kip raises both arms, happy.",
+        "Top: Sam pulls the wrong key out and inserts the right one; in the lens all pins line up green on the dashed line.",
+        "Top: the key turns and the front door swings open; both halves now show an open door; hold."
+      ],
+      "camera": "static split screen, no camera move",
+      "finalState": "Top: front door open, Sam happy at the door. Bottom: arch door open, Kip happy in front of it with the key in his RIGHT hand.",
+      "transition": "intentional cut to clip C06: Kip arrives back home in the Lumen museum through a shrinking violet ring",
+      "sound": {
+        "sfx": [
+          "a dull clunk for the blocked key",
+          "a soft scan chime for the Lumen door",
+          "a key click and a door swing on the top half"
+        ],
+        "music": "alternate the present bed (top) and the future bed (bottom) with a soft crossfade"
+      },
+      "avoid": [
+        "keep the divider line straight and clean"
+      ],
+      "outgoing": {
+        "positions": "Kip center-right in the bottom half; Sam at the door in the top half",
+        "direction": "both face right",
+        "propOwner": "Kip holds the relic; Sam's key is in the lock",
+        "propHand": "Kip: RIGHT hand",
+        "emotion": "both happy",
+        "changes": "both doors are open",
+        "nextMatches": false
+      }
+    },
+    {
+      "cena": "c06-home",
+      "purpose": "He returns home and the video lands its insight",
+      "location": "a calm Lumen museum hall with two white display pedestals topped by faint glass domes",
+      "timeOfDay": "soft indoor light",
+      "framing": "medium-wide shot at eye level, Kip just left of center, the right pedestal in the right third",
+      "layout": {
+        "foreground": "a smooth pale floor",
+        "middleground": "Kip just left of center; the right display pedestal with an empty glass dome",
+        "background": "a large rounded white wall panel, a faint second pedestal at the left, and empty air above Kip for a floating light panel"
+      },
+      "characters": [
+        {
+          "id": "FL-01",
+          "position": "just left of center, feet on the ground line",
+          "facing": "right",
+          "pose": "standing upright, just arrived",
+          "expression": "determined",
+          "holding": "the relic key in his RIGHT hand"
+        }
+      ],
+      "opening": "A shrinking violet ring with a soft flash has just dropped Kip off in the museum; he stands holding the relic key.",
+      "beats": [
+        "Kip raises the key, which glows golden.",
+        "A floating cyan light panel appears above him showing the key's jagged edge as a zigzag line; five empty rounded tiles appear under the five cuts one by one.",
+        "Kip walks to the right pedestal and reaches out with his right hand to place the key inside the glass dome.",
+        "The key rests on the pedestal and glows warmly; Kip steps back and throws both arms up, happy; hold the final frame."
+      ],
+      "camera": "static with a very slow push-in of about 3 percent",
+      "finalState": "The key glowing on the right pedestal inside the dome; Kip right of center facing right, arms up, happy, hands empty; the light panel still floating above.",
+      "transition": "end of the episode: hold the last frame for one second",
+      "sound": {
+        "sfx": [
+          "an arrival pop and soft flash",
+          "a glassy chime as each tile appears",
+          "a warm bell when the key is placed"
+        ],
+        "music": "the future bed resolves on a soft final chord"
+      },
+      "avoid": [
+        "the five tiles stay empty; the digits 3 5 2 4 4 are added in the editor"
+      ],
+      "outgoing": {
+        "positions": "Kip right of center beside the right pedestal",
+        "direction": "faces right",
+        "propOwner": "the museum: the key rests on the pedestal",
+        "propHand": "none; Kip's hands are empty",
+        "emotion": "happy and satisfied",
+        "changes": "the relic now rests in the display case",
+        "nextMatches": false
+      }
+    }
+  ]
+}

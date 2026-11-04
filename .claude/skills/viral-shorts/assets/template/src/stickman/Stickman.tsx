@@ -1,7 +1,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { LEAD, PRESENT_PEOPLE } from "./bible";
-import { BONES, resolvePose, solve, type Pose, type PoseName } from "./rig";
+import { BONES, leftArm, resolvePose, solve, type Pose, type PoseName } from "./rig";
 
 export type Expression = "neutral" | "happy" | "curious" | "worried" | "shocked" | "angry" | "determined";
 export type View = "side" | "three-quarter" | "front" | "back";
@@ -23,7 +23,8 @@ export type StickmanProps = {
   /** -1..1: para onde as pupilas olham (além do facing) */
   look?: number;
   blink?: boolean;
-  /** objeto na mão do lado da câmera / de trás, desenhado em coordenadas da mão (de pé, sem espelhar) */
+  /** objeto na mão do lado da câmera / de trás, em coordenadas da mão (de pé, sem espelhar).
+   *  De perfil: facing = 1 → near é a mão DIREITA dele; facing = -1 → near é a ESQUERDA. */
   holdNear?: React.ReactNode;
   holdFar?: React.ReactNode;
   opacity?: number;
@@ -139,8 +140,19 @@ export const Stickman: React.FC<StickmanProps> = ({
   const R = BONES.headR;
   const hx = sk.head.x;
   const hy = sk.head.y;
-  // Chrono-Band no pulso ESQUERDO do Kip: lado da câmera quando ele olha para a direita.
-  const bandArm = facing === 1 ? sk.near : sk.far;
+  // Chrono-Band no pulso ESQUERDO do Kip (ver leftArm em rig.ts)
+  const leftIsNear = leftArm(view, facing) === "near";
+  const bandArm = leftIsNear ? sk.near : sk.far;
+  const band = lead ? (
+    <g
+      transform={`translate(${bandArm.elbow.x + (bandArm.hand.x - bandArm.elbow.x) * 0.72} ${
+        bandArm.elbow.y + (bandArm.hand.y - bandArm.elbow.y) * 0.72
+      }) rotate(${-bandArm.foreAngle})`}
+    >
+      <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} opacity={0.35} transform="scale(1.6)" />
+      <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} stroke={OUT} strokeWidth={3} />
+    </g>
+  ) : null;
 
   // túnica / camiseta: trapézio do ombro ao quadril, ao longo do tronco
   const tx = sk.neck.x - sk.hip.x;
@@ -196,6 +208,8 @@ export const Stickman: React.FC<StickmanProps> = ({
       <ellipse cx={0} cy={2} rx={46} ry={8} fill="#000" opacity={0.12} />
       {/* braço e perna de trás */}
       <Limb pts={[sk.shoulder, sk.far.elbow, sk.far.hand]} />
+      {/* pulseira no braço de trás: fica atrás do corpo junto com ele */}
+      {!leftIsNear && band}
       <Limb pts={[sk.hip, sk.legFar.knee, sk.legFar.foot]} />
       <Boot f={sk.legFar.foot} />
       {/* tronco + roupa */}
@@ -238,16 +252,7 @@ export const Stickman: React.FC<StickmanProps> = ({
       <Limb pts={[sk.shoulder, sk.near.elbow, sk.near.hand]} />
       <circle cx={sk.near.hand.x} cy={sk.near.hand.y} r={6} fill={C.skin} stroke={OUT} strokeWidth={4} />
       <circle cx={sk.far.hand.x} cy={sk.far.hand.y} r={6} fill={C.skin} stroke={OUT} strokeWidth={4} />
-      {lead && (
-        <g
-          transform={`translate(${bandArm.elbow.x + (bandArm.hand.x - bandArm.elbow.x) * 0.72} ${
-            bandArm.elbow.y + (bandArm.hand.y - bandArm.elbow.y) * 0.72
-          }) rotate(${-bandArm.foreAngle})`}
-        >
-          <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} opacity={0.35} transform="scale(1.6)" />
-          <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} stroke={OUT} strokeWidth={3} />
-        </g>
-      )}
+      {leftIsNear && band}
       {at(sk.near.hand, holdNear)}
     </g>
   );

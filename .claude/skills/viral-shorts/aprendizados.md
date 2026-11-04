@@ -33,6 +33,7 @@ Formato: `- [AAAA-MM-DD] contexto → regra`. Acrescente no fim da seção certa
 - [2026-11-03] Sintetizar frase por frase (quebra em . ! ? e cena) mantém a entonação e deixa o início de cada frase exato; não quebrar nas vírgulas (a fala fica picotada).
 - [2026-11-03] Narração real (46,7 s) saiu bem mais curta que a estimativa (63 s) → só ajuste a duração do roteiro depois de gerar a voz de verdade.
 - [2026-11-03] Sempre rodar `npm run check-sync` depois da voz: ele pegou na hora a legenda deslocada em 400 ms (teste de controle).
+- [2026-11-04] O TTS às vezes respira no meio da frase sem vírgula e a palavra seguinte aparecia ~0,2 s antes → `snapToSilences` encaixa cada silêncio claro na fronteira de palavra mais próxima (vaso: 26/26 pausas entre palavras; chave em inglês: 24/25, 0% em silêncio).
 
 ## Roteiro / pesquisa
 - [2026-11-03] Estatística sem fonte quase entrou num texto → só números com fonte no dossiê; na dúvida, corte.

@@ -1,4 +1,13 @@
-# viral-shorts: skill do Claude Code para Shorts virais com Remotion
+# Skills do Claude Code para Shorts virais com Remotion
+
+Este repositório traz duas skills que usam o mesmo projeto Remotion:
+
+| Skill | O que faz | Idioma do vídeo |
+|---|---|---|
+| **`viral-shorts`** | Shorts explicativos "como funciona / por que acontece" em 2.5D ou 3D | pt-BR (Piper grátis) |
+| **`stickman-do-futuro`** | série **"Relics of the Old Days"**: Kip, um stickman do futuro, acha uma relíquia de hoje, viaja ao presente e explica como ela funciona. Vídeo por código **e** pacote de prompts para Google Flow / Higgsfield | inglês (Kokoro am_michael grátis) |
+
+## viral-shorts
 
 Skill que transforma um **tema** num **Short/Reels/TikTok explicativo pronto para postar**, 100% por código. A partir do tema, ela:
 
@@ -78,7 +87,7 @@ npm run finalize -- <slug>                 # áudio -14 LUFS + legendas.srt
 npm run export -- <slug>                   # pacote: video.mp4, youtube.txt, tiktok.txt, reels.txt…
 npm run youtube -- upload <slug> --confirmar
 npm run youtube -- fila add a b c --inicio 2026-11-10T12:00:00-03:00 --intervalo-horas 24
-npm test                                   # testes das bibliotecas (legendas, alinhamento, metadados)
+npm test                                   # testes das bibliotecas (legendas, alinhamento, metadados, stickman, prompt pack)
 ```
 
 ## Exemplos incluídos
@@ -88,10 +97,51 @@ npm test                                   # testes das bibliotecas (legendas, a
 
 Os dois já vêm **narrados** com a voz grátis brasileira do Piper (`faber`), legendas sincronizadas pelo áudio real e cenas que animam na palavra falada. Para trocar de voz: `npm run tts -- exemplo-vaso-sanitario --voz cadu`.
 
+## stickman-do-futuro ("Relics of the Old Days", em inglês)
+
+```
+/stickman-do-futuro house key
+/stickman-do-futuro ideias        ← 8 ideias de relíquia para você escolher
+```
+
+A skill segue o documento "Future Stickman Video Instructions":
+1. **dossiê de fatos** do presente, com fontes, separado da ficção do futuro;
+2. **história em 6 clipes** (achado → viagem → uso → mecanismo → comparação → volta), que você aprova;
+3. **narração grátis em inglês** (Kokoro `am_michael`) com legenda palavra por palavra;
+4. **cenas por código**: o Kip tem esqueleto com poses, halo, túnica e a Chrono-Band no pulso esquerdo, e há eras, portal do tempo e tela dividida;
+5. **metadados e hashtags em inglês**.
+
+Opcionalmente, ela gera o **pacote de prompts** (`npm run prompt-pack -- <slug>`), com:
+- folha de personagem;
+- agente de consistência;
+- prompts de imagem e de animação de cada clipe;
+- a voz cortada por clipe;
+- legendas no tempo de 10 s por clipe.
+
+```
+.claude/skills/stickman-do-futuro/
+├── SKILL.md            ← fluxo (instruções em PT, conteúdo em EN)
+├── aprendizados.md
+└── references/         ← bíblia da série, roteiro de relíquia, visual por código, pacote de prompts, hashtags EN
+```
+
+O código do universo fica no template da `viral-shorts`, por isso **instale as duas juntas**:
+- `src/stickman/`: `bible.ts`, a fonte única do universo; o rig; `Stickman.tsx`; as eras; `clips.ts`;
+- `scripts/prompt-pack.ts`;
+- `scripts/stickman-sheet.ts`.
+
+```bash
+cp -r .claude/skills/viral-shorts .claude/skills/stickman-do-futuro ~/.claude/skills/
+npm run stickman-sheet                      # folha do Kip (PNG) desenhada pelo código
+npm run prompt-pack -- stickman-house-key   # pacote para Flow/Higgsfield em out/<slug>/prompt-pack/
+```
+
+**Episódio de exemplo: `stickman-house-key`** (45,5 s, 6 clipes). Kip acha uma chave de casa e descobre a fechadura de pinos: molas, pinos e a *shear line*. O exemplo já vem narrado e sincronizado, com `pesquisa.md`, `clips.json` e metadados.
+
 ## Créditos e referências
 
 - [Remotion](https://www.remotion.dev) e os [Agent Skills oficiais](https://github.com/remotion-dev/skills) (`npx skills add remotion-dev/skills`), que também podem ser instalados junto.
 - Regras de movimento inspiradas em [haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) (MIT).
 - Fonte Montserrat, licença SIL OFL 1.1 (`assets/template/public/fonts/OFL.txt`).
-- Narração grátis: [Piper](https://github.com/OHF-Voice/piper1-gpl) (vozes pt-BR faber/cadu/jeff, datasets CC0) e, como alternativa, [Kokoro-82M](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (Apache 2.0).
+- Narração grátis: [Piper](https://github.com/OHF-Voice/piper1-gpl) (vozes pt-BR faber/cadu/jeff, datasets CC0) e [Kokoro-82M](https://github.com/hexgrad/kokoro) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (Apache 2.0), padrão para inglês (`am_michael`).
 - Remotion é gratuito para pessoas físicas e empresas pequenas. Empresas maiores precisam de [licença](https://www.remotion.dev/license).

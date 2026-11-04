@@ -1,0 +1,1019 @@
+[
+  {
+    "text": "This",
+    "startMs": 175,
+    "endMs": 450,
+    "timestampMs": 313,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " tiny",
+    "startMs": 450,
+    "endMs": 725,
+    "timestampMs": 588,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " metal",
+    "startMs": 725,
+    "endMs": 1055,
+    "timestampMs": 890,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " stick",
+    "startMs": 1055,
+    "endMs": 1385,
+    "timestampMs": 1220,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " with",
+    "startMs": 1565,
+    "endMs": 1843,
+    "timestampMs": 1704,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " jagged",
+    "startMs": 1843,
+    "endMs": 2232,
+    "timestampMs": 2038,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " teeth",
+    "startMs": 2232,
+    "endMs": 2565,
+    "timestampMs": 2399,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 2865,
+    "endMs": 3112,
+    "timestampMs": 2989,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " buried",
+    "startMs": 3112,
+    "endMs": 3544,
+    "timestampMs": 3328,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " in",
+    "startMs": 3544,
+    "endMs": 3729,
+    "timestampMs": 3637,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 3729,
+    "endMs": 3976,
+    "timestampMs": 3853,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Old",
+    "startMs": 3976,
+    "endMs": 4223,
+    "timestampMs": 4100,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Layers.",
+    "startMs": 4223,
+    "endMs": 4655,
+    "timestampMs": 4439,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Nobody",
+    "startMs": 4965,
+    "endMs": 5326,
+    "timestampMs": 5146,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " on",
+    "startMs": 5326,
+    "endMs": 5480,
+    "timestampMs": 5403,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Lumen",
+    "startMs": 5480,
+    "endMs": 5789,
+    "timestampMs": 5635,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " can",
+    "startMs": 5789,
+    "endMs": 5995,
+    "timestampMs": 5892,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " tell",
+    "startMs": 6175,
+    "endMs": 6475,
+    "timestampMs": 6325,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " me",
+    "startMs": 6475,
+    "endMs": 6655,
+    "timestampMs": 6565,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " what",
+    "startMs": 6655,
+    "endMs": 6955,
+    "timestampMs": 6805,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 6955,
+    "endMs": 7135,
+    "timestampMs": 7045,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " did.",
+    "startMs": 7135,
+    "endMs": 7375,
+    "timestampMs": 7255,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " So",
+    "startMs": 7805,
+    "endMs": 7990,
+    "timestampMs": 7898,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " I",
+    "startMs": 7990,
+    "endMs": 8113,
+    "timestampMs": 8052,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " tapped",
+    "startMs": 8113,
+    "endMs": 8544,
+    "timestampMs": 8329,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " my",
+    "startMs": 8544,
+    "endMs": 8728,
+    "timestampMs": 8636,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 8728,
+    "endMs": 9405,
+    "timestampMs": 9067,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " and",
+    "startMs": 9405,
+    "endMs": 9652,
+    "timestampMs": 9529,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " jumped",
+    "startMs": 9652,
+    "endMs": 10082,
+    "timestampMs": 9867,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " back",
+    "startMs": 10082,
+    "endMs": 10390,
+    "timestampMs": 10236,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " to",
+    "startMs": 10390,
+    "endMs": 10575,
+    "timestampMs": 10483,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 10575,
+    "endMs": 10821,
+    "timestampMs": 10698,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " old",
+    "startMs": 10821,
+    "endMs": 11067,
+    "timestampMs": 10944,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " days,",
+    "startMs": 11067,
+    "endMs": 11375,
+    "timestampMs": 11221,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 11665,
+    "endMs": 12061,
+    "timestampMs": 11863,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " 2020s,",
+    "startMs": 12061,
+    "endMs": 12655,
+    "timestampMs": 12358,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " to",
+    "startMs": 13055,
+    "endMs": 13246,
+    "timestampMs": 13151,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " watch",
+    "startMs": 13246,
+    "endMs": 13627,
+    "timestampMs": 13437,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " someone",
+    "startMs": 13627,
+    "endMs": 14136,
+    "timestampMs": 13882,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " use",
+    "startMs": 14136,
+    "endMs": 14391,
+    "timestampMs": 14264,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " one.",
+    "startMs": 14391,
+    "endMs": 14645,
+    "timestampMs": 14518,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Back",
+    "startMs": 15075,
+    "endMs": 15375,
+    "timestampMs": 15225,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " then,",
+    "startMs": 15375,
+    "endMs": 15675,
+    "timestampMs": 15525,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " people",
+    "startMs": 15785,
+    "endMs": 16129,
+    "timestampMs": 15957,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " carried",
+    "startMs": 16129,
+    "endMs": 16523,
+    "timestampMs": 16326,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " little",
+    "startMs": 16523,
+    "endMs": 16868,
+    "timestampMs": 16696,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " bundles",
+    "startMs": 16868,
+    "endMs": 17261,
+    "timestampMs": 17065,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " of",
+    "startMs": 17261,
+    "endMs": 17409,
+    "timestampMs": 17335,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " them.",
+    "startMs": 17409,
+    "endMs": 17655,
+    "timestampMs": 17532,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " One",
+    "startMs": 17965,
+    "endMs": 18193,
+    "timestampMs": 18079,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " push",
+    "startMs": 18193,
+    "endMs": 18478,
+    "timestampMs": 18336,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " into",
+    "startMs": 18478,
+    "endMs": 18762,
+    "timestampMs": 18620,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 18762,
+    "endMs": 18990,
+    "timestampMs": 18876,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " lock,",
+    "startMs": 18990,
+    "endMs": 19275,
+    "timestampMs": 19133,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " one",
+    "startMs": 19595,
+    "endMs": 19818,
+    "timestampMs": 19707,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " twist",
+    "startMs": 19818,
+    "endMs": 20152,
+    "timestampMs": 19985,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " of",
+    "startMs": 20152,
+    "endMs": 20318,
+    "timestampMs": 20235,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 20318,
+    "endMs": 20541,
+    "timestampMs": 20430,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " wrist,",
+    "startMs": 20541,
+    "endMs": 20875,
+    "timestampMs": 20708,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " and",
+    "startMs": 20965,
+    "endMs": 21167,
+    "timestampMs": 21066,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 21167,
+    "endMs": 21369,
+    "timestampMs": 21268,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " door",
+    "startMs": 21369,
+    "endMs": 21622,
+    "timestampMs": 21496,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " opened.",
+    "startMs": 21622,
+    "endMs": 21975,
+    "timestampMs": 21799,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Inside,",
+    "startMs": 22405,
+    "endMs": 22960,
+    "timestampMs": 22683,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " spring",
+    "startMs": 23010,
+    "endMs": 23438,
+    "timestampMs": 23224,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " pins",
+    "startMs": 23438,
+    "endMs": 23744,
+    "timestampMs": 23591,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " jam",
+    "startMs": 23744,
+    "endMs": 23989,
+    "timestampMs": 23867,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 23989,
+    "endMs": 24234,
+    "timestampMs": 24112,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " cylinder.",
+    "startMs": 24234,
+    "endMs": 24785,
+    "timestampMs": 24510,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " The",
+    "startMs": 25095,
+    "endMs": 25317,
+    "timestampMs": 25206,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " right",
+    "startMs": 25317,
+    "endMs": 25650,
+    "timestampMs": 25484,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " key",
+    "startMs": 25650,
+    "endMs": 25873,
+    "timestampMs": 25762,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " lifts",
+    "startMs": 25873,
+    "endMs": 26206,
+    "timestampMs": 26040,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " each",
+    "startMs": 26206,
+    "endMs": 26484,
+    "timestampMs": 26345,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " pin",
+    "startMs": 26484,
+    "endMs": 26706,
+    "timestampMs": 26595,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " to",
+    "startMs": 26706,
+    "endMs": 26872,
+    "timestampMs": 26789,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " exactly",
+    "startMs": 26872,
+    "endMs": 27317,
+    "timestampMs": 27095,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 27317,
+    "endMs": 27539,
+    "timestampMs": 27428,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " shear",
+    "startMs": 27539,
+    "endMs": 27872,
+    "timestampMs": 27706,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " line,",
+    "startMs": 27872,
+    "endMs": 28150,
+    "timestampMs": 28011,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " and",
+    "startMs": 28690,
+    "endMs": 28936,
+    "timestampMs": 28813,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 28936,
+    "endMs": 29182,
+    "timestampMs": 29059,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " cylinder",
+    "startMs": 29182,
+    "endMs": 29735,
+    "timestampMs": 29459,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " turns.",
+    "startMs": 29825,
+    "endMs": 29915,
+    "timestampMs": 29870,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " Wrong",
+    "startMs": 30345,
+    "endMs": 30710,
+    "timestampMs": 30528,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " teeth,",
+    "startMs": 30710,
+    "endMs": 31075,
+    "timestampMs": 30893,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " and",
+    "startMs": 31225,
+    "endMs": 31426,
+    "timestampMs": 31326,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " one",
+    "startMs": 31426,
+    "endMs": 31628,
+    "timestampMs": 31527,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " pin",
+    "startMs": 31628,
+    "endMs": 31829,
+    "timestampMs": 31729,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " still",
+    "startMs": 31829,
+    "endMs": 32131,
+    "timestampMs": 31980,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " blocks",
+    "startMs": 32131,
+    "endMs": 32484,
+    "timestampMs": 32308,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " it.",
+    "startMs": 32484,
+    "endMs": 32635,
+    "timestampMs": 32560,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " On",
+    "startMs": 32945,
+    "endMs": 33148,
+    "timestampMs": 33047,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 33148,
+    "endMs": 33555,
+    "timestampMs": 33352,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " my",
+    "startMs": 33775,
+    "endMs": 33943,
+    "timestampMs": 33859,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " door",
+    "startMs": 33943,
+    "endMs": 34222,
+    "timestampMs": 34083,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " simply",
+    "startMs": 34222,
+    "endMs": 34613,
+    "timestampMs": 34418,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " knows",
+    "startMs": 34613,
+    "endMs": 34948,
+    "timestampMs": 34781,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " me.",
+    "startMs": 34948,
+    "endMs": 35115,
+    "timestampMs": 35032,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " Back",
+    "startMs": 35425,
+    "endMs": 35508,
+    "timestampMs": 35467,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " then,",
+    "startMs": 35508,
+    "endMs": 35590,
+    "timestampMs": 35549,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 35710,
+    "endMs": 35971,
+    "timestampMs": 35841,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " door",
+    "startMs": 35971,
+    "endMs": 36297,
+    "timestampMs": 36134,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " only",
+    "startMs": 36297,
+    "endMs": 36622,
+    "timestampMs": 36460,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " trusted",
+    "startMs": 36622,
+    "endMs": 37144,
+    "timestampMs": 36883,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 37144,
+    "endMs": 37404,
+    "timestampMs": 37274,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " key.",
+    "startMs": 37404,
+    "endMs": 37665,
+    "timestampMs": 37535,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " So",
+    "startMs": 38095,
+    "endMs": 38297,
+    "timestampMs": 38196,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " this",
+    "startMs": 38297,
+    "endMs": 38634,
+    "timestampMs": 38466,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " wasn't",
+    "startMs": 38634,
+    "endMs": 39038,
+    "timestampMs": 38836,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " junk.",
+    "startMs": 39038,
+    "endMs": 39375,
+    "timestampMs": 39207,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " It",
+    "startMs": 39685,
+    "endMs": 39863,
+    "timestampMs": 39774,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " was",
+    "startMs": 39863,
+    "endMs": 40101,
+    "timestampMs": 39982,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " a",
+    "startMs": 40101,
+    "endMs": 40220,
+    "timestampMs": 40161,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " password,",
+    "startMs": 40220,
+    "endMs": 40755,
+    "timestampMs": 40488,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " cut",
+    "startMs": 41025,
+    "endMs": 41230,
+    "timestampMs": 41128,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " into",
+    "startMs": 41230,
+    "endMs": 41487,
+    "timestampMs": 41359,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " metal,",
+    "startMs": 41487,
+    "endMs": 41795,
+    "timestampMs": 41641,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " that",
+    "startMs": 42195,
+    "endMs": 42448,
+    "timestampMs": 42322,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " people",
+    "startMs": 42448,
+    "endMs": 42803,
+    "timestampMs": 42626,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " carried",
+    "startMs": 42803,
+    "endMs": 43208,
+    "timestampMs": 43006,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " in",
+    "startMs": 43208,
+    "endMs": 43360,
+    "timestampMs": 43284,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " their",
+    "startMs": 43360,
+    "endMs": 43664,
+    "timestampMs": 43512,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " pockets",
+    "startMs": 43664,
+    "endMs": 44069,
+    "timestampMs": 43867,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " every",
+    "startMs": 44069,
+    "endMs": 44372,
+    "timestampMs": 44221,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " day.",
+    "startMs": 44372,
+    "endMs": 44575,
+    "timestampMs": 44474,
+    "confidence": null,
+    "scene": 5
+  }
+]

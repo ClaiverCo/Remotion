@@ -183,3 +183,30 @@ export const solve = (pose: Pose): Skeleton => {
     height: -(head.y - B.headR),
   };
 };
+
+/**
+ * Posição NA TELA de uma mão (ou cotovelo/pé) de um Stickman desenhado em (x, y) com escala e facing.
+ * Use para pôr brilhos, setas e lupas exatamente onde está o objeto que ele segura.
+ */
+export const jointWorld = (
+  o: { x: number; y: number; scale?: number; facing?: 1 | -1; pose: Pose | PoseName },
+  joint: "nearHand" | "farHand" | "head" | "shoulder" | "hip",
+): { x: number; y: number } => {
+  const sk = solve(resolvePose(o.pose));
+  const s = o.scale ?? 1.5;
+  const f = o.facing ?? 1;
+  const p =
+    joint === "nearHand" ? sk.near.hand : joint === "farHand" ? sk.far.hand : joint === "head" ? sk.head : joint === "shoulder" ? sk.shoulder : sk.hip;
+  return { x: o.x + p.x * s * f, y: o.y + p.y * s };
+};
+
+/**
+ * Em qual braço desenhado fica o pulso ESQUERDO do personagem (onde vai a Chrono-Band do Kip).
+ * De perfil/3/4 olhando para a DIREITA, o lado esquerdo fica longe da câmera ("far"); olhando para a
+ * esquerda, perto ("near"). De frente, o braço "near" é desenhado à direita do quadro (= esquerda dele);
+ * de costas, inverte.
+ */
+export const leftArm = (view: "side" | "three-quarter" | "front" | "back", facing: 1 | -1): "near" | "far" => {
+  const near = view === "front" ? facing === 1 : view === "back" ? facing === -1 : facing === -1;
+  return near ? "near" : "far";
+};

@@ -474,6 +474,68 @@ export const distributeWords = (
   return out;
 };
 
+/**
+ * Encaixa as pausas do áudio que NÃO têm vírgula no texto (o TTS respirou no meio da frase, ex.:
+ * "Nobody on Lumen ‖ can tell me"). Para cada silêncio interno, acha a fronteira entre palavras mais
+ * próxima (até `maxShiftMs`) e re-mapeia linearmente os trechos vizinhos: a fala termina no início do
+ * silêncio e recomeça no fim dele. Lacunas que já existem (vírgulas encaixadas) ficam fixas.
+ * Se algum trecho ficaria curto demais, devolve as legendas como vieram.
+ */
+export const snapToSilences = (
+  caps: VideoCaption[],
+  silences: { startMs: number; endMs: number }[],
+  maxShiftMs = 350,
+): VideoCaption[] => {
+  if (caps.length < 2 || silences.length === 0) return caps;
+  type Anchor = { k: number; s: number; e: number };
+  // lacunas já presentes (≥ 100 ms) são âncoras fixas
+  const anchors: Anchor[] = [];
+  for (let k = 0; k < caps.length - 1; k++) {
+    if (caps[k + 1].startMs - caps[k].endMs >= 100) anchors.push({ k, s: caps[k].endMs, e: caps[k + 1].startMs });
+  }
+  const fixed = new Set(anchors.map((a) => a.k));
+  let added = 0;
+  for (const sil of [...silences].sort((a, b) => a.startMs - b.startMs)) {
+    const c = (sil.startMs + sil.endMs) / 2;
+    let best = -1;
+    let bestD = Number.POSITIVE_INFINITY;
+    for (let k = 0; k < caps.length - 1; k++) {
+      const d = Math.abs((caps[k].endMs + caps[k + 1].startMs) / 2 - c);
+      if (d < bestD) {
+        bestD = d;
+        best = k;
+      }
+    }
+    if (best < 0 || bestD > maxShiftMs || fixed.has(best) || anchors.some((a) => a.k === best)) continue;
+    anchors.push({ k: best, s: sil.startMs, e: sil.endMs });
+    added++;
+  }
+  if (added === 0) return caps;
+  anchors.sort((a, b) => a.k - b.k);
+  for (let i = 1; i < anchors.length; i++) if (anchors[i].s < anchors[i - 1].e) return caps;
+
+  const out = caps.map((c) => ({ ...c }));
+  let i0 = 0;
+  let newFrom = caps[0].startMs;
+  const bounds = [...anchors, { k: caps.length - 1, s: caps[caps.length - 1].endMs, e: Number.NaN }];
+  for (const b of bounds) {
+    const i1 = b.k;
+    const oldFrom = caps[i0].startMs;
+    const oldTo = caps[i1].endMs;
+    const newTo = b.s;
+    if (newTo - newFrom < MIN_WORD_MS * (i1 - i0 + 1)) return caps;
+    const map = (t: number) => newFrom + ((t - oldFrom) / Math.max(1, oldTo - oldFrom)) * (newTo - newFrom);
+    for (let i = i0; i <= i1; i++) {
+      out[i].startMs = Math.round(map(caps[i].startMs));
+      out[i].endMs = Math.round(map(caps[i].endMs));
+      out[i].timestampMs = Math.round((out[i].startMs + out[i].endMs) / 2);
+    }
+    i0 = i1 + 1;
+    newFrom = b.e;
+  }
+  return out;
+};
+
 // ---------------------------------------------------------------------------
 // Google Cloud TTS: SSML com <mark> antes de cada palavra -> tempos exatos
 // ---------------------------------------------------------------------------
