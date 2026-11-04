@@ -4,6 +4,8 @@ import { ShortVideo } from "./ShortVideo";
 import { timelineDurationInFrames } from "./lib/timeline";
 import type { VideoDefinition } from "./lib/types";
 import { StickmanSheet } from "./stickman/StickmanSheet";
+import { KipVentiladorNo3 } from "./especiais/kip-ventilador-no-3/KipVentiladorNo3";
+import { DURACAO as DURACAO_VENTILADOR } from "./especiais/kip-ventilador-no-3/timeline";
 import { VIDEO } from "./theme";
 import { videos } from "./videos/registry";
 
@@ -40,6 +42,8 @@ export const RemotionRoot: React.FC = () => (
       />
     ))}
     {/* Folha de referência do Kip (universo Stickman do Futuro) — npm run stickman-sheet */}
+    {/* Especial em pt-BR (sem narração): o Kip e o ventilador no 3 — npx remotion render kip-ventilador-no-3 */}
+    <Composition id="kip-ventilador-no-3" component={KipVentiladorNo3} durationInFrames={DURACAO_VENTILADOR} fps={30} width={1080} height={1920} />
     <Composition id="StickmanSheet" component={StickmanSheet} durationInFrames={1} fps={30} width={1920} height={1080} />
   </>
 );

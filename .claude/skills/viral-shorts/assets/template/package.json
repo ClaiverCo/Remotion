@@ -26,7 +26,8 @@
     "stickman-sheet": "tsx scripts/stickman-sheet.ts",
     "prompt-pack": "tsx scripts/prompt-pack.ts",
     "test": "tsx --test \"scripts/tests/*.test.ts\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "narrar-especial": "tsx scripts/narrar-especial.ts"
   },
   "dependencies": {
     "@react-three/fiber": "9.8.2",

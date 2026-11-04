@@ -138,7 +138,9 @@ export const NEGATIVE = [
 ];
 
 /** Detalhes acrescentados em episódios (não contradizem o resto). Formato: "AAAA-MM-DD · episódio · detalhe". */
-export const ADDITIONS: string[] = [];
+export const ADDITIONS: string[] = [
+  "2026-11-04 · stickman-electric-fan · On Lumen, a small floating cyan-and-violet breeze swirl can follow a person around to keep them cool (city tech, not part of Kip's outfit).",
+];
 
 /**
  * Parágrafo de identidade (reutilize LITERALMENTE em todo prompt com o personagem).

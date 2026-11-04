@@ -1,0 +1,38 @@
+{
+  "fps": 30,
+  "durationMs": 47455,
+  "audio": "stickman-electric-fan/narracao.mp3",
+  "source": "kokoro",
+  "scenes": [
+    {
+      "id": "c01-relic",
+      "startMs": 0,
+      "endMs": 7955
+    },
+    {
+      "id": "c02-jump",
+      "startMs": 7955,
+      "endMs": 16135
+    },
+    {
+      "id": "c03-room",
+      "startMs": 16135,
+      "endMs": 23275
+    },
+    {
+      "id": "c04-inside",
+      "startMs": 23275,
+      "endMs": 31285
+    },
+    {
+      "id": "c05-compare",
+      "startMs": 31285,
+      "endMs": 39985
+    },
+    {
+      "id": "c06-home",
+      "startMs": 39985,
+      "endMs": 47455
+    }
+  ]
+}
