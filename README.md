@@ -146,7 +146,7 @@ npm run render -- stickman-electric-fan && npm run finalize -- stickman-electric
 
 ### Especial em pt-BR: `kip-ventilador-no-3`
 
-Comédia curta (24 s, sem narração) fora do formato da série: o Kip, com 40 °C, aperta o ventilador com o dedão do pé no 1 (*só faz barulho*), no 2 (*agora sim*) e no 3 (*MODO TURBO*). Ele é arremessado na parede (**POF!**), congela e o vídeo fecha com "E você? usa no 1, 2 ou 3?". O código fica em `src/especiais/kip-ventilador-no-3/` (os tempos em `timeline.ts`), e os sons saem de `npm run sfx`.
+Comédia curta (24 s, narrada em pt-BR pelo Piper `faber` com `npm run narrar-especial`) fora do formato da série: o Kip, com 40 °C, aperta o ventilador com o dedão do pé no 1 (*só faz barulho*), no 2 (*agora sim*) e no 3 (*MODO TURBO*). Ele é arremessado na parede (**POF!**), congela e o vídeo fecha com "E você? usa no 1, 2 ou 3?". O código fica em `src/especiais/kip-ventilador-no-3/` (os tempos em `timeline.ts`), e os sons saem de `npm run sfx`.
 
 ```bash
 npx remotion render kip-ventilador-no-3 out/kip-ventilador-no-3/video.mp4

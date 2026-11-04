@@ -1,6 +1,27 @@
 import React from 'react';
 import {Html5Audio, interpolate, Sequence, staticFile} from 'remotion';
 import {DURACAO, T} from './timeline';
+import falas from './falas.json';
+
+/** Frame em que cada fala do narrador começa (mesma ordem de falas.json e das legendas). */
+const INICIO_FALAS = [6, 40, 158, 192, 260, 284, 334, 386, 400, 496, 514, T.cta + 2];
+
+const FALAS = falas.falas.map((fala, i) => ({...fala, de: INICIO_FALAS[i], ate: INICIO_FALAS[i] + Math.ceil(fala.segundos * 30)}));
+
+/** 0..1: quanto abaixar o fundo agora (1 = tem alguém falando). */
+const falando = (f: number) =>
+	Math.max(0, ...FALAS.map((x) => interpolate(f, [x.de - 4, x.de + 2, x.ate - 6, x.ate + 4], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})));
+
+/** Voz do narrador (Piper pt-BR, gerada por npm run narrar-especial). */
+const Narrador: React.FC = () => (
+	<>
+		{FALAS.map((x) => (
+			<Sequence key={x.arquivo} from={x.de} durationInFrames={x.ate - x.de + 6} name={x.texto}>
+				<Html5Audio src={staticFile(x.arquivo)} volume={1} />
+			</Sequence>
+		))}
+	</>
+);
 
 const Sfx: React.FC<{de: number; arquivo: string; volume?: number}> = ({de, arquivo, volume = 1}) => (
 	<Sequence from={de} name={arquivo}>
@@ -25,7 +46,7 @@ const Motor: React.FC<{de: number; ate: number; arquivo: string; volume: number;
 					const entra = interpolate(f, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
 					const sai = interpolate(f, [dur - 8, dur], [1, 0], {extrapolateLeft: 'clamp'});
 					const abaixa = cauda ? interpolate(f, cauda, [1, 0.3], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 1;
-					return volume * entra * sai * abaixa;
+					return volume * entra * sai * abaixa * (1 - 0.55 * falando(de + f));
 				}}
 			/>
 		</Sequence>
@@ -34,6 +55,7 @@ const Motor: React.FC<{de: number; ate: number; arquivo: string; volume: number;
 
 export const Sons: React.FC = () => (
 	<>
+		<Narrador />
 		<Motor de={0} ate={T.clique1 + 10} arquivo="cigarra.mp3" volume={0.35} />
 		<Sfx de={6} arquivo="pop.mp3" volume={0.5} />
 		<Sfx de={T.brilho} arquivo="ding.mp3" volume={0.3} />

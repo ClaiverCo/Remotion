@@ -1,0 +1,66 @@
+{
+  "voz": "faber",
+  "velocidade": 1.05,
+  "falas": [
+    {
+      "texto": "Quarenta graus na sombra.",
+      "arquivo": "kip-ventilador-no-3/fala-01.mp3",
+      "segundos": 1.697
+    },
+    {
+      "texto": "E o ventilador ali, só me olhando.",
+      "arquivo": "kip-ventilador-no-3/fala-02.mp3",
+      "segundos": 2.346
+    },
+    {
+      "texto": "Velocidade um.",
+      "arquivo": "kip-ventilador-no-3/fala-03.mp3",
+      "segundos": 1.338
+    },
+    {
+      "texto": "Só faz barulho.",
+      "arquivo": "kip-ventilador-no-3/fala-04.mp3",
+      "segundos": 1.243
+    },
+    {
+      "texto": "Velocidade dois.",
+      "arquivo": "kip-ventilador-no-3/fala-05.mp3",
+      "segundos": 1.558
+    },
+    {
+      "texto": "Agora sim.",
+      "arquivo": "kip-ventilador-no-3/fala-06.mp3",
+      "segundos": 1.233
+    },
+    {
+      "texto": "Mas e se... eu colocar no três?",
+      "arquivo": "kip-ventilador-no-3/fala-07.mp3",
+      "segundos": 1.902
+    },
+    {
+      "texto": "Velocidade três!",
+      "arquivo": "kip-ventilador-no-3/fala-08.mp3",
+      "segundos": 1.598
+    },
+    {
+      "texto": "Modo turbo!",
+      "arquivo": "kip-ventilador-no-3/fala-09.mp3",
+      "segundos": 1.238
+    },
+    {
+      "texto": "Pelo menos...",
+      "arquivo": "kip-ventilador-no-3/fala-10.mp3",
+      "segundos": 1.169
+    },
+    {
+      "texto": "parou de suar.",
+      "arquivo": "kip-ventilador-no-3/fala-11.mp3",
+      "segundos": 1.228
+    },
+    {
+      "texto": "E você? Usa no um, no dois, ou no três?",
+      "arquivo": "kip-ventilador-no-3/fala-12.mp3",
+      "segundos": 3.074
+    }
+  ]
+}

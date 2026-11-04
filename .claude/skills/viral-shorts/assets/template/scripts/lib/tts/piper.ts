@@ -25,7 +25,7 @@ export const PIPER_VOICES: Record<string, string> = {
 };
 
 /** Baixa a voz: 1º do repositório oficial (Hugging Face); se falhar, do pacote no GitHub (sherpa-onnx). */
-const ensureVoice = async (python: string, id: string) => {
+export const ensureVoice = async (python: string, id: string) => {
   const dir = path.join(TTS_DIR, "piper");
   const onnx = path.join(dir, `${id}.onnx`);
   const json = `${onnx}.json`;
