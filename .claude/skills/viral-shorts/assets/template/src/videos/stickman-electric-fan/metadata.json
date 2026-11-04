@@ -1,9 +1,26 @@
 {
   "youtube": {
-    "titulo": "A man from the future finds an electric fan 🌀",
-    "descricao": "Kip, a relic hunter from the far future, digs up a propeller locked in a cage that can't fly anywhere. So he travels back to the 2020s to find out what it was for: a fan never cooled the air at all. It swept warm air off people's skin and made their sweat evaporate faster.\n\nThe future world in this video is fiction. The fan explanation is based on how electric fans cool people (sources: U.S. Department of Energy \"Fans for Cooling\", Hewitt's Conceptual Physics, Popular Science, Mental Floss).",
-    "hashtags": ["#shorts", "#howitworks", "#stickman", "#science"],
-    "tags": ["how a fan works", "does a fan cool the air", "electric fan", "why fans feel cool", "sweat evaporation", "stickman animation", "future", "time travel", "science explained", "relics of the old days"],
+    "titulo": "How a fan really cools you, seen from the future 🌀",
+    "descricao": "Kip, a relic hunter from the far future, digs up a propeller locked in a cage that can't fly anywhere. So he travels back to the 2020s to find out what it was for: a fan never cooled the air at all. It swept warm air off people's skin and made their sweat evaporate faster.\n\nWhat should Kip dig up next? Comment below.\n\nThe future world in this video is fiction. The fan explanation is based on how electric fans cool people (sources: U.S. Department of Energy \"Fans for Cooling\", Hewitt's Conceptual Physics, Popular Science, Mental Floss).",
+    "hashtags": [
+      "#shorts",
+      "#howitworks",
+      "#stickman",
+      "#science"
+    ],
+    "tags": [
+      "how a fan works",
+      "does a fan cool the air",
+      "how does a fan cool you",
+      "electric fan",
+      "why fans feel cool",
+      "sweat evaporation",
+      "stickman animation",
+      "future",
+      "time travel",
+      "science explained",
+      "relics of the old days"
+    ],
     "categoria": "27",
     "privacidade": "private",
     "publicarEm": null,
@@ -11,10 +28,22 @@
   },
   "tiktok": {
     "legenda": "In the future nobody knows what this caged propeller was for 🌀 Did you know a fan never makes the air colder? Comment the next relic Kip should find!",
-    "hashtags": ["#howitworks", "#stickman", "#learnontiktok", "#science", "#timetravel"]
+    "hashtags": [
+      "#howitworks",
+      "#stickman",
+      "#learnontiktok",
+      "#science",
+      "#timetravel"
+    ]
   },
   "reels": {
     "legenda": "A fan never cooled the room. It cooled you 🌀 Save this and send it to someone who leaves the fan on in an empty room.",
-    "hashtags": ["#howitworks", "#stickman", "#science", "#summer", "#timetravel"]
+    "hashtags": [
+      "#howitworks",
+      "#stickman",
+      "#science",
+      "#summer",
+      "#timetravel"
+    ]
   }
 }
