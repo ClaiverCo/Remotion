@@ -39,25 +39,31 @@ const { positionals, values } = parseArgs({
 
 const ENGINES: Record<TtsMotor, TtsEngine> = { piper, kokoro, google, elevenlabs };
 
-let motor: TtsMotor = "piper";
-try {
-  motor = chooseMotor(values.motor, process.env);
-} catch (e) {
-  fail((e as Error).message);
-}
+const pickMotor = (idioma?: string): TtsMotor => {
+  try {
+    return chooseMotor(values.motor, process.env, idioma);
+  } catch (e) {
+    return fail((e as Error).message);
+  }
+};
 
 if (values["listar-vozes"]) {
+  const motor = pickMotor(positionals[0] ? loadRoteiro(positionals[0]).idioma : undefined);
   if (motor === "google") await listGoogleVoices();
-  else if (motor === "piper") console.log(`Piper pt-BR: ${Object.keys(PIPER_VOICES).join(" · ")} (padrão: faber)`);
-  else if (motor === "kokoro") console.log("Kokoro pt-BR: pm_alex (masculina, padrão) · pm_santa (masculina) · pf_dora (feminina)");
+  else if (motor === "piper") console.log(`Piper: ${Object.keys(PIPER_VOICES).join(" · ")} (padrão pt-BR: faber · inglês: ryan)`);
+  else if (motor === "kokoro") {
+    console.log("Kokoro inglês (EUA): am_michael (padrão) · am_fenrir · am_puck · am_adam · af_heart · af_bella …");
+    console.log("Kokoro inglês (UK): bm_george · bm_lewis · bf_emma …   Português: pm_alex · pf_dora (sotaque de Portugal)");
+  }
   else console.log("ElevenLabs: veja as vozes em elevenlabs.io → Voices (copie o Voice ID).");
   process.exit(0);
 }
 
 const slug = requireSlug(positionals, "npm run tts -- <slug> [--motor piper|kokoro|google|elevenlabs] [--voz X]");
 const roteiro = loadRoteiro(slug);
+const motor = pickMotor(roteiro.idioma);
 const result = await ENGINES[motor](slug, roteiro, {
-  voz: values.voz ?? values.voice,
+  voz: values.voz ?? values.voice ?? roteiro.vozId,
   velocidade: values.velocidade ? parseFloat(values.velocidade.replace(",", ".")) : undefined,
   modelo: values.modelo ?? values.model,
   fromCache: values["from-cache"],

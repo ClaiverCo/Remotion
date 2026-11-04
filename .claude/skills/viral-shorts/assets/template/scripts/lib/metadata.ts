@@ -55,6 +55,19 @@ export const PALAVRAS_SENSIVEIS = [
   "pirâmide",
   "dinheiro fácil",
   "renda extra garantida",
+  // inglês
+  "suicide",
+  "kill",
+  "murder",
+  "blood",
+  "gun",
+  "drugs",
+  "cocaine",
+  "nude",
+  "gambling",
+  "casino",
+  "scam",
+  "get rich quick",
 ];
 
 const checkHashtags = (

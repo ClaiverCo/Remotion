@@ -9,7 +9,7 @@ import {
   timepointsToCaptions,
 } from "../../src/lib/captions.ts";
 import { spokenWords, tokenizeNarration, type ScriptWord } from "../../src/lib/words.ts";
-import { chooseMotor } from "../lib/tts/choose.ts";
+import { chooseMotor, kokoroLang } from "../lib/tts/choose.ts";
 import { wordTime } from "../../src/lib/scene.ts";
 import { chunkForGoogle } from "../lib/tts/google.ts";
 
@@ -93,6 +93,10 @@ test("chooseMotor: flag > TTS_MOTOR > chaves > piper grátis (pt-BR)", () => {
   assert.equal(chooseMotor(undefined, { TTS_MOTOR: "Kokoro", ELEVENLABS_API_KEY: "y" }), "kokoro");
   assert.equal(chooseMotor("google", { TTS_MOTOR: "kokoro" }), "google");
   assert.throws(() => chooseMotor("edge", {}), /desconhecido/);
+  // idioma do roteiro decide o motor grátis
+  assert.equal(chooseMotor(undefined, {}, "en-US"), "kokoro");
+  assert.equal(chooseMotor(undefined, {}, "pt-BR"), "piper");
+  assert.equal(chooseMotor(undefined, { TTS_MOTOR: "piper" }, "en-US"), "piper");
 });
 
 test("findClausePauses acha o vale de energia de cada vírgula (mesmo sem silêncio total)", () => {
@@ -135,4 +139,10 @@ test("wordTime acha a palavra falada na cena (sem acento/pontuação, por prefix
   assert.equal(wordTime(words, "botao", 9, { nth: 2 }), 3.0);
   assert.equal(wordTime(words, "levant", 9), 2.0);
   assert.equal(wordTime(words, "despenca", 9), 9);
+});
+
+test("kokoroLang: inglês EUA/UK pela voz, português como pt-br", () => {
+  assert.equal(kokoroLang("en-US", "am_michael"), "en-us");
+  assert.equal(kokoroLang("en-US", "bm_george"), "en-gb");
+  assert.equal(kokoroLang("pt-BR", "pm_alex"), "pt-br");
 });

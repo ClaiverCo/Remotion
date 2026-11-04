@@ -10,6 +10,7 @@ import path from "node:path";
 import { ssmlWithMarks, timepointsToCaptions, type Timepoint } from "../../../src/lib/captions.ts";
 import { scriptWords, spokenWords, type ScriptWord } from "../../../src/lib/words.ts";
 import { cacheDir, fail, ffprobeDurationMs, publicDir, readJson, run, writeJson } from "../project.ts";
+import { isEnglish } from "./choose.ts";
 import type { TtsEngine } from "./types.ts";
 
 const API = "https://texttospeech.googleapis.com";
@@ -78,8 +79,11 @@ export const google: TtsEngine = async (slug, roteiro, opts) => {
   const words = scriptWords(roteiro);
   // SSML com o texto "falado" (pronúncias do roteiro); as marcas usam os mesmos índices da legenda
   const chunks = chunkForGoogle(spokenWords(words, roteiro.pronuncias));
-  const voz = opts.voz ?? process.env.GOOGLE_TTS_VOZ ?? "pt-BR-Neural2-B";
-  const velocidade = opts.velocidade ?? parseFloat(process.env.GOOGLE_TTS_VELOCIDADE ?? "1.05");
+  const en = isEnglish(roteiro.idioma);
+  const languageCode = en ? "en-US" : "pt-BR";
+  const envVoz = process.env.GOOGLE_TTS_VOZ;
+  const voz = opts.voz || (envVoz && envVoz.startsWith(languageCode) ? envVoz : en ? "en-US-Neural2-D" : "pt-BR-Neural2-B");
+  const velocidade = opts.velocidade ?? parseFloat(process.env.GOOGLE_TTS_VELOCIDADE || "1.05");
   const cacheFile = path.join(cacheDir(), `${slug}-google.json`);
   const ssmlBytes = chunks.reduce((a, c) => a + Buffer.byteLength(c.ssml), 0);
   const textChars = words.reduce((a, w) => a + w.text.length + 1, 0);
@@ -110,7 +114,7 @@ export const google: TtsEngine = async (slug, roteiro, opts) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           input: { ssml: c.ssml },
-          voice: { languageCode: "pt-BR", name: voz },
+          voice: { languageCode, name: voz },
           audioConfig: {
             audioEncoding: "MP3",
             speakingRate: velocidade,

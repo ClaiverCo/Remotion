@@ -10,6 +10,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fail } from "../project.ts";
 import { download, dryRunLocal, ensureVenv, synthesizeLocal, TTS_DIR } from "./local.ts";
+import { isEnglish } from "./choose.ts";
 import type { TtsEngine } from "./types.ts";
 
 export const PIPER_VOICES: Record<string, string> = {
@@ -17,6 +18,10 @@ export const PIPER_VOICES: Record<string, string> = {
   cadu: "pt_BR-cadu-medium",
   jeff: "pt_BR-jeff-medium",
   edresson: "pt_BR-edresson-low",
+  ryan: "en_US-ryan-high",
+  lessac: "en_US-lessac-high",
+  joe: "en_US-joe-medium",
+  alan: "en_GB-alan-medium",
 };
 
 /** Baixa a voz: 1º do repositório oficial (Hugging Face); se falhar, do pacote no GitHub (sherpa-onnx). */
@@ -27,7 +32,7 @@ const ensureVoice = async (python: string, id: string) => {
   if (fs.existsSync(onnx) && fs.existsSync(json)) return { onnx, json };
   fs.mkdirSync(dir, { recursive: true });
   const [lang, name, quality] = [id.slice(0, 5), id.split("-")[1], id.split("-")[2]];
-  const hf = `https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/${lang}/${name}/${quality}/${id}`;
+  const hf = `https://huggingface.co/rhasspy/piper-voices/resolve/main/${lang.slice(0, 2)}/${lang}/${name}/${quality}/${id}`;
   console.log(`→ Piper: baixando a voz ${id} (1ª vez)…`);
   if ((await download(`${hf}.onnx`, onnx)) && (await download(`${hf}.onnx.json`, json))) return { onnx, json };
 
@@ -53,11 +58,11 @@ const ensureVoice = async (python: string, id: string) => {
 };
 
 export const piper: TtsEngine = async (slug, roteiro, opts) => {
-  const voz = (opts.voz ?? process.env.PIPER_VOZ ?? "faber").toLowerCase();
-  const id = PIPER_VOICES[voz] ?? (voz.startsWith("pt_BR-") ? voz : null);
+  const voz = opts.voz || process.env.PIPER_VOZ || (isEnglish(roteiro.idioma) ? "ryan" : "faber");
+  const id = PIPER_VOICES[voz.toLowerCase()] ?? (/^[a-z]{2}_[A-Z]{2}-/.test(voz) ? voz : null);
   if (!id) fail(`Voz Piper "${voz}" desconhecida. Use: ${Object.keys(PIPER_VOICES).join(", ")}.`);
-  const velocidade = opts.velocidade ?? parseFloat(process.env.PIPER_VELOCIDADE ?? "1.0");
-  const label = `Piper pt-BR (grátis, local) · voz ${voz} · velocidade ${velocidade}`;
+  const velocidade = opts.velocidade ?? parseFloat(process.env.PIPER_VELOCIDADE || "1.0");
+  const label = `Piper (grátis, local) · voz ${voz} · velocidade ${velocidade}`;
   if (opts.dryRun) {
     dryRunLocal(roteiro, label);
     return null;
