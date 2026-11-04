@@ -1,0 +1,18 @@
+{
+  "_howToUse": "Pick 1 'broad' + 2 'niche' + 1–2 specific to the relic. YouTube: add #shorts. Reels: 5 hashtags max in total. Swap 1–2 for tags trending this month if they are truly relevant.",
+  "_updated": "2026-11",
+  "series": {
+    "broad": ["#howitworks", "#didyouknow", "#explained"],
+    "niche": ["#stickman", "#timetravel", "#futurestickman", "#animation"],
+    "platform": { "youtube": ["#shorts"], "tiktok": ["#learnontiktok"], "reels": [] }
+  },
+  "by-topic": {
+    "home": ["#engineering", "#homehacks", "#everydayscience"],
+    "money": ["#money", "#history", "#economics"],
+    "transport": ["#cars", "#transport", "#engineering"],
+    "communication": ["#technology", "#tech", "#history"],
+    "food": ["#foodscience", "#kitchen", "#science"],
+    "work-school": ["#office", "#school", "#history"],
+    "health": ["#health", "#science", "#medicine"]
+  }
+}
