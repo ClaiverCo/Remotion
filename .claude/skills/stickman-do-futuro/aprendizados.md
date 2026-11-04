@@ -24,6 +24,9 @@ Correções pedidas pelo usuário e o que deu certo nesta série. Formato: `- [A
 - [2026-11-04] Episódio de novela termina num gancho, não na volta para casa → até 7 clipes (o mecanismo em dois), clipe final com `era: "viagem"`, `"caudaMs": 2200` no roteiro para o cartão "TO BE CONTINUED…" ter tempo de tela, e um tique-taque depois da última palavra.
 - [2026-11-04] Dano planejado no Kip (Chrono-Band rachada) → prop `band="cracked"` do `Stickman`, registrado em `ADDITIONS`; nunca mude a cor da pulseira de outro jeito.
 
+- [2026-11-04] Ep. 2: o Kokoro alinhou mal uma frase com vírgula (legenda ~0,2 s adiantada; check-sync 2,1%) → reencaixar as palavras da frase entre os silêncios reais (`ffmpeg silencedetect`) no `captions.json` e rodar `npm run sync`; voltou a 0%.
+- [2026-11-04] Objeto na mão do Kip em close (zoom 1,3) parecia gigante → power bank com escala 0,42 na mão e mãos na altura do peito (`HANDS`), nunca na frente do rosto.
+
 ## Ambiente (sessões na nuvem)
 - [2026-11-04] O render/QA tentou baixar o Chrome Headless Shell e falhou (rede bloqueada) → `export REMOTION_BROWSER_EXECUTABLE=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell` antes de `npm run qa`/`render`.
 

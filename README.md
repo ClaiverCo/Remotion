@@ -150,8 +150,11 @@ Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça 
 
 - **Ep. 1 `stickman-stuck-01-crystal`** (56 s, 7 clipes): *"The Crystal That Counts Time"*. O Central Clock de Lumen atrasa; Kip vai a 2026, ganha o relógio do Ben e descobre o quartzo que vibra 32.768 vezes por segundo, dividido por 2 quinze vezes até virar um tique por segundo. No fim, a Chrono-Band racha e ele fica preso.
 
+- **Ep. 2 `stickman-stuck-02-battery`** (56 s, 7 clipes): *"Power in a Pocket"*. A Chrono-Band está sem energia; o Ben empresta um power bank e o Kip descobre a bateria de lítio: íons atravessam o separador por dentro e os elétrons dão a volta pelo fio, alimentando o aparelho. A pulseira acende 3 s e mostra a planta da máquina do tempo, com 4 espaços vazios.
+
 ```bash
 npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
+npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`

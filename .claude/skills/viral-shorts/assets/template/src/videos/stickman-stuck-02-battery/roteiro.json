@@ -1,0 +1,87 @@
+{
+  "slug": "stickman-stuck-02-battery",
+  "titulo": "Stuck in 2026, Ep. 2: Power in a Pocket",
+  "tema": "Stuck in 2026, episode 2: Kip learns how a lithium-ion power bank stores and releases energy, and finds out he must build a time machine",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "en-US",
+  "perguntaCentral": "Where does a power bank keep its energy, and how does it get out?",
+  "duracaoAlvoSeg": 60,
+  "voz": "kokoro",
+  "vozId": "am_michael",
+  "pronuncias": {
+    "2026": "twenty twenty-six"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "the lithium-ion power bank",
+    "descricao": "an ordinary pocket-sized power bank from the 2020s: a dark grey rounded rectangle with four small charge lights in a row and one charging port, connected with a plain white charging cable"
+  },
+  "cenas": [
+    {
+      "id": "c01-dead",
+      "era": "presente",
+      "acao": "In Ben's garage, Kip taps his cracked, dark Chrono-Band again and again and nothing happens.",
+      "narracao": "Stuck in 2026, my *Chrono-Band* was dead. I tapped it again and again. Nothing. Without power, I had no way home.",
+      "visual": "Ben's garage: workbench with Ben's watch ticking on it, pegboard, roll-up door. Kip taps his cracked dark band at 'tapped' and again at 'again'; at 'Nothing' a grey cross over the band; at 'way home' a faded portal thought-bubble pops and vanishes.",
+      "selo": { "texto": "STUCK IN 2026 · EP 2", "icone": "!", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-bank",
+      "era": "presente",
+      "acao": "Ben walks in, pulls a power bank from his pocket and holds it up.",
+      "narracao": "Then Ben pulled a small brick from his pocket: a *power bank*, a lithium-ion battery that people carried around.",
+      "visual": "Ben enters from the right, reaches into his shorts pocket at 'pulled', holds up a dark grey power bank with four lights at 'brick'; a label 'power bank' at 'power bank' and a small battery icon at 'lithium-ion'. Kip leans in, curious.",
+      "sfx": "pop",
+      "fontes": [4, 5]
+    },
+    {
+      "id": "c03-plug",
+      "era": "presente",
+      "acao": "Ben plugs a cable from the power bank into a tiny port on Kip's band; the lights blink and power flows.",
+      "narracao": "His cable fit a tiny port on my band. The little lights blinked, and *power* started flowing in.",
+      "visual": "Kip holds the power bank in his right hand; a white cable runs to the Chrono-Band on his left wrist, plugged at 'port'. At 'blinked' the four lights blink in sequence; at 'power' yellow dots flow along the cable and the cracked band glows faintly.",
+      "sfx": "ding",
+      "fontes": []
+    },
+    {
+      "id": "c04-ions",
+      "era": "presente",
+      "acao": "Cutaway of a battery cell: lithium ions drift from the graphite side to the other side through the separator.",
+      "narracao": "Inside the battery, *lithium ions* drift from one side to the other, through a thin wall called a separator.",
+      "visual": "Big cell cutaway: graphite layers on the left, metal-oxide side on the right, light-blue electrolyte between, a dashed separator wall in the middle. At 'lithium ions' small cyan '+' balls light up in the graphite; at 'drift' they float right, through the separator; at 'separator' the wall is labelled. Kip small in a corner.",
+      "sfx": "ding",
+      "fontes": [1, 3, 4]
+    },
+    {
+      "id": "c05-electrons",
+      "era": "presente",
+      "acao": "Electrons bounce off the separator and go the long way through an outside wire that lights Kip's band; then charging reverses the flow.",
+      "narracao": "But the separator blocks *electrons*. So they take the long way, out through the wire, powering my band. Charging pushes everything back.",
+      "visual": "Same cutaway. At 'blocks' yellow '−' dots bounce off the separator with a small cross; at 'long way' they leave the top of the graphite side, travel along an outside wire loop through a Chrono-Band icon that lights up at 'powering', and enter the other side. At 'Charging' a plug icon appears and every arrow flips: ions drift back left, electrons run back.",
+      "sfx": "ding",
+      "fontes": [3, 4, 5]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Split screen: on Lumen, power waves flow through the air to everything; in 2026, a power bank charges at a wall socket, empties and charges again.",
+      "narracao": "On Lumen, power flows through the air to everything. Here, people *store* it in batteries and charge them again and again.",
+      "visual": "Bottom half (my time) first at 'Lumen': a tower sends cyan rings through the air to floating platforms and a citizen's device. Top half (old days) at 'Here': a power bank plugged into a wall socket; its four lights fill up at 'store', then empty and fill again at 'again and again'.",
+      "sfx": "whoosh",
+      "fontes": [1, 2]
+    },
+    {
+      "id": "c07-blueprint",
+      "era": "presente",
+      "acao": "The cracked band lights up for three seconds and projects a blueprint of a machine with six slots, two of them filled and four empty; then it goes dark.",
+      "narracao": "Then my band lit up for *three seconds*. It showed a machine with four empty slots. To get home, I had to *build* one.",
+      "visual": "Garage. At 'lit' the cracked band glows and projects a cyan hologram above Kip: a round machine outline with six slots. Two slots hold a crystal icon and a battery icon; four are dashed and empty, each with a '?' at 'four empty slots'. A 3-2-1 dot timer runs out and the hologram flickers off. Kip turns determined at 'build'; Ben smiles. 'TO BE CONTINUED' end card.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

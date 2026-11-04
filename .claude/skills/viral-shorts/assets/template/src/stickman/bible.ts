@@ -145,6 +145,10 @@ export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-stuck-01-crystal · Ben (PP-02), the 2026 resident from the fan episode, becomes Kip's recurring ally: mustard #E0B44C T-shirt, short black hair, no halo, slightly smaller than Kip. He wears an analog quartz watch on his left wrist and gives it to Kip.",
   "2026-11-04 · stickman-stuck-01-crystal · Planned damage: from the end of Ep. 1 the Chrono-Band stays on Kip's LEFT wrist but is cracked and dark (#4C3D78, a pale crack line, no glow) until the arc says otherwise. It can no longer open a portal by itself.",
   "2026-11-04 · stickman-stuck-01-crystal · Crossing-rule exception for this arc only: a 2026 watch and its quartz crystal may later cross to Lumen (Ep. 6).",
+  "2026-11-04 · stickman-stuck-02-battery · On Lumen, power arrives wirelessly: soft cyan rings spread from the city through the air to every device, so nothing on Lumen needs a battery or a plug.",
+  "2026-11-04 · stickman-stuck-02-battery · The Chrono-Band has a tiny charging port on its side (fiction). Charged from Ben's power bank, the cracked band can light up for a few seconds but still cannot open a portal by itself.",
+  "2026-11-04 · stickman-stuck-02-battery · Ben's garage (GARAGE-01) is Kip's base in 2026: workbench on the left with Ben's watch lying on it, pegboard and shelf above it, roll-up door on the right, one hanging lamp.",
+  "2026-11-04 · stickman-stuck-02-battery · The time machine blueprint (BLUEPRINT-01): a cyan hologram ring with a portal in the middle and six slots. Slot 1 = the quartz crystal (Ep. 1), slot 2 = the battery (Ep. 2); slots 3 to 6 stay empty with '?' until their episode.",
 ];
 
 /**
