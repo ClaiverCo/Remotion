@@ -1,0 +1,77 @@
+{
+  "slug": "stickman-house-key",
+  "titulo": "What was this jagged metal stick for?",
+  "tema": "The house key and the pin tumbler lock, seen by a stickman from the far future",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "en-US",
+  "perguntaCentral": "How can a small flat stick of metal with jagged teeth open only its own door?",
+  "duracaoAlvoSeg": 50,
+  "voz": "kokoro",
+  "vozId": "am_michael",
+  "pronuncias": {
+    "2020s": "twenty-twenties"
+  },
+  "barraProgresso": false,
+  "reliquia": {
+    "nome": "the house key",
+    "descricao": "an ordinary metal house key from the 2020s, found buried in the Old Layers of planet Lumen"
+  },
+  "cenas": [
+    {
+      "id": "c01-relic",
+      "era": "futuro",
+      "acao": "Kip holds up a dusty brass key at a dig pit in Lumen; a lens zooms on its jagged teeth; two citizens shrug.",
+      "narracao": "This tiny metal stick with *jagged teeth* was buried in the Old Layers. Nobody on Lumen can tell me what it did.",
+      "visual": "Future city, cool off-white. Kip at the edge of a dig pit with layered soil, holding the glowing key up in his right hand. Magnifier circle on the teeth at 'jagged teeth'. Dashed arrow to a key-shaped imprint in the pit at 'buried'. Two Lumen citizens walk in and shrug at 'Nobody'.",
+      "selo": { "texto": "WHAT IS THIS?", "icone": "?", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-jump",
+      "era": "viagem",
+      "acao": "Kip taps the Chrono-Band, a ring portal opens, he steps through and arrives on a 2020s street.",
+      "narracao": "So I tapped my *Chrono-Band* and jumped back to the old days, the 2020s, to watch someone use one.",
+      "visual": "Kip taps his left wrist with his right hand at 'tapped'; cyan and violet ring portal opens; he walks in at 'jumped' and it collapses into a dot. Hard switch to a warm present-day street at 'old days'; a shrinking violet ring drops him off. A person walks toward a house in the back at 'watch'.",
+      "sfx": "whoosh",
+      "fontes": []
+    },
+    {
+      "id": "c03-doorstep",
+      "era": "presente",
+      "acao": "A present-day homeowner pulls out a bundle of keys, pushes one into the lock, twists it and the door opens while Kip watches.",
+      "narracao": "Back then, people carried little bundles of them. One push into the lock, one *twist* of the wrist, and the door opened.",
+      "visual": "Doorstep, warm palette. PP-01 walks to the front door jingling a keyring at 'bundles'. Key goes into the lock at 'push', turns at 'twist', door swings open at 'opened'. Kip watches from the left, curious, then amazed.",
+      "sfx": "whoosh",
+      "fontes": [1, 5]
+    },
+    {
+      "id": "c04-inside",
+      "era": "presente",
+      "acao": "Cutaway of the cylinder: springs push the pins down; the right key slides in, lifts every pin to the shear line, and the plug turns.",
+      "narracao": "Inside, spring pins jam the cylinder. The right key lifts each pin to exactly the *shear line*, and the cylinder turns.",
+      "visual": "Circle wipe into the lock. Side cutaway: housing, plug, five pin stacks (spring, driver pin, key pin). Plug tries to turn and is blocked at 'jam'. Key slides in at 'right key', pins bounce up and settle; gaps align on the glowing shear line at 'shear line'. Front-view inset: plug rotates 90° and the bolt retracts at 'turns'. Kip points from the bottom left.",
+      "sfx": "ding",
+      "fontes": [1, 2, 3, 4]
+    },
+    {
+      "id": "c05-compare",
+      "era": "comparacao",
+      "acao": "Split screen: on top a wrong key leaves one pin blocking the line; below, Kip's Lumen door opens by itself; on top the right key finally works.",
+      "narracao": "Wrong teeth, and one pin still blocks it. On Lumen, my door simply *knows me*. Back then, the door only trusted the key.",
+      "visual": "Top half (old days): PP-01 tries a wrong key, inset cutaway shows one pin in red across the line at 'blocks'. Bottom half (my time) revealed at 'Lumen': Kip walks to a rounded door, a cyan ring scans him and it slides open at 'knows'. Top again at 'trusted': the right key turns and that door opens.",
+      "sfx": "whoosh",
+      "fontes": [3, 4]
+    },
+    {
+      "id": "c06-home",
+      "era": "futuro",
+      "acao": "Back in the Lumen museum, a floating light panel turns the key's cuts into a five-digit code; Kip sets the key in a glowing display case.",
+      "narracao": "So this wasn't junk. It was a *password*, cut into metal, that people carried in their pockets every day.",
+      "visual": "Kip arrives from a shrinking violet ring in the museum. At 'password' a floating light panel shows the key's cut profile and five digits appearing under the cuts. At 'pockets' he places the key in a display case that lights up. Ends happy, holding a calm frame.",
+      "sfx": "ding",
+      "fontes": [1, 4]
+    }
+  ]
+}

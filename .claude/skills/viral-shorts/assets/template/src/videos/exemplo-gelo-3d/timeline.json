@@ -1,0 +1,28 @@
+{
+  "fps": 30,
+  "durationMs": 13959,
+  "audio": "exemplo-gelo-3d/narracao.mp3",
+  "source": "piper",
+  "scenes": [
+    {
+      "id": "g01-gancho",
+      "startMs": 0,
+      "endMs": 3259
+    },
+    {
+      "id": "g02-rede",
+      "startMs": 3259,
+      "endMs": 7431
+    },
+    {
+      "id": "g03-volume",
+      "startMs": 7431,
+      "endMs": 11652
+    },
+    {
+      "id": "g04-final",
+      "startMs": 11652,
+      "endMs": 13959
+    }
+  ]
+}

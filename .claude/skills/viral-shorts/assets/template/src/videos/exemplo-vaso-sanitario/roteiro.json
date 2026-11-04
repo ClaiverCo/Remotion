@@ -1,0 +1,148 @@
+{
+  "slug": "exemplo-vaso-sanitario",
+  "titulo": "Como funciona o vaso sanitário",
+  "tema": "Como funciona o vaso sanitário (sifão, fecho hídrico e caixa acoplada)",
+  "modelo": "parece-facil",
+  "estilo": "2.5d",
+  "idioma": "pt-BR",
+  "perguntaCentral": "Se a água tampa o cano, como o cocô passa — e por que o banheiro não fede?",
+  "duracaoAlvoSeg": 50,
+  "voz": "piper",
+  "barraProgresso": false,
+  "cenas": [
+    {
+      "id": "s01-gancho",
+      "narracao": "Pra sumir com o xixi e o cocô, bastava um buraco ligado ao *esgoto*.",
+      "visual": "Corte lateral: bacia em blocos bege, cano escuro reto descendo e virando para o esgoto. Câmera desce do vaso ao cano.",
+      "selo": {
+        "texto": "PARECE FÁCIL?",
+        "icone": "?"
+      },
+      "sfx": "whoosh",
+      "fontes": []
+    },
+    {
+      "id": "s02-gases",
+      "narracao": "Só que o esgoto solta *gases* com cheiro de *ovo podre*, que subiriam pro banheiro.",
+      "visual": "Nuvens verdes correm pelo cano e sobem pelo buraco até o banheiro; mascote com cara de nojo; seta vermelha subindo.",
+      "selo": {
+        "texto": "PROBLEMA",
+        "icone": "!",
+        "cor": "vermelho"
+      },
+      "sfx": "whoosh",
+      "fontes": [
+        4
+      ]
+    },
+    {
+      "id": "s03-curva",
+      "narracao": "A solução: uma *curva* no cano. A água fica presa nela e *tampa* a passagem.",
+      "visual": "O cano reto se transforma numa curva em U dentro da louça; a água enche o fundo da curva.",
+      "sfx": "nenhum",
+      "fontes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "s04-nomes",
+      "narracao": "Essa curva é o *sifão*, e essa água é o *fecho hídrico*.",
+      "visual": "Zoom no U com rótulos SIFÃO e FECHO HÍDRICO; gás verde chega pelo outro lado e é barrado (X).",
+      "sfx": "pop",
+      "fontes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "s05-pergunta",
+      "narracao": "Mas se a água tampa o cano, como o cocô *passa*?",
+      "visual": "Cocô boiando no vaso; mascote pensativo olhando.",
+      "selo": {
+        "texto": "E AGORA?",
+        "icone": "?"
+      },
+      "sfx": "whoosh",
+      "fontes": []
+    },
+    {
+      "id": "s06-pouca-agua",
+      "narracao": "Pouca água não resolve. O truque é *muita água de uma vez*.",
+      "visual": "Um copo despeja um fio de água: só transborda um pouquinho pela curva e o cocô fica. Depois, uma enxurrada começa.",
+      "sfx": "nenhum",
+      "fontes": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s07-efeito-sifao",
+      "narracao": "Ela enche a curva e, ao descer, *puxa* tudo: é o *efeito sifão*.",
+      "visual": "Cano todo cheio com fluxo rápido; o cocô é sugado pela curva; o nível do vaso despenca.",
+      "selo": {
+        "texto": "EFEITO SIFÃO",
+        "icone": "raio",
+        "cor": "azul"
+      },
+      "sfx": "whoosh",
+      "fontes": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "s08-caixa",
+      "narracao": "Por isso existe a *caixa acoplada*: ela guarda uns *6 litros* de água.",
+      "visual": "A caixa acoplada aparece em cima do vaso, em corte, cheia de água; contador sobe até 6 L.",
+      "sfx": "whoosh",
+      "fontes": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "s09-obturador",
+      "narracao": "Apertou o botão, a borracha do fundo, o *obturador*, levanta e a água despenca.",
+      "visual": "Botão afunda; a borracha do fundo (obturador) gira para cima; a água desce da caixa para o vaso.",
+      "sfx": "nenhum",
+      "fontes": [
+        7
+      ]
+    },
+    {
+      "id": "s10-boia",
+      "narracao": "Aí a *boia* desce e abre a torneira. Quando a caixa enche, ela sobe e *fecha*.",
+      "visual": "Boia desce com o nível, jato de água entra pela válvula, nível sobe, boia sobe e o jato para.",
+      "sfx": "nenhum",
+      "fontes": [
+        7
+      ]
+    },
+    {
+      "id": "s11-selo-volta",
+      "narracao": "E um tubinho manda água pro vaso: o *fecho hídrico* volta e o cheiro fica *lá embaixo*.",
+      "visual": "Tubinho leva água ao ladrão, que enche o vaso; o U volta a ter água; gás verde barrado embaixo.",
+      "sfx": "ding",
+      "fontes": [
+        8,
+        5
+      ]
+    },
+    {
+      "id": "s12-final",
+      "narracao": "Ainda acha que era só um *buraco*?",
+      "visual": "Zoom out mostrando o sistema inteiro; mascote sorrindo. Conecta com o começo (loop).",
+      "selo": {
+        "texto": "E AÍ?",
+        "icone": "?"
+      },
+      "sfx": "pop",
+      "fontes": []
+    }
+  ],
+  "pronuncias": {
+    "fecho": "fêcho"
+  }
+}

@@ -2,7 +2,9 @@ node_modules/
 out/
 .cache/
 .whisper/
+.tts/
 .secrets/
 .env
 *.log
 .DS_Store
+__pycache__/
