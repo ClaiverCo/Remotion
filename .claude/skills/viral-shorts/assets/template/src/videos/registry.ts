@@ -3,11 +3,13 @@ import type { VideoDefinition } from "../lib/types";
 import { video as exemploVasoSanitario } from "./exemplo-vaso-sanitario";
 import { video as exemploGelo3d } from "./exemplo-gelo-3d";
 import { video as stickmanHouseKey } from "./stickman-house-key";
+import { video as stickmanElectricFan } from "./stickman-electric-fan";
 // @registry-imports
 
 export const videos: VideoDefinition[] = [
   exemploVasoSanitario,
   exemploGelo3d,
   stickmanHouseKey,
+  stickmanElectricFan,
   // @registry-entries
 ];

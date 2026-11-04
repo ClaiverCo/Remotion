@@ -1,0 +1,1058 @@
+[
+  {
+    "text": "We",
+    "startMs": 175,
+    "endMs": 334,
+    "timestampMs": 255,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " dug",
+    "startMs": 334,
+    "endMs": 546,
+    "timestampMs": 440,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " this",
+    "startMs": 546,
+    "endMs": 810,
+    "timestampMs": 678,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " out",
+    "startMs": 810,
+    "endMs": 1022,
+    "timestampMs": 916,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " of",
+    "startMs": 1022,
+    "endMs": 1181,
+    "timestampMs": 1102,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 1181,
+    "endMs": 1393,
+    "timestampMs": 1287,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Old",
+    "startMs": 1393,
+    "endMs": 1604,
+    "timestampMs": 1499,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Layers:",
+    "startMs": 1604,
+    "endMs": 1975,
+    "timestampMs": 1790,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " a",
+    "startMs": 2355,
+    "endMs": 2487,
+    "timestampMs": 2421,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " propeller",
+    "startMs": 2487,
+    "endMs": 3148,
+    "timestampMs": 2818,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " locked",
+    "startMs": 3148,
+    "endMs": 3610,
+    "timestampMs": 3379,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " inside",
+    "startMs": 3610,
+    "endMs": 4073,
+    "timestampMs": 3842,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " a",
+    "startMs": 4073,
+    "endMs": 4205,
+    "timestampMs": 4139,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " cage.",
+    "startMs": 4205,
+    "endMs": 4535,
+    "timestampMs": 4370,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " It",
+    "startMs": 4845,
+    "endMs": 5026,
+    "timestampMs": 4936,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " can't",
+    "startMs": 5026,
+    "endMs": 5329,
+    "timestampMs": 5178,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " fly",
+    "startMs": 5329,
+    "endMs": 5571,
+    "timestampMs": 5450,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " anywhere.",
+    "startMs": 5571,
+    "endMs": 6115,
+    "timestampMs": 5843,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " So",
+    "startMs": 6425,
+    "endMs": 6618,
+    "timestampMs": 6522,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " what",
+    "startMs": 6618,
+    "endMs": 6939,
+    "timestampMs": 6779,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 6939,
+    "endMs": 7196,
+    "timestampMs": 7068,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 7196,
+    "endMs": 7388,
+    "timestampMs": 7292,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " for?",
+    "startMs": 7388,
+    "endMs": 7645,
+    "timestampMs": 7517,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " So",
+    "startMs": 8075,
+    "endMs": 8256,
+    "timestampMs": 8166,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " I",
+    "startMs": 8256,
+    "endMs": 8377,
+    "timestampMs": 8317,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " tapped",
+    "startMs": 8377,
+    "endMs": 8799,
+    "timestampMs": 8588,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " my",
+    "startMs": 8799,
+    "endMs": 8980,
+    "timestampMs": 8890,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 8980,
+    "endMs": 9644,
+    "timestampMs": 9312,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " and",
+    "startMs": 9644,
+    "endMs": 9885,
+    "timestampMs": 9765,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " jumped",
+    "startMs": 9885,
+    "endMs": 10308,
+    "timestampMs": 10097,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " back",
+    "startMs": 10308,
+    "endMs": 10609,
+    "timestampMs": 10459,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " to",
+    "startMs": 10609,
+    "endMs": 10791,
+    "timestampMs": 10700,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 10791,
+    "endMs": 11032,
+    "timestampMs": 10912,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " old",
+    "startMs": 11032,
+    "endMs": 11273,
+    "timestampMs": 11153,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " days,",
+    "startMs": 11273,
+    "endMs": 11575,
+    "timestampMs": 11424,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 11965,
+    "endMs": 12361,
+    "timestampMs": 12163,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " 2020s,",
+    "startMs": 12361,
+    "endMs": 12955,
+    "timestampMs": 12658,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " right",
+    "startMs": 13405,
+    "endMs": 13777,
+    "timestampMs": 13591,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " into",
+    "startMs": 13777,
+    "endMs": 14088,
+    "timestampMs": 13933,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 14088,
+    "endMs": 14212,
+    "timestampMs": 14150,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " very",
+    "startMs": 14212,
+    "endMs": 14522,
+    "timestampMs": 14367,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " hot",
+    "startMs": 14522,
+    "endMs": 14770,
+    "timestampMs": 14646,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " summer",
+    "startMs": 14770,
+    "endMs": 15204,
+    "timestampMs": 14987,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " afternoon.",
+    "startMs": 15204,
+    "endMs": 15825,
+    "timestampMs": 15515,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Back",
+    "startMs": 16255,
+    "endMs": 16534,
+    "timestampMs": 16395,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " then,",
+    "startMs": 16534,
+    "endMs": 16813,
+    "timestampMs": 16674,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " people",
+    "startMs": 16841,
+    "endMs": 17280,
+    "timestampMs": 17061,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " in",
+    "startMs": 17280,
+    "endMs": 17468,
+    "timestampMs": 17374,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " hot",
+    "startMs": 17468,
+    "endMs": 17720,
+    "timestampMs": 17594,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " rooms",
+    "startMs": 17720,
+    "endMs": 18097,
+    "timestampMs": 17909,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " pressed",
+    "startMs": 18097,
+    "endMs": 18599,
+    "timestampMs": 18348,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 18599,
+    "endMs": 18725,
+    "timestampMs": 18662,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " button,",
+    "startMs": 19115,
+    "endMs": 19538,
+    "timestampMs": 19327,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " sat",
+    "startMs": 19574,
+    "endMs": 19728,
+    "timestampMs": 19651,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " right",
+    "startMs": 19728,
+    "endMs": 19957,
+    "timestampMs": 19843,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " in",
+    "startMs": 19957,
+    "endMs": 20071,
+    "timestampMs": 20014,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " front",
+    "startMs": 20071,
+    "endMs": 20300,
+    "timestampMs": 20186,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " of",
+    "startMs": 20300,
+    "endMs": 20415,
+    "timestampMs": 20358,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 20415,
+    "endMs": 20568,
+    "timestampMs": 20492,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " spinning",
+    "startMs": 20568,
+    "endMs": 20912,
+    "timestampMs": 20740,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " blades,",
+    "startMs": 20912,
+    "endMs": 21180,
+    "timestampMs": 21046,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " and",
+    "startMs": 21530,
+    "endMs": 21780,
+    "timestampMs": 21655,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " sighed",
+    "startMs": 21780,
+    "endMs": 22216,
+    "timestampMs": 21998,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " with",
+    "startMs": 22216,
+    "endMs": 22528,
+    "timestampMs": 22372,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " relief.",
+    "startMs": 22528,
+    "endMs": 22965,
+    "timestampMs": 22747,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " But",
+    "startMs": 23395,
+    "endMs": 23607,
+    "timestampMs": 23501,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 23607,
+    "endMs": 23819,
+    "timestampMs": 23713,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " room",
+    "startMs": 23819,
+    "endMs": 24084,
+    "timestampMs": 23952,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " never",
+    "startMs": 24084,
+    "endMs": 24402,
+    "timestampMs": 24243,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " got",
+    "startMs": 24402,
+    "endMs": 24614,
+    "timestampMs": 24508,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " cooler.",
+    "startMs": 24614,
+    "endMs": 24985,
+    "timestampMs": 24800,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " The",
+    "startMs": 25295,
+    "endMs": 25529,
+    "timestampMs": 25412,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " breeze",
+    "startMs": 25529,
+    "endMs": 25938,
+    "timestampMs": 25734,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " swept",
+    "startMs": 25938,
+    "endMs": 26289,
+    "timestampMs": 26114,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " warm",
+    "startMs": 26289,
+    "endMs": 26581,
+    "timestampMs": 26435,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " air",
+    "startMs": 26581,
+    "endMs": 26815,
+    "timestampMs": 26698,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " off",
+    "startMs": 26815,
+    "endMs": 27049,
+    "timestampMs": 26932,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 27049,
+    "endMs": 27283,
+    "timestampMs": 27166,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " skin,",
+    "startMs": 27283,
+    "endMs": 27575,
+    "timestampMs": 27429,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " so",
+    "startMs": 28015,
+    "endMs": 28196,
+    "timestampMs": 28106,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " sweat",
+    "startMs": 28196,
+    "endMs": 28559,
+    "timestampMs": 28378,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " evaporated",
+    "startMs": 28559,
+    "endMs": 29223,
+    "timestampMs": 28891,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " faster",
+    "startMs": 29223,
+    "endMs": 29646,
+    "timestampMs": 29435,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " and",
+    "startMs": 29646,
+    "endMs": 29888,
+    "timestampMs": 29767,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " carried",
+    "startMs": 29888,
+    "endMs": 30371,
+    "timestampMs": 30130,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " heat",
+    "startMs": 30371,
+    "endMs": 30673,
+    "timestampMs": 30522,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " away.",
+    "startMs": 30673,
+    "endMs": 30975,
+    "timestampMs": 30824,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " Point",
+    "startMs": 31405,
+    "endMs": 31712,
+    "timestampMs": 31559,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " it",
+    "startMs": 31712,
+    "endMs": 31865,
+    "timestampMs": 31789,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " at",
+    "startMs": 31865,
+    "endMs": 32018,
+    "timestampMs": 31942,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " an",
+    "startMs": 32018,
+    "endMs": 32172,
+    "timestampMs": 32095,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " empty",
+    "startMs": 32172,
+    "endMs": 32478,
+    "timestampMs": 32325,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " chair,",
+    "startMs": 32478,
+    "endMs": 32785,
+    "timestampMs": 32632,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " and",
+    "startMs": 33105,
+    "endMs": 33339,
+    "timestampMs": 33222,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " it",
+    "startMs": 33339,
+    "endMs": 33515,
+    "timestampMs": 33427,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cooled",
+    "startMs": 33515,
+    "endMs": 33925,
+    "timestampMs": 33720,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " nobody.",
+    "startMs": 33925,
+    "endMs": 34335,
+    "timestampMs": 34130,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " On",
+    "startMs": 34645,
+    "endMs": 34845,
+    "timestampMs": 34745,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 34845,
+    "endMs": 35245,
+    "timestampMs": 35045,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " a",
+    "startMs": 35465,
+    "endMs": 35589,
+    "timestampMs": 35527,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cool",
+    "startMs": 35589,
+    "endMs": 35900,
+    "timestampMs": 35745,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " breeze",
+    "startMs": 35900,
+    "endMs": 36336,
+    "timestampMs": 36118,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " follows",
+    "startMs": 36336,
+    "endMs": 36833,
+    "timestampMs": 36585,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " me",
+    "startMs": 36833,
+    "endMs": 37020,
+    "timestampMs": 36927,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " around.",
+    "startMs": 37020,
+    "endMs": 37455,
+    "timestampMs": 37238,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Back",
+    "startMs": 37765,
+    "endMs": 38033,
+    "timestampMs": 37899,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " then,",
+    "startMs": 38033,
+    "endMs": 38300,
+    "timestampMs": 38167,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " people",
+    "startMs": 38350,
+    "endMs": 38721,
+    "timestampMs": 38536,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " chased",
+    "startMs": 38721,
+    "endMs": 39092,
+    "timestampMs": 38907,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 39092,
+    "endMs": 39304,
+    "timestampMs": 39198,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " breeze.",
+    "startMs": 39304,
+    "endMs": 39675,
+    "timestampMs": 39490,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " So",
+    "startMs": 40105,
+    "endMs": 40274,
+    "timestampMs": 40190,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " it",
+    "startMs": 40274,
+    "endMs": 40443,
+    "timestampMs": 40359,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " wasn't",
+    "startMs": 40443,
+    "endMs": 40782,
+    "timestampMs": 40613,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " a",
+    "startMs": 40782,
+    "endMs": 40894,
+    "timestampMs": 40838,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " broken",
+    "startMs": 40894,
+    "endMs": 41289,
+    "timestampMs": 41092,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " flying",
+    "startMs": 41289,
+    "endMs": 41684,
+    "timestampMs": 41487,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " machine.",
+    "startMs": 41684,
+    "endMs": 42135,
+    "timestampMs": 41910,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " It",
+    "startMs": 42445,
+    "endMs": 42608,
+    "timestampMs": 42527,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " never",
+    "startMs": 42608,
+    "endMs": 42933,
+    "timestampMs": 42771,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " cooled",
+    "startMs": 42933,
+    "endMs": 43312,
+    "timestampMs": 43123,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " the",
+    "startMs": 43312,
+    "endMs": 43528,
+    "timestampMs": 43420,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " air.",
+    "startMs": 43528,
+    "endMs": 43745,
+    "timestampMs": 43637,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " It",
+    "startMs": 44055,
+    "endMs": 44209,
+    "timestampMs": 44132,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " cooled",
+    "startMs": 44209,
+    "endMs": 44567,
+    "timestampMs": 44388,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " people,",
+    "startMs": 44567,
+    "endMs": 44925,
+    "timestampMs": 44746,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " one",
+    "startMs": 45175,
+    "endMs": 45438,
+    "timestampMs": 45307,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " breeze",
+    "startMs": 45438,
+    "endMs": 45898,
+    "timestampMs": 45668,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " at",
+    "startMs": 45898,
+    "endMs": 46095,
+    "timestampMs": 45997,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " a",
+    "startMs": 46095,
+    "endMs": 46226,
+    "timestampMs": 46161,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " time.",
+    "startMs": 46226,
+    "endMs": 46555,
+    "timestampMs": 46391,
+    "confidence": null,
+    "scene": 5
+  }
+]
