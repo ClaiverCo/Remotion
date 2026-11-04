@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, random, spring, useCurrentFrame} from 'remotion';
-import {FONTE} from '../fonte';
+import {FONT as FONTE} from '../../theme';
 import {FPS, H, ramp, T, W} from './timeline';
 
 type Linha = {texto: string; de: number; cor?: string; tamanho?: number};

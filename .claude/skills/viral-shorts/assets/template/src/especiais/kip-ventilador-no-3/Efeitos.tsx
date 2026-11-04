@@ -1,6 +1,6 @@
 import React from 'react';
 import {random, spring} from 'remotion';
-import {FONTE} from '../fonte';
+import {FONT as FONTE} from '../../theme';
 import {FPS, percursoVento, ramp, T, vento} from './timeline';
 
 const ORIGEM_X = 790; // de onde o vento sai (frente da grade)

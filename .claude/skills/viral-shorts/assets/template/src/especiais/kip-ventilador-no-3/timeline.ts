@@ -44,7 +44,7 @@ export const T = {
 } as const;
 
 /** Posição x onde o boneco para para apertar cada botão. */
-export const PARADA = {inicio: 330, b1: 615, b2: 655, b3: 695} as const;
+export const PARADA = {inicio: 330, b1: 619, b2: 663, b3: 707} as const;
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const suave = Easing.inOut(Easing.cubic);
@@ -53,7 +53,7 @@ const suave = Easing.inOut(Easing.cubic);
 export const ramp = (
 	frame: number,
 	entrada: [number, number],
-	saida: [number, number],
+	saida: [number, number] = [0, 1],
 	easing: (t: number) => number = suave,
 ) => interpolate(frame, entrada, saida, {...clamp, easing});
 

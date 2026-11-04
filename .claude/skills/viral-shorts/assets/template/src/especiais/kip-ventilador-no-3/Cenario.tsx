@@ -1,7 +1,7 @@
 import React from 'react';
 import {Easing, interpolateColors} from 'remotion';
 import {CHAO, keys, PARADA, PAREDE_X, ramp, T, temperatura, vento, W} from './timeline';
-import {FONTE} from '../fonte';
+import {FONT as FONTE} from '../../theme';
 
 const CONTORNO = '#262626';
 

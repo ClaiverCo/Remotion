@@ -138,6 +138,20 @@ npm run prompt-pack -- stickman-house-key   # pacote para Flow/Higgsfield em out
 
 **Episódio de exemplo: `stickman-house-key`** (45,5 s, 6 clipes). Kip acha uma chave de casa e descobre a fechadura de pinos: molas, pinos e a *shear line*. O exemplo já vem narrado e sincronizado, com `pesquisa.md`, `clips.json` e metadados.
 
+**Episódio `stickman-electric-fan`** (47,5 s, 6 clipes): *"Why did they keep a propeller in a cage?"*. Kip acha um ventilador de coluna e descobre que ele nunca esfriou o ar: a brisa tira o ar morno da pele e acelera a evaporação do suor. Narrado (Kokoro `am_michael`), com dossiê de 8 fontes e metadados em inglês.
+
+```bash
+npm run render -- stickman-electric-fan && npm run finalize -- stickman-electric-fan
+```
+
+### Especial em pt-BR: `kip-ventilador-no-3`
+
+Comédia curta (24 s, sem narração) fora do formato da série: o Kip, com 40 °C, aperta o ventilador com o dedão do pé no 1 (*só faz barulho*), no 2 (*agora sim*) e no 3 (*MODO TURBO*). Ele é arremessado na parede (**POF!**), congela e o vídeo fecha com "E você? usa no 1, 2 ou 3?". O código fica em `src/especiais/kip-ventilador-no-3/` (os tempos em `timeline.ts`), e os sons saem de `npm run sfx`.
+
+```bash
+npx remotion render kip-ventilador-no-3 out/kip-ventilador-no-3/video.mp4
+```
+
 ## Créditos e referências
 
 - [Remotion](https://www.remotion.dev) e os [Agent Skills oficiais](https://github.com/remotion-dev/skills) (`npx skills add remotion-dev/skills`), que também podem ser instalados junto.

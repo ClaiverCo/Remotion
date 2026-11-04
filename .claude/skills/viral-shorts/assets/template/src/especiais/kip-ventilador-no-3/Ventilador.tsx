@@ -1,5 +1,6 @@
 import React from 'react';
 import {random} from 'remotion';
+import {FONT} from '../../theme';
 import {anguloPas, botaoAtivo, CHAO, keys, ramp, T, velocidadePas} from './timeline';
 
 // Geometria do ventilador de coluna (visto de 3/4, soprando para a esquerda)
@@ -133,7 +134,7 @@ export const Ventilador: React.FC<{frame: number}> = ({frame}) => {
 					x={teclaX(n)}
 					y={1438}
 					textAnchor="middle"
-					fontFamily="Inter Display Black, Inter, Arial, sans-serif"
+					fontFamily={FONT}
 					fontWeight={900}
 					fontSize={26}
 					fill={n === 3 ? '#e0392b' : '#555'}
