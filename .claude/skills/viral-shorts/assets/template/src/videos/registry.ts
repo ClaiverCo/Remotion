@@ -4,6 +4,7 @@ import { video as exemploVasoSanitario } from "./exemplo-vaso-sanitario";
 import { video as exemploGelo3d } from "./exemplo-gelo-3d";
 import { video as stickmanHouseKey } from "./stickman-house-key";
 import { video as stickmanElectricFan } from "./stickman-electric-fan";
+import { video as stickmanStuck01Crystal } from "./stickman-stuck-01-crystal";
 // @registry-imports
 
 export const videos: VideoDefinition[] = [
@@ -11,5 +12,6 @@ export const videos: VideoDefinition[] = [
   exemploGelo3d,
   stickmanHouseKey,
   stickmanElectricFan,
+  stickmanStuck01Crystal,
   // @registry-entries
 ];

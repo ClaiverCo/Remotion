@@ -26,7 +26,7 @@ Esta skill **reaproveita o projeto Remotion da skill `viral-shorts`** (`../viral
 
 1. Leia `SKILL_DIR/aprendizados.md` e `VS_DIR/aprendizados.md` e aplique tudo.
 2. Se `PROJ` ainda não é um projeto (não existe `src/videos/registry.ts`), siga o passo 0 da `VS_DIR/SKILL.md` (copiar `VS_DIR/assets/template/`, `npm install`, conferir node, ffmpeg e Python 3.10+).
-3. Leia `references/serie-biblia.md`. O episódio de referência, que tem código, roteiro, direção e dossiê, é `src/videos/stickman-house-key/`; leia o `Scenes.tsx` e o `clips.json` dele antes de escrever um episódio novo.
+3. Leia `references/serie-biblia.md`. Se o episódio for do arco **"Stuck in 2026"** (mini novela), leia também `references/arco-preso-em-2026.md` e siga a continuidade de lá. O episódio de referência, que tem código, roteiro, direção e dossiê, é `src/videos/stickman-house-key/`; leia o `Scenes.tsx` e o `clips.json` dele antes de escrever um episódio novo.
 
 ## 1. Ideias de relíquia (se o tema não veio pronto)
 

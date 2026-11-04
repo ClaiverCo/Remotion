@@ -28,10 +28,14 @@ export type StickmanProps = {
   holdNear?: React.ReactNode;
   holdFar?: React.ReactNode;
   opacity?: number;
+  /** Estado da Chrono-Band (só Kip): "ok" brilha; "cracked" = rachada e apagada (arco "Stuck in 2026", a partir do fim do ep. 1). */
+  band?: "ok" | "cracked";
 };
 
 const C = LEAD.colors;
 const OUT = C.outline;
+/** Chrono-Band rachada e apagada: o mesmo violeta, escurecido e sem brilho. */
+export const CRACKED_BAND = "#4C3D78";
 const LIMB = 7;
 
 const Brows: React.FC<{ e: Expression; ex: number[]; dir: number }> = ({ e, ex, dir }) => {
@@ -129,6 +133,7 @@ export const Stickman: React.FC<StickmanProps> = ({
   holdNear,
   holdFar,
   opacity = 1,
+  band: bandState = "ok",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -149,8 +154,9 @@ export const Stickman: React.FC<StickmanProps> = ({
         bandArm.elbow.y + (bandArm.hand.y - bandArm.elbow.y) * 0.72
       }) rotate(${-bandArm.foreAngle})`}
     >
-      <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} opacity={0.35} transform="scale(1.6)" />
-      <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} stroke={OUT} strokeWidth={3} />
+      {bandState === "ok" && <rect x={-8} y={-5} width={16} height={10} rx={4} fill={C.chronoBand} opacity={0.35} transform="scale(1.6)" />}
+      <rect x={-8} y={-5} width={16} height={10} rx={4} fill={bandState === "ok" ? C.chronoBand : CRACKED_BAND} stroke={OUT} strokeWidth={3} />
+      {bandState === "cracked" && <path d="M-5 -5 L-1 -1 L-4 1 L1 5 M-1 -1 L4 -3" fill="none" stroke="#E5E7EB" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" />}
     </g>
   ) : null;
 

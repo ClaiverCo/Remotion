@@ -52,6 +52,8 @@ export const roteiroSchema = z.object({
     })
     .optional(),
   barraProgresso: z.boolean().default(false),
+  /** Tempo (ms) que o vídeo continua depois da última palavra (padrão 900). Ex.: 2200 para um "to be continued". */
+  caudaMs: z.number().int().min(0).max(6000).optional(),
   /** Universo Stickman: a relíquia do episódio (em inglês, para os prompts). */
   reliquia: z
     .object({

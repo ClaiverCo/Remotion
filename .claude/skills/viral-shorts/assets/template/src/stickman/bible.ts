@@ -140,6 +140,11 @@ export const NEGATIVE = [
 /** Detalhes acrescentados em episódios (não contradizem o resto). Formato: "AAAA-MM-DD · episódio · detalhe". */
 export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-electric-fan · On Lumen, a small floating cyan-and-violet breeze swirl can follow a person around to keep them cool (city tech, not part of Kip's outfit).",
+  "2026-11-04 · stickman-stuck-01-crystal · Arc \"Stuck in 2026\" (6 episodes): Kip lands in the year 2026 specifically and cannot go home; each episode explains one ordinary object that becomes a part of his home-made time machine.",
+  "2026-11-04 · stickman-stuck-01-crystal · Lumen's Central Clock (CLOCK-01): a floating white ring with 12 cyan/violet light dots, one cyan light hand and a window with a quartz tuning-fork crystal at its centre. It keeps every door, floating platform and portal in time; when it lags, doors open late; when it stops, portals lose their reference.",
+  "2026-11-04 · stickman-stuck-01-crystal · Ben (PP-02), the 2026 resident from the fan episode, becomes Kip's recurring ally: mustard #E0B44C T-shirt, short black hair, no halo, slightly smaller than Kip. He wears an analog quartz watch on his left wrist and gives it to Kip.",
+  "2026-11-04 · stickman-stuck-01-crystal · Planned damage: from the end of Ep. 1 the Chrono-Band stays on Kip's LEFT wrist but is cracked and dark (#4C3D78, a pale crack line, no glow) until the arc says otherwise. It can no longer open a portal by itself.",
+  "2026-11-04 · stickman-stuck-01-crystal · Crossing-rule exception for this arc only: a 2026 watch and its quartz crystal may later cross to Lumen (Ep. 6).",
 ];
 
 /**

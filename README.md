@@ -144,6 +144,16 @@ npm run prompt-pack -- stickman-house-key   # pacote para Flow/Higgsfield em out
 npm run render -- stickman-electric-fan && npm run finalize -- stickman-electric-fan
 ```
 
+### Mini novela "Stuck in 2026" (6 episódios)
+
+Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça de uma máquina do tempo. O plano do arco está em `.claude/skills/stickman-do-futuro/references/arco-preso-em-2026.md`.
+
+- **Ep. 1 `stickman-stuck-01-crystal`** (56 s, 7 clipes): *"The Crystal That Counts Time"*. O Central Clock de Lumen atrasa; Kip vai a 2026, ganha o relógio do Ben e descobre o quartzo que vibra 32.768 vezes por segundo, dividido por 2 quinze vezes até virar um tique por segundo. No fim, a Chrono-Band racha e ele fica preso.
+
+```bash
+npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
+```
+
 ### Especial em pt-BR: `kip-ventilador-no-3`
 
 Comédia curta (24 s, narrada em pt-BR pelo Piper `faber` com `npm run narrar-especial`) fora do formato da série: o Kip, com 40 °C, aperta o ventilador com o dedão do pé no 1 (*só faz barulho*), no 2 (*agora sim*) e no 3 (*MODO TURBO*). Ele é arremessado na parede (**POF!**), congela e o vídeo fecha com "E você? usa no 1, 2 ou 3?". O código fica em `src/especiais/kip-ventilador-no-3/` (os tempos em `timeline.ts`), e os sons saem de `npm run sfx`.

@@ -18,3 +18,12 @@ Correções pedidas pelo usuário e o que deu certo nesta série. Formato: `- [A
 ## Pacote de prompts
 - [2026-11-04] Com a identidade antiga (269 palavras), nenhum prompt cabia nas faixas do documento → identidade compacta (~170 palavras, todos os traços travados) e a medida de tamanho exclui os blocos literais.
 - [2026-11-04] Dígitos e rótulos no prompt de imagem viram texto inventado pelo gerador → no pacote, os quadros dos dígitos ficam vazios e os números entram no editor (no vídeo por código eles aparecem normalmente).
+
+## Novela "Stuck in 2026"
+- [2026-11-04] O enredo dos 6 episódios veio de um documento com outros nomes (Nex, Aurel, "aparelho de pulso") → "nosso personagem padrão" é sempre o Kip da bíblia; traduza os nomes (tabela em `references/arco-preso-em-2026.md`) e não crie um segundo protagonista.
+- [2026-11-04] Episódio de novela termina num gancho, não na volta para casa → até 7 clipes (o mecanismo em dois), clipe final com `era: "viagem"`, `"caudaMs": 2200` no roteiro para o cartão "TO BE CONTINUED…" ter tempo de tela, e um tique-taque depois da última palavra.
+- [2026-11-04] Dano planejado no Kip (Chrono-Band rachada) → prop `band="cracked"` do `Stickman`, registrado em `ADDITIONS`; nunca mude a cor da pulseira de outro jeito.
+
+## Ambiente (sessões na nuvem)
+- [2026-11-04] O render/QA tentou baixar o Chrome Headless Shell e falhou (rede bloqueada) → `export REMOTION_BROWSER_EXECUTABLE=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell` antes de `npm run qa`/`render`.
+

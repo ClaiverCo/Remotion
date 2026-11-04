@@ -1,0 +1,88 @@
+{
+  "slug": "stickman-stuck-01-crystal",
+  "titulo": "Stuck in 2026, Ep. 1: The Crystal That Counts Time",
+  "tema": "Stuck in 2026, episode 1: Kip learns how a quartz watch keeps time, then gets stuck in 2026",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "en-US",
+  "perguntaCentral": "How does an ordinary wristwatch from the 2020s know exactly how long one second is?",
+  "duracaoAlvoSeg": 60,
+  "voz": "kokoro",
+  "vozId": "am_michael",
+  "pronuncias": {
+    "2026": "twenty twenty-six",
+    "32,768": "thirty-two thousand, seven hundred sixty-eight"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "the quartz wristwatch",
+    "descricao": "an ordinary analog quartz wristwatch from the 2020s with a round steel case, a plain white dial with no numbers, black hour and minute hands, a thin red second hand and a black strap; the relic found on Lumen is the same model, dusty and stopped"
+  },
+  "cenas": [
+    {
+      "id": "c01-late",
+      "era": "futuro",
+      "acao": "On Lumen a door opens a beat too late and Kip bumps into it; the Central Clock tower lags; he opens a dusty stopped watch from the Old Layers and the same crystal glows inside.",
+      "narracao": "Lumen's Central Clock times every door and portal, and it was falling behind. Then I dug up a watch with the *same crystal*.",
+      "visual": "Future city. Kip walks right toward a rounded door that stays shut; he bonks into it at 'door' and it slides open late. The Central Clock floats above the towers, its light-tick lagging. At 'dug' a dusty watch rises from the dig pit into his right hand; at 'crystal' its back pops open and a tiny tuning-fork crystal glows, matching a glowing crystal in the Central Clock.",
+      "selo": { "texto": "STUCK IN 2026 · EP 1", "icone": "!", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-jump",
+      "era": "viagem",
+      "acao": "Kip leaves the stopped relic on a light pedestal, taps the Chrono-Band, steps through the ring portal and arrives on a 2026 street.",
+      "narracao": "I needed one that still worked. So I tapped my *Chrono-Band* and jumped back to the old days, the year 2026.",
+      "visual": "Kip sets the dusty watch on a floating light pedestal at 'needed', taps his left wrist with his right hand at 'tapped'; cyan and violet portal opens; he walks in at 'jumped' and it collapses. Hard switch to a warm 2026 street at 'old days'; a shrinking violet ring drops him off.",
+      "sfx": "whoosh",
+      "fontes": []
+    },
+    {
+      "id": "c03-ben",
+      "era": "presente",
+      "acao": "Ben, a friendly 2026 neighbour, checks his wristwatch, smiles and hands it to Kip; the thin red second hand ticks once per second.",
+      "narracao": "There I met *Ben*. He checked his wrist, smiled, and handed me his watch. Its thin hand ticked once every second.",
+      "visual": "Front of a simple house with a garage. Ben (PP-02, mustard T-shirt) walks in from the right, raises his left wrist at 'checked', smiles, unbuckles the watch and hands it over at 'handed'. Kip holds it up in his right hand; at 'ticked' a magnifier shows the red second hand stepping, tick by tick.",
+      "sfx": "pop",
+      "fontes": [1, 4]
+    },
+    {
+      "id": "c04-quartz",
+      "era": "presente",
+      "acao": "Cutaway of the watch: the button battery sends voltage to a tiny quartz tuning fork, which vibrates very fast while a counter climbs to 32,768 per second.",
+      "narracao": "Inside, a battery's voltage makes a *quartz tuning fork* vibrate 32,768 times a second.",
+      "visual": "Big watch cutaway, centre top. At 'battery' the coin cell lights up; at 'voltage' small sparks run along a wire to the crystal capsule; at 'quartz' a zoom on the tuning fork whose prongs blur as they vibrate; at '32,768' a counter spins up to 32,768 / s. Kip small in a corner, pointing.",
+      "sfx": "ding",
+      "fontes": [1, 2, 3, 5]
+    },
+    {
+      "id": "c05-halves",
+      "era": "presente",
+      "acao": "A chain of fifteen boxes halves the number from 32,768 down to 1; the final pulse drives a tiny motor and the second hand steps once.",
+      "narracao": "A chip cuts that in half fifteen times in a row, leaving *one pulse* a second to move the hand.",
+      "visual": "A zig-zag chain of 15 small boxes lights up one after another at 'half fifteen times': 32,768 → 16,384 → 8,192 … → 2 → 1. At 'one pulse' the last box flashes, a pulse travels to a small coil-and-gear motor, and the red second hand steps one tick. Kip claps at 'hand'.",
+      "sfx": "ding",
+      "fontes": [1, 4, 5]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Split screen: in 2026 the crystal ticks inside an everyday watch on Kip's hand; on Lumen, citizens stare at the Central Clock and shrug.",
+      "narracao": "Back then, this crystal ticked inside an everyday watch. On Lumen, *nobody* remembers how our Central Clock keeps time.",
+      "visual": "Top half (old days): Kip on the 2026 street holds Ben's watch; a tiny glowing crystal icon ticks inside it. Bottom half (my time) at 'Lumen': the floating Central Clock flickers while two Lumen citizens look up and shrug at 'nobody', question marks over their heads.",
+      "sfx": "whoosh",
+      "fontes": [1, 2]
+    },
+    {
+      "id": "c07-stuck",
+      "era": "viagem",
+      "acao": "At dusk Kip opens the portal home, but a cut-in shows the Central Clock stopping on Lumen; the portal overloads, the Chrono-Band cracks and goes dark, and the portal closes. Kip is stuck.",
+      "narracao": "I opened the portal home. Then, on Lumen, the Central Clock *stopped*. My Chrono-Band cracked, the portal closed, and I was *stuck*.",
+      "visual": "2026 street at dusk, Ben behind. Kip taps the band at 'opened' and the portal grows. At 'Lumen' a round cut-in shows the Central Clock; at 'stopped' its light freezes and fades out. The portal flickers, sparks fly from the band at 'cracked' (crack line, band goes dark), the portal collapses at 'closed'. Kip shocked, holding the watch; at 'stuck' a hold and 'TO BE CONTINUED' in the end card.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

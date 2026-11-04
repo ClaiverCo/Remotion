@@ -81,7 +81,7 @@ export const saveCaptionsAndTimeline = (
   captions: VideoCaption[],
   opts: { audio: string | null; source: Timeline["source"]; audioDurationMs?: number },
 ): Timeline => {
-  const timeline = buildTimeline(roteiro, captions, opts);
+  const timeline = buildTimeline(roteiro, captions, { ...opts, tailMs: roteiro.caudaMs });
   writeJson(path.join(videoDir(slug), "captions.json"), captions);
   writeJson(path.join(videoDir(slug), "timeline.json"), timeline);
   const secs = (timeline.durationMs / 1000).toFixed(1);
