@@ -104,7 +104,13 @@ export const MachineFrame: React.FC<{
   glow?: { slot: number; p: number };
   hum?: number;
   screen?: { q?: number; pin?: number; clock?: number };
-}> = ({ x, groundY, t, parts, R = 150, glow, hum = 0, screen = {} }) => {
+  /** conteúdo da telinha desenhado no centro dela (substitui os ícones de `screen`), 300 × 70 */
+  screenNode?: React.ReactNode;
+  /** peças dos encaixes 3–5 (episódios seguintes), em coordenadas do encaixe */
+  extra?: Record<number, React.ReactNode>;
+  /** alerta vermelho piscando num encaixe */
+  alert?: { slot: number; p: number };
+}> = ({ x, groundY, t, parts, R = 150, glow, hum = 0, screen = {}, screenNode, extra = {}, alert }) => {
   const baseH = 120;
   const cy = groundY - baseH - R - 14;
   const slot = (i: number) => {
@@ -118,7 +124,8 @@ export const MachineFrame: React.FC<{
       <rect x={x - 180} y={groundY - baseH} width={360} height={baseH} rx={18} fill="#C9D1D9" stroke={OUT} strokeWidth={5} />
       <rect x={x - 150} y={groundY - baseH + 14} width={300} height={70} rx={12} fill="#0B2530" stroke={OUT} strokeWidth={4} />
       <g transform={`translate(${x} ${groundY - baseH + 49})`}>
-        {(screen.q ?? 0) > 0 && (
+        {screenNode}
+        {!screenNode && (screen.q ?? 0) > 0 && (
           <text x={-90} y={20} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={56} fill={CYAN} opacity={screen.q}>
             ?
           </text>
@@ -162,6 +169,8 @@ export const MachineFrame: React.FC<{
             {has && i === 0 && <Watch scale={0.62} sec={t + 50} strap={false} />}
             {has && i === 1 && <PowerBank scale={0.5} leds={4} />}
             {has && i === 2 && <CircuitBoard scale={0.42} chipGlow={g} />}
+            {has && i > 2 && extra[i]}
+            {alert && alert.slot === i && alert.p > 0 && <circle r={52} fill="none" stroke="#E05A47" strokeWidth={8} opacity={alert.p} />}
           </g>
         );
       })}

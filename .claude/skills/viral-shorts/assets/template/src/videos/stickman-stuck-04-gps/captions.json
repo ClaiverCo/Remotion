@@ -1,0 +1,1189 @@
+[
+  {
+    "text": "A",
+    "startMs": 175,
+    "endMs": 284,
+    "timestampMs": 230,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " máquina",
+    "startMs": 284,
+    "endMs": 718,
+    "timestampMs": 501,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " ligou,",
+    "startMs": 718,
+    "endMs": 1043,
+    "timestampMs": 881,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " mas",
+    "startMs": 1253,
+    "endMs": 1472,
+    "timestampMs": 1363,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " sem",
+    "startMs": 1472,
+    "endMs": 1692,
+    "timestampMs": 1582,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " o",
+    "startMs": 1692,
+    "endMs": 1802,
+    "timestampMs": 1747,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Relógio",
+    "startMs": 1802,
+    "endMs": 2241,
+    "timestampMs": 2022,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Central",
+    "startMs": 2241,
+    "endMs": 2680,
+    "timestampMs": 2461,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " ela",
+    "startMs": 2680,
+    "endMs": 2899,
+    "timestampMs": 2790,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " não",
+    "startMs": 2899,
+    "endMs": 3118,
+    "timestampMs": 3009,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " sabia",
+    "startMs": 3118,
+    "endMs": 3448,
+    "timestampMs": 3283,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " onde",
+    "startMs": 3448,
+    "endMs": 3722,
+    "timestampMs": 3585,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " estava.",
+    "startMs": 3722,
+    "endMs": 4106,
+    "timestampMs": 3914,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Nem",
+    "startMs": 4416,
+    "endMs": 4645,
+    "timestampMs": 4531,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " quando.",
+    "startMs": 4645,
+    "endMs": 5045,
+    "timestampMs": 4845,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Assim,",
+    "startMs": 5355,
+    "endMs": 5823,
+    "timestampMs": 5589,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " mirar",
+    "startMs": 5973,
+    "endMs": 6260,
+    "timestampMs": 6117,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " o",
+    "startMs": 6260,
+    "endMs": 6356,
+    "timestampMs": 6308,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " portal",
+    "startMs": 6356,
+    "endMs": 6692,
+    "timestampMs": 6524,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " era",
+    "startMs": 6692,
+    "endMs": 6883,
+    "timestampMs": 6788,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " impossível.",
+    "startMs": 6883,
+    "endMs": 7410,
+    "timestampMs": 7147,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " Aí",
+    "startMs": 7840,
+    "endMs": 8007,
+    "timestampMs": 7924,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " o",
+    "startMs": 8007,
+    "endMs": 8118,
+    "timestampMs": 8063,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Ben",
+    "startMs": 8118,
+    "endMs": 8341,
+    "timestampMs": 8230,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " abriu",
+    "startMs": 8341,
+    "endMs": 8675,
+    "timestampMs": 8508,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " o",
+    "startMs": 8675,
+    "endMs": 8786,
+    "timestampMs": 8731,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " mapa",
+    "startMs": 8786,
+    "endMs": 9064,
+    "timestampMs": 8925,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " no",
+    "startMs": 9064,
+    "endMs": 9231,
+    "timestampMs": 9148,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " celular.",
+    "startMs": 9231,
+    "endMs": 9676,
+    "timestampMs": 9454,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Um",
+    "startMs": 9986,
+    "endMs": 10151,
+    "timestampMs": 10069,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " pontinho",
+    "startMs": 10151,
+    "endMs": 10646,
+    "timestampMs": 10399,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " azul",
+    "startMs": 10646,
+    "endMs": 10920,
+    "timestampMs": 10783,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " mostrava",
+    "startMs": 10920,
+    "endMs": 11415,
+    "timestampMs": 11168,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " exatamente",
+    "startMs": 11415,
+    "endMs": 12020,
+    "timestampMs": 11718,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " onde",
+    "startMs": 12020,
+    "endMs": 12295,
+    "timestampMs": 12158,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 12295,
+    "endMs": 12404,
+    "timestampMs": 12350,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " gente",
+    "startMs": 12404,
+    "endMs": 12734,
+    "timestampMs": 12569,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " estava,",
+    "startMs": 12734,
+    "endMs": 13119,
+    "timestampMs": 12927,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " ali",
+    "startMs": 13248,
+    "endMs": 13490,
+    "timestampMs": 13369,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " na",
+    "startMs": 13490,
+    "endMs": 13672,
+    "timestampMs": 13581,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " garagem.",
+    "startMs": 13672,
+    "endMs": 14156,
+    "timestampMs": 13914,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Na",
+    "startMs": 14586,
+    "endMs": 14761,
+    "timestampMs": 14674,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " prateleira,",
+    "startMs": 14761,
+    "endMs": 15404,
+    "timestampMs": 15083,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " ele",
+    "startMs": 15664,
+    "endMs": 15926,
+    "timestampMs": 15795,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " achou",
+    "startMs": 15926,
+    "endMs": 16319,
+    "timestampMs": 16123,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " um",
+    "startMs": 16319,
+    "endMs": 16515,
+    "timestampMs": 16417,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " GPS",
+    "startMs": 16515,
+    "endMs": 16777,
+    "timestampMs": 16646,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " velho",
+    "startMs": 16777,
+    "endMs": 17170,
+    "timestampMs": 16974,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " de",
+    "startMs": 17170,
+    "endMs": 17366,
+    "timestampMs": 17268,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " carro.",
+    "startMs": 17366,
+    "endMs": 17759,
+    "timestampMs": 17563,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Eu",
+    "startMs": 18069,
+    "endMs": 18242,
+    "timestampMs": 18156,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " encaixei",
+    "startMs": 18242,
+    "endMs": 18762,
+    "timestampMs": 18502,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " o",
+    "startMs": 18762,
+    "endMs": 18877,
+    "timestampMs": 18820,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " aparelho",
+    "startMs": 18877,
+    "endMs": 19397,
+    "timestampMs": 19137,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " inteiro",
+    "startMs": 19397,
+    "endMs": 19859,
+    "timestampMs": 19628,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " na",
+    "startMs": 19859,
+    "endMs": 20032,
+    "timestampMs": 19946,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " máquina,",
+    "startMs": 20032,
+    "endMs": 20494,
+    "timestampMs": 20263,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " no",
+    "startMs": 20604,
+    "endMs": 20714,
+    "timestampMs": 20659,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " quarto",
+    "startMs": 20714,
+    "endMs": 20972,
+    "timestampMs": 20843,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " espaço.",
+    "startMs": 21062,
+    "endMs": 21421,
+    "timestampMs": 21242,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Lá",
+    "startMs": 21851,
+    "endMs": 22061,
+    "timestampMs": 21956,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " em",
+    "startMs": 22061,
+    "endMs": 22270,
+    "timestampMs": 22166,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " cima,",
+    "startMs": 22270,
+    "endMs": 22620,
+    "timestampMs": 22445,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " satélites",
+    "startMs": 22879,
+    "endMs": 23458,
+    "timestampMs": 23169,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " mandam",
+    "startMs": 23458,
+    "endMs": 23864,
+    "timestampMs": 23661,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " sinais",
+    "startMs": 23864,
+    "endMs": 24269,
+    "timestampMs": 24067,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " com",
+    "startMs": 24269,
+    "endMs": 24501,
+    "timestampMs": 24385,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 24501,
+    "endMs": 24617,
+    "timestampMs": 24559,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " hora",
+    "startMs": 24617,
+    "endMs": 24906,
+    "timestampMs": 24762,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " exata.",
+    "startMs": 24906,
+    "endMs": 25254,
+    "timestampMs": 25080,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " O",
+    "startMs": 25564,
+    "endMs": 25684,
+    "timestampMs": 25624,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " receptor",
+    "startMs": 25684,
+    "endMs": 26222,
+    "timestampMs": 25953,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " vê",
+    "startMs": 26222,
+    "endMs": 26402,
+    "timestampMs": 26312,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " quanto",
+    "startMs": 26402,
+    "endMs": 26821,
+    "timestampMs": 26612,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " cada",
+    "startMs": 26821,
+    "endMs": 27120,
+    "timestampMs": 26971,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " sinal",
+    "startMs": 27120,
+    "endMs": 27479,
+    "timestampMs": 27300,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " demorou",
+    "startMs": 27479,
+    "endMs": 27958,
+    "timestampMs": 27719,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " e",
+    "startMs": 27958,
+    "endMs": 28078,
+    "timestampMs": 28018,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " calcula",
+    "startMs": 28078,
+    "endMs": 28557,
+    "timestampMs": 28318,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 28557,
+    "endMs": 28677,
+    "timestampMs": 28617,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " distância",
+    "startMs": 28677,
+    "endMs": 29275,
+    "timestampMs": 28976,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " até",
+    "startMs": 29275,
+    "endMs": 29515,
+    "timestampMs": 29395,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " eles.",
+    "startMs": 29515,
+    "endMs": 29814,
+    "timestampMs": 29665,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " Mas",
+    "startMs": 30244,
+    "endMs": 30511,
+    "timestampMs": 30378,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " esses",
+    "startMs": 30511,
+    "endMs": 30912,
+    "timestampMs": 30712,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " relógios",
+    "startMs": 30912,
+    "endMs": 31514,
+    "timestampMs": 31213,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " adiantam",
+    "startMs": 31514,
+    "endMs": 32115,
+    "timestampMs": 31815,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cerca",
+    "startMs": 32115,
+    "endMs": 32516,
+    "timestampMs": 32316,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " de",
+    "startMs": 32516,
+    "endMs": 32717,
+    "timestampMs": 32617,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " 38",
+    "startMs": 32717,
+    "endMs": 32917,
+    "timestampMs": 32817,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " microssegundos",
+    "startMs": 32917,
+    "endMs": 33919,
+    "timestampMs": 33418,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " por",
+    "startMs": 33919,
+    "endMs": 34187,
+    "timestampMs": 34053,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " dia,",
+    "startMs": 34187,
+    "endMs": 34454,
+    "timestampMs": 34321,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " por",
+    "startMs": 34784,
+    "endMs": 35031,
+    "timestampMs": 34908,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " causa",
+    "startMs": 35031,
+    "endMs": 35402,
+    "timestampMs": 35217,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " da",
+    "startMs": 35402,
+    "endMs": 35587,
+    "timestampMs": 35495,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " relatividade.",
+    "startMs": 35587,
+    "endMs": 36390,
+    "timestampMs": 35989,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " Por",
+    "startMs": 36700,
+    "endMs": 36944,
+    "timestampMs": 36822,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " isso,",
+    "startMs": 36944,
+    "endMs": 37249,
+    "timestampMs": 37097,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " eles",
+    "startMs": 37478,
+    "endMs": 37782,
+    "timestampMs": 37630,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " são",
+    "startMs": 37782,
+    "endMs": 38025,
+    "timestampMs": 37904,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " ajustados",
+    "startMs": 38025,
+    "endMs": 38632,
+    "timestampMs": 38329,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " antes",
+    "startMs": 38632,
+    "endMs": 38996,
+    "timestampMs": 38814,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " de",
+    "startMs": 38996,
+    "endMs": 39179,
+    "timestampMs": 39088,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " subir.",
+    "startMs": 39179,
+    "endMs": 39543,
+    "timestampMs": 39361,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Em",
+    "startMs": 39973,
+    "endMs": 40189,
+    "timestampMs": 40081,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 40189,
+    "endMs": 40622,
+    "timestampMs": 40406,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " o",
+    "startMs": 40811,
+    "endMs": 40935,
+    "timestampMs": 40873,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Relógio",
+    "startMs": 40935,
+    "endMs": 41432,
+    "timestampMs": 41184,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Central",
+    "startMs": 41432,
+    "endMs": 41929,
+    "timestampMs": 41681,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " resolve",
+    "startMs": 41929,
+    "endMs": 42426,
+    "timestampMs": 42178,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " tudo.",
+    "startMs": 42426,
+    "endMs": 42737,
+    "timestampMs": 42582,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Aqui,",
+    "startMs": 43047,
+    "endMs": 43412,
+    "timestampMs": 43230,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " até",
+    "startMs": 43582,
+    "endMs": 43812,
+    "timestampMs": 43697,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " um",
+    "startMs": 43812,
+    "endMs": 43983,
+    "timestampMs": 43898,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " mapa",
+    "startMs": 43983,
+    "endMs": 44270,
+    "timestampMs": 44127,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " de",
+    "startMs": 44270,
+    "endMs": 44443,
+    "timestampMs": 44357,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " celular",
+    "startMs": 44443,
+    "endMs": 44901,
+    "timestampMs": 44672,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " depende",
+    "startMs": 44901,
+    "endMs": 45359,
+    "timestampMs": 45130,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " de",
+    "startMs": 45359,
+    "endMs": 45532,
+    "timestampMs": 45446,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " relógios",
+    "startMs": 45532,
+    "endMs": 46048,
+    "timestampMs": 45790,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " no",
+    "startMs": 46048,
+    "endMs": 46220,
+    "timestampMs": 46134,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " espaço,",
+    "startMs": 46310,
+    "endMs": 46492,
+    "timestampMs": 46401,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " corrigidos",
+    "startMs": 46862,
+    "endMs": 47515,
+    "timestampMs": 47189,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " pela",
+    "startMs": 47515,
+    "endMs": 47812,
+    "timestampMs": 47664,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " relatividade.",
+    "startMs": 47812,
+    "endMs": 48584,
+    "timestampMs": 48198,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " A",
+    "startMs": 49014,
+    "endMs": 49120,
+    "timestampMs": 49067,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " máquina",
+    "startMs": 49120,
+    "endMs": 49546,
+    "timestampMs": 49333,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " calculou",
+    "startMs": 49546,
+    "endMs": 50025,
+    "timestampMs": 49786,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " o",
+    "startMs": 50025,
+    "endMs": 50132,
+    "timestampMs": 50079,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " caminho",
+    "startMs": 50132,
+    "endMs": 50558,
+    "timestampMs": 50345,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " até",
+    "startMs": 50558,
+    "endMs": 50771,
+    "timestampMs": 50665,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Lumen.",
+    "startMs": 50771,
+    "endMs": 51090,
+    "timestampMs": 50931,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Então",
+    "startMs": 51400,
+    "endMs": 51702,
+    "timestampMs": 51551,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " pediu",
+    "startMs": 51702,
+    "endMs": 52005,
+    "timestampMs": 51854,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " uma",
+    "startMs": 52005,
+    "endMs": 52206,
+    "timestampMs": 52106,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " descarga",
+    "startMs": 52206,
+    "endMs": 52660,
+    "timestampMs": 52433,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " de",
+    "startMs": 52660,
+    "endMs": 52811,
+    "timestampMs": 52736,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " energia",
+    "startMs": 52811,
+    "endMs": 53214,
+    "timestampMs": 53013,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " que",
+    "startMs": 53214,
+    "endMs": 53416,
+    "timestampMs": 53315,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " nenhuma",
+    "startMs": 53416,
+    "endMs": 53819,
+    "timestampMs": 53618,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " bateria",
+    "startMs": 53819,
+    "endMs": 54222,
+    "timestampMs": 54021,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " consegue",
+    "startMs": 54222,
+    "endMs": 54675,
+    "timestampMs": 54449,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " dar",
+    "startMs": 54675,
+    "endMs": 54877,
+    "timestampMs": 54776,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " de",
+    "startMs": 54877,
+    "endMs": 55028,
+    "timestampMs": 54953,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " uma",
+    "startMs": 55028,
+    "endMs": 55229,
+    "timestampMs": 55129,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " vez.",
+    "startMs": 55229,
+    "endMs": 55431,
+    "timestampMs": 55330,
+    "confidence": null,
+    "scene": 6
+  }
+]

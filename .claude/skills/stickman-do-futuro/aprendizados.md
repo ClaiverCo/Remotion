@@ -30,6 +30,10 @@ Correções pedidas pelo usuário e o que deu certo nesta série. Formato: `- [A
 - [2026-11-04] Ep. 3: o Kokoro de novo adiantou uma frase antes de dois-pontos ("square: a chip") → mesmo conserto do ep. 2 (reencaixar entre os silêncios reais); o check-sync voltou a 0%. Dois-pontos na narração costumam dar esse desvio: prefira ponto final.
 - [2026-11-04] Para pôr uma peça num encaixe do lado direito do anel, o Kip fica na frente da máquina → depois de encaixar, ele dá dois passos para trás (`walkAlong` curto) para não parecer que está dentro do anel.
 
+- [2026-11-04] Ep. 4: o usuário pediu o episódio em português do Brasil e quis **ouvir as vozes antes** → gerar a narração com cada voz Piper (faber, cadu, jeff), recortar o gancho + o clipe com números em `voz-<nome>.mp3`, enviar e perguntar. Escolha: **cadu**. Em pt-BR o Piper é mais lento: o mesmo roteiro deu 52 s (faber) a 58 s (cadu/jeff).
+- [2026-11-04] Número com fonte contestada ("o GPS erraria 10 km por dia") → fica fora da narração; use o fato mais seguro (os relógios são ajustados antes do lançamento). Diferença invisível (38 µs) no desenho → exagere e escreva "(diferença exagerada para dar para ver)".
+- [2026-11-04] Subtítulo longo do cartão final passava da largura → `EndCard` ajusta a fonte pelo comprimento do texto.
+
 ## Ambiente (sessões na nuvem)
 - [2026-11-04] O render/QA tentou baixar o Chrome Headless Shell e falhou (rede bloqueada) → `export REMOTION_BROWSER_EXECUTABLE=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell` antes de `npm run qa`/`render`.
 

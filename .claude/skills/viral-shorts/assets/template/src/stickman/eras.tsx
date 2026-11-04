@@ -192,7 +192,8 @@ export const PresentBackdrop: React.FC<{
 };
 
 /** Etiqueta da era no canto (ficção do universo). */
-export const EraTag: React.FC<{ era: "future" | "present"; top?: number }> = ({ era, top = 250 }) => {
+/** `label` troca o texto (ex.: episódio em português); a cor continua a da era. */
+export const EraTag: React.FC<{ era: "future" | "present"; top?: number; label?: string }> = ({ era, top = 250, label }) => {
   const e = ERAS[era];
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -217,7 +218,7 @@ export const EraTag: React.FC<{ era: "future" | "present"; top?: number }> = ({ 
           color: LEAD.colors.outline,
         }}
       >
-        {e.label}
+        {label ?? e.label}
       </div>
     </AbsoluteFill>
   );

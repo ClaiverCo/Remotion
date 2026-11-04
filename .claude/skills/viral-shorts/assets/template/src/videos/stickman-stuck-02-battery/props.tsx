@@ -357,14 +357,14 @@ export const WallSocket: React.FC<{ x: number; y: number }> = ({ x, y }) => (
 );
 
 /** Cartão final da novela. */
-export const EndCard: React.FC<{ show: number; next: string; y?: number }> = ({ show, next, y = 520 }) =>
+export const EndCard: React.FC<{ show: number; next: string; y?: number; title?: string }> = ({ show, next, y = 520, title = "TO BE CONTINUED…" }) =>
   show > 0 ? (
     <g transform={`translate(540 ${y}) scale(${0.85 + 0.15 * show})`} opacity={show}>
       <rect x={-420} y={-110} width={840} height={220} rx={40} fill="#111827" opacity={0.92} />
       <text y={-12} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={66} fill="#ffffff">
-        TO BE CONTINUED…
+        {title}
       </text>
-      <text y={60} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={34} fill={CYAN}>
+      <text y={60} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={Math.min(34, 740 / (next.length * 0.62))} fill={CYAN}>
         {next}
       </text>
     </g>

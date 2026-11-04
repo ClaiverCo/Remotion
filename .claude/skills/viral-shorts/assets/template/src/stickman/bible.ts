@@ -152,6 +152,9 @@ export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-stuck-03-chip · The physical time machine (MACHINE-01) stands on the right side of Ben's garage: a grey ring on two legs over a base with a small dark screen, six round sockets around the ring in the blueprint's order (0 top = Ben's watch, 1 upper right = power bank, 2 lower right = phone circuit board with its chip; 3 to 5 empty).",
   "2026-11-04 · stickman-stuck-03-chip · The Chrono-Band has a tiny 'brain' (processor) under a flip-up cover; it burned out in the portal overload of Ep. 1 and is replaced, in the machine, by the chip from an old phone's circuit board.",
   "2026-11-04 · stickman-stuck-03-chip · On Lumen, Kip believed device brains were grown from rare glowing crystals (his belief, never shown as how Lumen really works).",
+  "2026-11-04 · stickman-stuck-04-gps · Slot 3 (bottom of the ring) holds Ben's old generic car GPS navigator (GPS-01: black screen in a grey frame, suction mount, no brand). With it, the machine knows where and when it is and can plot a route to Lumen.",
+  "2026-11-04 · stickman-stuck-04-gps · The machine's next need: one huge burst of energy that no battery can deliver at once (sets up Ep. 5).",
+  "2026-11-04 · stickman-stuck-04-gps · Language: Ep. 4 onward of this arc may be narrated in Brazilian Portuguese (Piper voice 'cadu', chosen by the user); era tags read 'ANTIGAMENTE · 2026' and 'LUMEN · MEU TEMPO', split labels 'ANTIGAMENTE' and 'MEU TEMPO', end card 'CONTINUA…'.",
 ];
 
 /**

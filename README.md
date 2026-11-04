@@ -154,10 +154,13 @@ Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça 
 
 - **Ep. 3 `stickman-stuck-03-chip`** (60 s, 7 clipes): *"The Brain Made of Sand"*. O "cérebro" da Chrono-Band queimou; o Ben acha a placa de um celular velho e o chip entra no 3º encaixe da máquina, agora uma estrutura de verdade na garagem. O vídeo explica areia → silício → cristal → discos → luz que grava bilhões de transistores. No fim, a máquina pergunta onde e quando eles estão.
 
+- **Ep. 4 `stickman-stuck-04-gps`** (58 s, 7 clipes, **em português do Brasil**, voz Piper `cadu`): *"Relógios no Céu"*. A máquina não sabe onde nem quando está; o Ben mostra o mapa do celular e um GPS velho de carro entra no 4º encaixe. O vídeo explica os sinais com a hora exata dos satélites e por que os relógios deles, que adiantam cerca de 38 microssegundos por dia por causa da relatividade, são ajustados antes do lançamento. No fim, a máquina pede uma descarga de energia que nenhuma bateria dá.
+
 ```bash
 npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
 npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
 npm run render -- stickman-stuck-03-chip && npm run finalize -- stickman-stuck-03-chip
+npm run render -- stickman-stuck-04-gps && npm run finalize -- stickman-stuck-04-gps
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`
