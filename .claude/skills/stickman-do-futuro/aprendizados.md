@@ -27,6 +27,9 @@ Correções pedidas pelo usuário e o que deu certo nesta série. Formato: `- [A
 - [2026-11-04] Ep. 2: o Kokoro alinhou mal uma frase com vírgula (legenda ~0,2 s adiantada; check-sync 2,1%) → reencaixar as palavras da frase entre os silêncios reais (`ffmpeg silencedetect`) no `captions.json` e rodar `npm run sync`; voltou a 0%.
 - [2026-11-04] Objeto na mão do Kip em close (zoom 1,3) parecia gigante → power bank com escala 0,42 na mão e mãos na altura do peito (`HANDS`), nunca na frente do rosto.
 
+- [2026-11-04] Ep. 3: o Kokoro de novo adiantou uma frase antes de dois-pontos ("square: a chip") → mesmo conserto do ep. 2 (reencaixar entre os silêncios reais); o check-sync voltou a 0%. Dois-pontos na narração costumam dar esse desvio: prefira ponto final.
+- [2026-11-04] Para pôr uma peça num encaixe do lado direito do anel, o Kip fica na frente da máquina → depois de encaixar, ele dá dois passos para trás (`walkAlong` curto) para não parecer que está dentro do anel.
+
 ## Ambiente (sessões na nuvem)
 - [2026-11-04] O render/QA tentou baixar o Chrome Headless Shell e falhou (rede bloqueada) → `export REMOTION_BROWSER_EXECUTABLE=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell` antes de `npm run qa`/`render`.
 

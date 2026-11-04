@@ -1,0 +1,1236 @@
+[
+  {
+    "text": "Power",
+    "startMs": 175,
+    "endMs": 516,
+    "timestampMs": 346,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 516,
+    "endMs": 744,
+    "timestampMs": 630,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " only",
+    "startMs": 744,
+    "endMs": 1028,
+    "timestampMs": 886,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " half",
+    "startMs": 1028,
+    "endMs": 1313,
+    "timestampMs": 1171,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 1313,
+    "endMs": 1540,
+    "timestampMs": 1427,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " problem.",
+    "startMs": 1540,
+    "endMs": 1995,
+    "timestampMs": 1768,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Inside",
+    "startMs": 2305,
+    "endMs": 2805,
+    "timestampMs": 2555,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " my",
+    "startMs": 2805,
+    "endMs": 3019,
+    "timestampMs": 2912,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Chrono-Band,",
+    "startMs": 3019,
+    "endMs": 3805,
+    "timestampMs": 3412,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " its",
+    "startMs": 4155,
+    "endMs": 4387,
+    "timestampMs": 4271,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " tiny",
+    "startMs": 4387,
+    "endMs": 4677,
+    "timestampMs": 4532,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " brain",
+    "startMs": 4677,
+    "endMs": 5025,
+    "timestampMs": 4851,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " had",
+    "startMs": 5025,
+    "endMs": 5257,
+    "timestampMs": 5141,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " burned",
+    "startMs": 5257,
+    "endMs": 5663,
+    "timestampMs": 5460,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " out.",
+    "startMs": 5663,
+    "endMs": 5895,
+    "timestampMs": 5779,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " And",
+    "startMs": 6205,
+    "endMs": 6428,
+    "timestampMs": 6317,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " nobody",
+    "startMs": 6428,
+    "endMs": 6817,
+    "timestampMs": 6623,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " here",
+    "startMs": 6817,
+    "endMs": 7095,
+    "timestampMs": 6956,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " sold",
+    "startMs": 7265,
+    "endMs": 7552,
+    "timestampMs": 7409,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " parts",
+    "startMs": 7552,
+    "endMs": 7897,
+    "timestampMs": 7725,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " from",
+    "startMs": 7897,
+    "endMs": 8183,
+    "timestampMs": 8040,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 8183,
+    "endMs": 8413,
+    "timestampMs": 8298,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " future.",
+    "startMs": 8413,
+    "endMs": 8815,
+    "timestampMs": 8614,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Ben",
+    "startMs": 9245,
+    "endMs": 9450,
+    "timestampMs": 9348,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " dug",
+    "startMs": 9450,
+    "endMs": 9656,
+    "timestampMs": 9553,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " through",
+    "startMs": 9656,
+    "endMs": 10067,
+    "timestampMs": 9862,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 10067,
+    "endMs": 10170,
+    "timestampMs": 10119,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " drawer",
+    "startMs": 10170,
+    "endMs": 10530,
+    "timestampMs": 10350,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " and",
+    "startMs": 10530,
+    "endMs": 10735,
+    "timestampMs": 10633,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " found",
+    "startMs": 11105,
+    "endMs": 11456,
+    "timestampMs": 11281,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " an",
+    "startMs": 11456,
+    "endMs": 11632,
+    "timestampMs": 11544,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " old",
+    "startMs": 11632,
+    "endMs": 11866,
+    "timestampMs": 11749,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " phone's",
+    "startMs": 11866,
+    "endMs": 12275,
+    "timestampMs": 12071,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " circuit",
+    "startMs": 12275,
+    "endMs": 12744,
+    "timestampMs": 12510,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " board.",
+    "startMs": 12744,
+    "endMs": 13095,
+    "timestampMs": 12920,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " In",
+    "startMs": 13405,
+    "endMs": 13555,
+    "timestampMs": 13480,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 13555,
+    "endMs": 13754,
+    "timestampMs": 13655,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " middle",
+    "startMs": 13754,
+    "endMs": 14103,
+    "timestampMs": 13929,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " sat",
+    "startMs": 14103,
+    "endMs": 14303,
+    "timestampMs": 14203,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 14303,
+    "endMs": 14402,
+    "timestampMs": 14353,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " small",
+    "startMs": 14402,
+    "endMs": 14701,
+    "timestampMs": 14552,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " black",
+    "startMs": 14701,
+    "endMs": 15000,
+    "timestampMs": 14851,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " square:",
+    "startMs": 15000,
+    "endMs": 15349,
+    "timestampMs": 15175,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 15699,
+    "endMs": 15841,
+    "timestampMs": 15770,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " chip.",
+    "startMs": 15841,
+    "endMs": 16195,
+    "timestampMs": 16018,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " I",
+    "startMs": 16635,
+    "endMs": 16738,
+    "timestampMs": 16687,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fitted",
+    "startMs": 16738,
+    "endMs": 17096,
+    "timestampMs": 16917,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " it",
+    "startMs": 17096,
+    "endMs": 17250,
+    "timestampMs": 17173,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " into",
+    "startMs": 17250,
+    "endMs": 17506,
+    "timestampMs": 17378,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " my",
+    "startMs": 17506,
+    "endMs": 17660,
+    "timestampMs": 17583,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " machine's",
+    "startMs": 17660,
+    "endMs": 18121,
+    "timestampMs": 17891,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " third",
+    "startMs": 18121,
+    "endMs": 18429,
+    "timestampMs": 18275,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " slot.",
+    "startMs": 18429,
+    "endMs": 18685,
+    "timestampMs": 18557,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Then",
+    "startMs": 18995,
+    "endMs": 19264,
+    "timestampMs": 19130,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Ben",
+    "startMs": 19264,
+    "endMs": 19479,
+    "timestampMs": 19372,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " said",
+    "startMs": 19479,
+    "endMs": 19748,
+    "timestampMs": 19614,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " something",
+    "startMs": 19748,
+    "endMs": 20285,
+    "timestampMs": 20017,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " strange:",
+    "startMs": 20285,
+    "endMs": 20715,
+    "timestampMs": 20500,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " chips",
+    "startMs": 21065,
+    "endMs": 21384,
+    "timestampMs": 21225,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " like",
+    "startMs": 21384,
+    "endMs": 21651,
+    "timestampMs": 21518,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " this",
+    "startMs": 21651,
+    "endMs": 21917,
+    "timestampMs": 21784,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " start",
+    "startMs": 21917,
+    "endMs": 22236,
+    "timestampMs": 22077,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " out",
+    "startMs": 22236,
+    "endMs": 22449,
+    "timestampMs": 22343,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " as",
+    "startMs": 22449,
+    "endMs": 22609,
+    "timestampMs": 22529,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " sand.",
+    "startMs": 22609,
+    "endMs": 22875,
+    "timestampMs": 22742,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " Factories",
+    "startMs": 23305,
+    "endMs": 23921,
+    "timestampMs": 23613,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " purify",
+    "startMs": 23921,
+    "endMs": 24353,
+    "timestampMs": 24137,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 24353,
+    "endMs": 24599,
+    "timestampMs": 24476,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " silica",
+    "startMs": 24599,
+    "endMs": 25032,
+    "timestampMs": 24816,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " in",
+    "startMs": 25032,
+    "endMs": 25217,
+    "timestampMs": 25125,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " sand",
+    "startMs": 25217,
+    "endMs": 25525,
+    "timestampMs": 25371,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " into",
+    "startMs": 25525,
+    "endMs": 25833,
+    "timestampMs": 25679,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " almost",
+    "startMs": 25833,
+    "endMs": 26265,
+    "timestampMs": 26049,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " perfect",
+    "startMs": 26375,
+    "endMs": 26813,
+    "timestampMs": 26594,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " silicon,",
+    "startMs": 26813,
+    "endMs": 27250,
+    "timestampMs": 27032,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " grow",
+    "startMs": 27860,
+    "endMs": 28160,
+    "timestampMs": 28010,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " it",
+    "startMs": 28160,
+    "endMs": 28340,
+    "timestampMs": 28250,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " into",
+    "startMs": 28340,
+    "endMs": 28640,
+    "timestampMs": 28490,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " one",
+    "startMs": 28640,
+    "endMs": 28880,
+    "timestampMs": 28760,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " big",
+    "startMs": 28880,
+    "endMs": 29120,
+    "timestampMs": 29000,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " crystal,",
+    "startMs": 29120,
+    "endMs": 29600,
+    "timestampMs": 29360,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " and",
+    "startMs": 30100,
+    "endMs": 30370,
+    "timestampMs": 30235,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " slice",
+    "startMs": 30370,
+    "endMs": 30774,
+    "timestampMs": 30572,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " it",
+    "startMs": 30774,
+    "endMs": 30976,
+    "timestampMs": 30875,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " into",
+    "startMs": 30976,
+    "endMs": 31313,
+    "timestampMs": 31145,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " thin",
+    "startMs": 31313,
+    "endMs": 31651,
+    "timestampMs": 31482,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " discs.",
+    "startMs": 31651,
+    "endMs": 32055,
+    "timestampMs": 31853,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " Then",
+    "startMs": 32485,
+    "endMs": 32755,
+    "timestampMs": 32620,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " light",
+    "startMs": 32755,
+    "endMs": 33079,
+    "timestampMs": 32917,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " prints",
+    "startMs": 33079,
+    "endMs": 33457,
+    "timestampMs": 33268,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " circuit",
+    "startMs": 33457,
+    "endMs": 33889,
+    "timestampMs": 33673,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " patterns",
+    "startMs": 33889,
+    "endMs": 34375,
+    "timestampMs": 34132,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " onto",
+    "startMs": 34375,
+    "endMs": 34645,
+    "timestampMs": 34510,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " each",
+    "startMs": 34645,
+    "endMs": 34915,
+    "timestampMs": 34780,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " disc,",
+    "startMs": 34915,
+    "endMs": 35185,
+    "timestampMs": 35050,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " layer",
+    "startMs": 35525,
+    "endMs": 35892,
+    "timestampMs": 35709,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " after",
+    "startMs": 35892,
+    "endMs": 36258,
+    "timestampMs": 36075,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " layer,",
+    "startMs": 36258,
+    "endMs": 36625,
+    "timestampMs": 36442,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " until",
+    "startMs": 36885,
+    "endMs": 37262,
+    "timestampMs": 37074,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " one",
+    "startMs": 37262,
+    "endMs": 37514,
+    "timestampMs": 37388,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " chip",
+    "startMs": 37514,
+    "endMs": 37828,
+    "timestampMs": 37671,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " holds",
+    "startMs": 37828,
+    "endMs": 38206,
+    "timestampMs": 38017,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " billions",
+    "startMs": 38206,
+    "endMs": 38772,
+    "timestampMs": 38489,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " of",
+    "startMs": 38772,
+    "endMs": 38960,
+    "timestampMs": 38866,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " transistors:",
+    "startMs": 38960,
+    "endMs": 39715,
+    "timestampMs": 39338,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " tiny",
+    "startMs": 40165,
+    "endMs": 40563,
+    "timestampMs": 40364,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " on-off",
+    "startMs": 40563,
+    "endMs": 41040,
+    "timestampMs": 40802,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " switches.",
+    "startMs": 41040,
+    "endMs": 41755,
+    "timestampMs": 41398,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " On",
+    "startMs": 42185,
+    "endMs": 42402,
+    "timestampMs": 42294,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 42402,
+    "endMs": 42835,
+    "timestampMs": 42619,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " I",
+    "startMs": 43165,
+    "endMs": 43275,
+    "timestampMs": 43220,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " thought",
+    "startMs": 43275,
+    "endMs": 43713,
+    "timestampMs": 43494,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " brains",
+    "startMs": 43713,
+    "endMs": 44096,
+    "timestampMs": 43905,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " like",
+    "startMs": 44096,
+    "endMs": 44370,
+    "timestampMs": 44233,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " this",
+    "startMs": 44370,
+    "endMs": 44644,
+    "timestampMs": 44507,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " needed",
+    "startMs": 44644,
+    "endMs": 45028,
+    "timestampMs": 44836,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " rare",
+    "startMs": 45028,
+    "endMs": 45302,
+    "timestampMs": 45165,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " crystals.",
+    "startMs": 45302,
+    "endMs": 45795,
+    "timestampMs": 45549,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Back",
+    "startMs": 46105,
+    "endMs": 46443,
+    "timestampMs": 46274,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " then,",
+    "startMs": 46443,
+    "endMs": 46780,
+    "timestampMs": 46612,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " they",
+    "startMs": 46830,
+    "endMs": 47020,
+    "timestampMs": 46925,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " started",
+    "startMs": 47020,
+    "endMs": 47325,
+    "timestampMs": 47173,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " as",
+    "startMs": 47325,
+    "endMs": 47440,
+    "timestampMs": 47383,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " sand,",
+    "startMs": 47440,
+    "endMs": 47630,
+    "timestampMs": 47535,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " purified",
+    "startMs": 48170,
+    "endMs": 48647,
+    "timestampMs": 48409,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " and",
+    "startMs": 48647,
+    "endMs": 48859,
+    "timestampMs": 48753,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " printed",
+    "startMs": 48859,
+    "endMs": 49282,
+    "timestampMs": 49071,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " with",
+    "startMs": 49282,
+    "endMs": 49547,
+    "timestampMs": 49415,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " light.",
+    "startMs": 49547,
+    "endMs": 49865,
+    "timestampMs": 49706,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " The",
+    "startMs": 50295,
+    "endMs": 50549,
+    "timestampMs": 50422,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " chip",
+    "startMs": 50549,
+    "endMs": 50867,
+    "timestampMs": 50708,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " woke",
+    "startMs": 50867,
+    "endMs": 51184,
+    "timestampMs": 51026,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " up.",
+    "startMs": 51184,
+    "endMs": 51375,
+    "timestampMs": 51280,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Then",
+    "startMs": 51685,
+    "endMs": 51896,
+    "timestampMs": 51791,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " the",
+    "startMs": 51896,
+    "endMs": 52066,
+    "timestampMs": 51981,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " machine",
+    "startMs": 52066,
+    "endMs": 52404,
+    "timestampMs": 52235,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " asked",
+    "startMs": 52404,
+    "endMs": 52658,
+    "timestampMs": 52531,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " me",
+    "startMs": 52658,
+    "endMs": 52785,
+    "timestampMs": 52722,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " a",
+    "startMs": 52785,
+    "endMs": 52869,
+    "timestampMs": 52827,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " question:",
+    "startMs": 52869,
+    "endMs": 53250,
+    "timestampMs": 53060,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " where",
+    "startMs": 53830,
+    "endMs": 54187,
+    "timestampMs": 54009,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " exactly",
+    "startMs": 54187,
+    "endMs": 54663,
+    "timestampMs": 54425,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " are",
+    "startMs": 54663,
+    "endMs": 54901,
+    "timestampMs": 54782,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " we,",
+    "startMs": 54901,
+    "endMs": 55080,
+    "timestampMs": 54991,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " in",
+    "startMs": 55160,
+    "endMs": 55356,
+    "timestampMs": 55258,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " space",
+    "startMs": 55356,
+    "endMs": 55749,
+    "timestampMs": 55553,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " and",
+    "startMs": 55749,
+    "endMs": 56011,
+    "timestampMs": 55880,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " in",
+    "startMs": 56011,
+    "endMs": 56208,
+    "timestampMs": 56110,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " time?",
+    "startMs": 56208,
+    "endMs": 56535,
+    "timestampMs": 56372,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " I",
+    "startMs": 56845,
+    "endMs": 57002,
+    "timestampMs": 56924,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " had",
+    "startMs": 57002,
+    "endMs": 57316,
+    "timestampMs": 57159,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " no",
+    "startMs": 57316,
+    "endMs": 57552,
+    "timestampMs": 57434,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " idea.",
+    "startMs": 57552,
+    "endMs": 57945,
+    "timestampMs": 57749,
+    "confidence": null,
+    "scene": 6
+  }
+]

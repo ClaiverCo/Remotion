@@ -1,0 +1,85 @@
+{
+  "slug": "stickman-stuck-03-chip",
+  "titulo": "Stuck in 2026, Ep. 3: The Brain Made of Sand",
+  "tema": "Stuck in 2026, episode 3: Kip learns how a silicon chip is made from sand and fits one into his time machine",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "en-US",
+  "perguntaCentral": "How does ordinary sand end up as the brain of a phone?",
+  "duracaoAlvoSeg": 60,
+  "voz": "kokoro",
+  "vozId": "am_michael",
+  "pronuncias": {},
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "the silicon chip",
+    "descricao": "a loose green circuit board from an old phone of the 2020s, with thin copper lines and one small black square chip in the middle; no battery, no brand"
+  },
+  "cenas": [
+    {
+      "id": "c01-burned",
+      "era": "presente",
+      "acao": "In Ben's garage, Kip opens a tiny cover on his cracked Chrono-Band and finds its little processor burned black, with a wisp of smoke.",
+      "narracao": "Power was only half the problem. Inside my Chrono-Band, its tiny brain had *burned out*. And nobody here sold parts from the future.",
+      "visual": "Garage, the time machine frame standing on the right with the watch and the power bank in two of its six slots. Kip raises his left wrist; at 'Inside' the band's cover flips open in a magnifier; at 'burned out' the little chip inside is black with a curl of grey smoke. At 'nobody' Kip shrugs.",
+      "selo": { "texto": "STUCK IN 2026 · EP 3", "icone": "!", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-board",
+      "era": "presente",
+      "acao": "Ben opens a drawer under the workbench and holds up a loose green circuit board from an old phone, with a small black chip in the middle.",
+      "narracao": "Ben dug through a drawer and found an old phone's circuit board. In the middle sat a small black square: a *chip*.",
+      "visual": "Ben pulls a drawer under the bench at 'drawer', rummages, and lifts a green circuit board at 'circuit board'. At 'black square' a magnifier shows the chip; at 'chip' it glows.",
+      "sfx": "pop",
+      "fontes": [1]
+    },
+    {
+      "id": "c03-slot",
+      "era": "presente",
+      "acao": "Kip fits the board into the third slot of the machine frame; it clicks and lights up; Ben points at the chip and a small pile of sand appears in a thought bubble.",
+      "narracao": "I fitted it into my machine's third slot. Then Ben said something strange: chips like this start out as *sand*.",
+      "visual": "Kip carries the board in his right hand to the machine frame and slides it into slot 3 at 'third slot' (click, slot glows). Ben, behind him, says the line (dramatization, no lip sync); at 'sand' a thought bubble with a small sand pile pops above Kip, who looks shocked.",
+      "sfx": "ding",
+      "fontes": [1, 3]
+    },
+    {
+      "id": "c04-wafer",
+      "era": "presente",
+      "acao": "Diagram: a pile of silica sand turns into a lump of pure silicon, grows into one big cylindrical crystal and is sliced into thin shiny discs.",
+      "narracao": "Factories purify the silica in sand into almost perfect *silicon*, grow it into one big crystal, and slice it into thin discs.",
+      "visual": "A left-to-right flow above the caption zone: sand pile ('silica'), arrow, grey shiny lump ('silicon') at 'silicon', arrow, a tall cylinder pulled up from a glowing pot at 'crystal', arrow, the cylinder sliced into thin shiny wafers at 'slice'. Kip small in a corner.",
+      "sfx": "whoosh",
+      "fontes": [1, 3, 4]
+    },
+    {
+      "id": "c05-light",
+      "era": "presente",
+      "acao": "Light shines through a stencil-like mask onto a wafer, printing a pattern; layers stack up; a zoom shows a grid of tiny switches blinking on and off.",
+      "narracao": "Then light prints circuit patterns onto each disc, layer after layer, until one chip holds *billions of transistors*: tiny on-off switches.",
+      "visual": "A big wafer disc; a lamp shines down through a mask at 'light' and the pattern appears on the disc at 'prints'. At 'layer after layer' three coloured layers stack. At 'billions' a zoom circle shows a grid of tiny switches flicking on and off; a label 'billions' and an on/off switch icon at 'switches'.",
+      "sfx": "ding",
+      "fontes": [2, 5, 6, 7]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Split screen: on Lumen, Kip imagined a rare glowing crystal on a museum pedestal; in 2026, a plain pile of sand turns into a chip.",
+      "narracao": "On Lumen, I thought brains like this needed rare crystals. Back then, they started as *sand*, purified and printed with light.",
+      "visual": "Bottom half (my time) first at 'Lumen': a rare glowing violet crystal on a light pedestal in the museum. Top half (old days) at 'Back then': a plain sand pile; at 'sand' it flows into a wafer and the wafer shines into a chip at 'printed with light'.",
+      "sfx": "whoosh",
+      "fontes": [1, 2]
+    },
+    {
+      "id": "c07-question",
+      "era": "presente",
+      "acao": "The chip wakes up and the machine's little screen asks where exactly they are in space and time, with a map pin and a clock; Kip has no answer.",
+      "narracao": "The chip woke up. Then the machine asked me a question: where *exactly* are we, in space and in time? I had no idea.",
+      "visual": "Garage. At 'woke' slot 3 glows and the frame hums. At 'question' a small screen on the machine shows a big '?'; at 'space' a map pin icon, at 'time' a clock icon. Kip shrugs at 'no idea'; Ben scratches his head. 'TO BE CONTINUED' end card.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

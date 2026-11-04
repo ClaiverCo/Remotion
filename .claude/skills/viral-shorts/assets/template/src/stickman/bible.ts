@@ -149,6 +149,9 @@ export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-stuck-02-battery · The Chrono-Band has a tiny charging port on its side (fiction). Charged from Ben's power bank, the cracked band can light up for a few seconds but still cannot open a portal by itself.",
   "2026-11-04 · stickman-stuck-02-battery · Ben's garage (GARAGE-01) is Kip's base in 2026: workbench on the left with Ben's watch lying on it, pegboard and shelf above it, roll-up door on the right, one hanging lamp.",
   "2026-11-04 · stickman-stuck-02-battery · The time machine blueprint (BLUEPRINT-01): a cyan hologram ring with a portal in the middle and six slots. Slot 1 = the quartz crystal (Ep. 1), slot 2 = the battery (Ep. 2); slots 3 to 6 stay empty with '?' until their episode.",
+  "2026-11-04 · stickman-stuck-03-chip · The physical time machine (MACHINE-01) stands on the right side of Ben's garage: a grey ring on two legs over a base with a small dark screen, six round sockets around the ring in the blueprint's order (0 top = Ben's watch, 1 upper right = power bank, 2 lower right = phone circuit board with its chip; 3 to 5 empty).",
+  "2026-11-04 · stickman-stuck-03-chip · The Chrono-Band has a tiny 'brain' (processor) under a flip-up cover; it burned out in the portal overload of Ep. 1 and is replaced, in the machine, by the chip from an old phone's circuit board.",
+  "2026-11-04 · stickman-stuck-03-chip · On Lumen, Kip believed device brains were grown from rare glowing crystals (his belief, never shown as how Lumen really works).",
 ];
 
 /**

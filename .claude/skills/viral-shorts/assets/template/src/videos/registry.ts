@@ -6,6 +6,7 @@ import { video as stickmanHouseKey } from "./stickman-house-key";
 import { video as stickmanElectricFan } from "./stickman-electric-fan";
 import { video as stickmanStuck01Crystal } from "./stickman-stuck-01-crystal";
 import { video as stickmanStuck02Battery } from "./stickman-stuck-02-battery";
+import { video as stickmanStuck03Chip } from "./stickman-stuck-03-chip";
 // @registry-imports
 
 export const videos: VideoDefinition[] = [
@@ -15,5 +16,6 @@ export const videos: VideoDefinition[] = [
   stickmanElectricFan,
   stickmanStuck01Crystal,
   stickmanStuck02Battery,
+  stickmanStuck03Chip,
   // @registry-entries
 ];

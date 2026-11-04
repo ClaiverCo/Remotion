@@ -152,9 +152,12 @@ Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça 
 
 - **Ep. 2 `stickman-stuck-02-battery`** (56 s, 7 clipes): *"Power in a Pocket"*. A Chrono-Band está sem energia; o Ben empresta um power bank e o Kip descobre a bateria de lítio: íons atravessam o separador por dentro e os elétrons dão a volta pelo fio, alimentando o aparelho. A pulseira acende 3 s e mostra a planta da máquina do tempo, com 4 espaços vazios.
 
+- **Ep. 3 `stickman-stuck-03-chip`** (60 s, 7 clipes): *"The Brain Made of Sand"*. O "cérebro" da Chrono-Band queimou; o Ben acha a placa de um celular velho e o chip entra no 3º encaixe da máquina, agora uma estrutura de verdade na garagem. O vídeo explica areia → silício → cristal → discos → luz que grava bilhões de transistores. No fim, a máquina pergunta onde e quando eles estão.
+
 ```bash
 npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
 npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
+npm run render -- stickman-stuck-03-chip && npm run finalize -- stickman-stuck-03-chip
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`

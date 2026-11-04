@@ -18,7 +18,7 @@ O Central Clock de Lumen sincroniza portas, plataformas flutuantes e portais. El
 |---|---|---|---|---|---|
 | 1 | `stickman-stuck-01-crystal` ✅ | The Crystal That Counts Time | relógio de quartzo: 32.768 vibrações/s, dividido por 2 quinze vezes | marcador de tempo | o Central Clock para, a Chrono-Band racha, Kip fica preso |
 | 2 | `stickman-stuck-02-battery` ✅ | Power in a Pocket | bateria de lítio: íons por dentro, elétrons pelo circuito | alimentação | a tela da Chrono-Band acende 3 s e mostra uma máquina com 4 espaços vazios |
-| 3 | `stickman-stuck-03-chip` | The Brain Made of Sand | chip de silício: areia → silício → discos → luz grava bilhões de transistores | processador | a máquina pergunta onde e quando ele está |
+| 3 | `stickman-stuck-03-chip` ✅ | The Brain Made of Sand | chip de silício: areia → silício → discos → luz grava bilhões de transistores | processador | a máquina pergunta onde e quando ele está |
 | 4 | `stickman-stuck-04-gps` | Clocks in the Sky | GPS: distância a vários satélites; relógios corrigidos pela relatividade (~38 µs/dia) | referência de tempo e posição | a máquina pede um pulso de energia que nenhuma bateria dá de uma vez |
 | 5 | `stickman-stuck-05-capacitor` | Lightning in a Box | capacitor do flash: carrega aos poucos e solta de uma vez | pulso de energia do portal | o portal começa a abrir, o chip superaquece e tudo desliga |
 | 6 | `stickman-stuck-06-fan` | The Wind That Saved the Machine | ventilador do computador: o ar em movimento tira o calor da peça | refrigeração e primeiro teste | portal do tamanho de uma mão por 3 s: só o cristal passa para Lumen, o Central Clock volta, Kip segue preso e planeja uma máquina maior |
@@ -29,6 +29,9 @@ O Central Clock de Lumen sincroniza portas, plataformas flutuantes e portais. El
 - **Power bank do Ben (PB-01):** cinza-escuro com 4 luzes de carga, na mão direita do Kip (`PowerBank`, escala 0,42 na mão). Ele carrega a pulseira por uma porta lateral (ficção).
 - **Planta da máquina (BLUEPRINT-01):** holograma ciano com 6 encaixes (`MachineBlueprint filled={n}`). Ep. 2 termina com 2 cheios (cristal e bateria) e 4 vazios; cada episódio seguinte enche mais um.
 - **Peças compartilhadas:** `Garage`, `PowerBank`, `ChargeCable`, `BandCloseup`, `MachineBlueprint` e `EndCard` ficam em `src/videos/stickman-stuck-02-battery/props.tsx`; `Watch`, `CentralClock`, `TuningFork`, `Pill` e `Sparks` em `src/videos/stickman-stuck-01-crystal/props.tsx`. Importe daí nos próximos episódios.
+- **Máquina física (MACHINE-01), a partir do ep. 3:** anel cinza em pé sobre uma base com telinha, à direita da garagem (`MachineFrame x={800}`), com 6 encaixes na ordem da planta. Ep. 3: 0 = relógio do Ben, 1 = power bank, 2 = placa do celular com o chip; 3–5 vazios. A telinha da base mostra o que a máquina "pede" (no fim do ep. 3: "?", alfinete de mapa e relógio). Use `machineSlot(x, groundY, i)` para alinhar a mão do Kip a um encaixe.
+- **Relógio e power bank montados:** do ep. 3 em diante eles ficam nos encaixes 0 e 1 da máquina, não mais na bancada nem na mão do Kip.
+- **Peças do ep. 3** (`src/videos/stickman-stuck-03-chip/props.tsx`): `MachineFrame`, `machineSlot`, `CircuitBoard`, `OpenBand`, `Drawer`, `SandPile`, `SiliconLump`, `Ingot`, `Wafers`, `LithoRig`, `SwitchGrid`, `ToggleIcon`, `RareCrystal`, `FlowArrow`.
 - **Cenário novo:** a garagem do Ben é a base de Kip em 2026; a máquina cresce nela a cada episódio.
 - **Regra de cruzamento:** exceção deste arco: um relógio de 2026 e o cristal podem ir para Lumen (Ep. 6).
 - **Segurança (Ep. 5):** capacitores e montagem só como desenho simples. Kip nunca abre um flash ou outro aparelho em cena, porque capacitores podem guardar carga perigosa.
