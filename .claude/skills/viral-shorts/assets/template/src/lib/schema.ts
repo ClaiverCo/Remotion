@@ -23,6 +23,17 @@ export const cenaSchema = z.object({
   selo: seloSchema.optional(),
   sfx: z.enum(["whoosh", "pop", "ding", "nenhum"]).default("whoosh"),
   fontes: z.array(z.number().int().positive()).default([]),
+  // --- campos do universo Stickman do Futuro (opcionais; usados pelo pacote de prompts) ---
+  /** era mostrada na cena */
+  era: z.enum(["futuro", "presente", "viagem", "comparacao"]).optional(),
+  /** ação visual principal (em inglês, vai para os prompts de imagem/animação) */
+  acao: z.string().optional(),
+  /** lugar da cena (em inglês) */
+  local: z.string().optional(),
+  /** IDs dos personagens em cena (ex.: ["FL-01", "PP-01"]) */
+  personagens: z.array(z.string()).optional(),
+  /** enquadramento/câmera (em inglês, ex.: "medium shot, eye level, slow push-in") */
+  camera: z.string().optional(),
 });
 
 export const roteiroSchema = z.object({
@@ -46,6 +57,13 @@ export const roteiroSchema = z.object({
     })
     .optional(),
   barraProgresso: z.boolean().default(false),
+  /** Universo Stickman: a relíquia do episódio (em inglês, para os prompts). */
+  reliquia: z
+    .object({
+      nome: z.string(),
+      descricao: z.string(),
+    })
+    .optional(),
   cenas: z.array(cenaSchema).min(2),
 });
 

@@ -38,9 +38,9 @@ export const bundleProject = async () => {
   return cachedServeUrl;
 };
 
-export const prepare = async (slug: string) => {
+export const prepare = async (slug: string, chromiumOverride?: ChromiumOptions) => {
   const serveUrl = await bundleProject();
-  const chromiumOptions = chromiumOptionsFor(slug);
+  const chromiumOptions = chromiumOverride ?? chromiumOptionsFor(slug);
   const exe = browserExecutable();
   const browser = await openBrowser("chrome", {
     browserExecutable: exe,

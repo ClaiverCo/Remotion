@@ -23,6 +23,8 @@
     "export": "tsx scripts/export-package.ts",
     "youtube": "tsx scripts/youtube-upload.ts",
     "sfx": "tsx scripts/gen-sfx.ts",
+    "stickman-sheet": "tsx scripts/stickman-sheet.ts",
+    "prompt-pack": "tsx scripts/prompt-pack.ts",
     "test": "tsx --test \"scripts/tests/*.test.ts\"",
     "typecheck": "tsc --noEmit"
   },

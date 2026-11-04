@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { ShortVideo } from "./ShortVideo";
 import { timelineDurationInFrames } from "./lib/timeline";
 import type { VideoDefinition } from "./lib/types";
+import { StickmanSheet } from "./stickman/StickmanSheet";
 import { VIDEO } from "./theme";
 import { videos } from "./videos/registry";
 
@@ -38,5 +39,7 @@ export const RemotionRoot: React.FC = () => (
         height={VIDEO.height}
       />
     ))}
+    {/* Folha de referência do Kip (universo Stickman do Futuro) — npm run stickman-sheet */}
+    <Composition id="StickmanSheet" component={StickmanSheet} durationInFrames={1} fps={30} width={1920} height={1080} />
   </>
 );
