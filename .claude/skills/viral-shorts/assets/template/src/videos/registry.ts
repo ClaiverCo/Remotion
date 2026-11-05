@@ -11,6 +11,7 @@ import { video as stickmanStuck04Gps } from "./stickman-stuck-04-gps";
 import { video as stickmanStuck01CrystalPt } from "./stickman-stuck-01-crystal-pt";
 import { video as stickmanStuck02BatteryPt } from "./stickman-stuck-02-battery-pt";
 import { video as stickmanStuck03ChipPt } from "./stickman-stuck-03-chip-pt";
+import { video as stickmanStuck04GpsEn } from "./stickman-stuck-04-gps-en";
 // @registry-imports
 
 export const videos: VideoDefinition[] = [
@@ -25,5 +26,6 @@ export const videos: VideoDefinition[] = [
   stickmanStuck01CrystalPt,
   stickmanStuck02BatteryPt,
   stickmanStuck03ChipPt,
+  stickmanStuck04GpsEn,
   // @registry-entries
 ];

@@ -30,7 +30,9 @@ O Central Clock de Lumen sincroniza portas, plataformas flutuantes e portais. El
 | 1 | `stickman-stuck-01-crystal-pt` ✅ | O Cristal que Conta o Tempo | `stickman-stuck-01-crystal` |
 | 2 | `stickman-stuck-02-battery-pt` ✅ | Energia no Bolso | `stickman-stuck-02-battery` |
 | 3 | `stickman-stuck-03-chip-pt` ✅ | O Cérebro Feito de Areia | `stickman-stuck-03-chip` |
-| 4 | `stickman-stuck-04-gps` ✅ | Relógios no Céu | (já nasceu em português) |
+| 4 | `stickman-stuck-04-gps` ✅ | Relógios no Céu | (já nasceu em português; a versão em inglês `stickman-stuck-04-gps-en` usa estas cenas) |
+
+**Versões em inglês:** os eps. 1–3 em inglês são os originais (`stickman-stuck-01-crystal` etc.). O ep. 4 em inglês é `stickman-stuck-04-gps-en`: ele chama `makeScenes(lang)` do ep. 4 em português, com um `lang.json` que mapeia as palavras-gatilho em português para as em inglês (voz Kokoro `am_michael`, 56,7 s).
 
 **Como uma versão em outro idioma reaproveita as cenas** (`src/stickman/lang.ts`):
 - O `Scenes.tsx` do episódio exporta `makeScenes(L)`. A pasta da versão traduzida não tem `Scenes.tsx`; o `index.ts` dela chama `makeScenes(lang)` com o `lang.json` da pasta.

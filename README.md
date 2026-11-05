@@ -160,12 +160,12 @@ Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça 
 
 **Em português do Brasil (voz Piper `cadu`):** a novela segue em português. Os eps. 1–3 foram refeitos em português e as versões em inglês continuam no projeto:
 
-| Ep. | Português (pt-BR) | Inglês (original) |
+| Ep. | Português (pt-BR) | Inglês |
 |---|---|---|
 | 1 | `stickman-stuck-01-crystal-pt`: *O Cristal que Conta o Tempo* (59 s) | `stickman-stuck-01-crystal` |
 | 2 | `stickman-stuck-02-battery-pt`: *Energia no Bolso* (56 s) | `stickman-stuck-02-battery` |
 | 3 | `stickman-stuck-03-chip-pt`: *O Cérebro Feito de Areia* (58 s) | `stickman-stuck-03-chip` |
-| 4 | `stickman-stuck-04-gps`: *Relógios no Céu* (58 s) | — |
+| 4 | `stickman-stuck-04-gps`: *Relógios no Céu* (58 s) | `stickman-stuck-04-gps-en`: *Clocks in the Sky* (57 s) |
 
 As versões em português **reaproveitam as cenas** do episódio original: o `Scenes.tsx` exporta `makeScenes(L)` e a pasta `-pt` traz só o roteiro, a narração e um `lang.json` com as palavras-gatilho de cada cena e os textos da tela traduzidos (`src/stickman/lang.ts`). Para conferir uma tradução antes do render: `npm run check-lang -- <slug-pt> <slug-original>`.
 
@@ -178,6 +178,7 @@ npm run render -- stickman-stuck-04-gps && npm run finalize -- stickman-stuck-04
 npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
 npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
 npm run render -- stickman-stuck-03-chip && npm run finalize -- stickman-stuck-03-chip
+npm run render -- stickman-stuck-04-gps-en && npm run finalize -- stickman-stuck-04-gps-en
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`

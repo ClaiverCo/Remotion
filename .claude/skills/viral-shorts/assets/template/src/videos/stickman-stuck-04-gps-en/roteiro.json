@@ -1,0 +1,87 @@
+{
+  "slug": "stickman-stuck-04-gps-en",
+  "titulo": "Stuck in 2026, Ep. 4: Clocks in the Sky",
+  "tema": "Stuck in 2026, episode 4: Kip learns how GPS finds a position from satellite signals and why the satellites' clocks are corrected for relativity",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "en-US",
+  "perguntaCentral": "How does a phone map know exactly where you are?",
+  "duracaoAlvoSeg": 60,
+  "voz": "kokoro",
+  "vozId": "am_michael",
+  "pronuncias": {
+    "38": "thirty-eight"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "the old car GPS",
+    "descricao": "a generic car GPS navigator from the 2020s, with no brand: a small black screen in a grey frame showing a simple map, on a suction-cup mount"
+  },
+  "cenas": [
+    {
+      "id": "c01-lost",
+      "era": "presente",
+      "acao": "In Ben's garage, the time machine powers up, but its little screen only shows a question mark, a blinking map pin and a blinking clock.",
+      "narracao": "The machine powered up, but without the Central Clock it didn't know where it was. Or when. Aiming the portal was *impossible*.",
+      "visual": "Garage. The machine hums and the ring glows faintly. At 'Central Clock' a thought bubble shows Lumen's Central Clock, dark. At 'where' the map pin blinks on the screen; at 'when' the clock blinks. At 'impossible' a faint portal flickers inside the ring and vanishes behind a red X.",
+      "selo": { "texto": "STUCK IN 2026 · EP 4", "icone": "!", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-map",
+      "era": "presente",
+      "acao": "Ben shows a map on his phone; a little blue dot pulses exactly where the garage is.",
+      "narracao": "Then Ben opened a map on his phone. A little blue dot showed *exactly* where we were, right there in the garage.",
+      "visual": "Ben raises his phone at 'map'. A magnifier shows the screen: simple streets and a small house; at 'blue dot' the dot appears and pulses over the garage; at 'exactly' a blue ring closes on it. Kip's eyes go wide.",
+      "sfx": "pop",
+      "fontes": [2, 3]
+    },
+    {
+      "id": "c03-receiver",
+      "era": "presente",
+      "acao": "Ben finds an old car GPS on a shelf; Kip fits the whole device into the machine's fourth slot.",
+      "narracao": "On a shelf, he found an old car *GPS*. I fitted the whole device into the machine's fourth slot.",
+      "visual": "Ben takes the navigator from the shelf at 'shelf' and passes it to Kip. At 'fitted' Kip carries it in his right hand to the slot at the bottom of the ring; click and glow at 'fourth slot'. Kip takes two steps back.",
+      "sfx": "ding",
+      "fontes": []
+    },
+    {
+      "id": "c04-signals",
+      "era": "presente",
+      "acao": "Diagram: Earth below and four satellites around it; each sends a signal stamped with the time; the receiver times the delay and draws distance circles that meet at one point.",
+      "narracao": "Satellites up in space send signals with the *exact time*. The receiver measures how long each one took, and works out the distance.",
+      "visual": "The curve of the Earth below, with the receiver on it. Four satellites with clocks appear at 'Satellites'; at 'exact time' each sends a wave with a tiny clock. At 'took' a stopwatch times the delay; at 'distance' circles grow from each satellite and cross over the receiver.",
+      "sfx": "whoosh",
+      "fontes": [2, 3, 4]
+    },
+    {
+      "id": "c05-relativity",
+      "era": "presente",
+      "acao": "Two clocks side by side, one on a satellite and one on the ground; the satellite clock gains a little every day (38 microseconds); a wrench adjusts its rate.",
+      "narracao": "But those satellite clocks run about 38 microseconds a day fast, because of *relativity*. So they're adjusted before launch.",
+      "visual": "Satellite clock on the left, ground clock on the right. At 'fast' the satellite clock runs slightly ahead; a label reads '+38 microseconds a day'. At 'relativity' the orbit and Earth's gravity appear as lines. At 'adjusted' a wrench turns the satellite clock before a rocket lifts off, and the two clocks tick together.",
+      "sfx": "ding",
+      "fontes": [1, 5]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Split screen: on Lumen, the Central Clock runs everything by itself; in 2026, a phone map depends on satellites with clocks in space.",
+      "narracao": "On Lumen, the Central Clock handles everything. Here, even a phone map depends on *clocks in space*, corrected for relativity.",
+      "visual": "Bottom half (my time) first at 'Lumen': the Central Clock floats and doors open in its rhythm. Top half (old days) at 'Here': a phone with a map and, above it, three satellites with tiny clocks linked by dashed lines; at 'corrected' a green tick.",
+      "sfx": "whoosh",
+      "fontes": [1, 2, 3]
+    },
+    {
+      "id": "c07-energy",
+      "era": "presente",
+      "acao": "The machine shows the route to Lumen; then it asks for a huge burst of power, with a lightning bolt and a question mark; the power bank shows it can't cope.",
+      "narracao": "The machine plotted a route to Lumen. Then it asked for a burst of power that *no battery* can deliver at once.",
+      "visual": "Garage. At 'route' the screen shows a dotted line to a small planet (Lumen) and a tick; at 'burst' a giant lightning bolt with a '?' appears. At 'no battery' the power bank in slot 2 blinks red. Kip scratches his head; Ben's eyes go wide. 'TO BE CONTINUED' end card.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}
