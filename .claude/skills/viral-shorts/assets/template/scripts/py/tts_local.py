@@ -3,10 +3,11 @@
 Narração GRATUITA e local: Piper (vozes pt-BR gravadas por brasileiros) ou Kokoro.
 
 Chamado por scripts/lib/tts/local.ts — não precisa rodar à mão.
-  --motor piper  : --modelo <voz.onnx> [--config <voz.onnx.json>]
-  --motor kokoro : --modelo <kokoro.onnx> --vozes <voices.bin> --voz pm_alex
+  --motor piper    : --modelo <voz.onnx> [--config <voz.onnx.json>]
+  --motor kokoro   : --modelo <kokoro.onnx> --vozes <voices.bin> --voz pm_alex
+  --motor arquivos : cada frase já vem sintetizada num .wav ("file" na entrada), ex.: Google Chirp 3 HD
 
-Entrada (--entrada): JSON [{"text": "...", "pauseAfterMs": 260}, ...]  (uma frase por item)
+Entrada (--entrada): JSON [{"text": "...", "pauseAfterMs": 260, "file": "opcional.wav"}, ...]  (uma frase por item)
 Saída:
   --saida <arquivo.wav>  narração inteira (frases + pausas)
   stdout: JSON {"sampleRate", "durationMs", "frameMs",
@@ -101,16 +102,24 @@ def make_synth(args):
 
         return synth, voice.config.sample_rate
 
+    if args.motor == "arquivos":
+        # as frases já vêm prontas em .wav (ex.: Google Chirp 3 HD); não há o que sintetizar aqui
+        def synth(text):
+            log(f"Frase sem arquivo .wav: {text[:60]}")
+            sys.exit(2)
+
+        return synth, 24000
+
     log(f"Motor desconhecido: {args.motor}")
     sys.exit(2)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--motor", default="piper", choices=["piper", "kokoro"])
+    ap.add_argument("--motor", default="piper", choices=["piper", "kokoro", "arquivos"])
     ap.add_argument("--entrada", required=True)
     ap.add_argument("--saida", required=True)
-    ap.add_argument("--modelo", required=True)
+    ap.add_argument("--modelo", default="")
     ap.add_argument("--config", default=None)
     ap.add_argument("--vozes", default=None)
     ap.add_argument("--voz", default="")
@@ -121,8 +130,13 @@ def main():
 
     with open(args.entrada, encoding="utf-8") as f:
         phrases = json.load(f)
+    if args.motor in ("piper", "kokoro") and not args.modelo:
+        log("--modelo é obrigatório para piper e kokoro")
+        sys.exit(2)
 
     synth, sr = make_synth(args)
+    if args.motor == "arquivos" and phrases and phrases[0].get("file"):
+        sr = sf.info(phrases[0]["file"]).samplerate
     pad = int(sr * PAD_MS / 1000)
     parts = [np.zeros(int(sr * LEAD_MS / 1000), dtype=np.float32)]
     cursor = len(parts[0])
@@ -134,7 +148,14 @@ def main():
             f"{args.motor}|{os.path.basename(args.modelo)}|{args.voz}|{args.velocidade}|{args.idioma}|{text}".encode("utf-8")
         ).hexdigest()[:16]
         cached = os.path.join(args.cache, f"{key}.wav") if args.cache else None
-        if cached and os.path.exists(cached):
+        if p.get("file"):
+            audio, file_sr = sf.read(p["file"], dtype="float32")
+            if audio.ndim > 1:
+                audio = audio.mean(axis=1)
+            if file_sr != sr:
+                log(f"A frase {i + 1} veio a {file_sr} Hz, mas as outras a {sr} Hz.")
+                sys.exit(2)
+        elif cached and os.path.exists(cached):
             audio, sr = sf.read(cached, dtype="float32")
         else:
             audio, sr = synth(text)

@@ -1,19 +1,100 @@
 /**
  * Google Cloud Text-to-Speech (cota GRÁTIS mensal; exige conta Google Cloud com faturamento ativo).
- * Usa SSML com <mark> antes de cada palavra + enableTimePointing → tempo EXATO de cada palavra.
- * .env: GOOGLE_TTS_API_KEY (chave restrita à "Cloud Text-to-Speech API"),
- *       GOOGLE_TTS_VOZ (padrão pt-BR-Neural2-B, masculina; pt-BR-Neural2-C feminina),
+ * - Neural2 / Wavenet: SSML com <mark> antes de cada palavra + enableTimePointing → tempo EXATO de cada palavra.
+ * - Chirp 3 HD (as vozes mais naturais), Studio e Journey não devolvem esses tempos: são sintetizadas FRASE POR FRASE
+ *   (um .wav por frase, em cache) e sincronizadas pelas pausas do áudio, como as vozes locais (local.ts).
+ * Ambiente/.env: GOOGLE_TTS_API_KEY (chave restrita à "Cloud Text-to-Speech API"),
+ *       GOOGLE_TTS_VOZ (padrão pt-BR-Neural2-B; ex.: pt-BR-Chirp3-HD-Charon),
  *       GOOGLE_TTS_VELOCIDADE (0,25–4; padrão 1,05)
  */
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { ssmlWithMarks, timepointsToCaptions, type Timepoint } from "../../../src/lib/captions.ts";
+import type { Roteiro } from "../../../src/lib/schema.ts";
 import { scriptWords, spokenWords, type ScriptWord } from "../../../src/lib/words.ts";
 import { cacheDir, fail, ffprobeDurationMs, publicDir, readJson, run, writeJson } from "../project.ts";
 import { isEnglish } from "./choose.ts";
-import type { TtsEngine } from "./types.ts";
+import { ensureVenv, spokenPhrases, synthesizeLocal } from "./local.ts";
+import type { TtsEngine, TtsResult } from "./types.ts";
 
-const API = "https://texttospeech.googleapis.com";
+/** GOOGLE_TTS_API_BASE serve só para testes (servidor local que imita a API). */
+const API = process.env.GOOGLE_TTS_API_BASE || "https://texttospeech.googleapis.com";
+
+/** Vozes sem marcas SSML (sem tempo por palavra): sintetizadas frase por frase. */
+export const isPhraseVoice = (voz: string) => /Chirp|Studio|Journey/i.test(voz);
+
+/** Vozes que já recusaram `speakingRate` nesta execução (não tenta de novo a cada frase). */
+const NO_RATE = new Set<string>();
+
+/**
+ * Sintetiza UMA frase em WAV (LINEAR16, 24 kHz) e guarda em cache (`dir/<hash>.wav`).
+ * Se a voz não aceitar `speakingRate`, tenta de novo na velocidade normal e avisa.
+ */
+export const googlePhraseWav = async (o: {
+  text: string;
+  voz: string;
+  velocidade: number;
+  languageCode: string;
+  dir: string;
+  fromCache?: boolean;
+}): Promise<string> => {
+  const hash = crypto.createHash("sha1").update(`${o.voz}|${o.velocidade}|${o.text}`).digest("hex").slice(0, 16);
+  const file = path.join(o.dir, `${hash}.wav`);
+  if (fs.existsSync(file)) return file;
+  if (o.fromCache) fail(`Falta no cache a frase "${o.text.slice(0, 50)}…" (voz ${o.voz}). Rode sem --from-cache.`);
+  const key = keyOrFail();
+  const call = (rate?: number) =>
+    fetch(`${API}/v1/text:synthesize?key=${key}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        input: { text: o.text },
+        voice: { languageCode: o.languageCode, name: o.voz },
+        audioConfig: { audioEncoding: "LINEAR16", sampleRateHertz: 24000, ...(rate !== undefined ? { speakingRate: rate } : {}) },
+      }),
+    });
+  const useRate = o.velocidade !== 1 && !NO_RATE.has(o.voz);
+  let res = await call(useRate ? o.velocidade : undefined);
+  if (!res.ok && res.status === 400 && useRate) {
+    const msg = await res.text();
+    if (!/speak|rate|velocidad/i.test(msg)) fail(`Google respondeu 400: ${msg.slice(0, 800)}`);
+    NO_RATE.add(o.voz);
+    console.log(`\n⚠ A voz ${o.voz} não aceitou a velocidade ${o.velocidade}; usando 1,0 nas frases dela.`);
+    res = await call(undefined);
+  }
+  if (!res.ok) fail(`Google respondeu ${res.status}: ${(await res.text()).slice(0, 800)}`);
+  const data = (await res.json()) as { audioContent?: string };
+  if (!data.audioContent) fail(`O Google não devolveu áudio para "${o.text.slice(0, 50)}…".`);
+  fs.mkdirSync(o.dir, { recursive: true });
+  fs.writeFileSync(file, Buffer.from(data.audioContent!, "base64"));
+  return file;
+};
+
+/** Narração com uma voz sem marcas (Chirp 3 HD…): frase por frase + sincronia pelas pausas do áudio. */
+const googleByPhrase = async (
+  slug: string,
+  roteiro: Roteiro,
+  o: { voz: string; velocidade: number; languageCode: string; fromCache?: boolean; dryRun?: boolean },
+): Promise<TtsResult | null> => {
+  const phrases = spokenPhrases(roteiro);
+  const chars = phrases.reduce((a, p) => a + p.text.length, 0);
+  const label = `Google Cloud TTS · voz ${o.voz} · velocidade ${o.velocidade} · frase por frase`;
+  if (o.dryRun) {
+    console.log(`ℹ ${label}: ${phrases.length} frases, ~${chars} caracteres.`);
+    phrases.forEach((p, i) => console.log(`   ${String(i + 1).padStart(2)}. [cena ${p.scene + 1}] ${p.text}`));
+    return null;
+  }
+  const dir = path.join(cacheDir(), "google-frases");
+  const files: string[] = [];
+  for (const [i, p] of phrases.entries()) {
+    process.stdout.write(`\r→ Google TTS: frase ${i + 1}/${phrases.length} (voz ${o.voz})   `);
+    files.push(await googlePhraseWav({ text: p.text, voz: o.voz, velocidade: o.velocidade, languageCode: o.languageCode, dir, fromCache: o.fromCache }));
+  }
+  process.stdout.write("\n");
+  const python = ensureVenv(["soundfile==0.14.0"], "import numpy, soundfile");
+  return synthesizeLocal({ slug, roteiro, motor: "google", python, args: [], label, files });
+};
 /** Limite da API é 5000 bytes de entrada; deixamos folga. */
 const MAX_SSML_BYTES = 4500;
 
@@ -70,20 +151,33 @@ export const listGoogleVoices = async () => {
   if (!res.ok) fail(`Google respondeu ${res.status}: ${(await res.text()).slice(0, 600)}`);
   const data = (await res.json()) as { voices: { name: string; ssmlGender: string; naturalSampleRateHertz: number }[] };
   for (const v of data.voices.sort((a, b) => a.name.localeCompare(b.name))) {
-    console.log(`${v.name.padEnd(28)} ${v.ssmlGender}`);
+    console.log(`${v.name.padEnd(32)} ${v.ssmlGender}`);
   }
-  console.log("ℹ Use vozes Neural2 ou Wavenet (aceitam marcas SSML, necessárias para a legenda exata).");
+  console.log("ℹ Neural2/Wavenet: legenda com tempo exato por palavra. Chirp 3 HD (mais naturais): frase por frase, sincronizadas pelas pausas.");
+};
+
+/** Vozes do Google para um idioma (para as amostras). */
+export const googleVoices = async (languageCode: string) => {
+  const res = await fetch(`${API}/v1/voices?languageCode=${languageCode}&key=${keyOrFail()}`);
+  if (!res.ok) fail(`Google respondeu ${res.status}: ${(await res.text()).slice(0, 600)}`);
+  const data = (await res.json()) as { voices?: { name: string; ssmlGender: string }[] };
+  return (data.voices ?? []).sort((a, b) => a.name.localeCompare(b.name));
 };
 
 export const google: TtsEngine = async (slug, roteiro, opts) => {
   const words = scriptWords(roteiro);
-  // SSML com o texto "falado" (pronúncias do roteiro); as marcas usam os mesmos índices da legenda
-  const chunks = chunkForGoogle(spokenWords(words, roteiro.pronuncias));
   const en = isEnglish(roteiro.idioma);
   const languageCode = en ? "en-US" : "pt-BR";
   const envVoz = process.env.GOOGLE_TTS_VOZ;
-  const voz = opts.voz || (envVoz && envVoz.startsWith(languageCode) ? envVoz : en ? "en-US-Neural2-D" : "pt-BR-Neural2-B");
+  // a voz do roteiro (vozId) só vale se for uma voz do Google (ex.: "cadu" é do Piper)
+  const opVoz = opts.voz && opts.voz.startsWith(languageCode) ? opts.voz : undefined;
+  const voz = opVoz || (envVoz && envVoz.startsWith(languageCode) ? envVoz : en ? "en-US-Neural2-D" : "pt-BR-Neural2-B");
   const velocidade = opts.velocidade ?? parseFloat(process.env.GOOGLE_TTS_VELOCIDADE || "1.05");
+  if (isPhraseVoice(voz)) {
+    return googleByPhrase(slug, roteiro, { voz, velocidade, languageCode, fromCache: opts.fromCache, dryRun: opts.dryRun });
+  }
+  // SSML com o texto "falado" (pronúncias do roteiro); as marcas usam os mesmos índices da legenda
+  const chunks = chunkForGoogle(spokenWords(words, roteiro.pronuncias));
   const cacheFile = path.join(cacheDir(), `${slug}-google.json`);
   const ssmlBytes = chunks.reduce((a, c) => a + Buffer.byteLength(c.ssml), 0);
   const textChars = words.reduce((a, w) => a + w.text.length + 1, 0);
@@ -95,10 +189,6 @@ export const google: TtsEngine = async (slug, roteiro, opts) => {
     console.log(chunks[0].ssml.slice(0, 400) + (chunks[0].ssml.length > 400 ? "…" : ""));
     return null;
   }
-  if (/Chirp|Studio|Journey/i.test(voz)) {
-    console.log(`⚠ A voz ${voz} pode não aceitar marcas SSML; se as legendas saírem estranhas, use Neural2 ou Wavenet.`);
-  }
-
   let responses: GoogleResponse[];
   if (opts.fromCache) {
     if (!fs.existsSync(cacheFile)) fail(`Não há cache em ${cacheFile}. Rode sem --from-cache.`);

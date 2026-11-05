@@ -96,39 +96,54 @@ type LocalOut = {
   phrases: (Span & { pauses: Span[]; envStartMs: number; envelope: number[] })[];
 };
 
+/** Texto FALADO de cada frase (com as pronúncias do roteiro), na mesma ordem de `phrasesFromWords`. */
+export const spokenPhrases = (roteiro: Roteiro) => {
+  const words = scriptWords(roteiro);
+  const spoken = spokenWords(words, roteiro.pronuncias);
+  return phrasesFromWords(words).map((p) => ({
+    scene: p.scene,
+    text: spoken.slice(p.first, p.first + p.words.length).map((w) => w.text).join(" "),
+  }));
+};
+
 /**
  * Sintetiza a narração frase por frase com o motor local e monta as legendas:
  * início de cada frase exato; vírgulas pelos silêncios/vales de energia do áudio.
+ * Com `files` (um .wav por frase, já sintetizado por um motor online como o Google Chirp 3 HD),
+ * o Python só junta e analisa os áudios, e a sincronia é a mesma das vozes locais.
  */
 export const synthesizeLocal = (opts: {
   slug: string;
   roteiro: Roteiro;
-  motor: "piper" | "kokoro";
+  motor: "piper" | "kokoro" | "google";
   python: string;
   args: string[];
   label: string;
+  files?: string[];
 }): TtsResult => {
-  const { slug, roteiro, motor, python, args, label } = opts;
+  const { slug, roteiro, motor, python, args, label, files } = opts;
   const words = scriptWords(roteiro);
   const spoken = spokenWords(words, roteiro.pronuncias);
   const phrases = phrasesFromWords(words);
-  const work = path.join(cacheDir(), `${slug}-${motor}`);
+  if (files && files.length !== phrases.length) fail(`Esperava ${phrases.length} áudios de frase, recebi ${files.length}.`);
+  const work = path.join(cacheDir(), `${slug}-${motor}${files ? "-frases" : ""}`);
   fs.mkdirSync(work, { recursive: true });
   const inFile = path.join(work, "frases.json");
   const wav = path.join(work, "narracao.wav");
   // texto falado usa as pronúncias do roteiro; a legenda continua com o texto original
   writeJson(
     inFile,
-    phrases.map((p) => ({
+    phrases.map((p, i) => ({
       text: spoken.slice(p.first, p.first + p.words.length).map((w) => w.text).join(" "),
       pauseAfterMs: p.pauseAfterMs,
+      ...(files ? { file: files[i] } : {}),
     })),
   );
 
-  console.log(`→ ${label}: sintetizando ${phrases.length} frases…`);
+  console.log(`→ ${label}: ${files ? "juntando e analisando" : "sintetizando"} ${phrases.length} frases…`);
   const r = spawnSync(
     python,
-    ["-I", SCRIPT, "--motor", motor, "--entrada", inFile, "--saida", wav, "--cache", path.join(work, "frases"), ...args],
+    ["-I", SCRIPT, "--motor", files ? "arquivos" : motor, "--entrada", inFile, "--saida", wav, "--cache", path.join(work, "frases"), ...args],
     { encoding: "utf8", stdio: ["ignore", "pipe", "inherit"], maxBuffer: 64 * 1024 * 1024 },
   );
   if (r.status !== 0) fail(`O motor ${motor} falhou (código ${r.status}). Veja a mensagem acima.`);

@@ -65,7 +65,7 @@ Copie `.env.example` para `.env` e preencha só o que for usar.
 | O quê | Variáveis | Guia |
 |---|---|---|
 | Voz grátis local pt-BR (Piper) | nada obrigatório. Opcionais: `PIPER_VOZ` (`faber`/`cadu`/`jeff`), `PIPER_VELOCIDADE` | `references/narracao.md` |
-| Voz grátis Google (cota mensal) | `GOOGLE_TTS_API_KEY`, `GOOGLE_TTS_VOZ` | `references/narracao.md` |
+| Voz Google (cota mensal grátis; Chirp 3 HD é a mais natural em pt-BR) | `GOOGLE_TTS_API_KEY`, `GOOGLE_TTS_VOZ`. Na nuvem (claude.ai/code): variável de ambiente nas configurações do ambiente | `references/narracao.md` |
 | Voz ElevenLabs | `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | `references/narracao.md` |
 | Sua voz (Whisper local) | `WHISPER_MODEL` (padrão `medium`) | `references/narracao.md` |
 | Upload YouTube | `.secrets/client_secret.json` + `npm run youtube -- auth` | `references/upload-youtube.md` |
@@ -78,6 +78,8 @@ npm run new -- <slug> [--estilo 2.5d|3d]   # cria src/videos/<slug>/
 npm run estimate -- <slug>                 # legendas estimadas (rascunho sem voz)
 npm run tts -- <slug>                      # narração (Piper pt-BR grátis por padrão; Google/ElevenLabs se houver chave)
 npm run tts:piper -- <slug> --voz cadu     # força um motor/voz (tts:piper · tts:google · tts:elevenlabs · tts:kokoro)
+npm run amostras-voz -- <slug>             # amostras de vozes do Google (Chirp 3 HD + Neural2) para escolher antes de gravar
+npm run tts:google -- <slug> --voz pt-BR-Chirp3-HD-<Nome>   # narração Chirp 3 HD (frase por frase, sincronizada pelas pausas)
 npm run check-sync -- <slug>               # confere a sincronia legenda × áudio
 npm run transcribe -- <slug> --audio x.m4a # sua voz + Whisper + alinhamento com o roteiro
 npm run studio                             # pré-visualização no navegador

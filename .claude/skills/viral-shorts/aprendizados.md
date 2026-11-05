@@ -34,6 +34,7 @@ Formato: `- [AAAA-MM-DD] contexto → regra`. Acrescente no fim da seção certa
 - [2026-11-03] Narração real (46,7 s) saiu bem mais curta que a estimativa (63 s) → só ajuste a duração do roteiro depois de gerar a voz de verdade.
 - [2026-11-03] Sempre rodar `npm run check-sync` depois da voz: ele pegou na hora a legenda deslocada em 400 ms (teste de controle).
 - [2026-11-04] O TTS às vezes respira no meio da frase sem vírgula e a palavra seguinte aparecia ~0,2 s antes → `snapToSilences` encaixa cada silêncio claro na fronteira de palavra mais próxima (vaso: 26/26 pausas entre palavras; chave em inglês: 24/25, 0% em silêncio).
+- [2026-11-05] **Usuário reprovou também o Piper (cadu)**, na novela do stickman: "a narração está muito ruim" → para pt-BR com qualidade, o caminho é o **Google Chirp 3 HD** (o usuário escolheu). As vozes Chirp não aceitam `<mark>`, então o motor Google gera frase por frase e sincroniza pelas pausas do áudio, como o Piper. Antes de gravar, mostre amostras: `npm run amostras-voz -- <slug>`.
 
 ## Roteiro / pesquisa
 - [2026-11-03] Estatística sem fonte quase entrou num texto → só números com fonte no dossiê; na dúvida, corte.
