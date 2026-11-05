@@ -1,0 +1,1198 @@
+[
+  {
+    "text": "O",
+    "startMs": 175,
+    "endMs": 289,
+    "timestampMs": 232,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Relógio",
+    "startMs": 289,
+    "endMs": 745,
+    "timestampMs": 517,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Central",
+    "startMs": 745,
+    "endMs": 1200,
+    "timestampMs": 973,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " de",
+    "startMs": 1200,
+    "endMs": 1371,
+    "timestampMs": 1286,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Lumen",
+    "startMs": 1371,
+    "endMs": 1713,
+    "timestampMs": 1542,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " comanda",
+    "startMs": 1713,
+    "endMs": 2169,
+    "timestampMs": 1941,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " cada",
+    "startMs": 2169,
+    "endMs": 2454,
+    "timestampMs": 2312,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " porta",
+    "startMs": 2454,
+    "endMs": 2795,
+    "timestampMs": 2625,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " e",
+    "startMs": 2795,
+    "endMs": 2909,
+    "timestampMs": 2852,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " portal,",
+    "startMs": 2909,
+    "endMs": 3308,
+    "timestampMs": 3109,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " e",
+    "startMs": 3517,
+    "endMs": 3636,
+    "timestampMs": 3577,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " estava",
+    "startMs": 3636,
+    "endMs": 4051,
+    "timestampMs": 3844,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " atrasando.",
+    "startMs": 4051,
+    "endMs": 4645,
+    "timestampMs": 4348,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Aí",
+    "startMs": 4955,
+    "endMs": 5132,
+    "timestampMs": 5044,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " eu",
+    "startMs": 5132,
+    "endMs": 5309,
+    "timestampMs": 5221,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " desenterrei",
+    "startMs": 5309,
+    "endMs": 6018,
+    "timestampMs": 5664,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " um",
+    "startMs": 6018,
+    "endMs": 6195,
+    "timestampMs": 6107,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " relógio",
+    "startMs": 6195,
+    "endMs": 6667,
+    "timestampMs": 6431,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " com",
+    "startMs": 6667,
+    "endMs": 6903,
+    "timestampMs": 6785,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " o",
+    "startMs": 6903,
+    "endMs": 7021,
+    "timestampMs": 6962,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " mesmo",
+    "startMs": 7021,
+    "endMs": 7376,
+    "timestampMs": 7199,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " cristal.",
+    "startMs": 7376,
+    "endMs": 7848,
+    "timestampMs": 7612,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " Eu",
+    "startMs": 8278,
+    "endMs": 8441,
+    "timestampMs": 8360,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " precisava",
+    "startMs": 8441,
+    "endMs": 8986,
+    "timestampMs": 8714,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " de",
+    "startMs": 8986,
+    "endMs": 9149,
+    "timestampMs": 9068,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " um",
+    "startMs": 9149,
+    "endMs": 9313,
+    "timestampMs": 9231,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " que",
+    "startMs": 9313,
+    "endMs": 9531,
+    "timestampMs": 9422,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " funcionasse.",
+    "startMs": 9531,
+    "endMs": 10184,
+    "timestampMs": 9858,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Então",
+    "startMs": 10494,
+    "endMs": 10787,
+    "timestampMs": 10641,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " toquei",
+    "startMs": 10787,
+    "endMs": 11128,
+    "timestampMs": 10958,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " na",
+    "startMs": 11128,
+    "endMs": 11274,
+    "timestampMs": 11201,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " minha",
+    "startMs": 11274,
+    "endMs": 11567,
+    "timestampMs": 11421,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 11567,
+    "endMs": 12104,
+    "timestampMs": 11836,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " e",
+    "startMs": 12104,
+    "endMs": 12201,
+    "timestampMs": 12153,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " pulei",
+    "startMs": 12201,
+    "endMs": 12494,
+    "timestampMs": 12348,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " para",
+    "startMs": 12494,
+    "endMs": 12738,
+    "timestampMs": 12616,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " os",
+    "startMs": 12738,
+    "endMs": 12884,
+    "timestampMs": 12811,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " velhos",
+    "startMs": 12884,
+    "endMs": 13226,
+    "timestampMs": 13055,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " tempos,",
+    "startMs": 13226,
+    "endMs": 13567,
+    "timestampMs": 13397,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " o",
+    "startMs": 13726,
+    "endMs": 13988,
+    "timestampMs": 13857,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " ano",
+    "startMs": 13988,
+    "endMs": 14513,
+    "timestampMs": 14251,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " de",
+    "startMs": 14513,
+    "endMs": 14906,
+    "timestampMs": 14710,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " 2026.",
+    "startMs": 14906,
+    "endMs": 15562,
+    "timestampMs": 15234,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Lá",
+    "startMs": 15992,
+    "endMs": 16203,
+    "timestampMs": 16098,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " eu",
+    "startMs": 16203,
+    "endMs": 16414,
+    "timestampMs": 16309,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " conheci",
+    "startMs": 16414,
+    "endMs": 16977,
+    "timestampMs": 16696,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " o",
+    "startMs": 16977,
+    "endMs": 17118,
+    "timestampMs": 17048,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Ben.",
+    "startMs": 17118,
+    "endMs": 17399,
+    "timestampMs": 17259,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " Ele",
+    "startMs": 17709,
+    "endMs": 17960,
+    "timestampMs": 17835,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " olhou",
+    "startMs": 17960,
+    "endMs": 18336,
+    "timestampMs": 18148,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " o",
+    "startMs": 18336,
+    "endMs": 18461,
+    "timestampMs": 18399,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " pulso,",
+    "startMs": 18461,
+    "endMs": 18837,
+    "timestampMs": 18649,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " sorriu",
+    "startMs": 18926,
+    "endMs": 19309,
+    "timestampMs": 19118,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " e",
+    "startMs": 19309,
+    "endMs": 19418,
+    "timestampMs": 19364,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " me",
+    "startMs": 19418,
+    "endMs": 19583,
+    "timestampMs": 19501,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " deu",
+    "startMs": 19583,
+    "endMs": 19801,
+    "timestampMs": 19692,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " o",
+    "startMs": 19801,
+    "endMs": 19911,
+    "timestampMs": 19856,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " relógio",
+    "startMs": 19911,
+    "endMs": 20348,
+    "timestampMs": 20130,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " dele.",
+    "startMs": 20348,
+    "endMs": 20622,
+    "timestampMs": 20485,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " O",
+    "startMs": 20932,
+    "endMs": 21035,
+    "timestampMs": 20984,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " ponteiro",
+    "startMs": 21035,
+    "endMs": 21498,
+    "timestampMs": 21267,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fininho",
+    "startMs": 21498,
+    "endMs": 21909,
+    "timestampMs": 21704,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " andava",
+    "startMs": 21909,
+    "endMs": 22269,
+    "timestampMs": 22089,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " uma",
+    "startMs": 22269,
+    "endMs": 22474,
+    "timestampMs": 22372,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " vez",
+    "startMs": 22474,
+    "endMs": 22680,
+    "timestampMs": 22577,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " por",
+    "startMs": 22680,
+    "endMs": 22886,
+    "timestampMs": 22783,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " segundo.",
+    "startMs": 22886,
+    "endMs": 23297,
+    "timestampMs": 23092,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Lá",
+    "startMs": 23727,
+    "endMs": 24020,
+    "timestampMs": 23874,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " dentro,",
+    "startMs": 24020,
+    "endMs": 24702,
+    "timestampMs": 24361,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 24802,
+    "endMs": 24991,
+    "timestampMs": 24897,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " tensão",
+    "startMs": 24991,
+    "endMs": 25651,
+    "timestampMs": 25321,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " de",
+    "startMs": 25651,
+    "endMs": 25933,
+    "timestampMs": 25792,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " uma",
+    "startMs": 25933,
+    "endMs": 26310,
+    "timestampMs": 26122,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " bateria",
+    "startMs": 26310,
+    "endMs": 27064,
+    "timestampMs": 26687,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " faz",
+    "startMs": 27064,
+    "endMs": 27441,
+    "timestampMs": 27253,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " um",
+    "startMs": 27441,
+    "endMs": 27724,
+    "timestampMs": 27583,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " diapasão",
+    "startMs": 27724,
+    "endMs": 28572,
+    "timestampMs": 28148,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " de",
+    "startMs": 28572,
+    "endMs": 28855,
+    "timestampMs": 28714,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " quartzo",
+    "startMs": 29105,
+    "endMs": 29758,
+    "timestampMs": 29432,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " vibrar",
+    "startMs": 29758,
+    "endMs": 30329,
+    "timestampMs": 30044,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " 32.768",
+    "startMs": 30329,
+    "endMs": 30819,
+    "timestampMs": 30574,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " vezes",
+    "startMs": 30819,
+    "endMs": 31308,
+    "timestampMs": 31064,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " por",
+    "startMs": 31308,
+    "endMs": 31635,
+    "timestampMs": 31472,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " segundo.",
+    "startMs": 31635,
+    "endMs": 32288,
+    "timestampMs": 31962,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " Um",
+    "startMs": 32718,
+    "endMs": 32879,
+    "timestampMs": 32799,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " chip",
+    "startMs": 32879,
+    "endMs": 33148,
+    "timestampMs": 33014,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " divide",
+    "startMs": 33148,
+    "endMs": 33524,
+    "timestampMs": 33336,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " esse",
+    "startMs": 33524,
+    "endMs": 33793,
+    "timestampMs": 33659,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " número",
+    "startMs": 33793,
+    "endMs": 34169,
+    "timestampMs": 33981,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " por",
+    "startMs": 34169,
+    "endMs": 34384,
+    "timestampMs": 34277,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " dois,",
+    "startMs": 34384,
+    "endMs": 34653,
+    "timestampMs": 34519,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " quinze",
+    "startMs": 34883,
+    "endMs": 35312,
+    "timestampMs": 35098,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " vezes",
+    "startMs": 35312,
+    "endMs": 35679,
+    "timestampMs": 35496,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " seguidas,",
+    "startMs": 35679,
+    "endMs": 36230,
+    "timestampMs": 35955,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " até",
+    "startMs": 36419,
+    "endMs": 36639,
+    "timestampMs": 36529,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " sobrar",
+    "startMs": 36639,
+    "endMs": 37023,
+    "timestampMs": 36831,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " um",
+    "startMs": 37023,
+    "endMs": 37187,
+    "timestampMs": 37105,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " pulso",
+    "startMs": 37187,
+    "endMs": 37517,
+    "timestampMs": 37352,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " por",
+    "startMs": 37517,
+    "endMs": 37736,
+    "timestampMs": 37627,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " segundo,",
+    "startMs": 37736,
+    "endMs": 38175,
+    "timestampMs": 37956,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " que",
+    "startMs": 38385,
+    "endMs": 38586,
+    "timestampMs": 38486,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " move",
+    "startMs": 38586,
+    "endMs": 38838,
+    "timestampMs": 38712,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " o",
+    "startMs": 38838,
+    "endMs": 38939,
+    "timestampMs": 38889,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " ponteiro.",
+    "startMs": 38939,
+    "endMs": 39392,
+    "timestampMs": 39166,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Antigamente,",
+    "startMs": 39822,
+    "endMs": 40531,
+    "timestampMs": 40177,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " esse",
+    "startMs": 40680,
+    "endMs": 40940,
+    "timestampMs": 40810,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " cristal",
+    "startMs": 40940,
+    "endMs": 41357,
+    "timestampMs": 41149,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " batia",
+    "startMs": 41357,
+    "endMs": 41669,
+    "timestampMs": 41513,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " dentro",
+    "startMs": 41669,
+    "endMs": 42034,
+    "timestampMs": 41852,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " de",
+    "startMs": 42034,
+    "endMs": 42190,
+    "timestampMs": 42112,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " um",
+    "startMs": 42190,
+    "endMs": 42346,
+    "timestampMs": 42268,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " relógio",
+    "startMs": 42346,
+    "endMs": 42763,
+    "timestampMs": 42555,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " comum.",
+    "startMs": 42763,
+    "endMs": 43075,
+    "timestampMs": 42919,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Em",
+    "startMs": 43385,
+    "endMs": 43572,
+    "timestampMs": 43479,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 43572,
+    "endMs": 43945,
+    "timestampMs": 43759,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " ninguém",
+    "startMs": 44252,
+    "endMs": 44677,
+    "timestampMs": 44465,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " lembra",
+    "startMs": 44677,
+    "endMs": 45049,
+    "timestampMs": 44863,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " como",
+    "startMs": 45049,
+    "endMs": 45315,
+    "timestampMs": 45182,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " o",
+    "startMs": 45315,
+    "endMs": 45421,
+    "timestampMs": 45368,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " nosso",
+    "startMs": 45421,
+    "endMs": 45740,
+    "timestampMs": 45581,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Relógio",
+    "startMs": 45740,
+    "endMs": 46166,
+    "timestampMs": 45953,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Central",
+    "startMs": 46166,
+    "endMs": 46591,
+    "timestampMs": 46379,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " marca",
+    "startMs": 46591,
+    "endMs": 46910,
+    "timestampMs": 46751,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " o",
+    "startMs": 46910,
+    "endMs": 47016,
+    "timestampMs": 46963,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " tempo.",
+    "startMs": 47103,
+    "endMs": 47163,
+    "timestampMs": 47133,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Eu",
+    "startMs": 47756,
+    "endMs": 47936,
+    "timestampMs": 47846,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " abri",
+    "startMs": 47936,
+    "endMs": 48235,
+    "timestampMs": 48086,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " o",
+    "startMs": 48235,
+    "endMs": 48355,
+    "timestampMs": 48295,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " portal",
+    "startMs": 48355,
+    "endMs": 48774,
+    "timestampMs": 48565,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " de",
+    "startMs": 48774,
+    "endMs": 48954,
+    "timestampMs": 48864,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " casa.",
+    "startMs": 48954,
+    "endMs": 49253,
+    "timestampMs": 49104,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Então,",
+    "startMs": 49563,
+    "endMs": 50111,
+    "timestampMs": 49837,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " em",
+    "startMs": 50351,
+    "endMs": 50570,
+    "timestampMs": 50461,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 50570,
+    "endMs": 51009,
+    "timestampMs": 50790,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " o",
+    "startMs": 51199,
+    "endMs": 51322,
+    "timestampMs": 51261,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Relógio",
+    "startMs": 51322,
+    "endMs": 51814,
+    "timestampMs": 51568,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Central",
+    "startMs": 51814,
+    "endMs": 52306,
+    "timestampMs": 52060,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " parou.",
+    "startMs": 52306,
+    "endMs": 52675,
+    "timestampMs": 52491,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " Minha",
+    "startMs": 52985,
+    "endMs": 53282,
+    "timestampMs": 53134,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 53282,
+    "endMs": 53827,
+    "timestampMs": 53555,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " rachou,",
+    "startMs": 53827,
+    "endMs": 54173,
+    "timestampMs": 54000,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " o",
+    "startMs": 54362,
+    "endMs": 54483,
+    "timestampMs": 54423,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " portal",
+    "startMs": 54483,
+    "endMs": 54907,
+    "timestampMs": 54695,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " fechou,",
+    "startMs": 54907,
+    "endMs": 55330,
+    "timestampMs": 55119,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " e",
+    "startMs": 55550,
+    "endMs": 55671,
+    "timestampMs": 55611,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " eu",
+    "startMs": 55671,
+    "endMs": 55852,
+    "timestampMs": 55762,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " fiquei",
+    "startMs": 55852,
+    "endMs": 56275,
+    "timestampMs": 56064,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " preso.",
+    "startMs": 56275,
+    "endMs": 56637,
+    "timestampMs": 56456,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  }
+]

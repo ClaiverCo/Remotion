@@ -1,0 +1,1134 @@
+[
+  {
+    "text": "Lumen's",
+    "startMs": 175,
+    "endMs": 601,
+    "timestampMs": 388,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Central",
+    "startMs": 601,
+    "endMs": 1087,
+    "timestampMs": 844,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Clock",
+    "startMs": 1087,
+    "endMs": 1452,
+    "timestampMs": 1270,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " times",
+    "startMs": 1452,
+    "endMs": 1817,
+    "timestampMs": 1635,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " every",
+    "startMs": 1817,
+    "endMs": 2182,
+    "timestampMs": 2000,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " door",
+    "startMs": 2182,
+    "endMs": 2486,
+    "timestampMs": 2334,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " and",
+    "startMs": 2486,
+    "endMs": 2729,
+    "timestampMs": 2608,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " portal,",
+    "startMs": 2729,
+    "endMs": 3155,
+    "timestampMs": 2942,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " and",
+    "startMs": 3515,
+    "endMs": 3737,
+    "timestampMs": 3626,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 3737,
+    "endMs": 3903,
+    "timestampMs": 3820,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 3903,
+    "endMs": 4124,
+    "timestampMs": 4014,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " falling",
+    "startMs": 4124,
+    "endMs": 4567,
+    "timestampMs": 4346,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " behind.",
+    "startMs": 4567,
+    "endMs": 4955,
+    "timestampMs": 4761,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Then",
+    "startMs": 5265,
+    "endMs": 5537,
+    "timestampMs": 5401,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " I",
+    "startMs": 5537,
+    "endMs": 5645,
+    "timestampMs": 5591,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " dug",
+    "startMs": 5645,
+    "endMs": 5863,
+    "timestampMs": 5754,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " up",
+    "startMs": 5863,
+    "endMs": 6025,
+    "timestampMs": 5944,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " a",
+    "startMs": 6025,
+    "endMs": 6134,
+    "timestampMs": 6080,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " watch",
+    "startMs": 6134,
+    "endMs": 6460,
+    "timestampMs": 6297,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " with",
+    "startMs": 6460,
+    "endMs": 6732,
+    "timestampMs": 6596,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 6732,
+    "endMs": 6949,
+    "timestampMs": 6841,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " same",
+    "startMs": 6949,
+    "endMs": 7220,
+    "timestampMs": 7085,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " crystal.",
+    "startMs": 7220,
+    "endMs": 7655,
+    "timestampMs": 7438,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " I",
+    "startMs": 8085,
+    "endMs": 8195,
+    "timestampMs": 8140,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " needed",
+    "startMs": 8195,
+    "endMs": 8579,
+    "timestampMs": 8387,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " one",
+    "startMs": 8579,
+    "endMs": 8798,
+    "timestampMs": 8689,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " that",
+    "startMs": 8798,
+    "endMs": 9072,
+    "timestampMs": 8935,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " still",
+    "startMs": 9072,
+    "endMs": 9401,
+    "timestampMs": 9237,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " worked.",
+    "startMs": 9401,
+    "endMs": 9785,
+    "timestampMs": 9593,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " So",
+    "startMs": 10095,
+    "endMs": 10276,
+    "timestampMs": 10186,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " I",
+    "startMs": 10276,
+    "endMs": 10396,
+    "timestampMs": 10336,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " tapped",
+    "startMs": 10396,
+    "endMs": 10817,
+    "timestampMs": 10607,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " my",
+    "startMs": 10817,
+    "endMs": 10998,
+    "timestampMs": 10908,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 10998,
+    "endMs": 11659,
+    "timestampMs": 11329,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " and",
+    "startMs": 11659,
+    "endMs": 11900,
+    "timestampMs": 11780,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " jumped",
+    "startMs": 11900,
+    "endMs": 12321,
+    "timestampMs": 12111,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " back",
+    "startMs": 12321,
+    "endMs": 12622,
+    "timestampMs": 12472,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " to",
+    "startMs": 12622,
+    "endMs": 12803,
+    "timestampMs": 12713,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 12803,
+    "endMs": 13043,
+    "timestampMs": 12923,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " old",
+    "startMs": 13043,
+    "endMs": 13284,
+    "timestampMs": 13164,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " days,",
+    "startMs": 13284,
+    "endMs": 13585,
+    "timestampMs": 13435,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 13995,
+    "endMs": 14392,
+    "timestampMs": 14194,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " year",
+    "startMs": 14392,
+    "endMs": 14889,
+    "timestampMs": 14641,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " 2026.",
+    "startMs": 14889,
+    "endMs": 15385,
+    "timestampMs": 15137,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " There",
+    "startMs": 15815,
+    "endMs": 16213,
+    "timestampMs": 16014,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " I",
+    "startMs": 16213,
+    "endMs": 16345,
+    "timestampMs": 16279,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " met",
+    "startMs": 16345,
+    "endMs": 16610,
+    "timestampMs": 16478,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Ben.",
+    "startMs": 16610,
+    "endMs": 16875,
+    "timestampMs": 16743,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " He",
+    "startMs": 17185,
+    "endMs": 17303,
+    "timestampMs": 17244,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " checked",
+    "startMs": 17303,
+    "endMs": 17617,
+    "timestampMs": 17460,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " his",
+    "startMs": 17617,
+    "endMs": 17774,
+    "timestampMs": 17696,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " wrist,",
+    "startMs": 17774,
+    "endMs": 18010,
+    "timestampMs": 17892,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " smiled,",
+    "startMs": 18110,
+    "endMs": 18610,
+    "timestampMs": 18360,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " and",
+    "startMs": 19090,
+    "endMs": 19313,
+    "timestampMs": 19202,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " handed",
+    "startMs": 19313,
+    "endMs": 19702,
+    "timestampMs": 19508,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " me",
+    "startMs": 19702,
+    "endMs": 19869,
+    "timestampMs": 19786,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " his",
+    "startMs": 19869,
+    "endMs": 20091,
+    "timestampMs": 19980,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " watch.",
+    "startMs": 20091,
+    "endMs": 20425,
+    "timestampMs": 20258,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Its",
+    "startMs": 20735,
+    "endMs": 20962,
+    "timestampMs": 20849,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " thin",
+    "startMs": 20962,
+    "endMs": 21245,
+    "timestampMs": 21104,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " hand",
+    "startMs": 21245,
+    "endMs": 21528,
+    "timestampMs": 21387,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " ticked",
+    "startMs": 21528,
+    "endMs": 21925,
+    "timestampMs": 21727,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " once",
+    "startMs": 21925,
+    "endMs": 22208,
+    "timestampMs": 22067,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " every",
+    "startMs": 22208,
+    "endMs": 22548,
+    "timestampMs": 22378,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " second.",
+    "startMs": 22548,
+    "endMs": 22945,
+    "timestampMs": 22747,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Inside,",
+    "startMs": 23375,
+    "endMs": 24010,
+    "timestampMs": 23693,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 24150,
+    "endMs": 24346,
+    "timestampMs": 24248,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " battery's",
+    "startMs": 24346,
+    "endMs": 25228,
+    "timestampMs": 24787,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " voltage",
+    "startMs": 25228,
+    "endMs": 26012,
+    "timestampMs": 25620,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " makes",
+    "startMs": 26012,
+    "endMs": 26599,
+    "timestampMs": 26306,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 26599,
+    "endMs": 26795,
+    "timestampMs": 26697,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " quartz",
+    "startMs": 27065,
+    "endMs": 27725,
+    "timestampMs": 27395,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " tuning",
+    "startMs": 27725,
+    "endMs": 28384,
+    "timestampMs": 28055,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " fork",
+    "startMs": 28384,
+    "endMs": 28855,
+    "timestampMs": 28620,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " vibrate",
+    "startMs": 29355,
+    "endMs": 29993,
+    "timestampMs": 29674,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " 32,768",
+    "startMs": 29993,
+    "endMs": 30470,
+    "timestampMs": 30232,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " times",
+    "startMs": 30470,
+    "endMs": 30948,
+    "timestampMs": 30709,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 30948,
+    "endMs": 31108,
+    "timestampMs": 31028,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " second.",
+    "startMs": 31108,
+    "endMs": 31665,
+    "timestampMs": 31387,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " A",
+    "startMs": 32095,
+    "endMs": 32211,
+    "timestampMs": 32153,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " chip",
+    "startMs": 32211,
+    "endMs": 32501,
+    "timestampMs": 32356,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " cuts",
+    "startMs": 32501,
+    "endMs": 32791,
+    "timestampMs": 32646,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " that",
+    "startMs": 32791,
+    "endMs": 33081,
+    "timestampMs": 32936,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " in",
+    "startMs": 33081,
+    "endMs": 33255,
+    "timestampMs": 33168,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " half",
+    "startMs": 33255,
+    "endMs": 33546,
+    "timestampMs": 33401,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " fifteen",
+    "startMs": 33546,
+    "endMs": 34010,
+    "timestampMs": 33778,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " times",
+    "startMs": 34010,
+    "endMs": 34358,
+    "timestampMs": 34184,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " in",
+    "startMs": 34358,
+    "endMs": 34532,
+    "timestampMs": 34445,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " a",
+    "startMs": 34532,
+    "endMs": 34648,
+    "timestampMs": 34590,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " row,",
+    "startMs": 34648,
+    "endMs": 34880,
+    "timestampMs": 34764,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " leaving",
+    "startMs": 35460,
+    "endMs": 35908,
+    "timestampMs": 35684,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " one",
+    "startMs": 35908,
+    "endMs": 36132,
+    "timestampMs": 36020,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " pulse",
+    "startMs": 36132,
+    "endMs": 36468,
+    "timestampMs": 36300,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " a",
+    "startMs": 36468,
+    "endMs": 36580,
+    "timestampMs": 36524,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " second",
+    "startMs": 36580,
+    "endMs": 36973,
+    "timestampMs": 36777,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " to",
+    "startMs": 36973,
+    "endMs": 37141,
+    "timestampMs": 37057,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " move",
+    "startMs": 37141,
+    "endMs": 37421,
+    "timestampMs": 37281,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 37421,
+    "endMs": 37645,
+    "timestampMs": 37533,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " hand.",
+    "startMs": 37645,
+    "endMs": 37925,
+    "timestampMs": 37785,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Back",
+    "startMs": 38355,
+    "endMs": 38743,
+    "timestampMs": 38549,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " then,",
+    "startMs": 38743,
+    "endMs": 39130,
+    "timestampMs": 38937,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " this",
+    "startMs": 39240,
+    "endMs": 39635,
+    "timestampMs": 39438,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " crystal",
+    "startMs": 39735,
+    "endMs": 40140,
+    "timestampMs": 39938,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " ticked",
+    "startMs": 40140,
+    "endMs": 40494,
+    "timestampMs": 40317,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " inside",
+    "startMs": 40494,
+    "endMs": 40848,
+    "timestampMs": 40671,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " an",
+    "startMs": 40848,
+    "endMs": 41000,
+    "timestampMs": 40924,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " everyday",
+    "startMs": 41000,
+    "endMs": 41455,
+    "timestampMs": 41228,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " watch.",
+    "startMs": 41545,
+    "endMs": 41665,
+    "timestampMs": 41605,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " On",
+    "startMs": 41975,
+    "endMs": 42153,
+    "timestampMs": 42064,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 42153,
+    "endMs": 42510,
+    "timestampMs": 42332,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " nobody",
+    "startMs": 43000,
+    "endMs": 43369,
+    "timestampMs": 43185,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " remembers",
+    "startMs": 43369,
+    "endMs": 43896,
+    "timestampMs": 43633,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " how",
+    "startMs": 43896,
+    "endMs": 44107,
+    "timestampMs": 44002,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " our",
+    "startMs": 44107,
+    "endMs": 44317,
+    "timestampMs": 44212,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Central",
+    "startMs": 44317,
+    "endMs": 44739,
+    "timestampMs": 44528,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Clock",
+    "startMs": 44739,
+    "endMs": 45055,
+    "timestampMs": 44897,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " keeps",
+    "startMs": 45155,
+    "endMs": 45548,
+    "timestampMs": 45352,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " time.",
+    "startMs": 45548,
+    "endMs": 45875,
+    "timestampMs": 45712,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " I",
+    "startMs": 46305,
+    "endMs": 46420,
+    "timestampMs": 46363,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " opened",
+    "startMs": 46420,
+    "endMs": 46823,
+    "timestampMs": 46622,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " the",
+    "startMs": 46823,
+    "endMs": 47054,
+    "timestampMs": 46939,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " portal",
+    "startMs": 47054,
+    "endMs": 47457,
+    "timestampMs": 47256,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " home.",
+    "startMs": 47457,
+    "endMs": 47745,
+    "timestampMs": 47601,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Then,",
+    "startMs": 48055,
+    "endMs": 48860,
+    "timestampMs": 48458,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " on",
+    "startMs": 49260,
+    "endMs": 49360,
+    "timestampMs": 49310,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 49360,
+    "endMs": 49560,
+    "timestampMs": 49460,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " the",
+    "startMs": 49590,
+    "endMs": 49749,
+    "timestampMs": 49670,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Central",
+    "startMs": 49749,
+    "endMs": 50068,
+    "timestampMs": 49909,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Clock",
+    "startMs": 50068,
+    "endMs": 50307,
+    "timestampMs": 50188,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " stopped.",
+    "startMs": 50307,
+    "endMs": 50625,
+    "timestampMs": 50466,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " My",
+    "startMs": 50935,
+    "endMs": 51093,
+    "timestampMs": 51014,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 51093,
+    "endMs": 51670,
+    "timestampMs": 51382,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " cracked,",
+    "startMs": 51670,
+    "endMs": 52090,
+    "timestampMs": 51880,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " the",
+    "startMs": 52470,
+    "endMs": 52668,
+    "timestampMs": 52569,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " portal",
+    "startMs": 52668,
+    "endMs": 53014,
+    "timestampMs": 52841,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " closed,",
+    "startMs": 53014,
+    "endMs": 53360,
+    "timestampMs": 53187,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " and",
+    "startMs": 53400,
+    "endMs": 53609,
+    "timestampMs": 53505,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " I",
+    "startMs": 53609,
+    "endMs": 53713,
+    "timestampMs": 53661,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " was",
+    "startMs": 53713,
+    "endMs": 53922,
+    "timestampMs": 53818,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " stuck.",
+    "startMs": 53922,
+    "endMs": 54235,
+    "timestampMs": 54079,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  }
+]

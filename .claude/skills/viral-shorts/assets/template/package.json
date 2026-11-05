@@ -16,6 +16,8 @@
     "estimate": "tsx scripts/estimate-captions.ts",
     "sync": "tsx scripts/sync-scenes.ts",
     "check-sync": "tsx scripts/check-sync.ts",
+    "check-lang": "tsx scripts/check-lang.ts",
+    "amostras-voz": "tsx scripts/amostras-voz.ts",
     "render": "tsx scripts/render.ts",
     "qa": "tsx scripts/qa-frames.ts",
     "finalize": "tsx scripts/finalize.ts",

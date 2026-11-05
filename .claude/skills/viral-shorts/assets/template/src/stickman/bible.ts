@@ -140,6 +140,22 @@ export const NEGATIVE = [
 /** Detalhes acrescentados em episódios (não contradizem o resto). Formato: "AAAA-MM-DD · episódio · detalhe". */
 export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-electric-fan · On Lumen, a small floating cyan-and-violet breeze swirl can follow a person around to keep them cool (city tech, not part of Kip's outfit).",
+  "2026-11-04 · stickman-stuck-01-crystal · Arc \"Stuck in 2026\" (6 episodes): Kip lands in the year 2026 specifically and cannot go home; each episode explains one ordinary object that becomes a part of his home-made time machine.",
+  "2026-11-04 · stickman-stuck-01-crystal · Lumen's Central Clock (CLOCK-01): a floating white ring with 12 cyan/violet light dots, one cyan light hand and a window with a quartz tuning-fork crystal at its centre. It keeps every door, floating platform and portal in time; when it lags, doors open late; when it stops, portals lose their reference.",
+  "2026-11-04 · stickman-stuck-01-crystal · Ben (PP-02), the 2026 resident from the fan episode, becomes Kip's recurring ally: mustard #E0B44C T-shirt, short black hair, no halo, slightly smaller than Kip. He wears an analog quartz watch on his left wrist and gives it to Kip.",
+  "2026-11-04 · stickman-stuck-01-crystal · Planned damage: from the end of Ep. 1 the Chrono-Band stays on Kip's LEFT wrist but is cracked and dark (#4C3D78, a pale crack line, no glow) until the arc says otherwise. It can no longer open a portal by itself.",
+  "2026-11-04 · stickman-stuck-01-crystal · Crossing-rule exception for this arc only: a 2026 watch and its quartz crystal may later cross to Lumen (Ep. 6).",
+  "2026-11-04 · stickman-stuck-02-battery · On Lumen, power arrives wirelessly: soft cyan rings spread from the city through the air to every device, so nothing on Lumen needs a battery or a plug.",
+  "2026-11-04 · stickman-stuck-02-battery · The Chrono-Band has a tiny charging port on its side (fiction). Charged from Ben's power bank, the cracked band can light up for a few seconds but still cannot open a portal by itself.",
+  "2026-11-04 · stickman-stuck-02-battery · Ben's garage (GARAGE-01) is Kip's base in 2026: workbench on the left with Ben's watch lying on it, pegboard and shelf above it, roll-up door on the right, one hanging lamp.",
+  "2026-11-04 · stickman-stuck-02-battery · The time machine blueprint (BLUEPRINT-01): a cyan hologram ring with a portal in the middle and six slots. Slot 1 = the quartz crystal (Ep. 1), slot 2 = the battery (Ep. 2); slots 3 to 6 stay empty with '?' until their episode.",
+  "2026-11-04 · stickman-stuck-03-chip · The physical time machine (MACHINE-01) stands on the right side of Ben's garage: a grey ring on two legs over a base with a small dark screen, six round sockets around the ring in the blueprint's order (0 top = Ben's watch, 1 upper right = power bank, 2 lower right = phone circuit board with its chip; 3 to 5 empty).",
+  "2026-11-04 · stickman-stuck-03-chip · The Chrono-Band has a tiny 'brain' (processor) under a flip-up cover; it burned out in the portal overload of Ep. 1 and is replaced, in the machine, by the chip from an old phone's circuit board.",
+  "2026-11-04 · stickman-stuck-03-chip · On Lumen, Kip believed device brains were grown from rare glowing crystals (his belief, never shown as how Lumen really works).",
+  "2026-11-04 · stickman-stuck-04-gps · Slot 3 (bottom of the ring) holds Ben's old generic car GPS navigator (GPS-01: black screen in a grey frame, suction mount, no brand). With it, the machine knows where and when it is and can plot a route to Lumen.",
+  "2026-11-04 · stickman-stuck-04-gps · The machine's next need: one huge burst of energy that no battery can deliver at once (sets up Ep. 5).",
+  "2026-11-04 · stickman-stuck-04-gps · Language: Ep. 4 onward of this arc may be narrated in Brazilian Portuguese (Piper voice 'cadu', chosen by the user); era tags read 'ANTIGAMENTE · 2026' and 'LUMEN · MEU TEMPO', split labels 'ANTIGAMENTE' and 'MEU TEMPO', end card 'CONTINUA…'.",
+  "2026-11-05 · stickman-stuck-01/02/03-pt · Episodes 1 to 3 now also exist in Brazilian Portuguese (voice 'cadu'), with the same story, scenes and lore as the English originals; only the narration and on-screen text change.",
 ];
 
 /**

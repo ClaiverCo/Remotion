@@ -1,0 +1,43 @@
+{
+  "fps": 30,
+  "durationMs": 56435,
+  "audio": "stickman-stuck-01-crystal/narracao.mp3",
+  "source": "kokoro",
+  "scenes": [
+    {
+      "id": "c01-late",
+      "startMs": 0,
+      "endMs": 7965
+    },
+    {
+      "id": "c02-jump",
+      "startMs": 7965,
+      "endMs": 15695
+    },
+    {
+      "id": "c03-ben",
+      "startMs": 15695,
+      "endMs": 23255
+    },
+    {
+      "id": "c04-quartz",
+      "startMs": 23255,
+      "endMs": 31975
+    },
+    {
+      "id": "c05-halves",
+      "startMs": 31975,
+      "endMs": 38235
+    },
+    {
+      "id": "c06-compare",
+      "startMs": 38235,
+      "endMs": 46185
+    },
+    {
+      "id": "c07-stuck",
+      "startMs": 46185,
+      "endMs": 56435
+    }
+  ]
+}

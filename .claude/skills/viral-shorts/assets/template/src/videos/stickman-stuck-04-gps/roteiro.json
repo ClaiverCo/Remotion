@@ -1,0 +1,89 @@
+{
+  "slug": "stickman-stuck-04-gps",
+  "titulo": "Preso em 2026, Ep. 4: Relógios no Céu",
+  "tema": "Preso em 2026, episódio 4: o Kip descobre como o GPS acha a posição pelos sinais dos satélites e por que os relógios deles são corrigidos pela relatividade",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "pt-BR",
+  "perguntaCentral": "Como um mapa de celular sabe exatamente onde você está?",
+  "duracaoAlvoSeg": 60,
+  "voz": "piper",
+  "vozId": "cadu",
+  "pronuncias": {
+    "2026": "dois mil e vinte e seis",
+    "38": "trinta e oito",
+    "GPS": "gê pê ésse"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "o GPS velho de carro",
+    "descricao": "um navegador GPS de carro dos anos 2020, genérico e sem marca: uma telinha retangular preta com moldura cinza, um mapa simples na tela e um suporte de ventosa"
+  },
+  "cenas": [
+    {
+      "id": "c01-lost",
+      "era": "presente",
+      "acao": "Na garagem do Ben, a máquina do tempo liga, mas a telinha só mostra um ponto de interrogação, um alfinete de mapa e um relógio piscando.",
+      "narracao": "A máquina ligou, mas sem o Relógio Central ela não sabia onde estava. Nem quando. Assim, mirar o portal era *impossível*.",
+      "visual": "Garagem. A máquina zumbe e o anel brilha fraco. Em 'Relógio Central' um balão de pensamento mostra o Relógio Central de Lumen apagado. Em 'onde' o alfinete pisca na telinha; em 'quando' o relógio pisca. Em 'impossível' um portal fraco treme dentro do anel e some, com um X.",
+      "selo": { "texto": "PRESO EM 2026 · EP 4", "icone": "!", "cor": "amarelo" },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-map",
+      "era": "presente",
+      "acao": "O Ben mostra o celular com um mapa da rua; um pontinho azul pulsa exatamente onde fica a garagem.",
+      "narracao": "Aí o Ben abriu o mapa no celular. Um pontinho azul mostrava *exatamente* onde a gente estava, ali na garagem.",
+      "visual": "O Ben levanta o celular em 'mapa'. Uma lupa mostra a tela: ruas simples e uma casinha; em 'pontinho azul' o ponto aparece e pulsa sobre a garagem; em 'exatamente' um anel azul se fecha nele. O Kip arregala os olhos.",
+      "sfx": "pop",
+      "fontes": [2, 3]
+    },
+    {
+      "id": "c03-receiver",
+      "era": "presente",
+      "acao": "O Ben acha na prateleira um GPS velho de carro; o Kip encaixa o aparelho inteiro no quarto encaixe da máquina.",
+      "narracao": "Na prateleira, ele achou um *GPS* velho de carro. Eu encaixei o aparelho inteiro na máquina, no quarto espaço.",
+      "visual": "O Ben pega o navegador da prateleira em 'prateleira' e entrega ao Kip. Em 'encaixei' o Kip leva o aparelho na mão direita até o encaixe de baixo do anel; clique e brilho em 'quarto espaço'. O Kip dá dois passos para trás.",
+      "sfx": "ding",
+      "fontes": []
+    },
+    {
+      "id": "c04-signals",
+      "era": "presente",
+      "acao": "Diagrama: a Terra embaixo e quatro satélites em volta; cada um manda um sinal com a hora; o receptor mede o atraso e desenha círculos de distância que se cruzam num ponto.",
+      "narracao": "Lá em cima, satélites mandam sinais com a *hora exata*. O receptor vê quanto cada sinal demorou e calcula a distância até eles.",
+      "visual": "A curva da Terra embaixo, com o receptor num ponto. Quatro satélites com relógios aparecem em 'satélites'; em 'hora exata' cada um solta uma onda com um reloginho. Em 'demorou' um cronômetro mede o atraso; em 'distância' círculos crescem a partir de cada satélite e se cruzam sobre o receptor.",
+      "sfx": "whoosh",
+      "fontes": [2, 3, 4]
+    },
+    {
+      "id": "c05-relativity",
+      "era": "presente",
+      "acao": "Dois relógios lado a lado, um no satélite e um no chão; o do satélite adianta um pouquinho a cada dia (38 microssegundos); uma chave ajusta o ritmo dele.",
+      "narracao": "Mas esses relógios adiantam cerca de 38 microssegundos por dia, por causa da *relatividade*. Por isso, eles são ajustados antes de subir.",
+      "visual": "Relógio do satélite à esquerda (alto) e relógio do chão à direita. Em 'adiantam' o do satélite corre um tiquinho à frente; um contador mostra '+38 µs / dia'. Em 'relatividade' aparecem a órbita e a gravidade da Terra como linhas. Em 'ajustados' uma chave gira o relógio do satélite antes de um foguete subir, e os dois passam a bater juntos.",
+      "sfx": "ding",
+      "fontes": [1, 5]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Tela dividida: em Lumen, o Relógio Central organiza tudo sozinho; em 2026, um mapa de celular depende de satélites com relógios no espaço.",
+      "narracao": "Em Lumen, o Relógio Central resolve tudo. Aqui, até um mapa de celular depende de *relógios no espaço*, corrigidos pela relatividade.",
+      "visual": "Metade de baixo (meu tempo) primeiro em 'Lumen': o Relógio Central flutua e as portas abrem no ritmo dele. Metade de cima (antigamente) em 'Aqui': um celular com mapa e, acima dele, três satélites com reloginhos ligados por linhas tracejadas; em 'corrigidos' um tique verde.",
+      "sfx": "whoosh",
+      "fontes": [1, 2, 3]
+    },
+    {
+      "id": "c07-energy",
+      "era": "presente",
+      "acao": "A máquina mostra a rota até Lumen; depois pede uma descarga de energia enorme, com um raio e um ponto de interrogação; o power bank mostra que não aguenta.",
+      "narracao": "A máquina calculou o caminho até Lumen. Então pediu uma descarga de energia que *nenhuma bateria* consegue dar de uma vez.",
+      "visual": "Garagem. Em 'caminho' a telinha mostra uma linha pontilhada até um planetinha (Lumen) e um tique; em 'descarga' aparece um raio gigante com '?'. Em 'nenhuma bateria' o power bank do encaixe 2 pisca vermelho. O Kip coça a cabeça; o Ben arregala os olhos. Cartão 'CONTINUA…'.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

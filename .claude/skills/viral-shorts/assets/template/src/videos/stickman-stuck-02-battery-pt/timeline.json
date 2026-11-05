@@ -1,0 +1,43 @@
+{
+  "fps": 30,
+  "durationMs": 56214,
+  "audio": "stickman-stuck-02-battery-pt/narracao.mp3",
+  "source": "piper",
+  "scenes": [
+    {
+      "id": "c01-dead",
+      "startMs": 0,
+      "endMs": 9197
+    },
+    {
+      "id": "c02-bank",
+      "startMs": 9197,
+      "endMs": 15514
+    },
+    {
+      "id": "c03-plug",
+      "startMs": 15514,
+      "endMs": 21861
+    },
+    {
+      "id": "c04-ions",
+      "startMs": 21861,
+      "endMs": 28397
+    },
+    {
+      "id": "c05-electrons",
+      "startMs": 28397,
+      "endMs": 37579
+    },
+    {
+      "id": "c06-compare",
+      "startMs": 37579,
+      "endMs": 45642
+    },
+    {
+      "id": "c07-blueprint",
+      "startMs": 45642,
+      "endMs": 56214
+    }
+  ]
+}

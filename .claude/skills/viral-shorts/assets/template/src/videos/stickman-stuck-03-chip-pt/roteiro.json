@@ -1,0 +1,108 @@
+{
+  "slug": "stickman-stuck-03-chip-pt",
+  "titulo": "Preso em 2026, Ep. 3: O Cérebro Feito de Areia",
+  "tema": "Preso em 2026, episódio 3: o Kip descobre como um chip de silício nasce da areia e encaixa um na máquina do tempo",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "pt-BR",
+  "perguntaCentral": "Como a areia comum vira o cérebro de um celular?",
+  "duracaoAlvoSeg": 60,
+  "voz": "piper",
+  "vozId": "cadu",
+  "pronuncias": {
+    "Chrono-Band": "Crôno-Bénd"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "o chip de silício",
+    "descricao": "uma placa de circuito verde e solta de um celular velho dos anos 2020, com trilhas finas de cobre e um quadradinho preto (o chip) no meio; sem bateria e sem marca"
+  },
+  "cenas": [
+    {
+      "id": "c01-burned",
+      "era": "presente",
+      "acao": "Na garagem do Ben, o Kip abre uma tampinha na Chrono-Band rachada e acha o processador queimado, soltando fumaça.",
+      "narracao": "A energia era só metade do problema. Dentro da Chrono-Band, o cerebrozinho dela tinha *queimado*. E ninguém aqui vendia peças do futuro.",
+      "visual": "Garagem, com a máquina do tempo de pé à direita e o relógio e o power bank em dois dos seis encaixes. O Kip levanta o pulso esquerdo; em 'Dentro' a tampinha da pulseira abre numa lupa; em 'queimado' o chip lá dentro está preto e solta fumaça. Em 'ninguém' o Kip dá de ombros.",
+      "selo": {
+        "texto": "PRESO EM 2026 · EP 3",
+        "icone": "!",
+        "cor": "amarelo"
+      },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-board",
+      "era": "presente",
+      "acao": "O Ben abre uma gaveta embaixo da bancada e levanta a placa de circuito solta de um celular velho, com um chip preto no meio.",
+      "narracao": "O Ben fuçou uma gaveta e achou a placa de um celular velho. No meio, tinha um quadradinho preto. Era um *chip*.",
+      "visual": "O Ben puxa uma gaveta da bancada em 'gaveta', remexe e levanta uma placa verde em 'placa'. Em 'preto' uma lupa mostra o chip; em 'chip' ele brilha.",
+      "sfx": "pop",
+      "fontes": [
+        1
+      ]
+    },
+    {
+      "id": "c03-slot",
+      "era": "presente",
+      "acao": "O Kip põe a placa no terceiro encaixe da máquina; ela trava e acende; o Ben aponta para o chip e um montinho de areia aparece num balão.",
+      "narracao": "Eu coloquei a placa no terceiro encaixe da máquina. Aí o Ben disse uma coisa estranha: chips assim começam como *areia*.",
+      "visual": "O Kip leva a placa na mão direita até a máquina e encaixa no 3º espaço em 'terceiro encaixe' (clique, brilho). O Ben, atrás, fala a frase (dramatização, sem boca sincronizada); em 'areia' um balão com um montinho de areia aparece acima do Kip, que fica espantado.",
+      "sfx": "ding",
+      "fontes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "c04-wafer",
+      "era": "presente",
+      "acao": "Diagrama: um monte de areia de sílica vira um pedaço de silício puro, cresce num grande cristal cilíndrico e é fatiado em discos finos e brilhantes.",
+      "narracao": "As fábricas purificam a sílica da areia até virar *silício* quase perfeito, fazem crescer um cristal enorme e cortam em discos finos.",
+      "visual": "Fluxo acima da faixa da legenda: monte de areia ('areia de sílica'), seta, pedaço cinza brilhante ('silício') em 'silício', seta, um cilindro alto puxado de um pote incandescente em 'cristal', seta, o cilindro fatiado em discos finos em 'cortam'.",
+      "sfx": "whoosh",
+      "fontes": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "c05-light",
+      "era": "presente",
+      "acao": "A luz passa por uma máscara (um estêncil) e grava o desenho num disco; camadas se empilham; uma lupa mostra uma grade de interruptores minúsculos ligando e desligando.",
+      "narracao": "Depois, a luz grava os desenhos do circuito em cada disco, camada por camada, até um só chip ter *bilhões de transistores*, minúsculos interruptores.",
+      "visual": "Um disco grande; uma lâmpada brilha através de uma máscara em 'luz' e o desenho aparece no disco em 'grava'. Em 'camada por camada' três camadas coloridas se empilham. Em 'bilhões' uma lupa mostra uma grade de interruptores piscando; etiqueta 'bilhões' e um ícone de liga e desliga em 'interruptores'.",
+      "sfx": "ding",
+      "fontes": [
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Tela dividida: em Lumen, o Kip imaginava um cristal raro e brilhante num pedestal do museu; em 2026, um simples monte de areia vira um chip.",
+      "narracao": "Em Lumen, eu achava que cérebros assim vinham de cristais raros. Aqui, eles começavam como *areia*, purificada e gravada com luz.",
+      "visual": "Metade de baixo (meu tempo) primeiro em 'Lumen': um cristal violeta raro e brilhante num pedestal de luz do museu. Metade de cima (antigamente) em 'Aqui': um monte de areia; em 'areia' ele vira um disco, e o disco vira um chip brilhante em 'gravada com luz'.",
+      "sfx": "whoosh",
+      "fontes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c07-question",
+      "era": "presente",
+      "acao": "O chip acorda e a telinha da máquina pergunta onde exatamente eles estão no espaço e no tempo, com um alfinete de mapa e um relógio; o Kip não sabe responder.",
+      "narracao": "O chip acordou. Então a máquina me fez uma pergunta: onde *exatamente* a gente está, no espaço e no tempo? Eu não fazia ideia.",
+      "visual": "Garagem. Em 'acordou' o encaixe 3 brilha e a máquina zumbe. Em 'pergunta' a telinha mostra um '?'; em 'espaço' um alfinete de mapa, em 'tempo' um relógio. O Kip dá de ombros em 'ideia'; o Ben coça a cabeça. Cartão 'CONTINUA…'.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

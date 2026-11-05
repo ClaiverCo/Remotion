@@ -1,0 +1,108 @@
+{
+  "slug": "stickman-stuck-02-battery-pt",
+  "titulo": "Preso em 2026, Ep. 2: Energia no Bolso",
+  "tema": "Preso em 2026, episódio 2: o Kip descobre como um power bank de lítio guarda e solta energia e percebe que vai ter de construir uma máquina do tempo",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "pt-BR",
+  "perguntaCentral": "Onde um power bank guarda a energia, e como ela sai?",
+  "duracaoAlvoSeg": 60,
+  "voz": "piper",
+  "vozId": "cadu",
+  "pronuncias": {
+    "2026": "dois mil e vinte e seis",
+    "power": "páuer",
+    "bank": "bénk",
+    "Chrono-Band": "Crôno-Bénd"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "o power bank de lítio",
+    "descricao": "um power bank comum de bolso dos anos 2020: um retângulo cinza-escuro arredondado com quatro luzinhas de carga em fila e uma porta de carga, ligado a um cabo branco comum"
+  },
+  "cenas": [
+    {
+      "id": "c01-dead",
+      "era": "presente",
+      "acao": "Na garagem do Ben, o Kip toca a Chrono-Band rachada e apagada de novo e de novo, e nada acontece.",
+      "narracao": "Preso em 2026, minha *Chrono-Band* estava morta. Eu toquei nela de novo e de novo. Nada. Sem energia, eu não tinha como voltar.",
+      "visual": "Garagem do Ben: bancada com o relógio do Ben tique-taqueando, painel de ferramentas, porta de enrolar. O Kip toca a pulseira rachada em 'toquei' e de novo em cada 'novo'; em 'Nada' um X cinza sobre a pulseira; em 'voltar' um balão com um portal fraco estoura e some.",
+      "selo": {
+        "texto": "PRESO EM 2026 · EP 2",
+        "icone": "!",
+        "cor": "amarelo"
+      },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-bank",
+      "era": "presente",
+      "acao": "O Ben entra, tira um power bank do bolso e levanta.",
+      "narracao": "Então o Ben tirou do bolso um tijolinho: um *power bank*, uma bateria de lítio que as pessoas levavam para todo lado.",
+      "visual": "O Ben entra pela direita, põe a mão no bolso em 'tirou' e levanta um power bank cinza-escuro com quatro luzinhas em 'tijolinho'; etiqueta 'power bank' em 'power bank' e 'bateria de lítio' em 'lítio'. O Kip se inclina, curioso.",
+      "sfx": "pop",
+      "fontes": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "c03-plug",
+      "era": "presente",
+      "acao": "O cabo do power bank entra numa portinha da pulseira do Kip; as luzinhas piscam e a energia passa.",
+      "narracao": "O cabo dele encaixou numa portinha da minha pulseira. As luzinhas piscaram, e a *energia* começou a entrar.",
+      "visual": "O Kip segura o power bank na mão direita; um cabo branco vai até a Chrono-Band no pulso esquerdo e encaixa em 'portinha'. Em 'piscaram' as quatro luzinhas piscam em sequência; em 'energia' pontinhos amarelos correm pelo cabo e a pulseira rachada brilha fraco.",
+      "sfx": "ding",
+      "fontes": []
+    },
+    {
+      "id": "c04-ions",
+      "era": "presente",
+      "acao": "Corte de uma célula de bateria: os íons de lítio passam do lado do grafite para o outro lado, através do separador.",
+      "narracao": "Dentro da bateria, *íons de lítio* passam de um lado para o outro, através de uma parede fina chamada separador.",
+      "visual": "Corte grande da célula: camadas de grafite à esquerda, óxido metálico à direita, eletrólito azul-claro no meio e um separador tracejado. Em 'íons' bolinhas ciano com '+' acendem no grafite; em 'passam' elas atravessam para a direita; em 'separador' a parede ganha etiqueta. O Kip pequeno num canto.",
+      "sfx": "ding",
+      "fontes": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "c05-electrons",
+      "era": "presente",
+      "acao": "Os elétrons batem no separador e dão a volta por um fio de fora que acende a pulseira do Kip; depois a recarga inverte o fluxo.",
+      "narracao": "Mas o separador barra os *elétrons*. Então eles dão a volta, pelo fio de fora, e alimentam a minha pulseira. Recarregar faz tudo voltar.",
+      "visual": "Mesmo corte. Em 'barra' pontinhos amarelos '−' batem no separador com um X; em 'volta' eles saem pelo alto do grafite, correm por um fio de fora que passa por uma Chrono-Band, que acende em 'alimentam', e entram do outro lado. Em 'Recarregar' aparece uma tomada e tudo se inverte: íons voltam para a esquerda, elétrons correm de volta.",
+      "sfx": "ding",
+      "fontes": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Tela dividida: em Lumen, ondas de energia viajam pelo ar até tudo; em 2026, um power bank carrega na tomada, esvazia e carrega de novo.",
+      "narracao": "Em Lumen, a energia viaja pelo ar até tudo. Aqui, as pessoas *guardam* energia em baterias e recarregam de novo e de novo.",
+      "visual": "Metade de baixo (meu tempo) primeiro em 'Lumen': uma torre solta anéis ciano pelo ar até os painéis dos cidadãos. Metade de cima (antigamente) em 'Aqui': um power bank na tomada; as quatro luzinhas enchem em 'guardam', esvaziam e enchem de novo em 'de novo e de novo'.",
+      "sfx": "whoosh",
+      "fontes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c07-blueprint",
+      "era": "presente",
+      "acao": "A pulseira rachada acende por três segundos e projeta a planta de uma máquina com seis encaixes, dois cheios e quatro vazios; depois apaga.",
+      "narracao": "Então minha pulseira acendeu por *três segundos*. Ela mostrou uma máquina com quatro espaços vazios. Para voltar, eu teria que *construir* uma.",
+      "visual": "Garagem. Em 'acendeu' a pulseira rachada brilha e projeta um holograma ciano: um anel com seis encaixes. Dois têm um cristal e uma bateria; quatro estão tracejados e vazios, com '?', em 'quatro espaços vazios'. O holograma pisca e some. O Kip fica determinado em 'construir'; o Ben sorri. Cartão 'CONTINUA…'.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

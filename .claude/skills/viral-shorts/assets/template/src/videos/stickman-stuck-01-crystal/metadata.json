@@ -1,0 +1,32 @@
+{
+  "youtube": {
+    "titulo": "How a quartz watch counts seconds ⌚ Stuck in 2026, Ep. 1",
+    "descricao": "Lumen's Central Clock is falling behind, and the only clue is an old watch with the same crystal inside. So Kip travels to 2026 to find out how a quartz watch keeps time: a battery makes a tiny quartz tuning fork vibrate 32,768 times a second, and a chip halves that 15 times until one pulse a second moves the hand. Then the portal home breaks.\n\nEpisode 1 of 6 of \"Stuck in 2026\". What should Kip build first to get home? Comment below.\n\nThe future world in this video (Lumen, the Central Clock, time travel) is fiction. The watch explanation is based on how analog quartz watches work (sources: Wikipedia \"Quartz clock\", ASM International \"How a Quartz Watch Works\", NIST Time and Frequency Division, Sciencing).",
+    "hashtags": ["#shorts", "#howitworks", "#stickman", "#timetravel"],
+    "tags": [
+      "how a quartz watch works",
+      "quartz crystal 32768",
+      "why 32768 hz",
+      "how does a watch keep time",
+      "quartz tuning fork",
+      "piezoelectric",
+      "stickman animation",
+      "stuck in 2026",
+      "time travel",
+      "science explained",
+      "relics of the old days"
+    ],
+    "categoria": "27",
+    "privacidade": "private",
+    "publicarEm": null,
+    "midiaSintetica": true
+  },
+  "tiktok": {
+    "legenda": "Your watch has a crystal that vibrates 32,768 times a second ⌚ Kip came to 2026 to learn why… and now he can't go home. Ep. 1/6. Follow for Ep. 2!",
+    "hashtags": ["#howitworks", "#stickman", "#learnontiktok", "#timetravel", "#didyouknow"]
+  },
+  "reels": {
+    "legenda": "A tiny crystal counts every second on your wrist ⌚ Ep. 1 of Stuck in 2026. Save this and send it to someone who still wears a watch.",
+    "hashtags": ["#howitworks", "#stickman", "#timetravel", "#didyouknow", "#explained"]
+  }
+}

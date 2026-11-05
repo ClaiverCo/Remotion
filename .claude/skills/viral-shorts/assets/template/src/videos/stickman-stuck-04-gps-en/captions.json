@@ -1,0 +1,1189 @@
+[
+  {
+    "text": "The",
+    "startMs": 175,
+    "endMs": 401,
+    "timestampMs": 288,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " machine",
+    "startMs": 401,
+    "endMs": 853,
+    "timestampMs": 627,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " powered",
+    "startMs": 853,
+    "endMs": 1305,
+    "timestampMs": 1079,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " up,",
+    "startMs": 1305,
+    "endMs": 1475,
+    "timestampMs": 1390,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " but",
+    "startMs": 1885,
+    "endMs": 2084,
+    "timestampMs": 1985,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " without",
+    "startMs": 2084,
+    "endMs": 2481,
+    "timestampMs": 2283,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 2481,
+    "endMs": 2679,
+    "timestampMs": 2580,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Central",
+    "startMs": 2679,
+    "endMs": 3077,
+    "timestampMs": 2878,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Clock",
+    "startMs": 3077,
+    "endMs": 3374,
+    "timestampMs": 3226,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 3374,
+    "endMs": 3523,
+    "timestampMs": 3449,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " didn't",
+    "startMs": 3523,
+    "endMs": 3821,
+    "timestampMs": 3672,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " know",
+    "startMs": 3821,
+    "endMs": 4070,
+    "timestampMs": 3946,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " where",
+    "startMs": 4070,
+    "endMs": 4367,
+    "timestampMs": 4219,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 4367,
+    "endMs": 4516,
+    "timestampMs": 4442,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " was.",
+    "startMs": 4516,
+    "endMs": 4715,
+    "timestampMs": 4616,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Or",
+    "startMs": 5025,
+    "endMs": 5273,
+    "timestampMs": 5149,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " when.",
+    "startMs": 5273,
+    "endMs": 5685,
+    "timestampMs": 5479,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Aiming",
+    "startMs": 5995,
+    "endMs": 6402,
+    "timestampMs": 6199,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " the",
+    "startMs": 6402,
+    "endMs": 6635,
+    "timestampMs": 6519,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " portal",
+    "startMs": 6635,
+    "endMs": 7042,
+    "timestampMs": 6839,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 7042,
+    "endMs": 7275,
+    "timestampMs": 7159,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " impossible.",
+    "startMs": 7275,
+    "endMs": 7915,
+    "timestampMs": 7595,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " Then",
+    "startMs": 8345,
+    "endMs": 8631,
+    "timestampMs": 8488,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Ben",
+    "startMs": 8631,
+    "endMs": 8859,
+    "timestampMs": 8745,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " opened",
+    "startMs": 8859,
+    "endMs": 9259,
+    "timestampMs": 9059,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 9259,
+    "endMs": 9374,
+    "timestampMs": 9317,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " map",
+    "startMs": 9374,
+    "endMs": 9602,
+    "timestampMs": 9488,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " on",
+    "startMs": 9602,
+    "endMs": 9774,
+    "timestampMs": 9688,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " his",
+    "startMs": 9774,
+    "endMs": 10002,
+    "timestampMs": 9888,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " phone.",
+    "startMs": 10002,
+    "endMs": 10345,
+    "timestampMs": 10174,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " A",
+    "startMs": 10655,
+    "endMs": 10762,
+    "timestampMs": 10709,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " little",
+    "startMs": 10762,
+    "endMs": 11135,
+    "timestampMs": 10949,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " blue",
+    "startMs": 11135,
+    "endMs": 11401,
+    "timestampMs": 11268,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " dot",
+    "startMs": 11401,
+    "endMs": 11614,
+    "timestampMs": 11508,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " showed",
+    "startMs": 11614,
+    "endMs": 11987,
+    "timestampMs": 11801,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " exactly",
+    "startMs": 11987,
+    "endMs": 12414,
+    "timestampMs": 12201,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " where",
+    "startMs": 12414,
+    "endMs": 12734,
+    "timestampMs": 12574,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " we",
+    "startMs": 12734,
+    "endMs": 12894,
+    "timestampMs": 12814,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " were,",
+    "startMs": 12894,
+    "endMs": 13160,
+    "timestampMs": 13027,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " right",
+    "startMs": 13660,
+    "endMs": 13885,
+    "timestampMs": 13773,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " there",
+    "startMs": 13975,
+    "endMs": 14305,
+    "timestampMs": 14140,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " in",
+    "startMs": 14305,
+    "endMs": 14469,
+    "timestampMs": 14387,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " the",
+    "startMs": 14469,
+    "endMs": 14690,
+    "timestampMs": 14580,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " garage.",
+    "startMs": 14690,
+    "endMs": 15075,
+    "timestampMs": 14883,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " On",
+    "startMs": 15505,
+    "endMs": 15666,
+    "timestampMs": 15586,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 15666,
+    "endMs": 15773,
+    "timestampMs": 15720,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " shelf,",
+    "startMs": 15773,
+    "endMs": 16095,
+    "timestampMs": 15934,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " he",
+    "startMs": 16305,
+    "endMs": 16545,
+    "timestampMs": 16425,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " found",
+    "startMs": 16545,
+    "endMs": 17025,
+    "timestampMs": 16785,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " an",
+    "startMs": 17025,
+    "endMs": 17265,
+    "timestampMs": 17145,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " old",
+    "startMs": 17265,
+    "endMs": 17585,
+    "timestampMs": 17425,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " car",
+    "startMs": 17585,
+    "endMs": 17905,
+    "timestampMs": 17745,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " GPS.",
+    "startMs": 17905,
+    "endMs": 18225,
+    "timestampMs": 18065,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " I",
+    "startMs": 18535,
+    "endMs": 18642,
+    "timestampMs": 18589,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fitted",
+    "startMs": 18642,
+    "endMs": 19016,
+    "timestampMs": 18829,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 19016,
+    "endMs": 19230,
+    "timestampMs": 19123,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " whole",
+    "startMs": 19230,
+    "endMs": 19550,
+    "timestampMs": 19390,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " device",
+    "startMs": 19550,
+    "endMs": 19925,
+    "timestampMs": 19738,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " into",
+    "startMs": 20125,
+    "endMs": 20361,
+    "timestampMs": 20243,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " the",
+    "startMs": 20361,
+    "endMs": 20550,
+    "timestampMs": 20456,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " machine's",
+    "startMs": 20550,
+    "endMs": 20977,
+    "timestampMs": 20764,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fourth",
+    "startMs": 20977,
+    "endMs": 21308,
+    "timestampMs": 21143,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " slot.",
+    "startMs": 21308,
+    "endMs": 21545,
+    "timestampMs": 21427,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Satellites",
+    "startMs": 21975,
+    "endMs": 22673,
+    "timestampMs": 22324,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " up",
+    "startMs": 22673,
+    "endMs": 22864,
+    "timestampMs": 22769,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " in",
+    "startMs": 22864,
+    "endMs": 23054,
+    "timestampMs": 22959,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " space",
+    "startMs": 23054,
+    "endMs": 23435,
+    "timestampMs": 23245,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " send",
+    "startMs": 23755,
+    "endMs": 24026,
+    "timestampMs": 23891,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " signals",
+    "startMs": 24026,
+    "endMs": 24461,
+    "timestampMs": 24244,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " with",
+    "startMs": 24461,
+    "endMs": 24732,
+    "timestampMs": 24597,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 24732,
+    "endMs": 24950,
+    "timestampMs": 24841,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " exact",
+    "startMs": 24950,
+    "endMs": 25275,
+    "timestampMs": 25113,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " time.",
+    "startMs": 25395,
+    "endMs": 25805,
+    "timestampMs": 25600,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " The",
+    "startMs": 26115,
+    "endMs": 26335,
+    "timestampMs": 26225,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " receiver",
+    "startMs": 26335,
+    "endMs": 26829,
+    "timestampMs": 26582,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " measures",
+    "startMs": 26829,
+    "endMs": 27323,
+    "timestampMs": 27076,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " how",
+    "startMs": 27323,
+    "endMs": 27542,
+    "timestampMs": 27433,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " long",
+    "startMs": 27542,
+    "endMs": 27817,
+    "timestampMs": 27680,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " each",
+    "startMs": 27817,
+    "endMs": 28091,
+    "timestampMs": 27954,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " one",
+    "startMs": 28091,
+    "endMs": 28311,
+    "timestampMs": 28201,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " took,",
+    "startMs": 28311,
+    "endMs": 28585,
+    "timestampMs": 28448,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " and",
+    "startMs": 28935,
+    "endMs": 29125,
+    "timestampMs": 29030,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " works",
+    "startMs": 29125,
+    "endMs": 29409,
+    "timestampMs": 29267,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " out",
+    "startMs": 29409,
+    "endMs": 29599,
+    "timestampMs": 29504,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 29599,
+    "endMs": 29788,
+    "timestampMs": 29694,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " distance.",
+    "startMs": 29788,
+    "endMs": 30215,
+    "timestampMs": 30002,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " But",
+    "startMs": 30640,
+    "endMs": 30906,
+    "timestampMs": 30773,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " those",
+    "startMs": 30906,
+    "endMs": 31304,
+    "timestampMs": 31105,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " satellite",
+    "startMs": 31304,
+    "endMs": 31970,
+    "timestampMs": 31637,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " clocks",
+    "startMs": 31970,
+    "endMs": 32434,
+    "timestampMs": 32202,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " run",
+    "startMs": 32434,
+    "endMs": 32700,
+    "timestampMs": 32567,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " about",
+    "startMs": 32930,
+    "endMs": 33323,
+    "timestampMs": 33127,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " 38",
+    "startMs": 33323,
+    "endMs": 33519,
+    "timestampMs": 33421,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " microseconds",
+    "startMs": 33519,
+    "endMs": 34370,
+    "timestampMs": 33945,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " a",
+    "startMs": 34370,
+    "endMs": 34501,
+    "timestampMs": 34436,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " day",
+    "startMs": 34501,
+    "endMs": 34762,
+    "timestampMs": 34632,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " fast,",
+    "startMs": 34762,
+    "endMs": 35090,
+    "timestampMs": 34926,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " because",
+    "startMs": 35540,
+    "endMs": 35991,
+    "timestampMs": 35766,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " of",
+    "startMs": 35991,
+    "endMs": 36160,
+    "timestampMs": 36076,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " relativity.",
+    "startMs": 36160,
+    "endMs": 36780,
+    "timestampMs": 36470,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " So",
+    "startMs": 37090,
+    "endMs": 37258,
+    "timestampMs": 37174,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " they're",
+    "startMs": 37258,
+    "endMs": 37651,
+    "timestampMs": 37455,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " adjusted",
+    "startMs": 37651,
+    "endMs": 38155,
+    "timestampMs": 37903,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " before",
+    "startMs": 38155,
+    "endMs": 38548,
+    "timestampMs": 38352,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " launch.",
+    "startMs": 38548,
+    "endMs": 38940,
+    "timestampMs": 38744,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " On",
+    "startMs": 39370,
+    "endMs": 39583,
+    "timestampMs": 39477,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 39583,
+    "endMs": 40010,
+    "timestampMs": 39797,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " the",
+    "startMs": 40270,
+    "endMs": 40478,
+    "timestampMs": 40374,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Central",
+    "startMs": 40478,
+    "endMs": 40893,
+    "timestampMs": 40686,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Clock",
+    "startMs": 40893,
+    "endMs": 41204,
+    "timestampMs": 41049,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " handles",
+    "startMs": 41204,
+    "endMs": 41619,
+    "timestampMs": 41412,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " everything.",
+    "startMs": 41619,
+    "endMs": 42190,
+    "timestampMs": 41905,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Here,",
+    "startMs": 42500,
+    "endMs": 42850,
+    "timestampMs": 42675,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " even",
+    "startMs": 42940,
+    "endMs": 43260,
+    "timestampMs": 43100,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " a",
+    "startMs": 43260,
+    "endMs": 43389,
+    "timestampMs": 43325,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " phone",
+    "startMs": 43389,
+    "endMs": 43773,
+    "timestampMs": 43581,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " map",
+    "startMs": 43773,
+    "endMs": 44030,
+    "timestampMs": 43902,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " depends",
+    "startMs": 44030,
+    "endMs": 44542,
+    "timestampMs": 44286,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " on",
+    "startMs": 44542,
+    "endMs": 44735,
+    "timestampMs": 44639,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " clocks",
+    "startMs": 44735,
+    "endMs": 45183,
+    "timestampMs": 44959,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " in",
+    "startMs": 45183,
+    "endMs": 45375,
+    "timestampMs": 45279,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " space,",
+    "startMs": 45375,
+    "endMs": 45760,
+    "timestampMs": 45568,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " corrected",
+    "startMs": 46160,
+    "endMs": 46732,
+    "timestampMs": 46446,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " for",
+    "startMs": 46732,
+    "endMs": 46961,
+    "timestampMs": 46847,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " relativity.",
+    "startMs": 46961,
+    "endMs": 47590,
+    "timestampMs": 47276,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " The",
+    "startMs": 48020,
+    "endMs": 48225,
+    "timestampMs": 48123,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " machine",
+    "startMs": 48225,
+    "endMs": 48636,
+    "timestampMs": 48431,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " plotted",
+    "startMs": 48636,
+    "endMs": 49047,
+    "timestampMs": 48842,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " a",
+    "startMs": 49047,
+    "endMs": 49150,
+    "timestampMs": 49099,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " route",
+    "startMs": 49150,
+    "endMs": 49458,
+    "timestampMs": 49304,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " to",
+    "startMs": 49458,
+    "endMs": 49612,
+    "timestampMs": 49535,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Lumen.",
+    "startMs": 49612,
+    "endMs": 49920,
+    "timestampMs": 49766,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " Then",
+    "startMs": 50230,
+    "endMs": 50525,
+    "timestampMs": 50378,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " it",
+    "startMs": 50525,
+    "endMs": 50702,
+    "timestampMs": 50614,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " asked",
+    "startMs": 50702,
+    "endMs": 51055,
+    "timestampMs": 50879,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " for",
+    "startMs": 51055,
+    "endMs": 51291,
+    "timestampMs": 51173,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " a",
+    "startMs": 51291,
+    "endMs": 51409,
+    "timestampMs": 51350,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " burst",
+    "startMs": 51409,
+    "endMs": 51763,
+    "timestampMs": 51586,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " of",
+    "startMs": 51763,
+    "endMs": 51940,
+    "timestampMs": 51852,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " power",
+    "startMs": 52140,
+    "endMs": 52473,
+    "timestampMs": 52307,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " that",
+    "startMs": 52473,
+    "endMs": 52750,
+    "timestampMs": 52612,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " no",
+    "startMs": 52750,
+    "endMs": 52917,
+    "timestampMs": 52834,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " battery",
+    "startMs": 52917,
+    "endMs": 53361,
+    "timestampMs": 53139,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " can",
+    "startMs": 53361,
+    "endMs": 53583,
+    "timestampMs": 53472,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " deliver",
+    "startMs": 53583,
+    "endMs": 54026,
+    "timestampMs": 53805,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " at",
+    "startMs": 54026,
+    "endMs": 54192,
+    "timestampMs": 54109,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " once.",
+    "startMs": 54192,
+    "endMs": 54470,
+    "timestampMs": 54331,
+    "confidence": null,
+    "scene": 6
+  }
+]

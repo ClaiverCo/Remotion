@@ -18,3 +18,28 @@ Correções pedidas pelo usuário e o que deu certo nesta série. Formato: `- [A
 ## Pacote de prompts
 - [2026-11-04] Com a identidade antiga (269 palavras), nenhum prompt cabia nas faixas do documento → identidade compacta (~170 palavras, todos os traços travados) e a medida de tamanho exclui os blocos literais.
 - [2026-11-04] Dígitos e rótulos no prompt de imagem viram texto inventado pelo gerador → no pacote, os quadros dos dígitos ficam vazios e os números entram no editor (no vídeo por código eles aparecem normalmente).
+
+## Novela "Stuck in 2026"
+- [2026-11-04] O enredo dos 6 episódios veio de um documento com outros nomes (Nex, Aurel, "aparelho de pulso") → "nosso personagem padrão" é sempre o Kip da bíblia; traduza os nomes (tabela em `references/arco-preso-em-2026.md`) e não crie um segundo protagonista.
+- [2026-11-04] Episódio de novela termina num gancho, não na volta para casa → até 7 clipes (o mecanismo em dois), clipe final com `era: "viagem"`, `"caudaMs": 2200` no roteiro para o cartão "TO BE CONTINUED…" ter tempo de tela, e um tique-taque depois da última palavra.
+- [2026-11-04] Dano planejado no Kip (Chrono-Band rachada) → prop `band="cracked"` do `Stickman`, registrado em `ADDITIONS`; nunca mude a cor da pulseira de outro jeito.
+
+- [2026-11-04] Ep. 2: o Kokoro alinhou mal uma frase com vírgula (legenda ~0,2 s adiantada; check-sync 2,1%) → reencaixar as palavras da frase entre os silêncios reais (`ffmpeg silencedetect`) no `captions.json` e rodar `npm run sync`; voltou a 0%.
+- [2026-11-04] Objeto na mão do Kip em close (zoom 1,3) parecia gigante → power bank com escala 0,42 na mão e mãos na altura do peito (`HANDS`), nunca na frente do rosto.
+
+- [2026-11-04] Ep. 3: o Kokoro de novo adiantou uma frase antes de dois-pontos ("square: a chip") → mesmo conserto do ep. 2 (reencaixar entre os silêncios reais); o check-sync voltou a 0%. Dois-pontos na narração costumam dar esse desvio: prefira ponto final.
+- [2026-11-04] Para pôr uma peça num encaixe do lado direito do anel, o Kip fica na frente da máquina → depois de encaixar, ele dá dois passos para trás (`walkAlong` curto) para não parecer que está dentro do anel.
+
+- [2026-11-04] Ep. 4: o usuário pediu o episódio em português do Brasil e quis **ouvir as vozes antes** → gerar a narração com cada voz Piper (faber, cadu, jeff), recortar o gancho + o clipe com números em `voz-<nome>.mp3`, enviar e perguntar. Escolha: **cadu**. Em pt-BR o Piper é mais lento: o mesmo roteiro deu 52 s (faber) a 58 s (cadu/jeff).
+- [2026-11-04] Número com fonte contestada ("o GPS erraria 10 km por dia") → fica fora da narração; use o fato mais seguro (os relógios são ajustados antes do lançamento). Diferença invisível (38 µs) no desenho → exagere e escreva "(diferença exagerada para dar para ver)".
+- [2026-11-04] Subtítulo longo do cartão final passava da largura → `EndCard` ajusta a fonte pelo comprimento do texto.
+- [2026-11-05] O usuário pediu os eps. 1–3 refeitos em português → **não duplicar as cenas**: o `Scenes.tsx` original exporta `makeScenes(L)` e a versão `-pt` só tem `roteiro.json`, `lang.json`, `pesquisa.md`, `metadata.json` e um `index.ts` que chama `makeScenes(lang)`. Os originais em inglês ficam como estavam (conferido na prancha de QA).
+- [2026-11-05] A mesma palavra em inglês vira palavras diferentes em cada clipe ("Then" = "Aí" no c01 e "Então" no c07; "power" = "power" no c02 e "energia" no c03) → as chaves do `lang.json` são por cena (`"c01:Then"`). E em português a palavra pode aparecer antes na mesma cena ("O Relógio Central… um relógio") → `{ "q": "relógio", "nth": 2 }`.
+- [2026-11-05] Antes do render de uma versão traduzida, rode `npm run check-lang -- <slug-pt> <slug-original>`: ele confere se cada gatilho existe na fala da cena certa (eps. 1–3 pt: 148 gatilhos, todos certos).
+- [2026-11-05] O Piper em português leria "Chrono-Band" e "power bank" errado → `"pronuncias": { "Chrono-Band": "Crôno-Bénd", "power": "páuer", "bank": "bénk" }` (muda só a voz; a legenda continua com a grafia original).
+- [2026-11-05] **O usuário achou a narração do Piper (cadu) "muito ruim"** → o Piper é o limite de qualidade (robótico, entonação plana); trocar de voz Piper ou de velocidade não resolve. Ele escolheu o **Google Chirp 3 HD**. Para pt-BR com qualidade, ofereça primeiro o Google Chirp 3 HD (amostras com `npm run amostras-voz`), e só use Piper como rascunho ou se o usuário não quiser conta no Google.
+- [2026-11-05] Nesta sessão na nuvem, o Google TTS responde, mas `api.elevenlabs.io`, o Edge TTS da Microsoft e o Hugging Face estão bloqueados pela rede do ambiente. Não há `.env` persistente: a chave entra como variável de ambiente `GOOGLE_TTS_API_KEY` nas configurações do ambiente e só aparece numa sessão nova.
+
+## Ambiente (sessões na nuvem)
+- [2026-11-04] O render/QA tentou baixar o Chrome Headless Shell e falhou (rede bloqueada) → `export REMOTION_BROWSER_EXECUTABLE=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell` antes de `npm run qa`/`render`.
+

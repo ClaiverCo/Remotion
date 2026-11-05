@@ -65,7 +65,7 @@ Copie `.env.example` para `.env` e preencha só o que for usar.
 | O quê | Variáveis | Guia |
 |---|---|---|
 | Voz grátis local pt-BR (Piper) | nada obrigatório. Opcionais: `PIPER_VOZ` (`faber`/`cadu`/`jeff`), `PIPER_VELOCIDADE` | `references/narracao.md` |
-| Voz grátis Google (cota mensal) | `GOOGLE_TTS_API_KEY`, `GOOGLE_TTS_VOZ` | `references/narracao.md` |
+| Voz Google (cota mensal grátis; Chirp 3 HD é a mais natural em pt-BR) | `GOOGLE_TTS_API_KEY`, `GOOGLE_TTS_VOZ`. Na nuvem (claude.ai/code): variável de ambiente nas configurações do ambiente | `references/narracao.md` |
 | Voz ElevenLabs | `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | `references/narracao.md` |
 | Sua voz (Whisper local) | `WHISPER_MODEL` (padrão `medium`) | `references/narracao.md` |
 | Upload YouTube | `.secrets/client_secret.json` + `npm run youtube -- auth` | `references/upload-youtube.md` |
@@ -78,6 +78,8 @@ npm run new -- <slug> [--estilo 2.5d|3d]   # cria src/videos/<slug>/
 npm run estimate -- <slug>                 # legendas estimadas (rascunho sem voz)
 npm run tts -- <slug>                      # narração (Piper pt-BR grátis por padrão; Google/ElevenLabs se houver chave)
 npm run tts:piper -- <slug> --voz cadu     # força um motor/voz (tts:piper · tts:google · tts:elevenlabs · tts:kokoro)
+npm run amostras-voz -- <slug>             # amostras de vozes do Google (Chirp 3 HD + Neural2) para escolher antes de gravar
+npm run tts:google -- <slug> --voz pt-BR-Chirp3-HD-<Nome>   # narração Chirp 3 HD (frase por frase, sincronizada pelas pausas)
 npm run check-sync -- <slug>               # confere a sincronia legenda × áudio
 npm run transcribe -- <slug> --audio x.m4a # sua voz + Whisper + alinhamento com o roteiro
 npm run studio                             # pré-visualização no navegador
@@ -142,6 +144,41 @@ npm run prompt-pack -- stickman-house-key   # pacote para Flow/Higgsfield em out
 
 ```bash
 npm run render -- stickman-electric-fan && npm run finalize -- stickman-electric-fan
+```
+
+### Mini novela "Stuck in 2026" (6 episódios)
+
+Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça de uma máquina do tempo. O plano do arco está em `.claude/skills/stickman-do-futuro/references/arco-preso-em-2026.md`.
+
+- **Ep. 1 `stickman-stuck-01-crystal`** (56 s, 7 clipes): *"The Crystal That Counts Time"*. O Central Clock de Lumen atrasa; Kip vai a 2026, ganha o relógio do Ben e descobre o quartzo que vibra 32.768 vezes por segundo, dividido por 2 quinze vezes até virar um tique por segundo. No fim, a Chrono-Band racha e ele fica preso.
+
+- **Ep. 2 `stickman-stuck-02-battery`** (56 s, 7 clipes): *"Power in a Pocket"*. A Chrono-Band está sem energia; o Ben empresta um power bank e o Kip descobre a bateria de lítio: íons atravessam o separador por dentro e os elétrons dão a volta pelo fio, alimentando o aparelho. A pulseira acende 3 s e mostra a planta da máquina do tempo, com 4 espaços vazios.
+
+- **Ep. 3 `stickman-stuck-03-chip`** (60 s, 7 clipes): *"The Brain Made of Sand"*. O "cérebro" da Chrono-Band queimou; o Ben acha a placa de um celular velho e o chip entra no 3º encaixe da máquina, agora uma estrutura de verdade na garagem. O vídeo explica areia → silício → cristal → discos → luz que grava bilhões de transistores. No fim, a máquina pergunta onde e quando eles estão.
+
+- **Ep. 4 `stickman-stuck-04-gps`** (58 s, 7 clipes, **em português do Brasil**, voz Piper `cadu`): *"Relógios no Céu"*. A máquina não sabe onde nem quando está; o Ben mostra o mapa do celular e um GPS velho de carro entra no 4º encaixe. O vídeo explica os sinais com a hora exata dos satélites e por que os relógios deles, que adiantam cerca de 38 microssegundos por dia por causa da relatividade, são ajustados antes do lançamento. No fim, a máquina pede uma descarga de energia que nenhuma bateria dá.
+
+**Em português do Brasil (voz Piper `cadu`):** a novela segue em português. Os eps. 1–3 foram refeitos em português e as versões em inglês continuam no projeto:
+
+| Ep. | Português (pt-BR) | Inglês |
+|---|---|---|
+| 1 | `stickman-stuck-01-crystal-pt`: *O Cristal que Conta o Tempo* (59 s) | `stickman-stuck-01-crystal` |
+| 2 | `stickman-stuck-02-battery-pt`: *Energia no Bolso* (56 s) | `stickman-stuck-02-battery` |
+| 3 | `stickman-stuck-03-chip-pt`: *O Cérebro Feito de Areia* (58 s) | `stickman-stuck-03-chip` |
+| 4 | `stickman-stuck-04-gps`: *Relógios no Céu* (58 s) | `stickman-stuck-04-gps-en`: *Clocks in the Sky* (57 s) |
+
+As versões em português **reaproveitam as cenas** do episódio original: o `Scenes.tsx` exporta `makeScenes(L)` e a pasta `-pt` traz só o roteiro, a narração e um `lang.json` com as palavras-gatilho de cada cena e os textos da tela traduzidos (`src/stickman/lang.ts`). Para conferir uma tradução antes do render: `npm run check-lang -- <slug-pt> <slug-original>`.
+
+```bash
+npm run render -- stickman-stuck-01-crystal-pt && npm run finalize -- stickman-stuck-01-crystal-pt
+npm run render -- stickman-stuck-02-battery-pt && npm run finalize -- stickman-stuck-02-battery-pt
+npm run render -- stickman-stuck-03-chip-pt && npm run finalize -- stickman-stuck-03-chip-pt
+npm run render -- stickman-stuck-04-gps && npm run finalize -- stickman-stuck-04-gps
+# originais em inglês
+npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
+npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
+npm run render -- stickman-stuck-03-chip && npm run finalize -- stickman-stuck-03-chip
+npm run render -- stickman-stuck-04-gps-en && npm run finalize -- stickman-stuck-04-gps-en
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`

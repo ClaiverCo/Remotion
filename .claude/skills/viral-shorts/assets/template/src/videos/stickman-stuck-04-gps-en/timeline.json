@@ -1,0 +1,43 @@
+{
+  "fps": 30,
+  "durationMs": 56670,
+  "audio": "stickman-stuck-04-gps-en/narracao.mp3",
+  "source": "kokoro",
+  "scenes": [
+    {
+      "id": "c01-lost",
+      "startMs": 0,
+      "endMs": 8225
+    },
+    {
+      "id": "c02-map",
+      "startMs": 8225,
+      "endMs": 15385
+    },
+    {
+      "id": "c03-receiver",
+      "startMs": 15385,
+      "endMs": 21855
+    },
+    {
+      "id": "c04-signals",
+      "startMs": 21855,
+      "endMs": 30520
+    },
+    {
+      "id": "c05-relativity",
+      "startMs": 30520,
+      "endMs": 39250
+    },
+    {
+      "id": "c06-compare",
+      "startMs": 39250,
+      "endMs": 47900
+    },
+    {
+      "id": "c07-energy",
+      "startMs": 47900,
+      "endMs": 56670
+    }
+  ]
+}

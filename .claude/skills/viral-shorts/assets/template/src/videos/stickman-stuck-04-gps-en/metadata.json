@@ -1,0 +1,32 @@
+{
+  "youtube": {
+    "titulo": "How GPS knows where you are 🛰️ Stuck in 2026, Ep. 4",
+    "descricao": "Kip's time machine powered up, but without the Central Clock it doesn't know where or when it is. Ben opens a map on his phone, an old car GPS becomes part of the machine, and Kip finds out how GPS works: satellites send signals stamped with the exact time, and the receiver works out the distance to each one from how long the signal took. And there's a twist: because of relativity, the satellites' clocks run about 38 microseconds a day fast, so they're adjusted before launch.\n\nEpisode 4 of 6 of \"Stuck in 2026\". Where will Kip find that much power? Comment below.\n\nThe future world in this video (Lumen, the Central Clock, time travel and the machine) is fiction. The GPS explanation is based on how the system works (sources: Ohio State University \"Real-World Relativity: The GPS Navigation System\", SparkFun \"GPS Basics\", University of Alaska Fairbanks, GIM International).",
+    "hashtags": ["#shorts", "#howitworks", "#stickman", "#gps"],
+    "tags": [
+      "how gps works",
+      "gps relativity",
+      "atomic clocks satellites",
+      "38 microseconds",
+      "how does my phone know where i am",
+      "gps satellites explained",
+      "stickman animation",
+      "stuck in 2026",
+      "time travel",
+      "science explained",
+      "relics of the old days"
+    ],
+    "categoria": "27",
+    "privacidade": "private",
+    "publicarEm": null,
+    "midiaSintetica": true
+  },
+  "tiktok": {
+    "legenda": "Your GPS only works because someone took Einstein's relativity seriously 🛰️⏱️ Satellite clocks run 38 microseconds a day fast! Ep. 4/6 of Stuck in 2026. Did you know? 👇",
+    "hashtags": ["#howitworks", "#stickman", "#learnontiktok", "#gps", "#timetravel"]
+  },
+  "reels": {
+    "legenda": "The blue dot on your map depends on clocks in space corrected for relativity 🛰️ Ep. 4 of Stuck in 2026. Save this and send it to the friend who gets lost without GPS.",
+    "hashtags": ["#howitworks", "#stickman", "#gps", "#science", "#timetravel"]
+  }
+}

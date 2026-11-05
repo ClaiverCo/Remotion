@@ -1,0 +1,32 @@
+{
+  "youtube": {
+    "titulo": "Como o relógio conta os segundos ⌚ Preso em 2026, Ep. 1",
+    "descricao": "O Relógio Central de Lumen está atrasando, e a única pista é um relógio antigo com o mesmo cristal lá dentro. Então o Kip viaja até 2026 para descobrir como um relógio de quartzo marca o tempo: a bateria faz um diapasão de quartzo vibrar 32.768 vezes por segundo, e um chip divide esse número por dois, quinze vezes, até sobrar um pulso por segundo que move o ponteiro. Aí o portal de volta quebra.\n\nEpisódio 1 de 6 de \"Preso em 2026\". O que o Kip precisa construir primeiro para voltar? Comenta aí!\n\nO mundo do futuro neste vídeo (Lumen, o Relógio Central e a viagem no tempo) é ficção. A explicação do relógio se baseia em como os relógios analógicos de quartzo funcionam (fontes: Wikipédia \"Quartz clock\", ASM International \"How a Quartz Watch Works\", NIST Time and Frequency Division, Sciencing).",
+    "hashtags": ["#shorts", "#comofunciona", "#curiosidades", "#relogio"],
+    "tags": [
+      "como funciona o relógio de quartzo",
+      "cristal de quartzo 32768",
+      "por que 32768 hz",
+      "como o relógio marca o tempo",
+      "diapasão de quartzo",
+      "piezoelétrico",
+      "animação stickman",
+      "preso em 2026",
+      "viagem no tempo",
+      "ciência explicada",
+      "curiosidades"
+    ],
+    "categoria": "27",
+    "privacidade": "private",
+    "publicarEm": null,
+    "midiaSintetica": true
+  },
+  "tiktok": {
+    "legenda": "Seu relógio tem um cristal que vibra 32.768 vezes por segundo ⌚ O Kip veio a 2026 descobrir por quê… e agora não consegue voltar pra casa. Ep. 1/6. Segue pra ver o Ep. 2!",
+    "hashtags": ["#comofunciona", "#curiosidades", "#aprendanotiktok", "#relogio", "#ciencia"]
+  },
+  "reels": {
+    "legenda": "Um cristal minúsculo conta cada segundo no seu pulso ⌚ Ep. 1 de Preso em 2026. Salva e manda pra alguém que ainda usa relógio.",
+    "hashtags": ["#comofunciona", "#curiosidades", "#relogio", "#ciencia", "#vocesabia"]
+  }
+}

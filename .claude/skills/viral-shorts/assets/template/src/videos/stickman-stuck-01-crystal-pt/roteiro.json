@@ -1,0 +1,108 @@
+{
+  "slug": "stickman-stuck-01-crystal-pt",
+  "titulo": "Preso em 2026, Ep. 1: O Cristal que Conta o Tempo",
+  "tema": "Preso em 2026, episódio 1: o Kip descobre como um relógio de quartzo marca o tempo e fica preso em 2026",
+  "modelo": "pergunta-final",
+  "estilo": "2.5d",
+  "idioma": "pt-BR",
+  "perguntaCentral": "Como um relógio de pulso comum dos anos 2020 sabe exatamente quanto dura um segundo?",
+  "duracaoAlvoSeg": 60,
+  "voz": "piper",
+  "vozId": "cadu",
+  "pronuncias": {
+    "2026": "dois mil e vinte e seis",
+    "32.768": "trinta e dois mil, setecentos e sessenta e oito",
+    "Chrono-Band": "Crôno-Bénd"
+  },
+  "barraProgresso": false,
+  "caudaMs": 2200,
+  "reliquia": {
+    "nome": "o relógio de pulso de quartzo",
+    "descricao": "um relógio de pulso analógico de quartzo dos anos 2020: caixa redonda de aço, mostrador branco sem números, ponteiros pretos de hora e minuto, ponteiro de segundos vermelho e fino e pulseira preta; a relíquia achada em Lumen é o mesmo modelo, empoeirado e parado"
+  },
+  "cenas": [
+    {
+      "id": "c01-late",
+      "era": "futuro",
+      "acao": "Em Lumen, uma porta abre tarde e o Kip bate nela; o Relógio Central atrasa; ele abre um relógio empoeirado das Camadas Antigas e o mesmo cristal brilha lá dentro.",
+      "narracao": "O Relógio Central de Lumen comanda cada porta e portal, e estava atrasando. Aí eu desenterrei um relógio com o *mesmo cristal*.",
+      "visual": "Cidade de Lumen. O Kip anda até uma porta que não abre e bate nela em 'porta'; ela abre atrasada em 'atrasando'. O Relógio Central flutua com o ponteiro tremendo. Em 'desenterrei' um relógio empoeirado sobe do buraco até a mão direita dele; em 'cristal' a tampa de trás abre e um diapasão de quartzo brilha, igual ao do Relógio Central.",
+      "selo": {
+        "texto": "PRESO EM 2026 · EP 1",
+        "icone": "!",
+        "cor": "amarelo"
+      },
+      "sfx": "pop",
+      "fontes": []
+    },
+    {
+      "id": "c02-jump",
+      "era": "viagem",
+      "acao": "O Kip deixa a relíquia parada num pedestal de luz, toca a Chrono-Band, atravessa o portal e chega a uma rua de 2026.",
+      "narracao": "Eu precisava de um que funcionasse. Então toquei na minha *Chrono-Band* e pulei para os velhos tempos, o ano de 2026.",
+      "visual": "Em 'precisava' o Kip põe o relógio empoeirado num pedestal de luz; em 'toquei' toca o pulso esquerdo com a mão direita; o portal ciano e violeta abre; em 'pulei' ele entra e o portal fecha. Corte para uma rua quente de 2026 em 'velhos tempos'; um anel violeta o deixa lá. Em 'ano' aparece '2026'.",
+      "sfx": "whoosh",
+      "fontes": []
+    },
+    {
+      "id": "c03-ben",
+      "era": "presente",
+      "acao": "O Ben, um vizinho simpático de 2026, olha o relógio de pulso, sorri e entrega ao Kip; o ponteiro vermelho anda uma vez por segundo.",
+      "narracao": "Lá eu conheci o *Ben*. Ele olhou o pulso, sorriu e me deu o relógio dele. O ponteiro fininho andava uma vez por segundo.",
+      "visual": "Frente de uma casa simples. O Ben (PP-02, camiseta mostarda) chega pela direita, levanta o pulso esquerdo em 'olhou', sorri e entrega o relógio em 'deu'. O Kip levanta o relógio na mão direita; em 'andava' uma lupa mostra o ponteiro vermelho dando um passo por segundo.",
+      "sfx": "pop",
+      "fontes": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "c04-quartz",
+      "era": "presente",
+      "acao": "Corte do relógio: a bateria-botão manda tensão para um diapasão de quartzo minúsculo, que vibra muito rápido enquanto um contador sobe até 32.768 por segundo.",
+      "narracao": "Lá dentro, a tensão de uma bateria faz um *diapasão de quartzo* vibrar 32.768 vezes por segundo.",
+      "visual": "Corte grande do relógio. Em 'bateria' a pilha acende; em 'tensão' faíscas correm pelo fio até o cristal; em 'quartzo' a lupa mostra o diapasão vibrando; em '32.768' um contador sobe até 32.768 / s. O Kip pequeno num canto, apontando.",
+      "sfx": "ding",
+      "fontes": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "c05-halves",
+      "era": "presente",
+      "acao": "Uma corrente de quinze caixas divide o número por dois, de 32.768 até 1; o último pulso move um motorzinho e o ponteiro dá um passo.",
+      "narracao": "Um chip divide esse número por dois, quinze vezes seguidas, até sobrar *um pulso* por segundo, que move o ponteiro.",
+      "visual": "Uma corrente em zigue-zague de 16 caixas acende em 'divide': 32.768 → 16.384 → 8.192 … → 2 → 1. Em 'pulso' a última caixa brilha, um pulso viaja até o motorzinho e o ponteiro vermelho dá um passo.",
+      "sfx": "ding",
+      "fontes": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "c06-compare",
+      "era": "comparacao",
+      "acao": "Tela dividida: em 2026 o cristal bate dentro de um relógio comum na mão do Kip; em Lumen, os cidadãos olham o Relógio Central e dão de ombros.",
+      "narracao": "Antigamente, esse cristal batia dentro de um relógio comum. Em Lumen, *ninguém* lembra como o nosso Relógio Central marca o tempo.",
+      "visual": "Metade de cima (antigamente): o Kip na rua de 2026 com o relógio do Ben; uma lupa mostra o cristal. Metade de baixo (meu tempo) em 'Lumen': o Relógio Central treme e dois cidadãos olham para cima e dão de ombros em 'ninguém', com pontos de interrogação.",
+      "sfx": "whoosh",
+      "fontes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c07-stuck",
+      "era": "viagem",
+      "acao": "No fim da tarde, o Kip abre o portal de volta, mas um recorte mostra o Relógio Central parando em Lumen; o portal sobrecarrega, a Chrono-Band racha e apaga, e o portal fecha. O Kip fica preso.",
+      "narracao": "Eu abri o portal de casa. Então, em Lumen, o Relógio Central *parou*. Minha Chrono-Band rachou, o portal fechou, e eu fiquei *preso*.",
+      "visual": "Rua de 2026 no fim da tarde, o Ben atrás. O Kip toca a pulseira em 'abri' e o portal cresce. Em 'Lumen' um recorte redondo mostra o Relógio Central; em 'parou' a luz dele congela e apaga. O portal pisca, a pulseira solta faíscas em 'rachou' e apaga, o portal se fecha em 'fechou'. Em 'preso' uma pausa e o cartão 'CONTINUA…'.",
+      "sfx": "pop",
+      "fontes": []
+    }
+  ]
+}

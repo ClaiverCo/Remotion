@@ -1,0 +1,1165 @@
+[
+  {
+    "text": "Stuck",
+    "startMs": 175,
+    "endMs": 814,
+    "timestampMs": 495,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " in",
+    "startMs": 814,
+    "endMs": 1133,
+    "timestampMs": 974,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " 2026,",
+    "startMs": 1133,
+    "endMs": 1665,
+    "timestampMs": 1399,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " my",
+    "startMs": 1975,
+    "endMs": 2168,
+    "timestampMs": 2072,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Chrono-Band",
+    "startMs": 2168,
+    "endMs": 2876,
+    "timestampMs": 2522,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 0
+  },
+  {
+    "text": " was",
+    "startMs": 2876,
+    "endMs": 3133,
+    "timestampMs": 3005,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " dead.",
+    "startMs": 3133,
+    "endMs": 3455,
+    "timestampMs": 3294,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " I",
+    "startMs": 3765,
+    "endMs": 3879,
+    "timestampMs": 3822,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " tapped",
+    "startMs": 3879,
+    "endMs": 4276,
+    "timestampMs": 4078,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " it",
+    "startMs": 4276,
+    "endMs": 4446,
+    "timestampMs": 4361,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " again",
+    "startMs": 4446,
+    "endMs": 4787,
+    "timestampMs": 4617,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " and",
+    "startMs": 4787,
+    "endMs": 5014,
+    "timestampMs": 4901,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " again.",
+    "startMs": 5014,
+    "endMs": 5355,
+    "timestampMs": 5185,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Nothing.",
+    "startMs": 5665,
+    "endMs": 6295,
+    "timestampMs": 5980,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Without",
+    "startMs": 6605,
+    "endMs": 7091,
+    "timestampMs": 6848,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " power,",
+    "startMs": 7091,
+    "endMs": 7455,
+    "timestampMs": 7273,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " I",
+    "startMs": 7635,
+    "endMs": 7764,
+    "timestampMs": 7700,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " had",
+    "startMs": 7764,
+    "endMs": 8022,
+    "timestampMs": 7893,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " no",
+    "startMs": 8022,
+    "endMs": 8215,
+    "timestampMs": 8119,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " way",
+    "startMs": 8215,
+    "endMs": 8473,
+    "timestampMs": 8344,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " home.",
+    "startMs": 8473,
+    "endMs": 8795,
+    "timestampMs": 8634,
+    "confidence": null,
+    "scene": 0
+  },
+  {
+    "text": " Then",
+    "startMs": 9225,
+    "endMs": 9482,
+    "timestampMs": 9354,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " Ben",
+    "startMs": 9482,
+    "endMs": 9687,
+    "timestampMs": 9585,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " pulled",
+    "startMs": 9687,
+    "endMs": 10046,
+    "timestampMs": 9867,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 10046,
+    "endMs": 10148,
+    "timestampMs": 10097,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " small",
+    "startMs": 10148,
+    "endMs": 10456,
+    "timestampMs": 10302,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " brick",
+    "startMs": 10456,
+    "endMs": 10764,
+    "timestampMs": 10610,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " from",
+    "startMs": 10764,
+    "endMs": 11021,
+    "timestampMs": 10893,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " his",
+    "startMs": 11021,
+    "endMs": 11226,
+    "timestampMs": 11124,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " pocket:",
+    "startMs": 11226,
+    "endMs": 11585,
+    "timestampMs": 11406,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 12105,
+    "endMs": 12242,
+    "timestampMs": 12174,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " power",
+    "startMs": 12242,
+    "endMs": 12653,
+    "timestampMs": 12448,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " bank,",
+    "startMs": 12653,
+    "endMs": 12995,
+    "timestampMs": 12824,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 1
+  },
+  {
+    "text": " a",
+    "startMs": 13404,
+    "endMs": 13464,
+    "timestampMs": 13434,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " lithium-ion",
+    "startMs": 13435,
+    "endMs": 14147,
+    "timestampMs": 13791,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " battery",
+    "startMs": 14147,
+    "endMs": 14666,
+    "timestampMs": 14407,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " that",
+    "startMs": 14666,
+    "endMs": 14990,
+    "timestampMs": 14828,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " people",
+    "startMs": 14990,
+    "endMs": 15443,
+    "timestampMs": 15217,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " carried",
+    "startMs": 15443,
+    "endMs": 15961,
+    "timestampMs": 15702,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " around.",
+    "startMs": 15961,
+    "endMs": 16415,
+    "timestampMs": 16188,
+    "confidence": null,
+    "scene": 1
+  },
+  {
+    "text": " His",
+    "startMs": 16845,
+    "endMs": 17102,
+    "timestampMs": 16974,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " cable",
+    "startMs": 17102,
+    "endMs": 17488,
+    "timestampMs": 17295,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " fit",
+    "startMs": 17488,
+    "endMs": 17746,
+    "timestampMs": 17617,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " a",
+    "startMs": 17746,
+    "endMs": 17874,
+    "timestampMs": 17810,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " tiny",
+    "startMs": 17874,
+    "endMs": 18196,
+    "timestampMs": 18035,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " port",
+    "startMs": 18196,
+    "endMs": 18517,
+    "timestampMs": 18357,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " on",
+    "startMs": 18517,
+    "endMs": 18710,
+    "timestampMs": 18614,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " my",
+    "startMs": 18710,
+    "endMs": 18903,
+    "timestampMs": 18807,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " band.",
+    "startMs": 18903,
+    "endMs": 19225,
+    "timestampMs": 19064,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " The",
+    "startMs": 19560,
+    "endMs": 19711,
+    "timestampMs": 19636,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " little",
+    "startMs": 19711,
+    "endMs": 19976,
+    "timestampMs": 19844,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " lights",
+    "startMs": 19976,
+    "endMs": 20240,
+    "timestampMs": 20108,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " blinked,",
+    "startMs": 20304,
+    "endMs": 20618,
+    "timestampMs": 20461,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " and",
+    "startMs": 20886,
+    "endMs": 21102,
+    "timestampMs": 20994,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " power",
+    "startMs": 21102,
+    "endMs": 21428,
+    "timestampMs": 21265,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 2
+  },
+  {
+    "text": " started",
+    "startMs": 21428,
+    "endMs": 21860,
+    "timestampMs": 21644,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " flowing",
+    "startMs": 21860,
+    "endMs": 22294,
+    "timestampMs": 22077,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " in.",
+    "startMs": 22294,
+    "endMs": 22457,
+    "timestampMs": 22376,
+    "confidence": null,
+    "scene": 2
+  },
+  {
+    "text": " Inside",
+    "startMs": 22985,
+    "endMs": 23390,
+    "timestampMs": 23188,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 23390,
+    "endMs": 23622,
+    "timestampMs": 23506,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " battery,",
+    "startMs": 23622,
+    "endMs": 24085,
+    "timestampMs": 23854,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " lithium",
+    "startMs": 24505,
+    "endMs": 24966,
+    "timestampMs": 24736,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " ions",
+    "startMs": 24966,
+    "endMs": 25254,
+    "timestampMs": 25110,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 3
+  },
+  {
+    "text": " drift",
+    "startMs": 25254,
+    "endMs": 25600,
+    "timestampMs": 25427,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " from",
+    "startMs": 25600,
+    "endMs": 25888,
+    "timestampMs": 25744,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " one",
+    "startMs": 25888,
+    "endMs": 26118,
+    "timestampMs": 26003,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " side",
+    "startMs": 26118,
+    "endMs": 26406,
+    "timestampMs": 26262,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " to",
+    "startMs": 26406,
+    "endMs": 26579,
+    "timestampMs": 26493,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " the",
+    "startMs": 26579,
+    "endMs": 26809,
+    "timestampMs": 26694,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " other,",
+    "startMs": 26809,
+    "endMs": 27155,
+    "timestampMs": 26982,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " through",
+    "startMs": 27585,
+    "endMs": 28028,
+    "timestampMs": 27807,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 28028,
+    "endMs": 28139,
+    "timestampMs": 28084,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " thin",
+    "startMs": 28139,
+    "endMs": 28416,
+    "timestampMs": 28278,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " wall",
+    "startMs": 28416,
+    "endMs": 28693,
+    "timestampMs": 28555,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " called",
+    "startMs": 28693,
+    "endMs": 29080,
+    "timestampMs": 28887,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " a",
+    "startMs": 29080,
+    "endMs": 29191,
+    "timestampMs": 29136,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " separator.",
+    "startMs": 29191,
+    "endMs": 29745,
+    "timestampMs": 29468,
+    "confidence": null,
+    "scene": 3
+  },
+  {
+    "text": " But",
+    "startMs": 30175,
+    "endMs": 30405,
+    "timestampMs": 30290,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 30405,
+    "endMs": 30634,
+    "timestampMs": 30520,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " separator",
+    "startMs": 30634,
+    "endMs": 31209,
+    "timestampMs": 30922,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " blocks",
+    "startMs": 31209,
+    "endMs": 31611,
+    "timestampMs": 31410,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " electrons.",
+    "startMs": 31611,
+    "endMs": 32185,
+    "timestampMs": 31898,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 4
+  },
+  {
+    "text": " So",
+    "startMs": 32495,
+    "endMs": 32639,
+    "timestampMs": 32567,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " they",
+    "startMs": 32639,
+    "endMs": 32878,
+    "timestampMs": 32759,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " take",
+    "startMs": 32878,
+    "endMs": 33118,
+    "timestampMs": 32998,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 33118,
+    "endMs": 33309,
+    "timestampMs": 33214,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " long",
+    "startMs": 33309,
+    "endMs": 33548,
+    "timestampMs": 33429,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " way,",
+    "startMs": 33548,
+    "endMs": 33740,
+    "timestampMs": 33644,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " out",
+    "startMs": 34240,
+    "endMs": 34423,
+    "timestampMs": 34332,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " through",
+    "startMs": 34423,
+    "endMs": 34789,
+    "timestampMs": 34606,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " the",
+    "startMs": 34789,
+    "endMs": 34971,
+    "timestampMs": 34880,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " wire,",
+    "startMs": 34971,
+    "endMs": 35200,
+    "timestampMs": 35086,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " powering",
+    "startMs": 35300,
+    "endMs": 35933,
+    "timestampMs": 35617,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " my",
+    "startMs": 35933,
+    "endMs": 36144,
+    "timestampMs": 36039,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " band.",
+    "startMs": 36144,
+    "endMs": 36495,
+    "timestampMs": 36320,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " Charging",
+    "startMs": 36805,
+    "endMs": 37345,
+    "timestampMs": 37075,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " pushes",
+    "startMs": 37345,
+    "endMs": 37765,
+    "timestampMs": 37555,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " everything",
+    "startMs": 37765,
+    "endMs": 38425,
+    "timestampMs": 38095,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " back.",
+    "startMs": 38425,
+    "endMs": 38725,
+    "timestampMs": 38575,
+    "confidence": null,
+    "scene": 4
+  },
+  {
+    "text": " On",
+    "startMs": 39155,
+    "endMs": 39348,
+    "timestampMs": 39252,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Lumen,",
+    "startMs": 39348,
+    "endMs": 39735,
+    "timestampMs": 39542,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " power",
+    "startMs": 40015,
+    "endMs": 40308,
+    "timestampMs": 40162,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " flows",
+    "startMs": 40308,
+    "endMs": 40601,
+    "timestampMs": 40455,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " through",
+    "startMs": 40601,
+    "endMs": 40991,
+    "timestampMs": 40796,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " the",
+    "startMs": 40991,
+    "endMs": 41186,
+    "timestampMs": 41089,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " air",
+    "startMs": 41186,
+    "endMs": 41382,
+    "timestampMs": 41284,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " to",
+    "startMs": 41382,
+    "endMs": 41528,
+    "timestampMs": 41455,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " everything.",
+    "startMs": 41528,
+    "endMs": 42065,
+    "timestampMs": 41797,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Here,",
+    "startMs": 42375,
+    "endMs": 42740,
+    "timestampMs": 42558,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " people",
+    "startMs": 42870,
+    "endMs": 43229,
+    "timestampMs": 43050,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " store",
+    "startMs": 43229,
+    "endMs": 43536,
+    "timestampMs": 43383,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 5
+  },
+  {
+    "text": " it",
+    "startMs": 43536,
+    "endMs": 43689,
+    "timestampMs": 43613,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " in",
+    "startMs": 43689,
+    "endMs": 43843,
+    "timestampMs": 43766,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " batteries",
+    "startMs": 43843,
+    "endMs": 44355,
+    "timestampMs": 44099,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " and",
+    "startMs": 44645,
+    "endMs": 44867,
+    "timestampMs": 44756,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " charge",
+    "startMs": 44867,
+    "endMs": 45257,
+    "timestampMs": 45062,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " them",
+    "startMs": 45257,
+    "endMs": 45535,
+    "timestampMs": 45396,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " again",
+    "startMs": 45535,
+    "endMs": 45869,
+    "timestampMs": 45702,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " and",
+    "startMs": 45869,
+    "endMs": 46091,
+    "timestampMs": 45980,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " again.",
+    "startMs": 46091,
+    "endMs": 46425,
+    "timestampMs": 46258,
+    "confidence": null,
+    "scene": 5
+  },
+  {
+    "text": " Then",
+    "startMs": 46855,
+    "endMs": 47133,
+    "timestampMs": 46994,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " my",
+    "startMs": 47133,
+    "endMs": 47299,
+    "timestampMs": 47216,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " band",
+    "startMs": 47299,
+    "endMs": 47577,
+    "timestampMs": 47438,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " lit",
+    "startMs": 47577,
+    "endMs": 47799,
+    "timestampMs": 47688,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " up",
+    "startMs": 47799,
+    "endMs": 47966,
+    "timestampMs": 47883,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " for",
+    "startMs": 47966,
+    "endMs": 48188,
+    "timestampMs": 48077,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " three",
+    "startMs": 48188,
+    "endMs": 48521,
+    "timestampMs": 48355,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " seconds.",
+    "startMs": 48521,
+    "endMs": 48965,
+    "timestampMs": 48743,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " It",
+    "startMs": 49275,
+    "endMs": 49439,
+    "timestampMs": 49357,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " showed",
+    "startMs": 49439,
+    "endMs": 49823,
+    "timestampMs": 49631,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " a",
+    "startMs": 49823,
+    "endMs": 49932,
+    "timestampMs": 49878,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " machine",
+    "startMs": 49932,
+    "endMs": 50370,
+    "timestampMs": 50151,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " with",
+    "startMs": 50370,
+    "endMs": 50644,
+    "timestampMs": 50507,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " four",
+    "startMs": 50644,
+    "endMs": 50918,
+    "timestampMs": 50781,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " empty",
+    "startMs": 50918,
+    "endMs": 51246,
+    "timestampMs": 51082,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " slots.",
+    "startMs": 51246,
+    "endMs": 51575,
+    "timestampMs": 51411,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " To",
+    "startMs": 51885,
+    "endMs": 52053,
+    "timestampMs": 51969,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " get",
+    "startMs": 52053,
+    "endMs": 52276,
+    "timestampMs": 52165,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " home,",
+    "startMs": 52276,
+    "endMs": 52555,
+    "timestampMs": 52416,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " I",
+    "startMs": 52675,
+    "endMs": 52794,
+    "timestampMs": 52735,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " had",
+    "startMs": 52794,
+    "endMs": 53032,
+    "timestampMs": 52913,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " to",
+    "startMs": 53032,
+    "endMs": 53210,
+    "timestampMs": 53121,
+    "confidence": null,
+    "scene": 6
+  },
+  {
+    "text": " build",
+    "startMs": 53210,
+    "endMs": 53567,
+    "timestampMs": 53389,
+    "confidence": null,
+    "emphasis": true,
+    "scene": 6
+  },
+  {
+    "text": " one.",
+    "startMs": 53567,
+    "endMs": 53805,
+    "timestampMs": 53686,
+    "confidence": null,
+    "scene": 6
+  }
+]
