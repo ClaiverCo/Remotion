@@ -1,0 +1,43 @@
+{
+  "fps": 30,
+  "durationMs": 58319,
+  "audio": "stickman-stuck-03-chip-pt/narracao.mp3",
+  "source": "piper",
+  "scenes": [
+    {
+      "id": "c01-burned",
+      "startMs": 0,
+      "endMs": 8219
+    },
+    {
+      "id": "c02-board",
+      "startMs": 8219,
+      "endMs": 15385
+    },
+    {
+      "id": "c03-slot",
+      "startMs": 15385,
+      "endMs": 22540
+    },
+    {
+      "id": "c04-wafer",
+      "startMs": 22540,
+      "endMs": 30274
+    },
+    {
+      "id": "c05-light",
+      "startMs": 30274,
+      "endMs": 39982
+    },
+    {
+      "id": "c06-compare",
+      "startMs": 39982,
+      "endMs": 48565
+    },
+    {
+      "id": "c07-question",
+      "startMs": 48565,
+      "endMs": 58319
+    }
+  ]
+}

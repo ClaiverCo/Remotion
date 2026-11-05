@@ -242,7 +242,9 @@ export const WatchCutaway: React.FC<{
   vib: number;
   zoomFork: number;
   show?: { battery: number; voltage: number; quartz: number };
-}> = ({ x, y, t, power, flow, vib, zoomFork, show = { battery: 0, voltage: 0, quartz: 0 } }) => {
+  /** tradutor dos rótulos (pacote de idioma) */
+  tr?: (s: string) => string;
+}> = ({ x, y, t, power, flow, vib, zoomFork, show = { battery: 0, voltage: 0, quartz: 0 }, tr = (s) => s }) => {
   const id = uid(useId());
   const R = 330;
   const bat = { x: -150, y: 110 };
@@ -306,9 +308,9 @@ export const WatchCutaway: React.FC<{
           <circle r={50 + 30 * zoomFork} fill="none" stroke={CYAN} strokeWidth={6} strokeDasharray="14 10" />
         </g>
       )}
-      <Pill x={bat.x} y={bat.y + 140} text="battery" show={show.battery} color={YELLOW} size={38} />
-      <Pill x={-10} y={-20} text="voltage" show={show.voltage} color={YELLOW} size={34} />
-      <Pill x={cap.x - 10} y={cap.y - 170} text="quartz" show={show.quartz} color={CYAN} size={38} />
+      <Pill x={bat.x} y={bat.y + 140} text={tr("battery")} show={show.battery} color={YELLOW} size={38} />
+      <Pill x={-10} y={-20} text={tr("voltage")} show={show.voltage} color={YELLOW} size={34} />
+      <Pill x={cap.x - 10} y={cap.y - 170} text={tr("quartz")} show={show.quartz} color={CYAN} size={38} />
     </g>
   );
 };
@@ -317,13 +319,13 @@ const ramp01 = (v: number) => Math.max(0, Math.min(1, v));
 
 /** Valores da cadeia de divisão: 32 768 → 1 (16 caixas, 15 divisões). */
 export const HALVES = Array.from({ length: 16 }, (_, i) => 2 ** (15 - i));
-const fmt = (n: number) => n.toLocaleString("en-US");
+const fmt = (n: number, locale = "en-US") => n.toLocaleString(locale);
 
 /**
  * Cadeia de 16 caixas em zigue-zague (4 × 4): cada uma é a metade da anterior.
  * `lit` 0..16 = quantas caixas já acenderam (fracionário = a próxima está entrando).
  */
-export const HalvingChain: React.FC<{ x: number; y: number; lit: number; final: number }> = ({ x, y, lit, final }) => {
+export const HalvingChain: React.FC<{ x: number; y: number; lit: number; final: number; locale?: string }> = ({ x, y, lit, final, locale }) => {
   const W = 196;
   const H = 92;
   const GX = 34;
@@ -365,7 +367,7 @@ export const HalvingChain: React.FC<{ x: number; y: number; lit: number; final: 
               {last && final > 0 && <rect x={-W / 2 - 16} y={-H / 2 - 16} width={W + 32} height={H + 32} rx={30} fill={YELLOW} opacity={0.35 * final} />}
               <rect x={-W / 2} y={-H / 2} width={W} height={H} rx={20} fill={last ? (final > 0 ? "#FFF4CC" : "#ffffff") : i === 0 ? "#E0F7FA" : "#ffffff"} stroke={last ? YELLOW : i === 0 ? CYAN : "#9AA5B1"} strokeWidth={5} />
               <text y={15} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={v >= 10000 ? 40 : 46} fill={OUT}>
-                {fmt(v)}
+                {fmt(v, locale)}
               </text>
             </g>
           </g>

@@ -145,7 +145,9 @@ export const CellCutaway: React.FC<{
   bandLit?: number;
   charging?: number;
   labels?: { graphite?: number; oxide?: number; ions?: number; separator?: number; electrons?: number; charging?: number };
-}> = ({ x, y, t, ions, ionGlow = 0, electrons = 0, bounce = 0, wire = 0, bandLit = 0, charging = 0, labels = {} }) => {
+  /** tradutor dos rótulos (pacote de idioma) */
+  tr?: (s: string) => string;
+}> = ({ x, y, t, ions, ionGlow = 0, electrons = 0, bounce = 0, wire = 0, bandLit = 0, charging = 0, labels = {}, tr = (s) => s }) => {
   const W = 800;
   const H = 500;
   const L = -W / 2;
@@ -261,12 +263,12 @@ export const CellCutaway: React.FC<{
             </g>
           );
         })}
-      <Tag x={(anode.x0 + anode.x1) / 2} y={B + 50} text="graphite" show={labels.graphite ?? 0} color="#4B5563" />
-      <Tag x={(cathode.x0 + cathode.x1) / 2} y={B + 50} text="metal oxide" show={labels.oxide ?? 0} color="#D9825B" />
-      <Tag x={(anode.x0 + anode.x1) / 2 + 40} y={T - 40} text="lithium ions" show={labels.ions ?? 0} color={CYAN} />
-      <Tag x={0} y={B + 50} text="separator" show={labels.separator ?? 0} color="#7B8FA6" />
-      <Tag x={(cathode.x0 + cathode.x1) / 2} y={wireTop + 78} text="electrons" show={labels.electrons ?? 0} color={YELLOW} />
-      <Tag x={-170} y={wireTop + 78} text="charging" show={labels.charging ?? 0} color={YELLOW} />
+      <Tag x={(anode.x0 + anode.x1) / 2} y={B + 50} text={tr("graphite")} show={labels.graphite ?? 0} color="#4B5563" />
+      <Tag x={(cathode.x0 + cathode.x1) / 2} y={B + 50} text={tr("metal oxide")} show={labels.oxide ?? 0} color="#D9825B" />
+      <Tag x={(anode.x0 + anode.x1) / 2 + 40} y={T - 40} text={tr("lithium ions")} show={labels.ions ?? 0} color={CYAN} />
+      <Tag x={0} y={B + 50} text={tr("separator")} show={labels.separator ?? 0} color="#7B8FA6" />
+      <Tag x={(cathode.x0 + cathode.x1) / 2} y={wireTop + 78} text={tr("electrons")} show={labels.electrons ?? 0} color={YELLOW} />
+      <Tag x={-170} y={wireTop + 78} text={tr("charging")} show={labels.charging ?? 0} color={YELLOW} />
     </g>
   );
 };

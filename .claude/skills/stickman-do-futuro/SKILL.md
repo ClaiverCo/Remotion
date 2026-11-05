@@ -113,6 +113,14 @@ O pacote traz as 8 entregas do documento do usuário, a voz cortada por clipe (`
 - Upload: passo 9 da `VS_DIR/SKILL.md` (sempre mostre título e data e peça confirmação antes de `--confirmar`).
 - Ao final, ou quando o usuário corrigir algo, registre em `SKILL_DIR/aprendizados.md` (`- [data] contexto → regra`). Detalhes novos do universo vão para `ADDITIONS` em `bible.ts`.
 
+## 11. Versão do episódio em outro idioma (ex.: português do Brasil)
+
+Quando o usuário pedir um episódio já pronto em outro idioma, **não copie as cenas**:
+1. No `Scenes.tsx` original, as cenas ficam dentro de `makeScenes(L: SceneLang = EN)` (`src/stickman/lang.ts`); `useLangScene(props, L, "c0N")` no lugar de `useScene(props)`, textos da tela em `T("…")` e `label` na `EraTag`. Os eps. do arco "Stuck in 2026" já estão assim.
+2. `npm run new -- <slug>-pt`, apague o `Scenes.tsx` criado e faça o `index.ts` chamar `makeScenes(lang)` com um `lang.json` (veja `src/videos/stickman-stuck-01-crystal-pt/`).
+3. Escreva o `roteiro.json` traduzido com os **mesmos ids de cena**, mostre a narração e peça aprovação. Para pt-BR, use a voz que o usuário escolheu (no arco: Piper `cadu`); se ele ainda não escolheu, gere amostras das vozes antes (veja `aprendizados.md`).
+4. Depois da voz, preencha o `lang.json` (palavra-gatilho por cena, textos, etiquetas de era, `locale`) e rode `npm run check-lang -- <slug>-pt <slug>` até não sobrar nenhum ✖. Siga com check-sync, QA, render, metadados no idioma e export, como num episódio novo.
+
 ## Problemas comuns
 - **A pulseira aparece no pulso direito:** a regra está em `leftArm()` (`rig.ts`). Não troque `facing` no meio da cena só para "virar": isso troca a relíquia de mão. Mude a pose ou a direção da caminhada.
 - **Etiqueta ("MY TIME") em cima da cabeça:** suba a divisão da `SplitCompare` (`mid={880}`) e reduza a escala de quem está embaixo.

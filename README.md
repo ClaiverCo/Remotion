@@ -156,11 +156,26 @@ Kip fica preso em 2026 e, a cada episódio, transforma um objeto comum em peça 
 
 - **Ep. 4 `stickman-stuck-04-gps`** (58 s, 7 clipes, **em português do Brasil**, voz Piper `cadu`): *"Relógios no Céu"*. A máquina não sabe onde nem quando está; o Ben mostra o mapa do celular e um GPS velho de carro entra no 4º encaixe. O vídeo explica os sinais com a hora exata dos satélites e por que os relógios deles, que adiantam cerca de 38 microssegundos por dia por causa da relatividade, são ajustados antes do lançamento. No fim, a máquina pede uma descarga de energia que nenhuma bateria dá.
 
+**Em português do Brasil (voz Piper `cadu`):** a novela segue em português. Os eps. 1–3 foram refeitos em português e as versões em inglês continuam no projeto:
+
+| Ep. | Português (pt-BR) | Inglês (original) |
+|---|---|---|
+| 1 | `stickman-stuck-01-crystal-pt`: *O Cristal que Conta o Tempo* (59 s) | `stickman-stuck-01-crystal` |
+| 2 | `stickman-stuck-02-battery-pt`: *Energia no Bolso* (56 s) | `stickman-stuck-02-battery` |
+| 3 | `stickman-stuck-03-chip-pt`: *O Cérebro Feito de Areia* (58 s) | `stickman-stuck-03-chip` |
+| 4 | `stickman-stuck-04-gps`: *Relógios no Céu* (58 s) | — |
+
+As versões em português **reaproveitam as cenas** do episódio original: o `Scenes.tsx` exporta `makeScenes(L)` e a pasta `-pt` traz só o roteiro, a narração e um `lang.json` com as palavras-gatilho de cada cena e os textos da tela traduzidos (`src/stickman/lang.ts`). Para conferir uma tradução antes do render: `npm run check-lang -- <slug-pt> <slug-original>`.
+
 ```bash
+npm run render -- stickman-stuck-01-crystal-pt && npm run finalize -- stickman-stuck-01-crystal-pt
+npm run render -- stickman-stuck-02-battery-pt && npm run finalize -- stickman-stuck-02-battery-pt
+npm run render -- stickman-stuck-03-chip-pt && npm run finalize -- stickman-stuck-03-chip-pt
+npm run render -- stickman-stuck-04-gps && npm run finalize -- stickman-stuck-04-gps
+# originais em inglês
 npm run render -- stickman-stuck-01-crystal && npm run finalize -- stickman-stuck-01-crystal
 npm run render -- stickman-stuck-02-battery && npm run finalize -- stickman-stuck-02-battery
 npm run render -- stickman-stuck-03-chip && npm run finalize -- stickman-stuck-03-chip
-npm run render -- stickman-stuck-04-gps && npm run finalize -- stickman-stuck-04-gps
 ```
 
 ### Especial em pt-BR: `kip-ventilador-no-3`

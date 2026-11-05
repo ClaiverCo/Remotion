@@ -155,6 +155,7 @@ export const ADDITIONS: string[] = [
   "2026-11-04 · stickman-stuck-04-gps · Slot 3 (bottom of the ring) holds Ben's old generic car GPS navigator (GPS-01: black screen in a grey frame, suction mount, no brand). With it, the machine knows where and when it is and can plot a route to Lumen.",
   "2026-11-04 · stickman-stuck-04-gps · The machine's next need: one huge burst of energy that no battery can deliver at once (sets up Ep. 5).",
   "2026-11-04 · stickman-stuck-04-gps · Language: Ep. 4 onward of this arc may be narrated in Brazilian Portuguese (Piper voice 'cadu', chosen by the user); era tags read 'ANTIGAMENTE · 2026' and 'LUMEN · MEU TEMPO', split labels 'ANTIGAMENTE' and 'MEU TEMPO', end card 'CONTINUA…'.",
+  "2026-11-05 · stickman-stuck-01/02/03-pt · Episodes 1 to 3 now also exist in Brazilian Portuguese (voice 'cadu'), with the same story, scenes and lore as the English originals; only the narration and on-screen text change.",
 ];
 
 /**
